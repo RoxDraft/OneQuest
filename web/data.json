@@ -1,6 +1,6 @@
 {
  "is_sample": false,
- "generated_at": "2026-10-31T02:13+00:00",
+ "generated_at": "2026-11-01T02:08+00:00",
  "weights": {
   "scale": 0.3,
   "neglect": 0.25,
@@ -14,7 +14,6 @@
   "social": "เสียงจากโซเชียล"
  },
  "dates": [
-  "2026-10-02",
   "2026-10-03",
   "2026-10-04",
   "2026-10-05",
@@ -43,7 +42,8 @@
   "2026-10-28",
   "2026-10-29",
   "2026-10-30",
-  "2026-10-31"
+  "2026-10-31",
+  "2026-11-01"
  ],
  "daily_signals": {
   "supply": [
@@ -144,7 +144,7 @@
   ]
  },
  "evidence_status": {
-  "corroborating": 70
+  "corroborating": 65
  },
  "new_evidence_today": 0,
  "patterns": {
@@ -326,7 +326,7 @@
     "source": "World Bank WDI",
     "url": "https://data.worldbank.org/indicator/SP.POP.65UP.TO.ZS?locations=TH"
    },
-   "new_papers_12m": 171,
+   "new_papers_12m": 173,
    "plan": {
     "labor": {
      "note": "ตัวเลขทั้งหมดเป็นค่าสมมติ ต้องแทนด้วยข้อมูลจริงก่อนใช้",
@@ -663,15 +663,8 @@
     20,
     23
    ],
-   "indicator": {
-    "indicator": "SH.STA.SUIC.P5",
-    "name": "Suicide mortality rate (per 100,000 population)",
-    "year": 2021,
-    "value": 16.59,
-    "source": "World Bank WDI",
-    "url": "https://data.worldbank.org/indicator/SH.STA.SUIC.P5?locations=TH"
-   },
-   "new_papers_12m": 83981,
+   "indicator": null,
+   "new_papers_12m": 84188,
    "plan": null,
    "evidence": [
     {
@@ -703,7 +696,7 @@
      "source": "Artificial Intelligence Review",
      "domain": "openalex.org",
      "doi_or_url": "https://doi.org/10.1007/s10462-025-11422-4",
-     "cited_by": 182,
+     "cited_by": 183,
      "problem": "mental-health",
      "status": "corroborating"
     },
@@ -725,7 +718,7 @@
      "source": "The Lancet",
      "domain": "openalex.org",
      "doi_or_url": "https://doi.org/10.1016/s0140-6736(25)01853-7",
-     "cited_by": 465,
+     "cited_by": 468,
      "problem": "mental-health",
      "status": "corroborating"
     }
@@ -796,73 +789,10 @@
     6,
     5
    ],
-   "indicator": {
-    "indicator": "SL.UEM.1524.ZS",
-    "name": "Unemployment, youth total (% of total labor force ages 15-24) (modeled ILO estimate)",
-    "year": 2025,
-    "value": 4.531,
-    "source": "World Bank WDI",
-    "url": "https://data.worldbank.org/indicator/SL.UEM.1524.ZS?locations=TH"
-   },
-   "new_papers_12m": 1517,
+   "indicator": null,
+   "new_papers_12m": null,
    "plan": null,
-   "evidence": [
-    {
-     "tier": "research",
-     "title": "Integration of Artificial Intelligence in Food Processing Technologies",
-     "date": "2026-02-02",
-     "source": "Processes",
-     "domain": "openalex.org",
-     "doi_or_url": "https://doi.org/10.3390/pr14030513",
-     "cited_by": 17,
-     "problem": "ai-jobs",
-     "status": "corroborating"
-    },
-    {
-     "tier": "research",
-     "title": "Retraining and Lifelong Learning as an Anti-Crisis Tool: Preserving Ukraine’s Intellectual Capital in Times of War",
-     "date": "2026-01-28",
-     "source": "Knowledge Economy and Lifelong Learning",
-     "domain": "openalex.org",
-     "doi_or_url": "https://doi.org/10.61093/kell.2(1).48-66.2026",
-     "cited_by": 15,
-     "problem": "ai-jobs",
-     "status": "corroborating"
-    },
-    {
-     "tier": "research",
-     "title": "Technostress and generative AI in the workplace: a qualitative analysis of young professionals",
-     "date": "2025-12-12",
-     "source": "Frontiers in Artificial Intelligence",
-     "domain": "openalex.org",
-     "doi_or_url": "https://doi.org/10.3389/frai.2025.1728881",
-     "cited_by": 19,
-     "problem": "ai-jobs",
-     "status": "corroborating"
-    },
-    {
-     "tier": "research",
-     "title": "Technology-Driven Change in Human Resource Management: Reshaping Talent Management and Organizational Design",
-     "date": "2025-11-19",
-     "source": "Administrative Sciences",
-     "domain": "openalex.org",
-     "doi_or_url": "https://doi.org/10.3390/admsci15110452",
-     "cited_by": 16,
-     "problem": "ai-jobs",
-     "status": "corroborating"
-    },
-    {
-     "tier": "research",
-     "title": "Strategic Human Resource Management in the Digital Era: Technology, Transformation, and Sustainable Advantage",
-     "date": "2025-11-11",
-     "source": "Merits",
-     "domain": "openalex.org",
-     "doi_or_url": "https://doi.org/10.3390/merits5040023",
-     "cited_by": 33,
-     "problem": "ai-jobs",
-     "status": "corroborating"
-    }
-   ]
+   "evidence": []
   },
   {
    "id": "sme-credit",
@@ -929,15 +859,8 @@
     6,
     6
    ],
-   "indicator": {
-    "indicator": "FB.BNK.CAPA.ZS",
-    "name": "Bank capital to assets ratio (%)",
-    "year": 2024,
-    "value": 11.125634912273,
-    "source": "World Bank WDI",
-    "url": "https://data.worldbank.org/indicator/FB.BNK.CAPA.ZS?locations=TH"
-   },
-   "new_papers_12m": 682,
+   "indicator": null,
+   "new_papers_12m": 679,
    "plan": null,
    "evidence": [
     {
@@ -947,7 +870,7 @@
      "source": "Sustainability",
      "domain": "openalex.org",
      "doi_or_url": "https://doi.org/10.3390/su18020732",
-     "cited_by": 17,
+     "cited_by": 18,
      "problem": "sme-credit",
      "status": "corroborating"
     },
@@ -958,7 +881,7 @@
      "source": "Wiley Interdisciplinary Reviews Energy and Environment",
      "domain": "openalex.org",
      "doi_or_url": "https://doi.org/10.1002/wene.70020",
-     "cited_by": 10,
+     "cited_by": 11,
      "problem": "sme-credit",
      "status": "corroborating"
     },
@@ -991,7 +914,7 @@
      "source": "Sustainable Development",
      "domain": "openalex.org",
      "doi_or_url": "https://doi.org/10.1002/sd.70322",
-     "cited_by": 15,
+     "cited_by": 16,
      "problem": "sme-credit",
      "status": "corroborating"
     }
@@ -1062,15 +985,8 @@
     13,
     13
    ],
-   "indicator": {
-    "indicator": "EG.FEC.RNEW.ZS",
-    "name": "Renewable energy consumption (% of total final energy consumption)",
-    "year": 2021,
-    "value": 19,
-    "source": "World Bank WDI",
-    "url": "https://data.worldbank.org/indicator/EG.FEC.RNEW.ZS?locations=TH"
-   },
-   "new_papers_12m": 189,
+   "indicator": null,
+   "new_papers_12m": 184,
    "plan": null,
    "evidence": [
     {
@@ -1091,7 +1007,18 @@
      "source": "Scientific Reports",
      "domain": "openalex.org",
      "doi_or_url": "https://doi.org/10.1038/s41598-026-39034-0",
-     "cited_by": 16,
+     "cited_by": 17,
+     "problem": "battery-recycling",
+     "status": "corroborating"
+    },
+    {
+     "tier": "research",
+     "title": "Techno-economic feasibility of photovoltaic-powered electric vehicle charging stations: a global review and future outlook",
+     "date": "2026-02-07",
+     "source": "Sustainable Energy Research",
+     "domain": "openalex.org",
+     "doi_or_url": "https://doi.org/10.1186/s40807-025-00228-1",
+     "cited_by": 11,
      "problem": "battery-recycling",
      "status": "corroborating"
     },
@@ -1114,17 +1041,6 @@
      "domain": "openalex.org",
      "doi_or_url": "https://doi.org/10.3390/buildings15234237",
      "cited_by": 17,
-     "problem": "battery-recycling",
-     "status": "corroborating"
-    },
-    {
-     "tier": "research",
-     "title": "Energy Efficiency and Decarbonization Strategies in Buildings: A Review of Technologies, Policies, and Future Directions",
-     "date": "2025-10-31",
-     "source": "Applied Sciences",
-     "domain": "openalex.org",
-     "doi_or_url": "https://doi.org/10.3390/app152111660",
-     "cited_by": 40,
      "problem": "battery-recycling",
      "status": "corroborating"
     }
@@ -1203,7 +1119,7 @@
     "source": "World Bank WDI",
     "url": "https://data.worldbank.org/indicator/SE.TER.ENRR?locations=TH"
    },
-   "new_papers_12m": 567,
+   "new_papers_12m": 566,
    "plan": null,
    "evidence": [
     {
@@ -1328,15 +1244,8 @@
     17,
     15
    ],
-   "indicator": {
-    "indicator": "AG.PRD.FOOD.XD",
-    "name": "Food production index (2014-2016 = 100)",
-    "year": 2024,
-    "value": 98.91,
-    "source": "World Bank WDI",
-    "url": "https://data.worldbank.org/indicator/AG.PRD.FOOD.XD?locations=TH"
-   },
-   "new_papers_12m": 685,
+   "indicator": null,
+   "new_papers_12m": 686,
    "plan": null,
    "evidence": [
     {
@@ -1463,14 +1372,7 @@
     12,
     12
    ],
-   "indicator": {
-    "indicator": "EN.ATM.PM25.MC.M3",
-    "name": "PM2.5 air pollution, mean annual exposure (micrograms per cubic meter)",
-    "year": 2023,
-    "value": 23.4870743016258,
-    "source": "World Bank WDI",
-    "url": "https://data.worldbank.org/indicator/EN.ATM.PM25.MC.M3?locations=TH"
-   },
+   "indicator": null,
    "new_papers_12m": 113,
    "plan": {
     "predict": [
@@ -1872,7 +1774,7 @@
     "source": "World Bank WDI",
     "url": "https://data.worldbank.org/indicator/FS.AST.PRVT.GD.ZS?locations=TH"
    },
-   "new_papers_12m": 235,
+   "new_papers_12m": 234,
    "plan": {
     "predict": [
      {
@@ -2108,7 +2010,7 @@
      "source": "Wiley Interdisciplinary Reviews Energy and Environment",
      "domain": "openalex.org",
      "doi_or_url": "https://doi.org/10.1002/wene.70020",
-     "cited_by": 10,
+     "cited_by": 11,
      "problem": "household-debt",
      "status": "corroborating"
     },
@@ -2208,7 +2110,7 @@
     "source": "World Bank WDI",
     "url": "https://data.worldbank.org/indicator/IT.NET.USER.ZS?locations=TH"
    },
-   "new_papers_12m": 41,
+   "new_papers_12m": 42,
    "plan": null,
    "evidence": [
     {
@@ -2229,7 +2131,7 @@
      "source": "International journal of law, crime and justice",
      "domain": "openalex.org",
      "doi_or_url": "https://doi.org/10.1016/j.ijlcj.2026.100825",
-     "cited_by": 8,
+     "cited_by": 9,
      "problem": "online-fraud",
      "status": "corroborating"
     },
@@ -2262,7 +2164,7 @@
      "source": "Trends in Organized Crime",
      "domain": "openalex.org",
      "doi_or_url": "https://doi.org/10.1007/s12117-025-09576-2",
-     "cited_by": 4,
+     "cited_by": 5,
      "problem": "online-fraud",
      "status": "corroborating"
     }
@@ -2340,7 +2242,7 @@
     "source": "World Bank WDI",
     "url": "https://data.worldbank.org/indicator/EG.IMP.CONS.ZS?locations=TH"
    },
-   "new_papers_12m": 6409,
+   "new_papers_12m": 6423,
    "plan": null,
    "evidence": [
     {
@@ -2378,23 +2280,23 @@
     },
     {
      "tier": "research",
+     "title": "Geopolitical risks and the global renewable energy transition: Implications for energy security and economic resilience",
+     "date": "2026-01-06",
+     "source": "Energy Reports",
+     "domain": "openalex.org",
+     "doi_or_url": "https://doi.org/10.1016/j.egyr.2025.12.012",
+     "cited_by": 26,
+     "problem": "energy-security",
+     "status": "corroborating"
+    },
+    {
+     "tier": "research",
      "title": "Impact of drought on global food security by 2050",
      "date": "2025-12-24",
      "source": "Nature Communications",
      "domain": "openalex.org",
      "doi_or_url": "https://doi.org/10.1038/s41467-025-67862-7",
      "cited_by": 38,
-     "problem": "energy-security",
-     "status": "corroborating"
-    },
-    {
-     "tier": "research",
-     "title": "Supply chain risks in agri-food systems: a comprehensive review of economic vulnerabilities and mitigation approaches",
-     "date": "2025-11-18",
-     "source": "Frontiers in Sustainable Food Systems",
-     "domain": "openalex.org",
-     "doi_or_url": "https://doi.org/10.3389/fsufs.2025.1649834",
-     "cited_by": 25,
      "problem": "energy-security",
      "status": "corroborating"
     }
@@ -2463,15 +2365,8 @@
     9,
     13
    ],
-   "indicator": {
-    "indicator": "SH.MED.PHYS.ZS",
-    "name": "Physicians (per 1,000 people)",
-    "year": 2021,
-    "value": 0.541,
-    "source": "World Bank WDI",
-    "url": "https://data.worldbank.org/indicator/SH.MED.PHYS.ZS?locations=TH"
-   },
-   "new_papers_12m": 87,
+   "indicator": null,
+   "new_papers_12m": 89,
    "plan": null,
    "evidence": [
     {
@@ -2481,7 +2376,7 @@
      "source": "Aerobiology",
      "domain": "openalex.org",
      "doi_or_url": "https://doi.org/10.3390/aerobiology4010005",
-     "cited_by": 2,
+     "cited_by": 3,
      "problem": "rural-doctors",
      "status": "corroborating"
     },
@@ -2721,15 +2616,8 @@
     29,
     32
    ],
-   "indicator": {
-    "indicator": "ER.H2O.FWST.ZS",
-    "name": "Level of water stress: freshwater withdrawal as a proportion of available freshwater resources",
-    "year": 2022,
-    "value": 23.01393518,
-    "source": "World Bank WDI",
-    "url": "https://data.worldbank.org/indicator/ER.H2O.FWST.ZS?locations=TH"
-   },
-   "new_papers_12m": 74,
+   "indicator": null,
+   "new_papers_12m": 75,
    "plan": null,
    "evidence": [
     {
@@ -2739,7 +2627,7 @@
      "source": "Sustainability",
      "domain": "openalex.org",
      "doi_or_url": "https://doi.org/10.3390/su18042109",
-     "cited_by": 5,
+     "cited_by": 6,
      "problem": "flood-water",
      "status": "corroborating"
     },
