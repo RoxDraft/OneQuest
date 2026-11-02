@@ -1,6 +1,6 @@
 {
  "is_sample": false,
- "generated_at": "2026-11-01T02:08+00:00",
+ "generated_at": "2026-11-02T02:17+00:00",
  "weights": {
   "scale": 0.3,
   "neglect": 0.25,
@@ -14,7 +14,6 @@
   "social": "เสียงจากโซเชียล"
  },
  "dates": [
-  "2026-10-03",
   "2026-10-04",
   "2026-10-05",
   "2026-10-06",
@@ -43,7 +42,8 @@
   "2026-10-29",
   "2026-10-30",
   "2026-10-31",
-  "2026-11-01"
+  "2026-11-01",
+  "2026-11-02"
  ],
  "daily_signals": {
   "supply": [
@@ -144,7 +144,7 @@
   ]
  },
  "evidence_status": {
-  "corroborating": 65
+  "corroborating": 70
  },
  "new_evidence_today": 0,
  "patterns": {
@@ -326,7 +326,7 @@
     "source": "World Bank WDI",
     "url": "https://data.worldbank.org/indicator/SP.POP.65UP.TO.ZS?locations=TH"
    },
-   "new_papers_12m": 173,
+   "new_papers_12m": 171,
    "plan": {
     "labor": {
      "note": "ตัวเลขทั้งหมดเป็นค่าสมมติ ต้องแทนด้วยข้อมูลจริงก่อนใช้",
@@ -663,8 +663,15 @@
     20,
     23
    ],
-   "indicator": null,
-   "new_papers_12m": 84188,
+   "indicator": {
+    "indicator": "SH.STA.SUIC.P5",
+    "name": "Suicide mortality rate (per 100,000 population)",
+    "year": 2021,
+    "value": 16.59,
+    "source": "World Bank WDI",
+    "url": "https://data.worldbank.org/indicator/SH.STA.SUIC.P5?locations=TH"
+   },
+   "new_papers_12m": 84211,
    "plan": null,
    "evidence": [
     {
@@ -675,6 +682,17 @@
      "domain": "openalex.org",
      "doi_or_url": "https://doi.org/10.1007/s00332-026-10338-9",
      "cited_by": 241,
+     "problem": "mental-health",
+     "status": "corroborating"
+    },
+    {
+     "tier": "research",
+     "title": "Mapping the genetic landscape across 14 psychiatric disorders",
+     "date": "2025-12-10",
+     "source": "Nature",
+     "domain": "openalex.org",
+     "doi_or_url": "https://doi.org/10.1038/s41586-025-09820-3",
+     "cited_by": 131,
      "problem": "mental-health",
      "status": "corroborating"
     },
@@ -696,7 +714,7 @@
      "source": "Artificial Intelligence Review",
      "domain": "openalex.org",
      "doi_or_url": "https://doi.org/10.1007/s10462-025-11422-4",
-     "cited_by": 183,
+     "cited_by": 185,
      "problem": "mental-health",
      "status": "corroborating"
     },
@@ -707,18 +725,7 @@
      "source": "Phytochemistry Reviews",
      "domain": "openalex.org",
      "doi_or_url": "https://doi.org/10.1007/s11101-025-10194-7",
-     "cited_by": 180,
-     "problem": "mental-health",
-     "status": "corroborating"
-    },
-    {
-     "tier": "research",
-     "title": "Global, regional, and national burden of chronic kidney disease in adults, 1990–2023, and its attributable risk factors: a systematic analysis for the Global Burden of Disease Study 2023",
-     "date": "2025-11-01",
-     "source": "The Lancet",
-     "domain": "openalex.org",
-     "doi_or_url": "https://doi.org/10.1016/s0140-6736(25)01853-7",
-     "cited_by": 468,
+     "cited_by": 183,
      "problem": "mental-health",
      "status": "corroborating"
     }
@@ -789,10 +796,73 @@
     6,
     5
    ],
-   "indicator": null,
-   "new_papers_12m": null,
+   "indicator": {
+    "indicator": "SL.UEM.1524.ZS",
+    "name": "Unemployment, youth total (% of total labor force ages 15-24) (modeled ILO estimate)",
+    "year": 2025,
+    "value": 4.531,
+    "source": "World Bank WDI",
+    "url": "https://data.worldbank.org/indicator/SL.UEM.1524.ZS?locations=TH"
+   },
+   "new_papers_12m": 1509,
    "plan": null,
-   "evidence": []
+   "evidence": [
+    {
+     "tier": "research",
+     "title": "Integration of Artificial Intelligence in Food Processing Technologies",
+     "date": "2026-02-02",
+     "source": "Processes",
+     "domain": "openalex.org",
+     "doi_or_url": "https://doi.org/10.3390/pr14030513",
+     "cited_by": 17,
+     "problem": "ai-jobs",
+     "status": "corroborating"
+    },
+    {
+     "tier": "research",
+     "title": "Retraining and Lifelong Learning as an Anti-Crisis Tool: Preserving Ukraine’s Intellectual Capital in Times of War",
+     "date": "2026-01-28",
+     "source": "Knowledge Economy and Lifelong Learning",
+     "domain": "openalex.org",
+     "doi_or_url": "https://doi.org/10.61093/kell.2(1).48-66.2026",
+     "cited_by": 15,
+     "problem": "ai-jobs",
+     "status": "corroborating"
+    },
+    {
+     "tier": "research",
+     "title": "Technostress and generative AI in the workplace: a qualitative analysis of young professionals",
+     "date": "2025-12-12",
+     "source": "Frontiers in Artificial Intelligence",
+     "domain": "openalex.org",
+     "doi_or_url": "https://doi.org/10.3389/frai.2025.1728881",
+     "cited_by": 19,
+     "problem": "ai-jobs",
+     "status": "corroborating"
+    },
+    {
+     "tier": "research",
+     "title": "Technology-Driven Change in Human Resource Management: Reshaping Talent Management and Organizational Design",
+     "date": "2025-11-19",
+     "source": "Administrative Sciences",
+     "domain": "openalex.org",
+     "doi_or_url": "https://doi.org/10.3390/admsci15110452",
+     "cited_by": 16,
+     "problem": "ai-jobs",
+     "status": "corroborating"
+    },
+    {
+     "tier": "research",
+     "title": "Strategic Human Resource Management in the Digital Era: Technology, Transformation, and Sustainable Advantage",
+     "date": "2025-11-11",
+     "source": "Merits",
+     "domain": "openalex.org",
+     "doi_or_url": "https://doi.org/10.3390/merits5040023",
+     "cited_by": 34,
+     "problem": "ai-jobs",
+     "status": "corroborating"
+    }
+   ]
   },
   {
    "id": "sme-credit",
@@ -859,8 +929,15 @@
     6,
     6
    ],
-   "indicator": null,
-   "new_papers_12m": 679,
+   "indicator": {
+    "indicator": "FB.BNK.CAPA.ZS",
+    "name": "Bank capital to assets ratio (%)",
+    "year": 2024,
+    "value": 11.125634912273,
+    "source": "World Bank WDI",
+    "url": "https://data.worldbank.org/indicator/FB.BNK.CAPA.ZS?locations=TH"
+   },
+   "new_papers_12m": 682,
    "plan": null,
    "evidence": [
     {
@@ -985,7 +1062,14 @@
     13,
     13
    ],
-   "indicator": null,
+   "indicator": {
+    "indicator": "EG.FEC.RNEW.ZS",
+    "name": "Renewable energy consumption (% of total final energy consumption)",
+    "year": 2021,
+    "value": 19,
+    "source": "World Bank WDI",
+    "url": "https://data.worldbank.org/indicator/EG.FEC.RNEW.ZS?locations=TH"
+   },
    "new_papers_12m": 184,
    "plan": null,
    "evidence": [
@@ -1119,7 +1203,7 @@
     "source": "World Bank WDI",
     "url": "https://data.worldbank.org/indicator/SE.TER.ENRR?locations=TH"
    },
-   "new_papers_12m": 566,
+   "new_papers_12m": 565,
    "plan": null,
    "evidence": [
     {
@@ -1244,8 +1328,15 @@
     17,
     15
    ],
-   "indicator": null,
-   "new_papers_12m": 686,
+   "indicator": {
+    "indicator": "AG.PRD.FOOD.XD",
+    "name": "Food production index (2014-2016 = 100)",
+    "year": 2024,
+    "value": 98.91,
+    "source": "World Bank WDI",
+    "url": "https://data.worldbank.org/indicator/AG.PRD.FOOD.XD?locations=TH"
+   },
+   "new_papers_12m": 690,
    "plan": null,
    "evidence": [
     {
@@ -1372,8 +1463,15 @@
     12,
     12
    ],
-   "indicator": null,
-   "new_papers_12m": 113,
+   "indicator": {
+    "indicator": "EN.ATM.PM25.MC.M3",
+    "name": "PM2.5 air pollution, mean annual exposure (micrograms per cubic meter)",
+    "year": 2023,
+    "value": 23.4870743016258,
+    "source": "World Bank WDI",
+    "url": "https://data.worldbank.org/indicator/EN.ATM.PM25.MC.M3?locations=TH"
+   },
+   "new_papers_12m": 114,
    "plan": {
     "predict": [
      {
@@ -1774,7 +1872,7 @@
     "source": "World Bank WDI",
     "url": "https://data.worldbank.org/indicator/FS.AST.PRVT.GD.ZS?locations=TH"
    },
-   "new_papers_12m": 234,
+   "new_papers_12m": 231,
    "plan": {
     "predict": [
      {
@@ -2110,7 +2208,7 @@
     "source": "World Bank WDI",
     "url": "https://data.worldbank.org/indicator/IT.NET.USER.ZS?locations=TH"
    },
-   "new_papers_12m": 42,
+   "new_papers_12m": 41,
    "plan": null,
    "evidence": [
     {
@@ -2120,6 +2218,17 @@
      "source": "Risks",
      "domain": "openalex.org",
      "doi_or_url": "https://doi.org/10.3390/risks14040096",
+     "cited_by": 4,
+     "problem": "online-fraud",
+     "status": "corroborating"
+    },
+    {
+     "tier": "research",
+     "title": "‘Funds Left Delaware in the Morning’: Online Fraud Networks and Money Laundering Operations",
+     "date": "2026-04-16",
+     "source": "International Criminal Justice Review",
+     "domain": "openalex.org",
+     "doi_or_url": "https://doi.org/10.1177/10575677261416902",
      "cited_by": 4,
      "problem": "online-fraud",
      "status": "corroborating"
@@ -2154,17 +2263,6 @@
      "domain": "openalex.org",
      "doi_or_url": "https://doi.org/10.1007/s11417-025-09477-x",
      "cited_by": 9,
-     "problem": "online-fraud",
-     "status": "corroborating"
-    },
-    {
-     "tier": "research",
-     "title": "Nigerian confraternities and mass cross-border fraud",
-     "date": "2025-11-01",
-     "source": "Trends in Organized Crime",
-     "domain": "openalex.org",
-     "doi_or_url": "https://doi.org/10.1007/s12117-025-09576-2",
-     "cited_by": 5,
      "problem": "online-fraud",
      "status": "corroborating"
     }
@@ -2242,7 +2340,7 @@
     "source": "World Bank WDI",
     "url": "https://data.worldbank.org/indicator/EG.IMP.CONS.ZS?locations=TH"
    },
-   "new_papers_12m": 6423,
+   "new_papers_12m": 6438,
    "plan": null,
    "evidence": [
     {
@@ -2365,7 +2463,14 @@
     9,
     13
    ],
-   "indicator": null,
+   "indicator": {
+    "indicator": "SH.MED.PHYS.ZS",
+    "name": "Physicians (per 1,000 people)",
+    "year": 2021,
+    "value": 0.541,
+    "source": "World Bank WDI",
+    "url": "https://data.worldbank.org/indicator/SH.MED.PHYS.ZS?locations=TH"
+   },
    "new_papers_12m": 89,
    "plan": null,
    "evidence": [
@@ -2490,7 +2595,7 @@
     0
    ],
    "indicator": null,
-   "new_papers_12m": 373,
+   "new_papers_12m": 370,
    "plan": null,
    "evidence": [
     {
@@ -2616,7 +2721,14 @@
     29,
     32
    ],
-   "indicator": null,
+   "indicator": {
+    "indicator": "ER.H2O.FWST.ZS",
+    "name": "Level of water stress: freshwater withdrawal as a proportion of available freshwater resources",
+    "year": 2022,
+    "value": 23.01393518,
+    "source": "World Bank WDI",
+    "url": "https://data.worldbank.org/indicator/ER.H2O.FWST.ZS?locations=TH"
+   },
    "new_papers_12m": 75,
    "plan": null,
    "evidence": [
