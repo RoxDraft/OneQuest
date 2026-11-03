@@ -1,6 +1,6 @@
 {
  "is_sample": false,
- "generated_at": "2026-11-02T02:17+00:00",
+ "generated_at": "2026-11-03T03:56+00:00",
  "weights": {
   "scale": 0.3,
   "neglect": 0.25,
@@ -14,7 +14,6 @@
   "social": "เสียงจากโซเชียล"
  },
  "dates": [
-  "2026-10-04",
   "2026-10-05",
   "2026-10-06",
   "2026-10-07",
@@ -43,7 +42,8 @@
   "2026-10-30",
   "2026-10-31",
   "2026-11-01",
-  "2026-11-02"
+  "2026-11-02",
+  "2026-11-03"
  ],
  "daily_signals": {
   "supply": [
@@ -318,15 +318,8 @@
     21,
     25
    ],
-   "indicator": {
-    "indicator": "SP.POP.65UP.TO.ZS",
-    "name": "Population ages 65 and above (% of total population)",
-    "year": 2025,
-    "value": 16.017421033045,
-    "source": "World Bank WDI",
-    "url": "https://data.worldbank.org/indicator/SP.POP.65UP.TO.ZS?locations=TH"
-   },
-   "new_papers_12m": 171,
+   "indicator": null,
+   "new_papers_12m": 172,
    "plan": {
     "labor": {
      "note": "ตัวเลขทั้งหมดเป็นค่าสมมติ ต้องแทนด้วยข้อมูลจริงก่อนใช้",
@@ -663,15 +656,8 @@
     20,
     23
    ],
-   "indicator": {
-    "indicator": "SH.STA.SUIC.P5",
-    "name": "Suicide mortality rate (per 100,000 population)",
-    "year": 2021,
-    "value": 16.59,
-    "source": "World Bank WDI",
-    "url": "https://data.worldbank.org/indicator/SH.STA.SUIC.P5?locations=TH"
-   },
-   "new_papers_12m": 84211,
+   "indicator": null,
+   "new_papers_12m": 84358,
    "plan": null,
    "evidence": [
     {
@@ -692,7 +678,7 @@
      "source": "Nature",
      "domain": "openalex.org",
      "doi_or_url": "https://doi.org/10.1038/s41586-025-09820-3",
-     "cited_by": 131,
+     "cited_by": 130,
      "problem": "mental-health",
      "status": "corroborating"
     },
@@ -714,7 +700,7 @@
      "source": "Artificial Intelligence Review",
      "domain": "openalex.org",
      "doi_or_url": "https://doi.org/10.1007/s10462-025-11422-4",
-     "cited_by": 185,
+     "cited_by": 184,
      "problem": "mental-health",
      "status": "corroborating"
     },
@@ -804,7 +790,7 @@
     "source": "World Bank WDI",
     "url": "https://data.worldbank.org/indicator/SL.UEM.1524.ZS?locations=TH"
    },
-   "new_papers_12m": 1509,
+   "new_papers_12m": 1514,
    "plan": null,
    "evidence": [
     {
@@ -937,7 +923,7 @@
     "source": "World Bank WDI",
     "url": "https://data.worldbank.org/indicator/FB.BNK.CAPA.ZS?locations=TH"
    },
-   "new_papers_12m": 682,
+   "new_papers_12m": 684,
    "plan": null,
    "evidence": [
     {
@@ -1091,7 +1077,7 @@
      "source": "Scientific Reports",
      "domain": "openalex.org",
      "doi_or_url": "https://doi.org/10.1038/s41598-026-39034-0",
-     "cited_by": 17,
+     "cited_by": 16,
      "problem": "battery-recycling",
      "status": "corroborating"
     },
@@ -1203,7 +1189,7 @@
     "source": "World Bank WDI",
     "url": "https://data.worldbank.org/indicator/SE.TER.ENRR?locations=TH"
    },
-   "new_papers_12m": 565,
+   "new_papers_12m": 566,
    "plan": null,
    "evidence": [
     {
@@ -1235,7 +1221,7 @@
      "source": "Annals of Operations Research",
      "domain": "openalex.org",
      "doi_or_url": "https://doi.org/10.1007/s10479-026-07070-8",
-     "cited_by": 11,
+     "cited_by": 12,
      "problem": "semiconductor-skills",
      "status": "corroborating"
     },
@@ -1336,7 +1322,7 @@
     "source": "World Bank WDI",
     "url": "https://data.worldbank.org/indicator/AG.PRD.FOOD.XD?locations=TH"
    },
-   "new_papers_12m": 690,
+   "new_papers_12m": 693,
    "plan": null,
    "evidence": [
     {
@@ -2200,14 +2186,7 @@
     2,
     5
    ],
-   "indicator": {
-    "indicator": "IT.NET.USER.ZS",
-    "name": "Individuals using the Internet (% of population)",
-    "year": 2024,
-    "value": 90.86718789,
-    "source": "World Bank WDI",
-    "url": "https://data.worldbank.org/indicator/IT.NET.USER.ZS?locations=TH"
-   },
+   "indicator": null,
    "new_papers_12m": 41,
    "plan": null,
    "evidence": [
@@ -2340,7 +2319,7 @@
     "source": "World Bank WDI",
     "url": "https://data.worldbank.org/indicator/EG.IMP.CONS.ZS?locations=TH"
    },
-   "new_papers_12m": 6438,
+   "new_papers_12m": 6461,
    "plan": null,
    "evidence": [
     {
@@ -2463,15 +2442,8 @@
     9,
     13
    ],
-   "indicator": {
-    "indicator": "SH.MED.PHYS.ZS",
-    "name": "Physicians (per 1,000 people)",
-    "year": 2021,
-    "value": 0.541,
-    "source": "World Bank WDI",
-    "url": "https://data.worldbank.org/indicator/SH.MED.PHYS.ZS?locations=TH"
-   },
-   "new_papers_12m": 89,
+   "indicator": null,
+   "new_papers_12m": 87,
    "plan": null,
    "evidence": [
     {
@@ -2595,7 +2567,7 @@
     0
    ],
    "indicator": null,
-   "new_papers_12m": 370,
+   "new_papers_12m": 371,
    "plan": null,
    "evidence": [
     {
@@ -2729,7 +2701,7 @@
     "source": "World Bank WDI",
     "url": "https://data.worldbank.org/indicator/ER.H2O.FWST.ZS?locations=TH"
    },
-   "new_papers_12m": 75,
+   "new_papers_12m": 76,
    "plan": null,
    "evidence": [
     {
