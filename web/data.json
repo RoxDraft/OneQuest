@@ -1,6 +1,6 @@
 {
  "is_sample": false,
- "generated_at": "2026-11-03T03:56+00:00",
+ "generated_at": "2026-11-04T03:00+00:00",
  "weights": {
   "scale": 0.3,
   "neglect": 0.25,
@@ -14,7 +14,6 @@
   "social": "เสียงจากโซเชียล"
  },
  "dates": [
-  "2026-10-05",
   "2026-10-06",
   "2026-10-07",
   "2026-10-08",
@@ -43,7 +42,8 @@
   "2026-10-31",
   "2026-11-01",
   "2026-11-02",
-  "2026-11-03"
+  "2026-11-03",
+  "2026-11-04"
  ],
  "daily_signals": {
   "supply": [
@@ -318,8 +318,15 @@
     21,
     25
    ],
-   "indicator": null,
-   "new_papers_12m": 172,
+   "indicator": {
+    "indicator": "SP.POP.65UP.TO.ZS",
+    "name": "Population ages 65 and above (% of total population)",
+    "year": 2025,
+    "value": 16.017421033045,
+    "source": "World Bank WDI",
+    "url": "https://data.worldbank.org/indicator/SP.POP.65UP.TO.ZS?locations=TH"
+   },
+   "new_papers_12m": 173,
    "plan": {
     "labor": {
      "note": "ตัวเลขทั้งหมดเป็นค่าสมมติ ต้องแทนด้วยข้อมูลจริงก่อนใช้",
@@ -657,7 +664,7 @@
     23
    ],
    "indicator": null,
-   "new_papers_12m": 84358,
+   "new_papers_12m": 84420,
    "plan": null,
    "evidence": [
     {
@@ -667,7 +674,7 @@
      "source": "Journal of Nonlinear Science",
      "domain": "openalex.org",
      "doi_or_url": "https://doi.org/10.1007/s00332-026-10338-9",
-     "cited_by": 241,
+     "cited_by": 272,
      "problem": "mental-health",
      "status": "corroborating"
     },
@@ -678,7 +685,7 @@
      "source": "Nature",
      "domain": "openalex.org",
      "doi_or_url": "https://doi.org/10.1038/s41586-025-09820-3",
-     "cited_by": 130,
+     "cited_by": 131,
      "problem": "mental-health",
      "status": "corroborating"
     },
@@ -689,7 +696,7 @@
      "source": "Meta-Radiology",
      "domain": "openalex.org",
      "doi_or_url": "https://doi.org/10.1016/j.metrad.2025.100190",
-     "cited_by": 150,
+     "cited_by": 151,
      "problem": "mental-health",
      "status": "corroborating"
     },
@@ -700,7 +707,7 @@
      "source": "Artificial Intelligence Review",
      "domain": "openalex.org",
      "doi_or_url": "https://doi.org/10.1007/s10462-025-11422-4",
-     "cited_by": 184,
+     "cited_by": 185,
      "problem": "mental-health",
      "status": "corroborating"
     },
@@ -790,7 +797,7 @@
     "source": "World Bank WDI",
     "url": "https://data.worldbank.org/indicator/SL.UEM.1524.ZS?locations=TH"
    },
-   "new_papers_12m": 1514,
+   "new_papers_12m": 1518,
    "plan": null,
    "evidence": [
     {
@@ -800,7 +807,7 @@
      "source": "Processes",
      "domain": "openalex.org",
      "doi_or_url": "https://doi.org/10.3390/pr14030513",
-     "cited_by": 17,
+     "cited_by": 18,
      "problem": "ai-jobs",
      "status": "corroborating"
     },
@@ -822,7 +829,7 @@
      "source": "Frontiers in Artificial Intelligence",
      "domain": "openalex.org",
      "doi_or_url": "https://doi.org/10.3389/frai.2025.1728881",
-     "cited_by": 19,
+     "cited_by": 20,
      "problem": "ai-jobs",
      "status": "corroborating"
     },
@@ -923,7 +930,7 @@
     "source": "World Bank WDI",
     "url": "https://data.worldbank.org/indicator/FB.BNK.CAPA.ZS?locations=TH"
    },
-   "new_papers_12m": 684,
+   "new_papers_12m": 683,
    "plan": null,
    "evidence": [
     {
@@ -1056,7 +1063,7 @@
     "source": "World Bank WDI",
     "url": "https://data.worldbank.org/indicator/EG.FEC.RNEW.ZS?locations=TH"
    },
-   "new_papers_12m": 184,
+   "new_papers_12m": 185,
    "plan": null,
    "evidence": [
     {
@@ -1189,7 +1196,7 @@
     "source": "World Bank WDI",
     "url": "https://data.worldbank.org/indicator/SE.TER.ENRR?locations=TH"
    },
-   "new_papers_12m": 566,
+   "new_papers_12m": 563,
    "plan": null,
    "evidence": [
     {
@@ -1322,7 +1329,7 @@
     "source": "World Bank WDI",
     "url": "https://data.worldbank.org/indicator/AG.PRD.FOOD.XD?locations=TH"
    },
-   "new_papers_12m": 693,
+   "new_papers_12m": 689,
    "plan": null,
    "evidence": [
     {
@@ -1376,7 +1383,7 @@
      "source": "Information",
      "domain": "openalex.org",
      "doi_or_url": "https://doi.org/10.3390/info16110957",
-     "cited_by": 28,
+     "cited_by": 29,
      "problem": "food-loss",
      "status": "corroborating"
     }
@@ -1735,7 +1742,7 @@
      "source": "Scientific Reports",
      "domain": "openalex.org",
      "doi_or_url": "https://doi.org/10.1038/s41598-026-38186-3",
-     "cited_by": 6,
+     "cited_by": 7,
      "problem": "pm25",
      "status": "corroborating"
     },
@@ -1746,7 +1753,7 @@
      "source": "Toxics",
      "domain": "openalex.org",
      "doi_or_url": "https://doi.org/10.3390/toxics14010084",
-     "cited_by": 6,
+     "cited_by": 7,
      "problem": "pm25",
      "status": "corroborating"
     },
@@ -2186,7 +2193,14 @@
     2,
     5
    ],
-   "indicator": null,
+   "indicator": {
+    "indicator": "IT.NET.USER.ZS",
+    "name": "Individuals using the Internet (% of population)",
+    "year": 2024,
+    "value": 90.86718789,
+    "source": "World Bank WDI",
+    "url": "https://data.worldbank.org/indicator/IT.NET.USER.ZS?locations=TH"
+   },
    "new_papers_12m": 41,
    "plan": null,
    "evidence": [
@@ -2319,7 +2333,7 @@
     "source": "World Bank WDI",
     "url": "https://data.worldbank.org/indicator/EG.IMP.CONS.ZS?locations=TH"
    },
-   "new_papers_12m": 6461,
+   "new_papers_12m": 6459,
    "plan": null,
    "evidence": [
     {
@@ -2329,7 +2343,7 @@
      "source": "Journal of International Economics",
      "domain": "openalex.org",
      "doi_or_url": "https://doi.org/10.1016/j.jinteco.2026.104259",
-     "cited_by": 78,
+     "cited_by": 82,
      "problem": "energy-security",
      "status": "corroborating"
     },
@@ -2442,8 +2456,15 @@
     9,
     13
    ],
-   "indicator": null,
-   "new_papers_12m": 87,
+   "indicator": {
+    "indicator": "SH.MED.PHYS.ZS",
+    "name": "Physicians (per 1,000 people)",
+    "year": 2021,
+    "value": 0.541,
+    "source": "World Bank WDI",
+    "url": "https://data.worldbank.org/indicator/SH.MED.PHYS.ZS?locations=TH"
+   },
+   "new_papers_12m": 89,
    "plan": null,
    "evidence": [
     {
@@ -2453,17 +2474,6 @@
      "source": "Aerobiology",
      "domain": "openalex.org",
      "doi_or_url": "https://doi.org/10.3390/aerobiology4010005",
-     "cited_by": 3,
-     "problem": "rural-doctors",
-     "status": "corroborating"
-    },
-    {
-     "tier": "research",
-     "title": "Perspectives of Frontline Clinicians and End-Line Users on Smartphone-Based Photography for Assessing Traumatic Dental Injuries: Focus Group Interview Study and Thematic Analysis",
-     "date": "2026-01-26",
-     "source": "JMIR Human Factors",
-     "domain": "openalex.org",
-     "doi_or_url": "https://doi.org/10.2196/82668",
      "cited_by": 3,
      "problem": "rural-doctors",
      "status": "corroborating"
@@ -2498,6 +2508,17 @@
      "domain": "openalex.org",
      "doi_or_url": "https://doi.org/10.1186/s12889-025-25383-4",
      "cited_by": 4,
+     "problem": "rural-doctors",
+     "status": "corroborating"
+    },
+    {
+     "tier": "research",
+     "title": "Understanding the role and organization of health workers delivering non-communicable disease management in primary care in low- and middle-income countries: a scoping review",
+     "date": "2025-11-17",
+     "source": "BMC Family Practice",
+     "domain": "openalex.org",
+     "doi_or_url": "https://doi.org/10.1186/s12875-025-03033-3",
+     "cited_by": 8,
      "problem": "rural-doctors",
      "status": "corroborating"
     }
@@ -2567,7 +2588,7 @@
     0
    ],
    "indicator": null,
-   "new_papers_12m": 371,
+   "new_papers_12m": 367,
    "plan": null,
    "evidence": [
     {
