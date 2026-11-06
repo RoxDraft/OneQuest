@@ -1,6 +1,6 @@
 {
  "is_sample": false,
- "generated_at": "2026-11-06T19:52+00:00",
+ "generated_at": "2026-11-06T20:10+00:00",
  "weights": {
   "scale": 0.3,
   "neglect": 0.25,
@@ -1063,14 +1063,7 @@
     13,
     13
    ],
-   "indicator": {
-    "indicator": "EG.FEC.RNEW.ZS",
-    "name": "Renewable energy consumption (% of total final energy consumption)",
-    "year": 2021,
-    "value": 19,
-    "source": "World Bank WDI",
-    "url": "https://data.worldbank.org/indicator/EG.FEC.RNEW.ZS?locations=TH"
-   },
+   "indicator": null,
    "new_papers_12m": 183,
    "plan": null,
    "evidence": [
@@ -1196,27 +1189,10 @@
     30,
     32
    ],
-   "indicator": {
-    "indicator": "SE.TER.ENRR",
-    "name": "School enrollment, tertiary (% gross)",
-    "year": 2025,
-    "value": 49.0776442074561,
-    "source": "World Bank WDI",
-    "url": "https://data.worldbank.org/indicator/SE.TER.ENRR?locations=TH"
-   },
+   "indicator": null,
    "new_papers_12m": 573,
    "plan": null,
    "evidence": [
-    {
-     "tier": "news",
-     "title": "Community colleges rush to expand semiconductor training as labor shortage looms US chip industry – KTBB News , Weather , Talk",
-     "date": "20261105",
-     "source": "ktbb.com",
-     "domain": "ktbb.com",
-     "doi_or_url": "https://ktbb.com/post/?p=1558266",
-     "problem": "semiconductor-skills",
-     "status": "unverified"
-    },
     {
      "tier": "research",
      "title": "OM Forum—Supply Chain Management in the AI Era: A Vision Statement from the Operations Management Community",
@@ -1474,14 +1450,7 @@
     12,
     12
    ],
-   "indicator": {
-    "indicator": "EN.ATM.PM25.MC.M3",
-    "name": "PM2.5 air pollution, mean annual exposure (micrograms per cubic meter)",
-    "year": 2023,
-    "value": 23.4870743016258,
-    "source": "World Bank WDI",
-    "url": "https://data.worldbank.org/indicator/EN.ATM.PM25.MC.M3?locations=TH"
-   },
+   "indicator": null,
    "new_papers_12m": 114,
    "plan": {
     "predict": [
@@ -2609,6 +2578,16 @@
    "new_papers_12m": 365,
    "plan": null,
    "evidence": [
+    {
+     "tier": "news",
+     "title": "Chiang Rai Civic Groups Offers 5 Recommendations Before Thai - Myanmar River Talks",
+     "date": "20261106",
+     "source": "chiangraitimes.com",
+     "domain": "chiangraitimes.com",
+     "doi_or_url": "https://www.chiangraitimes.com/chiang-rai/chiang-rai-river-talks/",
+     "problem": "groundwater",
+     "status": "unverified"
+    },
     {
      "tier": "research",
      "title": "Biological synergies for heavy metal bioremediation across microbial, algal, and phytoremediation perspectives",
