@@ -148,30 +148,109 @@ tbody tr { cursor: pointer; }
 tbody tr:hover, tbody tr[aria-selected="true"] { background: var(--accent-soft); }
 footer { color: var(--muted); font-size: 12px; }
 .err { padding: 24px; color: var(--ink-2); }
+
+.topbar { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 10px 16px; border-bottom: 1px solid var(--line); padding-bottom: 12px; }
+.tabs { display: flex; flex-wrap: wrap; gap: 4px; }
+.tab { font: inherit; font-size: 14px; text-decoration: none; color: var(--ink-2); padding: 6px 12px; border-radius: 6px; border: 1px solid transparent; }
+.tab[aria-current="page"] { color: var(--ink); background: var(--accent-soft); border-color: var(--accent); font-weight: 600; }
+.tab:focus-visible, .langbtn:focus-visible, .linkbtn:focus-visible, .tl:focus-visible, summary:focus-visible, .search:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+.langbtn { font: inherit; font-family: var(--f-data); font-size: 13px; padding: 5px 12px; border-radius: 999px; border: 1px solid var(--line); background: var(--surface); color: var(--ink); cursor: pointer; }
+.view { display: grid; grid-template-columns: minmax(0, 1fr); gap: 20px; }
+.view[hidden] { display: none; }
+.intro h2 { font-size: 22px; }
+.intro p { margin: 6px 0 0; color: var(--ink-2); max-width: 70ch; }
+.qa-tools { display: flex; flex-wrap: wrap; gap: 8px 16px; align-items: center; justify-content: space-between; }
+.search { font: inherit; font-size: 14px; padding: 6px 10px; border-radius: 6px; border: 1px solid var(--line); background: var(--surface); color: var(--ink); width: min(100%, 22em); }
+.qa-list { display: grid; gap: 10px; }
+details.qa { background: var(--surface); border: 1px solid var(--line); border-radius: 10px; }
+details.qa > summary { cursor: pointer; list-style: none; padding: 14px 16px; display: grid; gap: 6px; }
+details.qa > summary::-webkit-details-marker { display: none; }
+details.qa > summary::after { content: "+"; font-family: var(--f-data); color: var(--muted); justify-self: end; margin-top: -1.6em; }
+details.qa[open] > summary::after { content: "−"; }
+.qa-meta { display: flex; gap: 8px; align-items: center; font-size: 12px; color: var(--muted); padding-right: 1.5em; }
+.qa-q { font-family: var(--f-display); font-size: 16px; font-weight: 600; padding-right: 1.5em; }
+.qa-a { padding: 0 16px 16px; font-size: 14px; color: var(--ink-2); border-top: 1px solid var(--line); }
+.qa-a p, .qa-a ul, .qa-a ol { margin: 10px 0 0; }
+.qa-a ul, .qa-a ol { padding-left: 20px; display: grid; gap: 6px; }
+.qa-a b { color: var(--ink); }
+code { font-family: var(--f-data); font-size: .92em; background: var(--accent-soft); padding: 1px 4px; border-radius: 3px; overflow-wrap: anywhere; }
+.refs { margin-top: 12px; font-size: 13px; }
+.refs ul { margin: 4px 0 0; padding-left: 18px; display: grid; gap: 4px; }
+.refs a { color: var(--accent); overflow-wrap: anywhere; }
+.linkbtn { font: inherit; font-size: 14px; background: none; border: 0; padding: 0; color: var(--accent); cursor: pointer; text-decoration: underline; }
+.pgrid { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 210px), 1fr)); gap: 10px; }
+.pcard { display: grid; align-content: start; gap: 2px; font-size: 13px; color: var(--ink-2); padding: 10px 12px; border: 1px solid var(--line); border-radius: 8px; }
+.pcard b { color: var(--ink); font-family: var(--f-display); font-size: 15px; margin-bottom: 4px; }
+.pcard .label { margin-top: 4px; }
+.pn { color: var(--accent); font-size: 12px; }
+@media (max-width: 720px) { .tabs { order: 3; width: 100%; } }
+.timeline { display: flex; gap: 6px; overflow-x: auto; padding-bottom: 6px; scrollbar-width: thin; }
+.tl { flex: none; display: grid; gap: 2px; text-decoration: none; color: var(--ink-2); font-size: 12px; max-width: 11em; padding: 8px 10px; border: 1px solid var(--line); border-left: 3px solid var(--accent); border-radius: 6px; background: var(--surface); }
+.tl .mono { color: var(--ink); font-size: 14px; }
+.case-list { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px; align-items: start; }
+@media (max-width: 800px) { .case-list { grid-template-columns: minmax(0, 1fr); } }
+.case { background: var(--surface); border: 1px solid var(--line); border-radius: 10px; padding: 16px; display: grid; gap: 8px; scroll-margin-top: 16px; }
+.case-head { display: flex; justify-content: space-between; gap: 8px; flex-wrap: wrap; align-items: center; }
+.case .yrs { color: var(--accent); font-size: 14px; }
+.case h3 { font-size: 18px; font-weight: 600; }
+.case p { margin: 0; color: var(--ink-2); font-size: 14px; }
+.lesson { display: grid; gap: 2px; font-size: 14px; padding: 8px 10px; border-radius: 6px; background: var(--accent-soft); }
+.case details summary { cursor: pointer; color: var(--accent); font-size: 13px; }
+.case dl { margin: 8px 0 0; display: grid; gap: 4px; font-size: 13px; }
+.case dt { color: var(--muted); font-size: 12px; margin-top: 6px; }
+.case dd { margin: 0; color: var(--ink-2); }
+.ev { display: inline-block; margin-top: 10px; font-size: 12px; padding: 2px 8px; border-radius: 4px; border: 1px solid var(--line); color: var(--ink-2); }
+.ev-high { border-color: var(--good); } .ev-mid { border-color: var(--warn); } .ev-now { border-color: var(--serious); }
+.note { font-size: 12px; color: var(--muted); }
+.sub { margin: 0; color: var(--ink-2); font-size: 14px; max-width: 75ch; }
+.lgrid { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 300px), 1fr)); gap: 10px; }
+.lcard { border: 1px solid var(--line); border-radius: 8px; padding: 10px 12px; display: grid; gap: 6px; align-content: start; }
+.lcard p { margin: 0; font-size: 13px; color: var(--ink-2); }
+.ltag { display: inline-flex; align-items: center; gap: 6px; font-size: 12px; font-weight: 600; color: var(--ink); padding: 2px 8px 2px 2px; border-radius: 999px; background: var(--accent-soft); }
+.lic { width: 18px; height: 18px; border-radius: 50%; display: inline-grid; place-items: center; font-size: 11px; background: var(--accent); color: var(--surface); font-family: var(--f-data); flex: none; }
+#layer-chips { align-items: center; }
+#layer-chips .label { margin-right: 4px; }
+ol.meet { list-style: none; margin: 0; padding: 0 0 0 14px; border-left: 2px solid var(--accent); display: grid; gap: 12px; }
+ol.meet li { display: grid; gap: 2px; font-size: 13px; color: var(--ink-2); position: relative; }
+ol.meet li::before { content: ""; position: absolute; left: -20px; top: 6px; width: 10px; height: 10px; border-radius: 50%; background: var(--surface); border: 2px solid var(--accent); }
+ol.meet .mono { color: var(--accent); font-size: 12px; }
+ol.meet b { color: var(--ink); font-size: 14px; }
+.mev { margin: 4px 0 0; padding-left: 18px; display: grid; gap: 6px; font-size: 13px; color: var(--ink-2); }
+.mev b { color: var(--ink); }
+
 @media (prefers-reduced-motion: reduce) { * { transition: none !important; animation: none !important; } }
 </style>
 
 <div class="wrap">
-  <header>
+  <header class="topbar">
     <div class="brand">
       <h1>One<span>Quest</span></h1>
-      <p>แผนที่ปัญหาและโอกาส อัปเดตทุกวัน</p>
+      <p data-t="tagline">แผนที่ปัญหาและโอกาส อัปเดตทุกวัน</p>
     </div>
-    <div class="updated" id="updated"></div>
+    <nav class="tabs" aria-label="มุมมอง">
+      <a class="tab" id="nav-dash" href="#dash" data-view="dash" data-t="nav_dash">แดชบอร์ด</a>
+      <a class="tab" id="nav-qa" href="#qa" data-view="qa" data-t="nav_qa">คลังถาม–ตอบ</a>
+      <a class="tab" id="nav-cases" href="#cases" data-view="cases" data-t="nav_cases">Case Study ประวัติศาสตร์</a>
+    </nav>
+    <button class="langbtn" id="lang-btn" type="button" data-t="lang">EN</button>
   </header>
 
-  <div class="banner" id="banner" hidden><b>ข้อมูลสมมติทั้งหมด</b> หน้านี้เป็น mockup ตัวเลข คะแนน และหลักฐานทุกชิ้นสร้างขึ้นเพื่อแสดงหน้าตาของระบบ ยังไม่ได้มาจากแหล่งจริง</div>
+  <div class="view" id="view-dash">
+  <div class="updated" id="updated"></div>
+  <p class="note" id="dash-note" hidden></p>
+
+  <div class="banner" id="banner" hidden><b data-en="All data is sample data.">ข้อมูลสมมติทั้งหมด</b> <span data-en="This page is a mockup: every number, score and piece of evidence is made up to show how the system looks, not taken from real sources.">หน้านี้เป็น mockup ตัวเลข คะแนน และหลักฐานทุกชิ้นสร้างขึ้นเพื่อแสดงหน้าตาของระบบ ยังไม่ได้มาจากแหล่งจริง</span></div>
 
   <section class="kpis" aria-label="สรุป">
-    <div class="kpi"><span class="label">ปัญหาที่ติดตาม</span><b id="k-problems">–</b></div>
-    <div class="kpi"><span class="label">หลักฐานใหม่วันนี้</span><b id="k-new">–</b></div>
-    <div class="kpi"><span class="label">รอคนตรวจสอบ</span><b id="k-pending">–</b></div>
-    <div class="kpi"><span class="label">ยืนยันแล้ว</span><b id="k-verified">–</b></div>
+    <div class="kpi"><span class="label" data-en="Problems tracked">ปัญหาที่ติดตาม</span><b id="k-problems">–</b></div>
+    <div class="kpi"><span class="label" data-en="New evidence today">หลักฐานใหม่วันนี้</span><b id="k-new">–</b></div>
+    <div class="kpi"><span class="label" data-en="Awaiting review">รอคนตรวจสอบ</span><b id="k-pending">–</b></div>
+    <div class="kpi"><span class="label" data-en="Verified">ยืนยันแล้ว</span><b id="k-verified">–</b></div>
   </section>
 
   <div class="filters">
     <div class="chips" id="cat-chips" role="group" aria-label="ประเภทช่องว่าง"></div>
-    <label class="label" for="scope">ขอบเขต
+    <label class="label" for="scope"><span data-en="Scope">ขอบเขต</span>
       <select id="scope">
         <option value="all">ทั้งหมด</option>
         <option value="global">ระดับโลก</option>
@@ -185,8 +264,8 @@ footer { color: var(--muted); font-size: 12px; }
   <div class="main">
     <section class="panel">
       <div class="panel-head">
-        <h2>แผนที่โอกาส</h2>
-        <p>ขวาบน = ปัญหาใหญ่ที่ยังไม่มีใครแก้มากพอ · ขนาดฟอง = จำนวนคนที่ได้รับผลกระทบ</p>
+        <h2 data-en="Opportunity map">แผนที่โอกาส</h2>
+        <p data-en="Top right = big problems nobody is tackling enough · bubble size = people affected">ขวาบน = ปัญหาใหญ่ที่ยังไม่มีใครแก้มากพอ · ขนาดฟอง = จำนวนคนที่ได้รับผลกระทบ</p>
       </div>
       <div id="bubble" role="img" aria-label="กราฟฟองสบู่ ขนาดปัญหาเทียบกับระดับที่ถูกละเลย"></div>
     </section>
@@ -196,16 +275,16 @@ footer { color: var(--muted); font-size: 12px; }
 
   <section class="panel" id="plan-panel">
     <div class="panel-head">
-      <h2>แผนลงมือ</h2>
-      <p>ปัญหา → สาเหตุย่อย → แนวทาง → เควสต์ที่คนทั่วไปหยิบไปทำได้ · กรอบสีส้ม = ยังไม่มีคนรับ · เควสต์ระดับเริ่มต้นไม่ต้องมีพื้นฐานมาก่อน</p>
+      <h2 data-en="Action plan">แผนลงมือ</h2>
+      <p data-en="Problem → sub-causes → approaches → quests anyone can pick up · orange border = unclaimed · beginner quests need no background">ปัญหา → สาเหตุย่อย → แนวทาง → เควสต์ที่คนทั่วไปหยิบไปทำได้ · กรอบสีส้ม = ยังไม่มีคนรับ · เควสต์ระดับเริ่มต้นไม่ต้องมีพื้นฐานมาก่อน</p>
     </div>
     <div id="plan"></div>
   </section>
 
   <section class="panel">
     <div class="panel-head">
-      <h2>รูปแบบร่วมข้ามปัญหา</h2>
-      <p>รวมทุกปัญหาที่แตกแผนแล้ว เพื่อดูว่าต้นเหตุและทักษะไหนเกิดซ้ำข้าม silo</p>
+      <h2 data-en="Patterns across problems">รูปแบบร่วมข้ามปัญหา</h2>
+      <p data-en="All planned problems combined, to see which causes and skills repeat across silos">รวมทุกปัญหาที่แตกแผนแล้ว เพื่อดูว่าต้นเหตุและทักษะไหนเกิดซ้ำข้าม silo</p>
     </div>
     <div id="patterns"></div>
   </section>
@@ -213,16 +292,16 @@ footer { color: var(--muted); font-size: 12px; }
   <div class="lower">
     <section class="panel">
       <div class="panel-head">
-        <h2>สัญญาณรายวัน</h2>
-        <p>ข่าว นโยบาย งานวิจัยใหม่ 30 วันล่าสุด แยกตามประเภท</p>
+        <h2 data-en="Daily signals">สัญญาณรายวัน</h2>
+        <p data-en="News, policy and new research over the last 30 days, by type">ข่าว นโยบาย งานวิจัยใหม่ 30 วันล่าสุด แยกตามประเภท</p>
       </div>
       <div id="area" role="img" aria-label="กราฟพื้นที่ซ้อน จำนวนสัญญาณรายวัน"></div>
     </section>
 
     <section class="panel">
       <div class="panel-head">
-        <h2>การตรวจสอบหลักฐาน</h2>
-        <p>ทุกชิ้นต้องผ่าน 4 ขั้นก่อนขึ้นสถานะยืนยันแล้ว</p>
+        <h2 data-en="Evidence checks">การตรวจสอบหลักฐาน</h2>
+        <p data-en="Every item passes 4 stages before it is marked verified">ทุกชิ้นต้องผ่าน 4 ขั้นก่อนขึ้นสถานะยืนยันแล้ว</p>
       </div>
       <div class="pipeline" id="pipeline"></div>
     </section>
@@ -230,18 +309,39 @@ footer { color: var(--muted); font-size: 12px; }
 
   <section class="panel">
     <div class="panel-head">
-      <h2>อันดับโอกาส</h2>
+      <h2 data-en="Opportunity ranking">อันดับโอกาส</h2>
       <p id="weights"></p>
     </div>
     <div class="table-wrap">
       <table>
-        <thead><tr><th>#</th><th>ปัญหา</th><th>ประเภท</th><th>พื้นที่</th><th class="num">คะแนน</th><th class="num">ขนาด</th><th class="num">ถูกละเลย</th><th class="num">แก้ได้</th><th class="num">จังหวะ</th><th class="num">คนที่กระทบ (ล้าน)</th></tr></thead>
+        <thead><tr><th>#</th><th data-en="Problem">ปัญหา</th><th data-en="Type">ประเภท</th><th data-en="Region">พื้นที่</th><th class="num" data-en="Score">คะแนน</th><th class="num" data-en="Scale">ขนาด</th><th class="num" data-en="Neglect">ถูกละเลย</th><th class="num" data-en="Tractable">แก้ได้</th><th class="num" data-en="Timing">จังหวะ</th><th class="num" data-en="Affected (m)">คนที่กระทบ (ล้าน)</th></tr></thead>
         <tbody id="rows"></tbody>
       </table>
     </div>
   </section>
 
-  <footer>OneQuest mockup · ข้อมูลอ่านจาก data.json ที่สคริปต์ Python สร้างขึ้นทุกวัน</footer>
+  </div>
+
+  <div class="view" id="view-qa" hidden>
+    <section class="intro"><h2 data-t="qa_title"></h2><p data-t="qa_intro"></p></section>
+    <div class="qa-tools"><div class="chips" id="qa-chips" role="group"></div><input class="search" id="qa-search" type="search"></div>
+    <span class="label" id="qa-count"></span>
+    <div class="qa-list" id="qa-list"></div>
+  </div>
+
+  <div class="view" id="view-cases" hidden>
+    <section class="intro"><h2 data-t="cases_title"></h2><p data-t="cases_intro"></p></section>
+    <section class="panel"><h2 data-t="patterns"></h2><div class="pgrid" id="p-table"></div></section>
+    <section class="panel"><div class="panel-head"><h2 data-t="infra_title"></h2></div><p class="sub" data-t="infra_intro"></p><div class="lgrid" id="infra-grid"></div><div class="refs" id="infra-refs"></div></section>
+    <section class="panel" id="meet"></section>
+    <div class="chips" id="case-chips" role="group"></div>
+    <div class="chips" id="layer-chips" role="group"></div>
+    <nav class="timeline" id="timeline" aria-label="Timeline"></nav>
+    <div class="case-list" id="case-list"></div>
+    <p class="note" data-t="dagger"></p>
+  </div>
+
+  <footer data-en="OneQuest mockup · dashboard reads data.json built daily by a Python script · Q&A and case studies are built into this page">OneQuest mockup · แดชบอร์ดอ่านข้อมูลจาก data.json ที่สคริปต์ Python สร้างทุกวัน · คลังถาม–ตอบและ Case Study อยู่ในไฟล์นี้</footer>
 </div>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/echarts/5.5.0/echarts.min.js"></script>
@@ -271,7 +371,7 @@ footer { color: var(--muted); font-size: 12px; }
   try { const s = JSON.parse(localStorage.getItem("oq-filters") || "null"); if (s) { state.cats = new Set(s.cats); state.scope = s.scope; } } catch (e) {}
   const save = () => { try { localStorage.setItem("oq-filters", JSON.stringify({ cats: [...state.cats], scope: state.scope })); } catch (e) {} };
 
-  fetch("data.json").then(r => { if (!r.ok) throw new Error(r.status); return r.json(); }).then(init).catch(err => {
+  fetch("data.json", { cache: "no-store" }).then(r => { if (!r.ok) throw new Error(r.status); return r.json(); }).then(init).catch(err => {
     $("dossier").innerHTML = '<p class="err">โหลด data.json ไม่ได้ ถ้าเปิดไฟล์ตรงจากเครื่อง ให้รัน <code>python -m http.server</code> ในโฟลเดอร์ web ก่อน แล้วเปิด http://localhost:8000</p>';
   });
 
@@ -432,9 +532,11 @@ footer { color: var(--muted); font-size: 12px; }
     return '<li class="predict"><span>' + esc(x.q) + '</span><form data-i="' + i + '"><input type="number" inputmode="decimal" aria-label="คำตอบของคุณ" placeholder="คำตอบของคุณ" value="' + esc(g ?? "") + '"><span class="label">' + esc(x.unit) + '</span><button type="submit">ดูคำตอบ</button></form>' + res + '<span class="label">' + esc(x.source) + "</span></li>";
   }
 
+  const STALE = "ไฟล์ data.json นี้สร้างจาก pipeline รุ่นเก่า จึงยังไม่มีข้อมูลแผนลงมือ ให้ใช้ pipeline/problems.json และ pipeline/build_data.py ชุดใหม่ แล้วรัน python pipeline/build_data.py อีกครั้ง";
+
   function renderPatterns() {
     const pt = data.patterns;
-    if (!pt) return;
+    if (!pt || !Object.keys(pt.why_unsolved).length) { $("patterns").innerHTML = '<p class="err">' + (pt ? "ยังไม่มีปัญหาที่แตกแผนไว้" : STALE) + "</p>"; return; }
     const title = id => esc((data.problems.find(x => x.id === id) || {}).title || id);
     const shared = Object.entries(pt.why_unsolved).filter(([, ids]) => ids.length > 1).sort((a, b) => b[1].length - a[1].length);
     const fields = Object.entries(pt.fields).sort((a, b) => b[1].quests - a[1].quests);
@@ -449,7 +551,13 @@ footer { color: var(--muted); font-size: 12px; }
     const el = $("plan");
     renderPatterns();
     const pl = p && p.plan;
-    if (!pl) { el.innerHTML = '<p class="err">ปัญหานี้ยังไม่ได้แตกเป็นแผนลงมือ ตอนนี้มีตัวอย่างเรื่องผู้ดูแลผู้สูงอายุ ฝุ่น PM2.5 และหนี้ครัวเรือน</p>'; return; }
+    if (!pl) {
+      const withPlan = data.problems.filter(x => x.plan);
+      el.innerHTML = '<p class="err">' + (!data.patterns ? STALE : "ปัญหานี้ยังไม่ได้แตกเป็นแผนลงมือ เลือกปัญหาที่มีแผนแล้ว: " +
+        withPlan.map(x => '<button class="chip" data-go="' + esc(x.id) + '">' + esc(x.title) + "</button>").join(" ")) + "</p>";
+      el.querySelectorAll("[data-go]").forEach(b => b.addEventListener("click", () => select(b.dataset.go)));
+      return;
+    }
     const lb = pl.labor || {};
     el.innerHTML = '<div class="plan-grid"><div style="display:grid;gap:12px">' +
       (pl.predict ? '<div class="cause"><b>ทายก่อนดูข้อมูล</b><span class="approach">เขียนคำตอบของคุณก่อน แล้วค่อยเทียบ จะเห็นว่าความรู้สึกเราพลาดไปทางไหน</span><ul class="quests">' + pl.predict.map((x, i) => predictHtml(p, x, i)).join("") + "</ul></div>" : "") +
@@ -489,6 +597,523 @@ footer { color: var(--muted); font-size: 12px; }
       '</div><span class="c">' + (s[2] ?? "") + "</span></div>").join("") +
       '<div class="tierline" style="margin-top:4px">' + Object.entries(STATUS).map(([k]) => statusPill(k) + ' <span class="mono" style="font-size:12px;color:var(--ink-2)">' + (st[k] || 0) + "</span>").join("&nbsp;&nbsp;") + "</div>";
   }
+})();
+</script>
+<script>
+const QA_THEMES = {
+  opps:    { th: "มองหาโอกาส", en: "Spotting opportunities" },
+  data:    { th: "ข้อมูลและหลักฐาน", en: "Data & evidence" },
+  design:  { th: "ออกแบบ OneQuest", en: "Designing OneQuest" },
+  mind:    { th: "วิธีคิดและอคติ", en: "Thinking & bias" },
+  history: { th: "ประวัติศาสตร์ตลาดงาน", en: "History of new work" },
+  tech:    { th: "ติดตั้งและใช้งาน", en: "Setup & tools" }
+};
+
+const QA = [
+{
+  id: "observe", date: "2026-10-15", theme: "opps", file: "research/how-people-observe-opportunities.md",
+  q: { th: "คนที่เลือกงานหรือสร้างงาน เขามองหาโอกาสในสังคมไทยและทั่วโลกอย่างไร ทำ research อะไร แบ่งเป็นประเภทหรืออุตสาหกรรมอะไร และภูมิศาสตร์เป็นตัวกำหนดไหม",
+       en: "How do people who choose or create work spot opportunities in Thailand and globally? What research do they do, how are opportunities categorised, and does geography decide them?" },
+  a: { th: "<p>โอกาสส่วนใหญ่เริ่มจาก 5 ทาง แล้วคนจัดหมวดด้วย 3 แกนซ้อนกัน</p><ul><li><b>5 ต้นทาง:</b> คำบ่นของคน (pain point), ช่องว่าง demand–supply (ราคาพุ่ง คิวยาว ประกาศงานเปิดค้างนาน), การเปลี่ยนแปลงใหญ่ (เทคโนโลยี ประชากร นโยบาย), ความไม่มีประสิทธิภาพที่คนชินไปแล้ว และสิ่งที่ได้ผลที่อื่นแต่ไทยยังไม่มี</li><li><b>3 แกน:</b> อุตสาหกรรม (ISIC/TSIC, S-Curve ของ BOI, BCG), เป้าหมายโลก (SDGs 17 ข้อ ตัวชี้วัด 231 ตัว) และ <b>ประเภทช่องว่าง</b> (ขาด supply, แพงเกินไป, เข้าไม่ถึง, คุณภาพต่ำ, ตลาดล้มเหลว, ประสานงานล้มเหลว, ความเสี่ยงอนาคต, เกิดใหม่) แกนสุดท้ายตรงกับ OneQuest ที่สุด</li><li><b>ภูมิศาสตร์กำหนดบางส่วน:</b> ปัญหามีทั้งระดับโลก ประเทศ และพื้นที่ โอกาสที่ชัดที่สุดมักอยู่ตรงที่ปัญหาโลกมาเจอบริบทไทย เช่น การดูแลผู้สูงอายุในไทยต้องคิดเรื่อง อสม. และลูกหลานที่ย้ายเข้าเมือง ซึ่งไม่เหมือนญี่ปุ่น</li><li><b>ความเข้าใจ 6 ชั้น:</b> คน, เศรษฐศาสตร์, ระบบ, จังหวะเวลา (why now), บริบทพื้นที่ และความถนัดของตัวเอง</li><li>ตัวเลขทางการส่วนใหญ่ออกปีละครั้งหรือไตรมาสละครั้ง ส่วนที่ “อัปเดตทุกวัน” ได้จริงคือสัญญาณ เช่น ข่าว นโยบาย และการลงทุน</li></ul>",
+       en: "<p>Most opportunities start from five sources, and people classify them along three overlapping axes.</p><ul><li><b>Five sources:</b> people's complaints (pain points), demand–supply gaps (rising prices, long queues, job ads that stay open), big shifts (technology, demographics, policy), inefficiencies everyone has accepted, and things that work elsewhere but don't exist here yet.</li><li><b>Three axes:</b> industry (ISIC/TSIC, Thailand's BOI S-Curve, BCG), global goals (17 SDGs, 231 indicators) and <b>gap type</b> (supply shortage, unaffordable, no access, low quality, market failure, coordination failure, future risk, newly emerging). The last axis fits OneQuest best.</li><li><b>Geography matters partly:</b> problems are global, national or local. The clearest opportunities sit where a global problem meets local context; elder care in Thailand depends on village health volunteers and children moving to cities, unlike Japan.</li><li><b>Six layers of understanding:</b> people, economics, systems, timing (why now), local context and your own strengths.</li><li>Official numbers mostly come out yearly or quarterly. What can truly update daily are signals such as news, policy and investment.</li></ul>" },
+  refs: [{ l: "UN SDG Global Database", u: "https://unstats.un.org/sdgs/dataportal" }, { l: "80,000 Hours: problem profiles", u: "https://80000hours.org/problem-profiles/" }]
+},
+{
+  id: "dalio", date: "2026-10-15", theme: "mind",
+  q: { th: "หนังสือ Changing World Order ของ Ray Dalio อธิบายเศรษฐศาสตร์ที่ถือเป็นความจริงไหม เหมือนจะมี 4 วงจรที่วนเกิดและชะลอตัว",
+       en: "Is Ray Dalio's Changing World Order an economic truth? It seems to describe about four cycles of rise and decline." },
+  a: { th: "<p>ไม่ถือเป็น “ความจริง” ทางเศรษฐศาสตร์ เป็นกรอบมองประวัติศาสตร์ที่นักลงทุนคนหนึ่งสรุปขึ้น ไม่ใช่ทฤษฎีที่นักเศรษฐศาสตร์ส่วนใหญ่ยอมรับเป็นกฎ</p><ul><li><b>สิ่งที่เสนอ:</b> แรงหลัก 5 อย่าง คือ วงจรหนี้และเงิน, ความสงบภายใน, ระเบียบโลก, นวัตกรรม และภัยธรรมชาติ 3 อย่างแรกเป็นวงจร จึงอาจจำเป็น “4” รวมเป็น Big Cycle ราว 250 ปี</li><li><b>ส่วนที่มีหลักฐาน:</b> หนี้สะสมจนเกิดวิกฤต (Minsky, Reinhart &amp; Rogoff) และความเหลื่อมล้ำที่นำไปสู่ความขัดแย้ง</li><li><b>ส่วนที่ถูกวิจารณ์:</b> ตัวอย่างน้อย (มหาอำนาจราว 10 แห่งใน 500 ปี), เลือกเรื่องที่เข้ากับรูปแบบแล้วอธิบายย้อนหลัง และบอกเวลาไม่ได้จึงพิสูจน์ว่าผิดยาก</li><li><b>สำหรับ OneQuest:</b> ใช้เป็นชั้น “บริบทมหภาค” อธิบายว่าทำไมบางปัญหาแรงขึ้นตอนนี้ เช่น หนี้ครัวเรือน ไม่ใช้เป็นตัวพยากรณ์</li></ul>",
+       en: "<p>No. It is a historical framework distilled by an investor, not a theory most economists accept as a law.</p><ul><li><b>The claim:</b> five forces drive the rise and fall of powers: the debt and money cycle, internal order, external world order, innovation and acts of nature. The first three are cycles, which may be why you remember “four”. Together they form a Big Cycle of about 250 years.</li><li><b>Supported parts:</b> debt build-ups ending in crises (Minsky, Reinhart &amp; Rogoff) and inequality feeding political conflict.</li><li><b>Criticised parts:</b> a tiny sample (about 10 powers over 500 years), fitting stories to the pattern after the fact, and no timing, so it is hard to prove wrong.</li><li><b>For OneQuest:</b> use it as a “macro context” layer that explains why some problems, such as household debt, are intensifying now. Don't use it as a forecast.</li></ul>" },
+  refs: [{ l: "Dalio (2021) Principles for Dealing with the Changing World Order, Avid Reader Press" }, { l: "Reinhart & Rogoff (2009) This Time Is Different, Princeton University Press" }]
+},
+{
+  id: "julia", date: "2026-10-15", theme: "tech",
+  q: { th: "ปกติ Claude ใช้ภาษา Julia ในการ plot กราฟไหม ถือว่าดีไหมสำหรับกราฟ 3 แกนที่อ่านง่าย อัปเดตเป็นสัดส่วน แบ่งสีตามประเภท และแชร์ได้",
+       en: "Does Claude use Julia for plotting? Is it a good choice for a readable three-axis chart that updates proportions, colours by type and can be shared?" },
+  a: { th: "<ul><li>ปกติใช้ Python (pandas, Plotly, matplotlib) ประมวลผล และ JavaScript (ECharts, Plotly.js, D3) สำหรับกราฟบนเว็บ OneQuest ก็ใช้แบบนี้</li><li>Julia คำนวณเร็วและกราฟสวย แต่ถ้าจะให้คนเปิดดูบนเว็บทุกวัน ต้องมีเซิร์ฟเวอร์ Julia รันตลอด เปิดครั้งแรกช้าเพราะต้องคอมไพล์ และหาคนช่วยต่อยากกว่า</li><li>เลี่ยงกราฟ 3 มิติ เพราะต้องหมุนดูและค่าด้านหลังถูกบัง ใช้ <b>กราฟฟองสบู่ 2 มิติ</b> แทน: X = ขนาดปัญหา, Y = ถูกละเลย, ขนาดฟอง = คนที่ได้รับผลกระทบ, สี = ประเภทช่องว่าง</li><li>สัดส่วนที่เปลี่ยนรายวันให้แยกเป็นกราฟพื้นที่ซ้อน (stacked area)</li></ul>",
+       en: "<ul><li>I normally use Python (pandas, Plotly, matplotlib) for processing and JavaScript (ECharts, Plotly.js, D3) for web charts. OneQuest follows that split.</li><li>Julia is fast and its charts look good, but a daily web page would need a Julia server running constantly, the first load is slow while it compiles, and fewer people can help maintain it.</li><li>Avoid 3D charts: you have to rotate them and points at the back get hidden. Use a <b>2D bubble chart</b>: X = problem size, Y = neglect, bubble size = people affected, colour = gap type.</li><li>Show daily changes in proportions in a separate stacked area chart.</li></ul>" },
+  refs: [{ l: "Apache ECharts", u: "https://echarts.apache.org/" }]
+},
+{
+  id: "bubble", date: "2026-10-15", theme: "data",
+  q: { th: "กราฟฟองสบู่เป็นมาตรฐานของนักประชากร นักสถิติ หรือนักวิจัยไหม (Hans Rosling ใน Factfulness ก็ใช้) และการประชุม World Bank ที่กรุงเทพฯ คุยเรื่องนี้ไหม",
+       en: "Is the bubble chart a standard tool for demographers, statisticians or researchers (Hans Rosling uses it in Factfulness)? Did the World Bank meetings in Bangkok discuss this?" },
+  a: { th: "<ul><li>เป็นเครื่องมือมาตรฐานสำหรับ<b>สื่อสาร</b>ข้อมูลการพัฒนา แต่ไม่ใช่วิธีวิเคราะห์ทางสถิติ Rosling ทำให้ดังผ่าน Gapminder (X รายได้, Y อายุขัย, ขนาด = ประชากร) ต่อมา Google ทำเป็น Motion Chart และ Our World in Data ก็ยังใช้</li><li>ตัวที่นักสถิติใช้จริงคือ scatter plot กราฟฟองสบู่คือ scatter ที่เพิ่มมิติขนาด ต้องให้<b>พื้นที่</b>ฟองแปรตามค่า และไม่ควรเกิน 4–5 มิติ</li><li>กราฟ “ขนาด × ถูกละเลย” เป็นแบบเดียวกับที่ใช้จัดลำดับความสำคัญ เช่น 80,000 Hours</li><li><b>การประชุม IMF–World Bank ที่กรุงเทพฯ (12–18 ต.ค. 2026)</b> ไม่ได้คุยเรื่องกราฟ หัวข้อหลักคือ ราคาพลังงานและเงินเฟ้อจากสงครามอิหร่าน, หนี้สาธารณะโลกสูงสุดตั้งแต่สงครามโลกครั้งที่ 2, AI กับการจ้างงาน, ข้อมูลเพื่อสินเชื่อ SME และ Bangkok Blueprint ด้านการฉ้อโกงทางการเงิน ประเด็นหนี้ พลังงาน และ AI จึงควรเป็นตัวขับเคลื่อน (driver) ใน OneQuest</li></ul>",
+       en: "<ul><li>It is a standard tool for <b>communicating</b> development data, not a statistical method. Rosling popularised it through Gapminder (X income, Y life expectancy, size = population); Google turned it into Motion Chart and Our World in Data still uses it.</li><li>What statisticians actually use is the scatter plot; a bubble chart adds size as a third dimension. Bubble <b>area</b> must scale with the value, and 4–5 dimensions is the limit.</li><li>A “size × neglect” chart is the same layout used for prioritisation, for example by 80,000 Hours.</li><li><b>The IMF–World Bank meetings in Bangkok (12–18 Oct 2026)</b> did not discuss charts. Main topics: the energy and inflation shock from the Iran war, global public debt at its highest since WWII, AI and jobs, data for SME credit, and the Bangkok Blueprint on financial fraud. Debt, energy and AI should therefore be drivers in OneQuest.</li></ul>" },
+  refs: [{ l: "Gapminder", u: "https://www.gapminder.org/tools/" }, { l: "Nation Thailand", u: "https://www.nationthailand.com/business/economy/40072081" }, { l: "Al Jazeera", u: "https://www.aljazeera.com/news/2026/10/11/war-and-high-debt-to-dominate-imf-world-bank-meetings-in-bangkok" }, { l: "Atlantic Council", u: "https://www.atlanticcouncil.org/blogs/econographics/live-updates-from-the-imf-world-bank-annual-meetings-in-thailand-as-financial-leaders-take-on-ai-debt-and-geopolitical-upheaval/" }]
+},
+{
+  id: "mockup", date: "2026-10-17", theme: "data", file: "onequest-mockup/README.md",
+  q: { th: "สร้าง Platform OneQuest แบบ mockup ได้ไหม export ไปรันเองที่ไหนได้ ต้องมีระบบหลังบ้านคอยดึงและตรวจข้อมูลไหม และงานวิจัยอย่าง Google Scholar ดีกว่าข่าวหรือ World Bank ไหม",
+       en: "Can you build a OneQuest mockup? Where can I run it myself, does it need a backend that fetches and checks data, and is research such as Google Scholar better than news or the World Bank?" },
+  a: { th: "<ul><li><b>รันเองได้:</b> หน้าเว็บเป็น HTML ไฟล์เดียว วางบน GitHub Pages, Cloudflare Pages, Netlify, Vercel หรือเครื่องตัวเองก็ได้ แนะนำ GitHub Pages + GitHub Actions เพราะฟรีและรันสคริปต์ทุกเช้าให้</li><li><b>หลังบ้าน:</b> เริ่มแค่สคริปต์ Python วันละครั้งก็พอ ระบบอัตโนมัติบอกไม่ได้ว่าข่าวไหนจริง ทำได้แค่ดูชั้นของแหล่งและมีแหล่งอิสระยืนยันตรงกันไหม ขั้นสุดท้ายต้องมีคนตรวจเสมอ</li><li><b>ใช้ 3 แหล่งคู่กัน:</b> งานวิจัยน่าเชื่อที่สุดแต่ช้าเป็นเดือนหรือปี, World Bank เป็นฐานที่เทียบข้ามประเทศได้แต่ออกปีละครั้ง, ข่าวเร็วที่สุดแต่ต้องรอยืนยัน</li><li>Google Scholar ไม่มี API และห้ามดึงอัตโนมัติ จึงใช้ OpenAlex แทน</li></ul>",
+       en: "<ul><li><b>Self-hosting:</b> the page is a single HTML file that runs on GitHub Pages, Cloudflare Pages, Netlify, Vercel or your own machine. GitHub Pages + GitHub Actions is recommended: free, and it runs the script every morning.</li><li><b>Backend:</b> a daily Python script is enough to start. Automation cannot tell whether news is true; it can only rank source tiers and check for independent corroboration, so a human makes the final call.</li><li><b>Use three source types together:</b> research is most reliable but months or years behind; the World Bank gives a comparable baseline but updates yearly; news is fastest but needs confirmation.</li><li>Google Scholar has no API and forbids scraping, so the pipeline uses OpenAlex instead.</li></ul>" },
+  refs: [{ l: "OpenAlex", u: "https://openalex.org/" }, { l: "World Bank Open Data", u: "https://data.worldbank.org/" }, { l: "GDELT", u: "https://www.gdeltproject.org/" }]
+},
+{
+  id: "pages", date: "2026-10-18", theme: "tech",
+  q: { th: "สอนใช้ GitHub Pages กับ GitHub Actions หน่อย และเจอคำเตือนว่า Node.js 20 จะไม่รองรับแล้ว ต้องแก้ไหม",
+       en: "How do I use GitHub Pages and GitHub Actions? And I got a warning that Node.js 20 is being retired. Do I need to fix it?" },
+  a: { th: "<ol><li>สร้าง repo สาธารณะชื่อ onequest แล้วอัปโหลด README.md, โฟลเดอร์ pipeline และ web</li><li>สร้างไฟล์ <code>.github/workflows/daily.yml</code> ผ่าน Add file &gt; Create new file เพราะโฟลเดอร์ซ่อนมักลากไม่ติด</li><li>Settings &gt; Pages &gt; Source เลือก GitHub Actions</li><li>แท็บ Actions &gt; daily-update &gt; Run workflow แล้วรอเครื่องหมายถูกสีเขียว</li><li>เว็บจะอยู่ที่ <code>https://&lt;ชื่อผู้ใช้&gt;.github.io/onequest/</code> และรันเองทุกวันราว 6 โมงเช้าเวลาไทย</li></ol><p><b>Node 20:</b> เป็นคำเตือน ไม่ใช่ error แต่ควรอัปเดตเป็น <code>actions/checkout@v5</code>, <code>setup-python@v6</code>, <code>upload-pages-artifact@v5</code>, <code>deploy-pages@v5</code> ก่อน GitHub ถอด Node 20 ออก (ไฟล์ใน zip แก้ไว้แล้ว)</p>",
+       en: "<ol><li>Create a public repo named onequest and upload README.md plus the pipeline and web folders.</li><li>Create <code>.github/workflows/daily.yml</code> via Add file &gt; Create new file, since hidden folders often fail to drag in.</li><li>Settings &gt; Pages &gt; Source: choose GitHub Actions.</li><li>Actions tab &gt; daily-update &gt; Run workflow, then wait for the green tick.</li><li>The site lives at <code>https://&lt;username&gt;.github.io/onequest/</code> and rebuilds daily around 6 a.m. Thai time.</li></ol><p><b>Node 20:</b> a warning, not an error, but update to <code>actions/checkout@v5</code>, <code>setup-python@v6</code>, <code>upload-pages-artifact@v5</code> and <code>deploy-pages@v5</code> before GitHub removes Node 20 (already fixed in the zip).</p>" },
+  refs: [{ l: "GitHub Pages docs", u: "https://docs.github.com/en/pages" }]
+},
+{
+  id: "small-team", date: "2026-10-20", theme: "data", file: "research/deep-research-feasibility.md",
+  q: { th: "ถ้าจะ drill down ทำวิจัยให้ละเอียดขึ้น มองเห็นความเชื่อมโยง และตระหนักถึงอคติและข้อจำกัดในการวัด ทีมเล็กทำได้ไหม หรือปกติทำได้เฉพาะธนาคารหรือองค์กรระดับโลก",
+       en: "Can a small team drill deeper, see the links between problems and account for bias and measurement limits, or is that normally only possible for banks and global institutions?" },
+  a: { th: "<p>ทำได้ ข้อมูลที่องค์กรใหญ่ใช้ส่วนใหญ่เปิดให้ใช้ฟรีแล้ว (World Bank, OECD, UN SDG, Our World in Data, IHME, data.go.th, ธปท.) สิ่งที่เขามีมากกว่าคือข้อมูลภายใน ทีมลงพื้นที่ และคนตรวจทาน ไม่ใช่วิธีวิเคราะห์</p><ul><li><b>ชดเชยด้วย:</b> โฟกัสแคบ 10–20 ปัญหา เปิดวิธีคิดให้คนนอกตรวจ และบอกความไม่แน่นอนตรงๆ</li><li><b>Drill down:</b> ปัญหา → สาเหตุย่อย → ตัวชี้วัด 2–3 ตัวจากต่างแหล่ง → แยกจังหวัดและกลุ่มคน</li><li><b>ความเชื่อมโยง:</b> ทุกเส้นที่ลากระหว่างปัญหาต้องมีแหล่งอ้างอิง ถ้าไม่มีให้ติดป้าย “สมมติฐาน” และอย่าสับสนเกิดพร้อมกันกับเป็นสาเหตุ</li><li><b>อคติที่ต้องติดป้ายไว้กับตัวเลข:</b> ข้อมูลช้า 1–3 ปี, ปัญหาที่ไม่มีใครวัดดูเหมือนไม่มีปัญหา, ข่าวเอียงภาษาอังกฤษ, ผู้ให้คะแนนลำเอียง (ให้หลายคนให้แล้วแสดงเป็นช่วง), ตัวแทน (proxy) ที่ไม่ตรง และ Goodhart's law</li></ul>",
+       en: "<p>Yes. Most data big institutions use is now free (World Bank, OECD, UN SDG, Our World in Data, IHME, data.go.th, Bank of Thailand). Their real edge is internal data, field teams and reviewers, not analytical methods.</p><ul><li><b>Compensate by</b> focusing narrowly on 10–20 problems, publishing your reasoning for outside review, and stating uncertainty plainly.</li><li><b>Drill down:</b> problem → sub-causes → 2–3 indicators from different sources → breakdown by province and group.</li><li><b>Links:</b> every link between problems needs a citation; otherwise label it a hypothesis, and don't confuse co-occurrence with causation.</li><li><b>Biases to label next to numbers:</b> data lagging 1–3 years, unmeasured problems looking like no problem, English-language news bias, rater bias (use several raters and show a range), mismatched proxies, and Goodhart's law.</li></ul>" },
+  refs: [{ l: "Our World in Data", u: "https://ourworldindata.org/" }, { l: "IHME Global Burden of Disease", u: "https://www.healthdata.org/research-analysis/gbd" }, { l: "data.go.th", u: "https://data.go.th/" }]
+},
+{
+  id: "pilot", date: "2026-10-20", theme: "design",
+  q: { th: "จุดประสงค์คืออยากเห็นภาพชัดขึ้นจนลงมือเก็บข้อมูลจริง และพัฒนาโมเดลตลาดงานใหม่ไปด้วย",
+       en: "The goal is to see clearly enough to start collecting real data and build a model of new job markets at the same time." },
+  a: { th: "<p>ทำ pilot ปัญหาเดียวให้ครบวงจรก่อน แล้วใช้เป็นแม่แบบ ตัวอย่างคือผู้ดูแลผู้สูงอายุ</p><ol><li><b>วัดช่องว่าง:</b> ผู้สูงอายุที่ต้องมีคนดูแล × อัตราผู้ดูแลต่อคน ลบผู้ดูแลที่มีอยู่ = งานที่ขาด</li><li><b>แปลงเป็นงานและทักษะ:</b> ใช้หมวดอาชีพ ESCO หรือ O*NET เพื่อเทียบกับข้อมูลสากล</li><li><b>เก็บสัญญาณตลาดงาน:</b> สำรวจภาวะการทำงานของ สสช., ตำแหน่งว่างกรมการจัดหางาน และเก็บประกาศงานเองเป็นตัวอย่าง (เว็บหางานส่วนใหญ่ห้ามดึงอัตโนมัติ)</li><li><b>ตรวจกับคนจริง:</b> สัมภาษณ์ผู้ดูแลและนายจ้าง 5–10 คน ว่าตัวเลขพลาดอะไร</li></ol>",
+       en: "<p>Run one problem through the full loop first, then reuse it as a template. Elder care was the first example.</p><ol><li><b>Measure the gap:</b> elderly needing care × carers per person, minus existing carers = missing jobs.</li><li><b>Translate into jobs and skills</b> using ESCO or O*NET occupation codes so results compare internationally.</li><li><b>Collect labour-market signals:</b> the NSO Labour Force Survey, Department of Employment vacancies, and a hand-collected sample of job ads (most job sites forbid scraping).</li><li><b>Check with real people:</b> interview 5–10 carers and employers about what the numbers miss.</li></ol>" },
+  refs: [{ l: "ESCO", u: "https://esco.ec.europa.eu/" }, { l: "O*NET", u: "https://www.onetonline.org/" }]
+},
+{
+  id: "quests", date: "2026-10-20", theme: "design",
+  q: { th: "ผู้บริหารพูดภาพรวม แต่ไม่เห็น actionable plan ที่แตกย่อยหรือแบ่งงานให้คนหมู่มาก",
+       en: "Leaders talk about the big picture, but there's no actionable plan broken down into work many people can take on." },
+  a: { th: "<p>ช่องว่างนี้มีจริง รายงานใหญ่มักจบที่ “ควรทำอะไร” แต่ไม่บอกว่าใครทำชิ้นไหนและวัดผลอย่างไร OneQuest จึงแตกเป็น 4 ชั้น</p><ol><li><b>ปัญหา</b> เช่น ผู้ดูแลผู้สูงอายุไม่พอ</li><li><b>สาเหตุย่อย</b> เช่น ค่าแรงต่ำ ไม่มีหลักสูตรรับรอง ครอบครัวเล็กลง</li><li><b>แนวทาง</b> เช่น ระบบจับคู่ผู้ดูแลกับครอบครัวในชุมชน</li><li><b>เควสต์</b> งานชิ้นเล็กที่บอกว่าใครทำได้ ใช้ทักษะอะไร ใช้เวลาเท่าไร และผลลัพธ์ที่วัดได้</li></ol><p>เควสต์ที่ต้องทำซ้ำคืองานใหม่ เควสต์ที่ไม่มีคนรับคือ supply ที่ขาด และรายงานผลจากเควสต์คือ progress รายวันที่ไม่ต้องรอตัวเลขทางการ</p>",
+       en: "<p>That gap is real. Big reports end at “what should be done” without saying who does which piece or how it is measured. OneQuest breaks work into four layers:</p><ol><li><b>Problem</b>, e.g. not enough elder carers</li><li><b>Sub-cause</b>, e.g. low pay, no certified course, shrinking families</li><li><b>Approach</b>, e.g. a community carer–family matching system</li><li><b>Quest</b>: a small task stating who can do it, the skill, the time and a measurable output</li></ol><p>Recurring quests are new jobs, unclaimed quests are missing supply, and quest reports become daily progress that doesn't wait for official statistics.</p>" },
+  refs: []
+},
+{
+  id: "silos", date: "2026-10-20", theme: "design",
+  q: { th: "ข่าวยังวนอยู่ที่ตัวปัญหา ยังไม่รวมแล้วหา insight หรือเชื่อม silo จนเห็น pattern แล้วพัฒนาระบบแก้ปัญหาเรื้อรัง กระจายงานและทรัพยากรให้ตรงจุด หรือสร้างพื้นที่ upskill/reskill",
+       en: "News keeps circling the problem itself. Nobody combines it into insight or connects silos to see patterns, build systems for chronic problems, target work and resources, or create upskilling/reskilling spaces." },
+  a: { th: "<ul><li>เพิ่มส่วน “แผนลงมือ” ใน mockup แล้ว เรื่องผู้ดูแลผู้สูงอายุแตกเป็นสาเหตุย่อย 3 ข้อ และเควสต์ 7 ชิ้น พร้อมแผงตลาดงานที่คำนวณตำแหน่งที่ยังขาด (ตัวเลขสมมติ)</li><li><b>มุมมองสาเหตุร่วม:</b> สาเหตุเดียวกัน เช่น สังคมสูงวัยหรือแรงงานย้ายเข้าเมือง ส่งผลกับหลายปัญหา จุดที่เชื่อมหลายปัญหาคือจุดที่ลงแรงคุ้มที่สุด</li><li><b>แผนที่ทักษะ:</b> รวมทักษะจากเควสต์ทุกปัญหา ทักษะที่ถูกต้องการซ้ำคือหลักสูตร upskill/reskill ที่ตรงกับงานที่ขาดจริง</li></ul>",
+       en: "<ul><li>An “action plan” section is now in the mockup: elder care is broken into 3 sub-causes and 7 quests, with a labour-market panel estimating unfilled positions (sample numbers).</li><li><b>Shared-cause view:</b> one cause, such as ageing or migration to cities, feeds several problems. The causes that touch the most problems are where effort pays off most.</li><li><b>Skills map:</b> pooling skills from every quest shows which are needed repeatedly; those become upskilling/reskilling courses tied to real shortages.</li></ul>" },
+  refs: []
+},
+{
+  id: "root-cause", date: "2026-10-20", theme: "design",
+  q: { th: "อยากเน้นแก้ที่ต้นเหตุ มากกว่าวิธีที่อาจลดแรงจูงใจให้คนพึ่งพาตัวเอง และเชื่อว่าคนเรียนรู้ได้ไม่ต่างจากคนที่มีพื้นฐานแข็งแรง",
+       en: "I want to favour root-cause solutions over ones that may weaken people's motivation to be self-reliant, and I believe anyone can learn as well as people with strong foundations." },
+  a: { th: "<ul><li><b>ประเภทแนวทาง:</b> แต่ละแนวทางติดป้าย “แก้ต้นเหตุ”, “สร้างความสามารถ” หรือ “บรรเทาเฉพาะหน้า” เพื่อเห็นว่าระบบลงแรงไปทางไหนมากเกิน</li><li><b>ระดับเควสต์:</b> เริ่มต้น / ขั้นกลาง / ขั้นสูง ระดับเริ่มต้นไม่ต้องมีพื้นฐาน เช่น เก็บค่าจ้างจากประกาศงาน 50 ชิ้น ทำให้เควสต์เป็นเส้นทางเรียนรู้ในตัว</li><li><b>ข้อควรระวัง:</b> ความเชื่อว่า “ช่วยแล้วคนจะขี้เกียจ” ก็เป็นอคติ งานทบทวนโครงการแจกเงิน 7 ประเทศ (Banerjee และคณะ 2017) ไม่พบว่าคนที่ได้เงินทำงานน้อยลง การบรรเทาเฉพาะหน้าบางครั้งคือสิ่งที่ทำให้คนมีแรงไปเรียนรู้ จึงควรวัดผลจริงว่าแต่ละแนวทางทำให้คนพึ่งตัวเองได้มากขึ้นหรือไม่</li></ul>",
+       en: "<ul><li><b>Approach types:</b> each approach is tagged “root cause”, “capability-building” or “short-term relief”, so you can see where the system over-invests.</li><li><b>Quest levels:</b> beginner / intermediate / advanced. Beginner quests need no background, e.g. collect wages from 50 job ads, so quests double as a learning path.</li><li><b>Caveat:</b> the belief that “help makes people lazy” is itself a bias. A review of cash-transfer programmes in seven countries (Banerjee et al. 2017) found no evidence that recipients work less. Relief is sometimes what gives people the capacity to learn, so measure whether each approach actually increases self-reliance.</li></ul>" },
+  refs: [{ l: "Banerjee, Hanna, Kreindler & Olken (2017) Debunking the Stereotype of the Lazy Welfare Recipient, World Bank Research Observer", u: "https://doi.org/10.1093/wbro/lkx002" }]
+},
+{
+  id: "rulers", date: "2026-10-20", theme: "mind",
+  q: { th: "จะเรียนรู้ข้ามสายที่รู้น้อยหรือไม่รู้เลยอย่างไร และจะหลุดจากกับดักความคิด (ความเร่งด่วน ความกลัว ข้อมูลที่หาง่าย การเชื่อมโยงสิ่งที่ไม่เกี่ยวกัน) ที่อ่านเจอใน Factfulness และ Thinking, Fast and Slow ได้อย่างไร เหมือนภาพเส้นลูกศรที่รู้ว่ายาวเท่ากันแต่ก็ยังเห็นไม่เท่า",
+       en: "How do I learn across fields I know little about, and escape thinking traps (urgency, fear, availability, false connections) from Factfulness and Thinking, Fast and Slow? Like the arrow illusion: I know the lines are equal but still see them as different." },
+  a: { th: "<p>ภาพลูกศร (Müller-Lyer) ตอบคำถามนี้เอง ต่อให้รู้ว่าเส้นเท่ากัน ตาก็ยังเห็นไม่เท่า Kahneman บอกว่าแก้อคติตัวเองด้วยความตั้งใจได้น้อย วิธีที่ได้ผลคือหยิบ<b>ไม้บรรทัด</b>มาวัด จึงควรสร้างไม้บรรทัดไว้ในวิธีทำงาน</p><ol><li><b>ทายก่อนดูข้อมูล</b> แล้วเทียบ จะรู้ว่าเราพลาดไปทางไหนเป็นนิสัย</li><li><b>ถามว่าเทียบกับอะไร</b> ตัวเลขทุกตัวต้องมีปีก่อน ประเทศอื่น หรือค่าฐาน</li><li><b>ทำไมยังไม่มีใครแก้</b> หาแรงจูงใจที่ทำให้ปัญหาอยู่ต่อ ใครได้ประโยชน์ เงินไหลไปไหน</li><li><b>หลักฐานฝั่งตรงข้าม</b> อย่างน้อย 1 ชิ้นต่อข้อสรุป</li><li><b>เร่งด่วนจริงไหม</b> ถ้ารออีกสัปดาห์อะไรจะเสียหาย</li></ol><p><b>ข้ามสาย:</b> เริ่มจากปัญหา ไม่ใช่สาขาวิชา เรียนพอทำเควสต์ระดับเริ่มต้นชิ้นแรก ทำคู่กับคนในสายนั้น แล้วเขียนบันทึก 3 บรรทัด: ก่อนทำเชื่ออะไร ข้อมูลบอกอะไร ตอนนี้เปลี่ยนความคิดอย่างไร</p>",
+       en: "<p>The Müller-Lyer arrows answer the question: even knowing the lines are equal, you still see them as unequal. Kahneman says he could barely correct his own biases by effort; what works is fetching a <b>ruler</b>. So build rulers into the way you work.</p><ol><li><b>Predict before seeing data</b>, then compare, to learn which way you habitually miss.</li><li><b>Ask “compared to what?”</b> Every number needs last year, another country or a baseline.</li><li><b>Ask why nobody has solved it.</b> Find the incentives keeping the problem alive: who benefits, where the money flows.</li><li><b>Opposing evidence:</b> at least one piece per conclusion.</li><li><b>Is it really urgent?</b> What breaks if we wait a week?</li></ol><p><b>Crossing fields:</b> start from the problem, not the discipline. Learn just enough for a first beginner quest, pair with someone from that field, then write a three-line note: what I believed, what the data said, how my view changed.</p>" },
+  refs: [{ l: "Kahneman (2011) Thinking, Fast and Slow, Farrar, Straus and Giroux" }, { l: "Rosling, Rosling & Rosling Rönnlund (2018) Factfulness, Flatiron Books", u: "https://www.gapminder.org/factfulness-book/" }]
+},
+{
+  id: "pm25", date: "2026-10-20", theme: "design",
+  q: { th: "เพิ่มทายก่อนดูข้อมูลกับทำไมยังไม่มีใครแก้ และแตกแผนต่อ เรื่องฝุ่นเคยฟังว่าควรมีหน่วยงานกลางที่เป็นอิสระ ตรวจสอบและเข้าถึงข้อมูลได้ แต่ตอนนี้เน้นแก้เฉพาะหน้า และการแก้ต้องใช้ทั้งวิศวกรรม วิทยาศาสตร์ เศรษฐศาสตร์ จิตวิทยา การเป็นผู้ประกอบการ และภาวะผู้นำ",
+       en: "Add predict-before-data and why-nobody-has-solved-it, and break down more plans. On PM2.5 I've heard calls for an independent central agency that can audit and access data, but the focus is still on short-term fixes, and solving it needs engineering, science, economics, psychology, entrepreneurship and leadership." },
+  a: { th: "<ul><li><b>ทายก่อนดูข้อมูล:</b> แต่ละปัญหามีคำถาม เช่น “ปีหนึ่งค่าฝุ่นเกินมาตรฐานกี่วัน” ให้พิมพ์ก่อนแล้วระบบบอกว่าทายสูงหรือต่ำไปกี่ %</li><li><b>ทำไมยังไม่มีใครแก้:</b> แยกเป็นประเภท เช่น ต้นทุน เจ้าภาพ ข้อมูล ข้ามพรมแดน</li><li><b>PM2.5:</b> แนวคิดหน่วยงานกลางถูกแตกเป็นเควสต์ ตั้งแต่ทำผังว่าหน่วยงานไหนรับผิดชอบอะไร ยื่นขอข้อมูลตาม พ.ร.บ.ข้อมูลข่าวสารฯ ไปจนถึงร่างโครงสร้างหน่วยงาน</li><li><b>หนี้ครัวเรือน:</b> ใส่กรอบวงจรหนี้จาก Big Debt Crises ของ Dalio</li><li><b>รูปแบบร่วม:</b> “ต้นทุน” เป็นต้นเหตุร่วมทั้ง 3 เรื่อง และ “ไม่มีเจ้าภาพ” ซ้ำกันระหว่างผู้สูงอายุกับฝุ่น</li><li><b>ไม่มีใครต้องเก่งทุกสาขา:</b> เควสต์แต่ละชิ้นใช้ 1–2 สาขา เศรษฐศาสตร์ถูกใช้มากที่สุด (9 เควสต์ ครบ 3 ปัญหา) จึงควรเปิด upskill ก่อน</li><li>คนที่ติดตาม (Dalio และช่องการเงิน) ให้ใช้เป็นสมมติฐานแล้วเทียบกับข้อมูล</li></ul>",
+       en: "<ul><li><b>Predict before data:</b> each problem asks a question such as “how many days a year exceed the PM2.5 standard?”; type a guess and the page shows how far off you were.</li><li><b>Why nobody has solved it:</b> reasons are typed, e.g. cost, no owner, data, cross-border.</li><li><b>PM2.5:</b> the independent-agency idea became quests: map which agency owns what, file requests under Thailand's Official Information Act, and draft an agency structure.</li><li><b>Household debt:</b> includes the debt-cycle frame from Dalio's Big Debt Crises.</li><li><b>Shared patterns:</b> “cost” is a common cause of all three problems, and “no owner” repeats across elder care and PM2.5.</li><li><b>Nobody needs every discipline:</b> each quest uses 1–2 fields. Economics is used most (9 quests across all 3 problems), so it is the first upskilling topic.</li><li>Treat the commentators you follow (Dalio, finance channels) as hypotheses to test against data.</li></ul>" },
+  refs: [{ l: "Air4Thai (Pollution Control Department)", u: "http://air4thai.pcd.go.th/" }, { l: "Dalio (2018) Big Debt Crises" }]
+},
+{
+  id: "realtime", date: "2026-10-20", theme: "data", file: "research/realtime-money-jobs-data.md",
+  q: { th: "World Bank มีข้อมูลเงินหมุนเวียนและตำแหน่งงานแต่ละประเทศแบบ realtime ระดับ record ไหม ข่าวบอกว่าเศรษฐกิจหดตัวแต่ไม่บอกว่าตรงไหน เงินไหลไปไหน คนตกงานและได้งานเท่าไร มองเห็นได้ถึงคน 8 พันล้านคนไหม หรือติดกฎหมายแต่ละประเทศ",
+       en: "Does the World Bank have real-time, record-level data on money flows and jobs in each country? News says the economy shrank but not where, where money went, or how many lost or found work. Can anyone see all 8 billion people, or do national laws block it?" },
+  a: { th: "<p>ไม่มี และยังไม่มีใครเห็นครบ 8 พันล้านคน World Bank มีแค่ตัวเลขรวมที่แต่ละประเทศส่งมา รายปีหรือรายไตรมาส ช้าหลายเดือน ที่ใกล้ realtime ที่สุดคือ nowcasting ของ World Bank/IMF ที่ประมาณ GDP จากค่าไฟ ภาษี หรือภาพดาวเทียม ซึ่งทำแค่บางประเทศ</p><ul><li><b>ข้อมูลรายคนอยู่ที่:</b> ธนาคารกลาง (PromptPay, Flow of Funds), ประกันสังคม, สรรพากร และเอกชน แต่เปิดได้แค่ภาพรวม</li><li><b>ทำไมตัวเลขตกงานไม่ตรงความรู้สึก:</b> ตามนิยาม ILO ทำงาน 1 ชั่วโมงต่อสัปดาห์ก็นับว่ามีงาน ส่วนคนที่พักหรือท้อจนเลิกหางานอยู่ “นอกกำลังแรงงาน” อัตราว่างงานไทยจึงราว 1% ตัวชี้วัด LU1–LU4 ของ ILO สะท้อนได้ดีกว่าแต่สื่อไม่ค่อยใช้</li><li><b>ติดที่:</b> ข้อมูลไม่มีอยู่จริง (เงินสด งานนอกระบบ), PDPA/GDPR, พ.ร.บ.สถิติ 2550, ไซโลระหว่างหน่วยงาน, อธิปไตยข้อมูล และเอกชนไม่มีแรงจูงใจเปิด ข้อ 2–3 คือเกราะกันระบบสอดแนม</li><li><b>สำหรับ OneQuest:</b> ช่องว่างที่ไม่มีใครเก็บคือสถานะที่ผู้ใช้เลือกบอกเอง (opt-in) เช่น กำลังหางาน พักอยู่ อยากเปลี่ยน role อยากได้ mentor</li></ul>",
+       en: "<p>No, and nobody sees all 8 billion people. The World Bank holds aggregates that countries report, yearly or quarterly and months late. The closest to real time is World Bank/IMF nowcasting, which estimates GDP from electricity use, taxes or satellite images, and only for some countries.</p><ul><li><b>Record-level data sits with</b> central banks (PromptPay, Flow of Funds), social security, tax authorities and private firms, which can only publish aggregates.</li><li><b>Why unemployment figures feel wrong:</b> under ILO definitions one hour of work a week counts as employed, and people resting or too discouraged to search are “outside the labour force”. That is why Thai unemployment is around 1%. ILO's LU1–LU4 underutilisation measures are more realistic but rarely reported.</li><li><b>Blockers:</b> data that doesn't exist (cash, informal work), PDPA/GDPR, Thailand's Statistics Act 2007, agency silos, data sovereignty, and no incentive for firms to share. The legal ones deliberately prevent mass surveillance.</li><li><b>For OneQuest:</b> the uncollected gap is opt-in self-reported status, such as job-seeking, taking a break, changing roles or wanting a mentor.</li></ul>" },
+  refs: [{ l: "ILO: Labour underutilization", u: "https://www.ilo.org/resource/labour-underutilization" }, { l: "IMF F&D (2025) Forecasting the Present in Developing Economies", u: "https://www.imf.org/en/publications/fandd/issues/2025/12/forecasting-the-present-in-developing-economies-jeff-kearns" }, { l: "Opportunity Insights Economic Tracker", u: "https://opportunityinsights.org/wp-content/uploads/2020/05/Methodology.pdf" }]
+},
+{
+  id: "new-markets", date: "2026-10-20", theme: "history", file: "research/new-job-markets-precedents.md", link: "cases",
+  q: { th: "อย่างที่ Jensen Huang (NVIDIA) และ Morris Chang (TSMC) ดูเหมือนสร้างตลาดงานใหม่ไว้รอ มีอุตสาหกรรมอื่นที่คล้ายกันไหม และเป็นต้นเหตุของการขยายตัวหรือมูลค่าเพิ่มจริงไหม",
+       en: "Jensen Huang (NVIDIA) and Morris Chang (TSMC) seem to have built job markets in advance. Are there similar cases in other industries, and did they actually cause growth?" },
+  a: { th: "<p>มี และหลายเคสมีหลักฐานว่าดันเศรษฐกิจจริง แต่จุดร่วมไม่ใช่ “คนเก่งคนเดียว” คือมีคนสร้าง<b>โครงสร้างพื้นฐานหรือมาตรฐานกลางที่ทำให้คนอื่นเข้ามาทำธุรกิจได้ถูกลง</b></p><ul><li><b>ตู้คอนเทนเนอร์:</b> การค้าระหว่างประเทศพัฒนาแล้วเพิ่มราว 380% มากกว่าผลของ FTA/GATT แต่ต้องรอ 10–15 ปี</li><li><b>GPS ที่เปิดให้พลเรือน:</b> ประโยชน์ต่อเอกชนสหรัฐฯ ราว 1.4 ล้านล้านดอลลาร์ (NIST/RTI)</li><li><b>Bell Labs ถูกบังคับเปิดสิทธิบัตรปี 1956:</b> นวัตกรรมต่อยอดเพิ่มขึ้นและเป็นจุดเริ่ม Silicon Valley</li><li><b>ภาพใหญ่:</b> ราว 60% ของงานสหรัฐฯ ปี 2018 ไม่มีอยู่ในปี 1940</li><li><b>เรื่องเล่าที่ต้องระวัง:</b> TSMC ตั้งโดยรัฐบาลไต้หวันเชิญ Morris Chang และ fabless มีก่อน TSMC, CUDA เดิมทำให้นักวิทยาศาสตร์, และเราเห็นแต่ผู้ชนะ (Itanium, Iridium, Segway ล้ม)</li></ul><p>ดูเคสเต็มพร้อมอ้างอิงในมุมมอง Case Study</p>",
+       en: "<p>Yes, and several have evidence of real growth. The common thread isn't a lone genius but someone building <b>shared infrastructure or standards that make it cheaper for others to enter</b>.</p><ul><li><b>Shipping containers:</b> trade among developed countries rose roughly 380%, more than the effect of FTAs/GATT, but it took 10–15 years.</li><li><b>GPS opened to civilians:</b> about US$1.4 trillion in benefits to the US private sector (NIST/RTI).</li><li><b>Bell Labs forced to license its patents in 1956:</b> follow-on innovation rose and seeded Silicon Valley.</li><li><b>Big picture:</b> about 60% of US jobs in 2018 did not exist in 1940.</li><li><b>Narratives to doubt:</b> TSMC was set up by Taiwan's government, which recruited Morris Chang, and fabless firms predate it; CUDA was first built for scientists; and we only see winners (Itanium, Iridium and Segway failed).</li></ul><p>See the full cases with references in the Case Study view.</p>" },
+  refs: [{ l: "NIST: Economic benefits of GPS", u: "https://www.nist.gov/news-events/news/2019/10/economic-benefits-global-positioning-system-us-private-sector-study" }, { l: "VoxEU/CEPR: Geography and determinants of new work", u: "https://cepr.org/voxeu/columns/geography-and-determinants-new-work-united-states" }]
+},
+{
+  id: "stale", date: "2026-10-30", theme: "tech",
+  q: { th: "เอาไฟล์ใหม่ไปใส่แล้วรัน แต่ไม่เห็นข้อมูลแผนลงมือและผู้ที่เข้าเควสต์เลย",
+       en: "I uploaded the new files and ran it, but the action plan and quest takers don't show up." },
+  a: { th: "<ul><li>สาเหตุคือหน้าเว็บเป็นรุ่นใหม่ แต่ <code>data.json</code> ยังมาจาก pipeline รุ่นเก่า</li><li>แตก zip ทับทั้งโฟลเดอร์ ไม่ใช่แค่ <code>index.html</code> เพราะแผนอยู่ใน <code>pipeline/problems.json</code> และต้องใช้ <code>build_data.py</code> ตัวใหม่</li><li>รัน <code>python pipeline/build_data.py</code> ใหม่ ถ้าใช้ GitHub Actions ต้อง commit โฟลเดอร์ <code>pipeline/</code> ขึ้นไปด้วย</li><li>หน้าเว็บตอนนี้จะบอกตรงๆ ถ้าเจอข้อมูลรุ่นเก่า</li></ul>",
+       en: "<ul><li>The page was new but <code>data.json</code> still came from the old pipeline.</li><li>Extract the zip over the whole folder, not only <code>index.html</code>, because plans live in <code>pipeline/problems.json</code> and need the new <code>build_data.py</code>.</li><li>Re-run <code>python pipeline/build_data.py</code>. With GitHub Actions, commit the <code>pipeline/</code> folder too.</li><li>The page now says so explicitly when it detects old data.</li></ul>" },
+  refs: []
+}
+];
+
+const CASE_TAGS = {
+  work:     { th: "การทำงาน", en: "Work" },
+  industry: { th: "อุตสาหกรรม", en: "Industry" },
+  life:     { th: "วิถีชีวิต", en: "Way of life" }
+};
+const EVIDENCE = {
+  high: { th: "หลักฐานสูง: งานวิจัยเชิงปริมาณ", en: "Strong evidence: quantitative research" },
+  mid:  { th: "หลักฐานปานกลาง: ประวัติศาสตร์และตัวเลขบางส่วน", en: "Moderate evidence: history plus partial numbers" },
+  now:  { th: "กำลังเกิด: ยังเป็นสมมติฐาน", en: "Ongoing: still a hypothesis" }
+};
+
+const CASES = [
+{
+  id: "print", years: "1450–1600", start: 1450, tags: ["work", "life"], ev: "high",
+  title: { th: "แท่นพิมพ์", en: "The printing press" },
+  sum: { th: "ข้อมูลถูกลงและแพร่เร็วขึ้น เมืองที่มีโรงพิมพ์เร็วกลายเป็นศูนย์กลางการค้าและความรู้", en: "Information became cheap and fast to copy; early printing cities became hubs of trade and knowledge." },
+  work: { th: "อาชีพคัดลอกหนังสือหายไป เกิดช่างพิมพ์ ผู้ขายหนังสือ โรงกระดาษ และตำราคณิตศาสตร์การค้าที่สอนทักษะทำบัญชีให้พ่อค้า", en: "Scribes declined; printers, booksellers and paper mills appeared, along with commercial arithmetic manuals that taught merchants bookkeeping." },
+  life: { th: "การอ่านออกเขียนได้เพิ่มขึ้น ความรู้ถูกทำให้เป็นมาตรฐาน และความคิดทางศาสนาและวิทยาศาสตร์แพร่ข้ามพรมแดน", en: "Literacy spread, knowledge became standardised, and religious and scientific ideas crossed borders." },
+  lag: { th: "หลายสิบปี เมืองที่รับแท่นพิมพ์ในช่วงปี 1400 โตเร็วกว่าเมืองอื่นราว 60% ในช่วง 1500–1600 †", en: "Decades. Cities that adopted printing in the 1400s grew about 60% faster in 1500–1600 †" },
+  lesson: { th: "เทคโนโลยีข้อมูลให้ผลมากที่สุดที่ที่มีคนพร้อมใช้ OneQuest ก็เป็นโครงสร้างข้อมูล จึงต้องลงทุนกับทักษะของผู้ใช้ไปพร้อมกัน", en: "Information technology pays off most where people can use it. OneQuest is information infrastructure too, so it must invest in users' skills alongside the data." },
+  refs: [{ l: "Dittmar (2011) Information Technology and Economic Change: The Impact of the Printing Press, Quarterly Journal of Economics 126(3)", u: "https://doi.org/10.1093/qje/qjr035" }]
+},
+{
+  id: "steam", years: "1760–1850", start: 1760, tags: ["work", "industry", "life"], ev: "high",
+  title: { th: "ปฏิวัติอุตสาหกรรมครั้งที่ 1: เครื่องจักรไอน้ำและโรงงาน", en: "First Industrial Revolution: steam and the factory" },
+  sum: { th: "การผลิตย้ายจากบ้านเข้าโรงงาน ผลผลิตต่อคนเพิ่ม แต่ค่าแรงจริงของคนงานแทบไม่ขยับหลายสิบปี", en: "Production moved from homes into factories. Output per worker rose, but workers' real wages barely moved for decades." },
+  work: { th: "ช่างทอมือถูกแทนด้วยเครื่องจักร งานถูกกำหนดด้วยนาฬิกาและกะทำงาน มีแรงงานเด็ก และเกิดการต่อต้านเครื่องจักรของกลุ่ม Luddite (1811–1816)", en: "Hand-loom weavers were displaced, work was governed by the clock and shifts, child labour spread, and Luddites smashed machines (1811–1816)." },
+  life: { th: "คนย้ายเข้าเมืองอุตสาหกรรม ที่อยู่แออัด สาธารณสุขแย่ลงก่อนจะดีขึ้น", en: "People moved into industrial towns; crowding and public health got worse before they got better." },
+  lag: { th: "ไอน้ำแทบไม่ช่วยการเติบโตจนหลังปี 1830 และให้ผลสูงสุดหลังปี 1850 ช่วงราว 1800–1840 ผลผลิตโตแต่ค่าแรงจริงนิ่ง (Engels' pause)", en: "Steam added little to growth until after 1830 and peaked after 1850. Around 1800–1840 output grew while real wages stalled (“Engels' pause”)." },
+  lesson: { th: "ตัวเลขรวมที่โตไม่ได้แปลว่าทุกคนได้ประโยชน์ OneQuest ควรติดตามว่าใครได้และใครเสีย ไม่ใช่แค่ยอดรวม", en: "Aggregate growth doesn't mean everyone gains. OneQuest should track who wins and who loses, not only totals." },
+  refs: [{ l: "Allen (2009) Engels' pause, Explorations in Economic History 46(4)", u: "https://doi.org/10.1016/j.eeh.2009.04.004" }, { l: "Crafts (2004) Steam as a General Purpose Technology, Economic Journal 114(495)", u: "https://doi.org/10.1111/j.1468-0297.2003.00200.x" }, { l: "Mokyr, Vickers & Ziebarth (2015) The History of Technological Anxiety, Journal of Economic Perspectives 29(3)", u: "https://doi.org/10.1257/jep.29.3.31" }]
+},
+{
+  id: "rail", years: "1830–1900", start: 1830, tags: ["industry", "life"], ev: "high",
+  title: { th: "รถไฟและโทรเลข", en: "Railways and the telegraph" },
+  sum: { th: "เชื่อมพื้นที่ห่างไกลเข้ากับตลาด สินค้าเกษตรขายได้ไกลขึ้น และเกิด “เวลามาตรฐาน”", en: "Remote regions were connected to markets, farm goods travelled further, and “standard time” was born." },
+  work: { th: "เกิดอาชีพนายสถานี พนักงานโทรเลข วิศวกรโยธา และบริษัทขนาดใหญ่ที่ต้องมีผู้จัดการมืออาชีพ", en: "New jobs: station agents, telegraph operators, civil engineers, and large firms that needed professional managers." },
+  life: { th: "ตารางเวลาเดินรถทำให้เมืองต่างๆ ใช้เวลาเดียวกัน (ทางรถไฟสหรัฐฯ ปี 1883) ข่าวและราคาสินค้าเดินทางเร็วกว่าคน", en: "Train timetables pushed towns onto one clock (US railroads, 1883); news and prices travelled faster than people." },
+  lag: { th: "ถ้าเอาทางรถไฟสหรัฐฯ ออกทั้งหมดในปี 1890 มูลค่าที่ดินเกษตรรวมจะลดลงราว 60%", en: "Removing all US railroads in 1890 would have cut total agricultural land value by about 60%." },
+  lesson: { th: "มูลค่ามาจาก “การเข้าถึงตลาด” OneQuest ทำหน้าที่คล้ายกันได้ คือเชื่อมคนที่มีทักษะกับงานที่ขาดในพื้นที่อื่น", en: "Value comes from market access. OneQuest can play a similar role by connecting people with skills to shortages elsewhere." },
+  refs: [{ l: "Donaldson & Hornbeck (2016) Railroads and American Economic Growth: A Market Access Approach, QJE 131(2)", u: "https://doi.org/10.1093/qje/qjw002" }, { l: "Donaldson (2018) Railroads of the Raj, American Economic Review 108(4–5)", u: "https://doi.org/10.1257/aer.20101199" }]
+},
+{
+  id: "electric", years: "1880–1930", start: 1882, tags: ["industry", "work", "life"], ev: "high",
+  title: { th: "ไฟฟ้า", en: "Electrification" },
+  sum: { th: "มีโรงไฟฟ้าตั้งแต่ปี 1882 แต่ผลิตภาพโรงงานเพิ่มชัดในทศวรรษ 1920 เมื่อโรงงานออกแบบผังใหม่รอบมอเตอร์ไฟฟ้า", en: "Power stations existed from 1882, yet factory productivity only surged in the 1920s, once factories were redesigned around electric motors." },
+  work: { th: "งานช่างไฟและการผลิตเครื่องใช้ไฟฟ้าเกิดขึ้น โรงงานเลิกใช้เพลาส่งกำลังเส้นเดียว เปลี่ยนเป็นมอเตอร์แยกแต่ละเครื่อง ทำให้จัดสายการผลิตได้ยืดหยุ่น", en: "Electricians and appliance makers appeared. Factories replaced the single line shaft with a motor per machine, allowing flexible production lines." },
+  life: { th: "แสงสว่างตอนกลางคืน ตู้เย็น และวิทยุ เปลี่ยนเวลาทำงานและการพักผ่อน", en: "Night lighting, refrigerators and radio reshaped work hours and leisure." },
+  lag: { th: "ราว 40 ปีจากโรงไฟฟ้าแห่งแรกจนผลิตภาพพุ่ง เพราะต้องรอโรงงานเก่าหมดอายุและคนเรียนวิธีจัดงานใหม่", en: "About 40 years from the first power station to the productivity surge: old plants had to be retired and managers had to learn new layouts." },
+  lesson: { th: "เทคโนโลยีอย่างเดียวไม่พอ ต้องจัดระบบงานใหม่และสร้างทักษะคู่กัน เป็นเหตุผลที่ OneQuest แตกแผนเป็นเควสต์ด้านคนและองค์กร ไม่ใช่แค่ด้านเทคโนโลยี", en: "Technology alone isn't enough; work must be reorganised and skills built alongside it. That's why OneQuest plans include people and organisation quests, not only technical ones." },
+  refs: [{ l: "David (1990) The Dynamo and the Computer, American Economic Review 80(2)", u: "https://www.jstor.org/stable/2006600" }, { l: "Brynjolfsson, Rock & Syverson (2021) The Productivity J-Curve, AEJ: Macroeconomics 13(1)", u: "https://doi.org/10.1257/mac.20180386" }]
+},
+{
+  id: "ford", years: "1913–1914", start: 1913, tags: ["work", "industry", "life"], ev: "high",
+  title: { th: "สายพานการผลิตและค่าแรงวันละ 5 ดอลลาร์ของ Ford", en: "Ford's assembly line and the $5 day" },
+  sum: { th: "เวลาประกอบแชสซีรถ Model T ลดจากราว 12 ชั่วโมงครึ่งเหลือราว 1 ชั่วโมงครึ่ง † แต่คนลาออกสูงมาก Ford จึงขึ้นค่าแรงเกือบเท่าตัว", en: "Model T chassis assembly fell from about 12.5 hours to about 1.5 hours †, but quit rates soared, so Ford nearly doubled pay." },
+  work: { th: "งานถูกซอยเป็นขั้นซ้ำๆ ทักษะช่างลดความสำคัญ อัตราคนงานลาออกปี 1913 สูงราว 370% † ค่าแรง 5 ดอลลาร์ (มกราคม 1914) ทำให้คนลาออกและขาดงานลดลง และมีคนต่อคิวสมัครงาน", en: "Work was split into repetitive steps and craft skill mattered less. Turnover hit roughly 370% in 1913 †. The $5 day (January 1914) cut quits and absences and drew queues of applicants." },
+  life: { th: "รถยนต์ถูกลงจนคนงานซื้อได้ เกิดชนชั้นกลางที่ใช้รถและการขยายตัวของชานเมือง", en: "Cars became cheap enough for workers to buy, feeding a car-owning middle class and suburban growth." },
+  lag: { th: "เร็วมากในระดับบริษัท (1–2 ปี) แต่ใช้เวลาหลายสิบปีกว่าระบบนี้จะแพร่ไปทั้งอุตสาหกรรมและประเทศอื่น", en: "Fast inside one firm (1–2 years), but decades to spread across industries and countries." },
+  lesson: { th: "การออกแบบงานใหม่ต้องมาคู่กับค่าตอบแทนและการรักษาคน ตรงกับเรื่องผู้ดูแลผู้สูงอายุใน OneQuest ที่ค่าแรงต่ำคือสาเหตุย่อยหลัก", en: "Redesigning work must come with pay and retention. This mirrors OneQuest's elder-care case, where low pay is a core sub-cause." },
+  refs: [{ l: "Raff & Summers (1987) Did Henry Ford Pay Efficiency Wages?, Journal of Labor Economics 5(4)", u: "https://doi.org/10.1086/298165" }]
+},
+{
+  id: "home", years: "1900–1980", start: 1900, tags: ["life", "work"], ev: "high",
+  title: { th: "เครื่องใช้ไฟฟ้าในบ้านกับงานของผู้หญิง", en: "Household appliances and women's work" },
+  sum: { th: "เครื่องซักผ้า ตู้เย็น และเครื่องดูดฝุ่น ลดเวลางานบ้านลงมาก และเป็นปัจจัยสำคัญที่ทำให้ผู้หญิงที่แต่งงานแล้วออกมาทำงานนอกบ้านมากขึ้น", en: "Washing machines, refrigerators and vacuum cleaners slashed housework time and were a major factor behind more married women working outside the home." },
+  work: { th: "แรงงานผู้หญิงเข้าสู่ตลาดงานในระบบ เกิดงานบริการและงานสำนักงานจำนวนมาก", en: "Women entered formal employment, alongside a large expansion of service and office jobs." },
+  life: { th: "งานดูแลในบ้านที่เคยไม่ถูกนับในสถิติ เริ่มกลายเป็นงานที่มีตลาดและค่าจ้าง", en: "Care work inside the home, once invisible in statistics, began to become paid market work." },
+  lag: { th: "ทยอยเกิดตลอด 80 ปี ตามราคาเครื่องใช้ไฟฟ้าที่ลดลงและไฟฟ้าที่เข้าถึงบ้านมากขึ้น", en: "Gradual over 80 years, tracking falling appliance prices and household electrification." },
+  lesson: { th: "นวัตกรรมในบ้านเปลี่ยนตลาดแรงงานได้ งานดูแล (เด็ก ผู้สูงอายุ) ยังเป็นงานที่สถิติมองไม่เห็นมาก และเป็นโอกาสที่ OneQuest ควรวัด", en: "Innovation at home can reshape the labour market. Care work (children, elderly) is still largely invisible in statistics and is something OneQuest should measure." },
+  refs: [{ l: "Greenwood, Seshadri & Yorukoglu (2005) Engines of Liberation, Review of Economic Studies 72(1)", u: "https://doi.org/10.1111/0034-6527.00326" }]
+},
+{
+  id: "green", years: "1960–2000", start: 1960, tags: ["industry", "life", "work"], ev: "high",
+  title: { th: "ปฏิวัติเขียว", en: "The Green Revolution" },
+  sum: { th: "พันธุ์ข้าวและข้าวสาลีให้ผลผลิตสูงจากงานวิจัยสาธารณะ (เช่น IRRI ที่ฟิลิปปินส์) ทำให้ผลผลิตต่อไร่ในประเทศกำลังพัฒนาเพิ่มขึ้นมาก", en: "High-yield rice and wheat varieties from public research (e.g. IRRI in the Philippines) sharply raised yields in developing countries." },
+  work: { th: "ใช้แรงงานต่อผลผลิตน้อยลง คนย้ายออกจากภาคเกษตรไปทำงานอุตสาหกรรมและบริการ", en: "Less labour was needed per unit of food, so workers moved from farming into industry and services." },
+  life: { th: "ราคาอาหารถูกลง ความอดอยากลดลง แต่มีผลข้างเคียงเรื่องน้ำ ปุ๋ย และความหลากหลายของพันธุ์พืช", en: "Food got cheaper and famine receded, with side effects on water, fertiliser use and crop diversity." },
+  lag: { th: "ผลผลิตเพิ่มราว 44% ในช่วง 1965–2010 และถ้าปฏิวัติเขียวเกิดช้าไป 10 ปี GDP ต่อหัวปี 2010 จะต่ำลงราว 17% †", en: "Yields rose about 44% over 1965–2010, and a 10-year delay would have lowered 2010 GDP per capita by about 17% †" },
+  lesson: { th: "งานวิจัยสาธารณะที่เปิดให้ทุกคนใช้คือโครงสร้างพื้นฐาน แต่ต้องติดตามผลข้างเคียงคู่กับผลดีเสมอ", en: "Open public research is infrastructure, but side effects must be tracked alongside benefits." },
+  refs: [{ l: "Gollin, Hansen & Wingender (2021) Two Blades of Grass: The Impact of the Green Revolution, Journal of Political Economy 129(8)", u: "https://doi.org/10.1086/714444" }, { l: "Evenson & Gollin (2003) Assessing the Impact of the Green Revolution, 1960 to 2000, Science 300(5620)", u: "https://doi.org/10.1126/science.1078710" }]
+},
+{
+  id: "container", years: "1956–1990", start: 1956, tags: ["industry", "work"], ev: "high",
+  title: { th: "ตู้คอนเทนเนอร์", en: "The shipping container" },
+  sum: { th: "Malcolm McLean เริ่มใช้ตู้ในปี 1956 และมาตรฐาน ISO ทำให้ตู้เดียวใช้ได้ทั้งเรือ รถ และราง ต้นทุนขนส่งลดลงจนเกิดห่วงโซ่อุปทานโลก", en: "Malcolm McLean shipped the first containers in 1956; ISO standards let one box move across ship, truck and rail. Shipping costs fell enough to create global supply chains." },
+  work: { th: "งานแบกขนสินค้าที่ท่าเรือหายไปเป็นจำนวนมาก ท่าเรือย้ายที่ (เช่น จากแมนฮัตตันไปนิวเจอร์ซีย์) เกิดงานโลจิสติกส์และการผลิตข้ามประเทศ", en: "Dockworker jobs collapsed, ports relocated (e.g. Manhattan to New Jersey), and logistics and cross-border manufacturing jobs appeared." },
+  life: { th: "สินค้านำเข้าราคาถูก และโรงงานย้ายไปประเทศค่าแรงต่ำ รวมถึงไทย", en: "Cheap imported goods, and factories moving to lower-wage countries, including Thailand." },
+  lag: { th: "การค้าระหว่างประเทศพัฒนาแล้วเพิ่มราว 380% ในระยะยาว ผลเห็นชัดหลัง 10–15 ปี", en: "Trade among developed countries rose about 380% in the long run, with effects visible after 10–15 years." },
+  lesson: { th: "มาตรฐานกลางที่ทุกคนใช้ร่วมกันคือตัวเร่ง และคนที่เสียประโยชน์มักกระจุกอยู่ในอาชีพและพื้นที่เดียว ต้องมีแผนรองรับเฉพาะกลุ่ม", en: "Shared standards are the accelerator, and losses concentrate in specific jobs and places, which need targeted transition plans." },
+  refs: [{ l: "Bernhofen, El-Sahli & Kneller (2016) Estimating the effects of the container revolution on world trade, Journal of International Economics 98", u: "https://doi.org/10.1016/j.jinteco.2015.09.001" }, { l: "Levinson (2006) The Box, Princeton University Press" }]
+},
+{
+  id: "chips", years: "1947–ปัจจุบัน", yearsEn: "1947–today", start: 1947, tags: ["industry", "work"], ev: "mid",
+  title: { th: "ทรานซิสเตอร์และเซมิคอนดักเตอร์", en: "Transistors and semiconductors" },
+  sum: { th: "Bell Labs คิดค้นทรานซิสเตอร์ปี 1947 ศาลบังคับให้เปิดสิทธิบัตรในปี 1956 และ TSMC (1987) แยกการผลิตออกจากการออกแบบชิป", en: "Bell Labs invented the transistor in 1947, a 1956 court decree forced it to license the patents, and TSMC (1987) separated chip manufacturing from chip design." },
+  work: { th: "เกิดบริษัทออกแบบชิปแบบไม่มีโรงงาน (fabless) เช่น NVIDIA และ Qualcomm งานวิศวกรออกแบบชิป ซอฟต์แวร์ออกแบบ (EDA) และช่างเทคนิคโรงงาน", en: "Fabless chip designers such as NVIDIA and Qualcomm emerged, along with chip-design engineers, EDA software and fab technicians." },
+  life: { th: "ทุกอย่างที่เป็นดิจิทัล ตั้งแต่โทรศัพท์จนถึง AI", en: "Everything digital, from phones to AI." },
+  lag: { th: "การเปิดสิทธิบัตรทำให้นวัตกรรมต่อยอดเพิ่มขึ้นยาวนาน แต่เฉพาะนอกวงการโทรคมนาคม TSMC ใช้เวลาเกิน 10 ปีกว่าจะเป็นผู้นำ", en: "The licensing decree caused a lasting rise in follow-on innovation, but only outside telecoms. TSMC took over a decade to lead." },
+  lesson: { th: "การเปิดให้คนอื่นใช้ (สิทธิบัตรเปิด, ไม่แข่งกับลูกค้า) สำคัญพอๆ กับตัวเทคโนโลยี และ “คนเก่งคนเดียว” มักมีรัฐและเครือข่ายอยู่เบื้องหลัง (TSMC ตั้งโดยรัฐบาลไต้หวัน)", en: "Openness (licensed patents, not competing with customers) matters as much as the technology, and the “lone genius” usually has state support and networks behind them (TSMC was set up by Taiwan's government)." },
+  refs: [{ l: "Watzinger, Fackler, Nagler & Schnitzer (2020) How Antitrust Enforcement Can Spur Innovation: Bell Labs and the 1956 Consent Decree, AEJ: Economic Policy 12(4)", u: "https://doi.org/10.1257/pol.20190086" }, { l: "Miller (2022) Chip War, Scribner" }]
+},
+{
+  id: "internet", years: "1970–2010", start: 1970, tags: ["work", "industry", "life"], ev: "high",
+  title: { th: "คอมพิวเตอร์และอินเทอร์เน็ต", en: "Computers and the internet" },
+  sum: { th: "ปี 1987 Robert Solow บอกว่า “เห็นคอมพิวเตอร์ทุกที่ ยกเว้นในสถิติผลิตภาพ” ผลิตภาพสหรัฐฯ เพิ่งพุ่งช่วงราว 1995–2004", en: "In 1987 Robert Solow quipped that computers were “everywhere but in the productivity statistics”; US productivity only surged around 1995–2004." },
+  work: { th: "คอมพิวเตอร์แทนงานที่ทำซ้ำตามกฎ (เสมียน งานประกอบบางส่วน) และช่วยงานวิเคราะห์และงานที่ต้องสื่อสาร ทำให้ตลาดงานแยกเป็นสองขั้ว งานกลางลดลง", en: "Computers replaced routine, rule-based tasks (clerks, some assembly) and complemented analytical and interpersonal work, polarising the labour market and hollowing out the middle." },
+  life: { th: "อีเมล ค้าขายออนไลน์ ทำงานทางไกล และข้อมูลที่หาได้ทันที", en: "Email, e-commerce, remote work and instant information." },
+  lag: { th: "ราว 20 ปีจากพีซีเครื่องแรกถึงช่วงผลิตภาพพุ่ง เพราะต้องลงทุนกับสิ่งที่วัดยาก เช่น ระบบงานใหม่และทักษะ (J-curve)", en: "About 20 years from the first PCs to the productivity surge, because firms had to invest in hard-to-measure intangibles such as new processes and skills (the J-curve)." },
+  lesson: { th: "ให้วัดที่ “งานย่อย (task)” ไม่ใช่ชื่ออาชีพ และใครได้ประโยชน์ขึ้นกับการลงทุนด้านการศึกษา ตรงกับที่ OneQuest แตกงานเป็นเควสต์และนับทักษะ", en: "Measure tasks, not job titles; who gains depends on investment in education. This matches how OneQuest breaks work into quests and counts skills." },
+  refs: [{ l: "Autor, Levy & Murnane (2003) The Skill Content of Recent Technological Change, QJE 118(4)", u: "https://doi.org/10.1162/003355303322552801" }, { l: "Goldin & Katz (2008) The Race between Education and Technology, Harvard University Press" }, { l: "Brynjolfsson, Rock & Syverson (2021) The Productivity J-Curve", u: "https://doi.org/10.1257/mac.20180386" }]
+},
+{
+  id: "newwork", years: "1940–2018", start: 1940, tags: ["work"], ev: "high",
+  title: { th: "การเกิดของ “งานใหม่”", en: "The rise of “new work”" },
+  sum: { th: "งานส่วนใหญ่ในสหรัฐฯ ปี 2018 (ราว 60%) อยู่ในตำแหน่งงานที่ยังไม่มีในปี 1940", en: "Most US jobs in 2018 (about 60%) were in job titles that did not exist in 1940." },
+  work: { th: "งานใหม่เกิดจากเทคโนโลยีที่เสริมคน (ไม่ได้แทนคน) และความต้องการแบบใหม่ เช่น บริการสุขภาพสำหรับสังคมสูงวัย ส่วนการทำงานแทนคนด้วยเครื่องจักรกัดกร่อนงานเดิม", en: "New work comes from technology that augments people and from new demand, such as health services for ageing populations; automation erodes existing work." },
+  life: { th: "อาชีพที่คนรุ่นพ่อแม่ไม่รู้จักกลายเป็นงานหลักของคนรุ่นลูก", en: "Jobs parents had never heard of became their children's main occupations." },
+  lag: { th: "ต่อเนื่องตลอด 80 ปี งานใหม่เกิดมากในพื้นที่ที่มีคนจบการศึกษาสูงและเมืองหนาแน่น", en: "Continuous over 80 years; new work concentrates in places with many graduates and in dense cities." },
+  lesson: { th: "OneQuest จับสัญญาณงานใหม่ได้จากชื่อตำแหน่งงานใหม่ในประกาศรับสมัคร และเควสต์ที่คนต้องทำซ้ำ (เควสต์ที่ซ้ำคืองานที่ยังไม่มีชื่อ)", en: "OneQuest can detect new work from new job titles in postings and from recurring quests, since a quest people keep doing is a job that doesn't have a name yet." },
+  refs: [{ l: "Autor, Chin, Salomons & Seegmiller (2024) New Frontiers: The Origins and Content of New Work, 1940–2018, QJE 139(3)", u: "https://doi.org/10.1093/qje/qjae008" }, { l: "VoxEU/CEPR: The geography and determinants of new work", u: "https://cepr.org/voxeu/columns/geography-and-determinants-new-work-united-states" }]
+},
+{
+  id: "mpesa", years: "2007–ปัจจุบัน", yearsEn: "2007–today", start: 2007, tags: ["life", "work"], ev: "high",
+  title: { th: "เงินผ่านมือถือ M-Pesa (เคนยา)", en: "Mobile money: M-Pesa (Kenya)" },
+  sum: { th: "โอนเงินผ่าน SMS โดยไม่ต้องมีบัญชีธนาคาร ทำให้ครัวเรือนในเคนยาราว 2% (ราว 194,000 ครัวเรือน) พ้นความยากจน †", en: "Transfers by SMS without a bank account lifted about 2% of Kenyan households (around 194,000) out of poverty †" },
+  work: { th: "ผู้หญิงจำนวนมากย้ายจากงานเกษตรไปทำธุรกิจหรือค้าขาย เกิดเครือข่ายตัวแทนรับฝากถอนเงินในชุมชน", en: "Many women moved from farming into business or trade, and a network of local cash-in/cash-out agents emerged." },
+  life: { th: "ครอบครัวรับเงินจากญาติในเมืองได้ทันที รับมือเหตุฉุกเฉินได้ดีขึ้น", en: "Families receive money from relatives in cities instantly and cope better with shocks." },
+  lag: { th: "เร็ว: ภายในราว 10 ปีหลังเปิดตัว ผลชัดที่สุดในครัวเรือนที่ผู้หญิงเป็นหัวหน้าครอบครัว", en: "Fast: within about a decade of launch, with the largest effects in female-headed households." },
+  lesson: { th: "ประเทศกำลังพัฒนากระโดดข้ามขั้นได้ ไทยมี PromptPay (2017) ที่คล้ายกัน OneQuest ควรติดตามว่าใครยังเข้าไม่ถึง ไม่ใช่แค่ยอดใช้งาน", en: "Developing countries can leapfrog. Thailand has a similar story with PromptPay (2017); OneQuest should track who still lacks access, not just usage totals." },
+  refs: [{ l: "Suri & Jack (2016) The long-run poverty and gender impacts of mobile money, Science 354(6317)", u: "https://doi.org/10.1126/science.aah5309" }, { l: "Bangkok Post: PromptPay usage hits record high in 2023", u: "https://bangkokpost.com/business/general/2775166/promptpay-usage-hits-record-high-in-2023" }]
+},
+{
+  id: "ai", years: "2022–ปัจจุบัน", yearsEn: "2022–today", start: 2022, tags: ["work", "industry", "life"], ev: "now",
+  title: { th: "AI แบบ generative", en: "Generative AI" },
+  sum: { th: "ยังอยู่ระหว่างเกิด หลักฐานแรกๆ ในงานบริการลูกค้าพบว่าผลิตภาพเพิ่ม และพนักงานมือใหม่ได้ประโยชน์มากที่สุด", en: "Still unfolding. Early evidence from customer support found productivity gains, with the biggest gains for novice workers." },
+  work: { th: "งานย่อยหลายอย่างถูกช่วยหรือแทนที่ เกิดตำแหน่งใหม่ เช่น ผู้ดูแลระบบ AI ผู้ตรวจผลงาน AI และผู้ออกแบบงานร่วมกับ AI", en: "Many tasks are assisted or replaced; new roles appear, such as AI operations, AI output reviewers and human–AI workflow designers." },
+  life: { th: "การเรียนรู้และการเข้าถึงความรู้เฉพาะทางถูกลง แต่ยังไม่รู้ว่าจะกระจายผลอย่างไร", en: "Learning and access to expert knowledge are getting cheaper, but how gains will be distributed is unknown." },
+  lag: { th: "ถ้าเหมือนไฟฟ้าและคอมพิวเตอร์ ผลรวมจะช้ากว่าที่คาด (J-curve) เพราะต้องจัดระบบงานใหม่ก่อน", en: "If it follows electricity and computers, aggregate gains will arrive later than expected (J-curve) because work must be reorganised first." },
+  lesson: { th: "ใช้บทเรียนจากเคสก่อนหน้า: ติดตามงานย่อยที่เปลี่ยน ผู้ได้และผู้เสีย และเปิดเควสต์ระดับเริ่มต้นให้คนเรียนใช้ AI ในงานจริง", en: "Apply earlier lessons: track changing tasks, winners and losers, and open beginner quests so people learn to use AI in real work." },
+  refs: [{ l: "Brynjolfsson, Li & Raymond (2025) Generative AI at Work, Quarterly Journal of Economics 140(2)", u: "https://doi.org/10.1093/qje/qjae044" }, { l: "Brynjolfsson, Rock & Syverson (2021) The Productivity J-Curve", u: "https://doi.org/10.1257/mac.20180386" }]
+}
+];
+
+const PATTERNS = [
+  { th: ["ผลมาช้า 10–40 ปี", "ไฟฟ้าราว 40 ปี คอมพิวเตอร์ราว 20 ปี คอนเทนเนอร์ 10–15 ปี", "แยกตัวชี้วัด “ระยะสั้น” ออกจาก “ผลระยะยาว” และอย่าตัดสินแนวทางเร็วเกินไป"],
+    en: ["Effects take 10–40 years", "Electricity ~40 years, computers ~20, containers 10–15", "Separate short-term indicators from long-run outcomes; don't judge approaches too early"] },
+  { th: ["เทคโนโลยีต้องมาคู่กับการจัดระบบงานใหม่และทักษะ", "ไฟฟ้า, คอมพิวเตอร์, สายพาน Ford", "ทุกแผนต้องมีเควสต์ด้านคนและองค์กร ไม่ใช่แค่ด้านเทคนิค"],
+    en: ["Technology needs reorganised work and skills", "Electricity, computers, Ford's line", "Every plan needs people and organisation quests, not just technical ones"] },
+  { th: ["คนได้กับคนเสียไม่ใช่กลุ่มเดียวกัน", "Engels' pause, คนงานท่าเรือ, งานกลางที่หายไปยุคคอมพิวเตอร์", "ติดตามการกระจายผลตามกลุ่มคนและพื้นที่ ไม่ใช่แค่ยอดรวม"],
+    en: ["Winners and losers are different people", "Engels' pause, dockworkers, the hollowed-out middle", "Track distribution by group and place, not just totals"] },
+  { th: ["โครงสร้างกลางที่เปิดให้ทุกคนใช้คือตัวเร่ง", "มาตรฐานตู้ ISO, สิทธิบัตร Bell Labs, IRRI, GPS", "OneQuest ควรเปิดข้อมูล วิธีคิด และเควสต์ให้คนอื่นต่อยอดได้"],
+    en: ["Open shared infrastructure accelerates change", "ISO containers, Bell Labs patents, IRRI, GPS", "OneQuest should open its data, methods and quests for others to build on"] },
+  { th: ["งานใหม่เกิดจริง แต่เกิดที่ที่มีคนพร้อม", "งานใหม่ 1940–2018, แท่นพิมพ์, การแข่งระหว่างการศึกษากับเทคโนโลยี", "เควสต์ระดับเริ่มต้นคือทางเข้าที่ทำให้คนพื้นฐานน้อยพร้อมรับงานใหม่"],
+    en: ["New work appears, but where people are ready", "New work 1940–2018, printing, education vs technology", "Beginner quests are the on-ramp that gets people with little background ready for new work"] }
+];
+
+const LAYERS = {
+  finance:   { ic: "฿", th: "แหล่งเงินทุน", en: "Capital & finance" },
+  health:    { ic: "+", th: "ระบบสุขภาพ", en: "Health system" },
+  test:      { ic: "⚗", th: "พื้นที่ทดลอง", en: "Testing spaces" },
+  research:  { ic: "R", th: "ทุนวิจัย", en: "Research funding" },
+  univ:      { ic: "U", th: "มหาวิทยาลัยและที่เรียน", en: "Universities & learning" },
+  wellbeing: { ic: "♣", th: "พื้นที่สุขภาวะ", en: "Wellbeing spaces" }
+};
+
+const INFRA = {
+  steam: [
+    { k: "finance", th: "โรงงานยุคแรกใช้เงินตัวเอง กำไรที่นำกลับมาลงทุน และเงินจากครอบครัวหรือหุ้นส่วนเป็นหลัก ธนาคารท้องถิ่น (country banks) ให้เงินทุนหมุนเวียน การตั้งบริษัทมหาชนถูกจำกัดโดย Bubble Act 1720 จนยกเลิกปี 1825 และมีกฎหมายจำกัดความรับผิดในปี 1855 Boulton ออกทุนให้ Watt พัฒนาเครื่องจักรไอน้ำ", en: "Early factories ran on owners' savings, reinvested profit and family or partner money. Country banks supplied working capital. Joint-stock companies were restricted by the Bubble Act of 1720 until its repeal in 1825, and limited liability arrived in 1855. Matthew Boulton bankrolled James Watt's steam engine." },
+    { k: "health", th: "เมืองโตเร็วกว่าระบบน้ำและสุขาภิบาล อายุขัยในเมืองอุตสาหกรรมแย่ลงช่วงแรก (urban penalty) จุดเปลี่ยนคือรายงานของ Chadwick (1842), พ.ร.บ.สาธารณสุข 1848, งานของ John Snow เรื่องอหิวาต์ (1854) และระบบท่อระบายน้ำลอนดอนหลัง Great Stink (1858) อัตราตายลดลงชัดเมื่อท้องถิ่นลงทุนน้ำสะอาดและท่อระบายน้ำ", en: "Cities outgrew their water and sanitation, and life expectancy in industrial towns fell at first (the “urban penalty”). Turning points: Chadwick's report (1842), the Public Health Act 1848, John Snow's cholera work (1854) and London's sewers after the Great Stink (1858). Mortality fell markedly once local governments invested in clean water and drains." },
+    { k: "test", th: "โรงงานและโรงช่างเป็นพื้นที่ทดลองจริง เช่น โรงงาน Soho ของ Boulton ที่เบอร์มิงแฮม ส่วนสมาคมและร้านกาแฟเป็นที่ที่ช่าง นักวิทยาศาสตร์ และนักลงทุนมาแลกความคิดกัน", en: "Workshops and mills were the real test beds, such as Boulton's Soho Manufactory in Birmingham, while societies and coffeehouses were where craftsmen, scientists and investors traded ideas." },
+    { k: "research", th: "ยังไม่มีทุนวิจัยจากรัฐแบบปัจจุบัน ใช้รางวัลและสิทธิบัตรแทน เช่น รางวัล Longitude (1714) และรางวัลของ Society of Arts (ตั้งปี 1754) สิทธิบัตรของ Watt ได้รับการขยายถึงปี 1800", en: "No modern public research grants yet; prizes and patents filled the role, e.g. the Longitude Prize (1714) and Society of Arts premiums (founded 1754). Watt's patent was extended to 1800." },
+    { k: "univ", th: "Watt ทำงานเป็นช่างเครื่องมือในมหาวิทยาลัยกลาสโกว์ และได้แลกความรู้เรื่องความร้อนกับ Joseph Black ต่อมามีสถาบันช่าง (Mechanics' Institutes) ตั้งแต่ปี 1821 เปิดให้คนงานเรียนวิทยาศาสตร์ตอนเย็น", en: "Watt worked as instrument maker at the University of Glasgow and exchanged ideas on heat with Joseph Black. From 1821 Mechanics' Institutes offered evening science classes to workers." },
+    { k: "wellbeing", th: "เมืองแออัดจนรัฐสภาตั้งคณะกรรมการเรื่องที่เดินสาธารณะ (1833) Birkenhead Park (1847) เป็นสวนสาธารณะแห่งแรกที่ใช้เงินภาษี และเป็นต้นแบบของ Central Park นิวยอร์ก (1858)", en: "Overcrowding led Parliament to set up a Select Committee on Public Walks (1833). Birkenhead Park (1847) was the first publicly funded park and inspired New York's Central Park (1858)." }
+  ],
+  rail: [
+    { k: "finance", th: "ทางรถไฟต้องใช้เงินมากเกินกว่าครอบครัวเดียวจะออกได้ จึงเกิดบริษัทมหาชนและตลาดหุ้นขนาดใหญ่ ตามด้วยฟองสบู่ Railway Mania ในอังกฤษช่วงทศวรรษ 1840", en: "Railways needed more capital than any family could supply, driving joint-stock companies and large stock markets, followed by Britain's Railway Mania bubble in the 1840s." }
+  ],
+  electric: [
+    { k: "finance", th: "นายธนาคาร J.P. Morgan เป็นผู้ลงทุนหลักของบริษัทไฟฟ้าของ Edison", en: "The banker J.P. Morgan was a key backer of Edison's electric companies." },
+    { k: "test", th: "ห้องทดลอง Menlo Park ของ Edison (1876) ถือเป็นต้นแบบห้องวิจัยของภาคอุตสาหกรรม ที่ทีมช่างและนักวิทยาศาสตร์ทดลองซ้ำอย่างเป็นระบบ", en: "Edison's Menlo Park lab (1876) is seen as a prototype industrial research lab where mixed teams of machinists and scientists experimented systematically." },
+    { k: "finance", th: "ในชนบทสหรัฐฯ เอกชนไม่ลงทุนสายไฟเพราะไม่คุ้ม รัฐจึงตั้งหน่วยงานไฟฟ้าชนบท (REA, 1935) ให้สินเชื่อสหกรณ์ไฟฟ้าของชุมชน", en: "Private utilities wouldn't wire rural America, so the Rural Electrification Administration (1935) lent to community electric cooperatives." }
+  ],
+  ford: [
+    { k: "wellbeing", th: "ค่าแรง 5 ดอลลาร์มาพร้อมแผนก Sociological Department ที่เข้าไปตรวจชีวิตที่บ้านของคนงาน เป็นตัวอย่างว่าสวัสดิการที่ควบคุมคนมากเกินไปก็ถูกต่อต้าน", en: "The $5 day came with a Sociological Department that inspected workers' home lives, a reminder that welfare which polices people provokes resistance." }
+  ],
+  home: [
+    { k: "finance", th: "สินเชื่อผ่อนชำระทำให้ครัวเรือนซื้อเครื่องใช้ไฟฟ้าได้ก่อนเก็บเงินครบ", en: "Instalment credit let households buy appliances before saving the full price." }
+  ],
+  green: [
+    { k: "research", th: "มูลนิธิ Rockefeller และ Ford ร่วมกับรัฐบาลฟิลิปปินส์ตั้งสถาบันวิจัยข้าวนานาชาติ (IRRI) ในปี 1960 ต่อมากลายเป็นเครือข่าย CGIAR", en: "The Rockefeller and Ford Foundations, with the Philippine government, founded the International Rice Research Institute (IRRI) in 1960, later part of the CGIAR network." },
+    { k: "test", th: "แปลงทดลองและสถานีวิจัยเกษตรในพื้นที่ เป็นจุดที่นักวิจัยกับเกษตรกรเจอกัน งานวิจัยในสหรัฐฯ พบว่าพื้นที่ใกล้สถานีทดลองเกษตรมีผลิตภาพสูงขึ้นในระยะยาว", en: "Local trial plots and agricultural experiment stations were where researchers met farmers. US evidence finds lasting productivity gains in counties near experiment stations." },
+    { k: "univ", th: "มหาวิทยาลัย land-grant ของสหรัฐฯ (Morrill Act 1862) เป็นต้นแบบให้มหาวิทยาลัยเกษตรที่ทำวิจัยและส่งเสริมเกษตรกรไปพร้อมกัน", en: "US land-grant universities (Morrill Act 1862) became the model for agricultural universities that combine research with farmer extension." }
+  ],
+  chips: [
+    { k: "research", th: "ช่วงแรกกองทัพและโครงการอวกาศสหรัฐฯ เป็นลูกค้าหลักของชิป (เช่น ขีปนาวุธ Minuteman และ Apollo) ทำให้ราคาลดลงก่อนตลาดพลเรือนจะโต", en: "Early on, US defence and space programmes (Minuteman missiles, Apollo) were the main chip buyers, pushing prices down before civilian markets grew." },
+    { k: "univ", th: "Stanford เปิด Stanford Industrial Park (1951) ให้บริษัทเทคโนโลยีเช่าที่ติดมหาวิทยาลัย ส่วนไต้หวันตั้ง ITRI (1973) และ Hsinchu Science Park (1980) ให้นักวิจัย บริษัท และรัฐอยู่ใกล้กัน", en: "Stanford opened Stanford Industrial Park (1951) to tech firms next to campus; Taiwan set up ITRI (1973) and Hsinchu Science Park (1980) to put researchers, firms and government side by side." },
+    { k: "finance", th: "Fairchild Semiconductor (1957) ได้ทุนจากนักลงทุนเอกชนแลกกับสิทธิซื้อกิจการ เป็นจุดเริ่มของวงการ venture capital ใน Silicon Valley ส่วน TSMC ได้ทุนตั้งต้นจากกองทุนรัฐบาลไต้หวันร่วมกับ Philips", en: "Fairchild Semiconductor (1957) was funded by a private investor in exchange for a buyout option, an origin point for Silicon Valley venture capital. TSMC's start-up capital came from a Taiwanese government fund together with Philips." }
+  ],
+  internet: [
+    { k: "research", th: "ทุนวิจัยรัฐช่วงสงครามโลกครั้งที่ 2 วางฐานระบบนวัตกรรมสหรัฐฯ หลังสงครามมีรายงาน Science, the Endless Frontier (1945) และตั้ง NSF (1950) อินเทอร์เน็ตเริ่มจาก ARPANET ที่ DARPA ให้ทุน (1969) และเว็บเกิดที่ CERN (1989)", en: "WWII public R&D seeded the US innovation system; then came Science, the Endless Frontier (1945) and the NSF (1950). The internet began as DARPA-funded ARPANET (1969), and the web was born at CERN (1989)." },
+    { k: "univ", th: "เด็กที่โตในพื้นที่ที่มีนักประดิษฐ์อยู่ใกล้ตัวมีโอกาสเป็นนักประดิษฐ์มากกว่ามาก คนเก่งจากครอบครัวรายได้น้อย ผู้หญิง และคนกลุ่มน้อยจำนวนมากไม่เคยได้เห็นงานแบบนี้ (lost Einsteins)", en: "Children who grow up near inventors are far more likely to invent; many talented children from low-income families, women and minorities never get that exposure (the “lost Einsteins”)." }
+  ],
+  newwork: [
+    { k: "univ", th: "งานวิจัยใช้การตั้งวิทยาลัยและมหาวิทยาลัย land-grant เป็นการทดลองตามธรรมชาติ พบว่าพื้นที่ที่ได้วิทยาลัยมีสิ่งประดิษฐ์และงานใหม่เพิ่มขึ้น", en: "Studies treating the founding of colleges and land-grant universities as natural experiments find more local invention and new work where colleges were established." }
+  ],
+  mpesa: [
+    { k: "finance", th: "ระยะทดลองได้ทุนร่วมจากกองทุนของรัฐบาลอังกฤษ (DFID) กับ Vodafone และธนาคารกลางเคนยายอมให้ทดลองก่อนออกกฎเต็มรูปแบบ", en: "The pilot was co-funded by a UK government (DFID) challenge fund and Vodafone, and Kenya's central bank allowed it to operate before full regulation." },
+    { k: "test", th: "เครือข่ายร้านค้าตัวแทนในชุมชนเป็นทั้งจุดบริการและจุดที่คนในชุมชนเรียนรู้การใช้เงินดิจิทัล", en: "Local shop agents were both service points and where communities learned to use digital money." }
+  ]
+};
+
+const MEET = {
+  intro: { th: "นวัตกรรมไม่ได้เกิดจากคนกลุ่มเดียว มันเกิดตรงที่คนต่างกลุ่มมาเจอกันเป็นประจำ แล้วพื้นที่แบบนั้นก็ขยายจากวงเล็กๆ กลายเป็นสถาบันของทั้งสังคม",
+           en: "Innovation rarely comes from one group. It happens where different groups meet regularly, and those meeting places grow from small circles into society-wide institutions." },
+  groups: { th: ["ช่างและคนงาน", "นักวิทยาศาสตร์", "ผู้ประกอบการและนักลงทุน", "แพทย์และนักสาธารณสุข", "รัฐและท้องถิ่น", "คนในชุมชน"],
+            en: ["Craftspeople & workers", "Scientists", "Entrepreneurs & investors", "Doctors & public health", "State & local government", "Community members"] },
+  steps: [
+    { y: "1650s–", th: ["ร้านกาแฟและสมาคมวิทยาศาสตร์", "ร้านกาแฟในลอนดอนและ Royal Society (1660) ให้พ่อค้า นักวิทยาศาสตร์ และช่างคุยกันข้ามชนชั้น"], en: ["Coffeehouses & learned societies", "London coffeehouses and the Royal Society (1660) let merchants, scientists and craftsmen talk across class lines"] },
+    { y: "1765–1813", th: ["Lunar Society แห่งเบอร์มิงแฮม", "นักอุตสาหกรรม (Boulton, Wedgwood) นักประดิษฐ์ (Watt) นักเคมี (Priestley) และแพทย์ (Erasmus Darwin) นัดเจอกันทุกเดือน"], en: ["Birmingham's Lunar Society", "Industrialists (Boulton, Wedgwood), an inventor (Watt), a chemist (Priestley) and a physician (Erasmus Darwin) met monthly"] },
+    { y: "1821–", th: ["สถาบันช่าง (Mechanics' Institutes)", "ขยายความรู้วิทยาศาสตร์จากวงชนชั้นกลางไปสู่คนงานทั่วไป ด้วยห้องสมุดและชั้นเรียนตอนเย็น"], en: ["Mechanics' Institutes", "Spread science from middle-class circles to ordinary workers through libraries and evening classes"] },
+    { y: "1847–", th: ["สวนสาธารณะ", "Birkenhead Park (1847), Central Park (1858) และสวนลุมพินี (2468) เป็นพื้นที่ที่คนทุกชนชั้นใช้ร่วมกัน และช่วยสุขภาพของคนเมือง"], en: ["Public parks", "Birkenhead Park (1847), Central Park (1858) and Bangkok's Lumphini Park (1925) became spaces every class shared, supporting urban health"] },
+    { y: "1862–", th: ["มหาวิทยาลัยที่ทำงานกับชุมชน", "มหาวิทยาลัย land-grant และสถานีทดลองเกษตร เอาการวิจัยไปอยู่ใกล้เกษตรกรและอุตสาหกรรมท้องถิ่น"], en: ["Universities working with communities", "Land-grant universities and experiment stations put research next to farmers and local industry"] },
+    { y: "1876–", th: ["ห้องวิจัยอุตสาหกรรม", "Menlo Park, Bell Labs รวมช่าง นักวิทยาศาสตร์ และทุนของบริษัทไว้ในที่เดียว"], en: ["Industrial research labs", "Menlo Park and Bell Labs put machinists, scientists and corporate capital under one roof"] },
+    { y: "1951–", th: ["เขตวิทยาศาสตร์และย่านนวัตกรรม", "Stanford Industrial Park, Hsinchu Science Park และย่านนวัตกรรมในเมือง รวมมหาวิทยาลัย บริษัท นักลงทุน และรัฐ"], en: ["Science parks & innovation districts", "Stanford Industrial Park, Hsinchu Science Park and urban innovation districts combine universities, firms, investors and government"] }
+  ],
+  evidence: {
+    th: ["<b>เมืองใหญ่ขึ้น นวัตกรรมโตเร็วกว่าขนาดเมือง:</b> เมืองที่ใหญ่ขึ้นเท่าตัวมีสิทธิบัตรใหม่ต่อหัวมากขึ้นราว 20% เพราะคนต่างกลุ่มเจอกันบ่อยขึ้น", "<b>การได้เห็นตัวอย่างสำคัญกว่าความสามารถอย่างเดียว:</b> เด็กเก่งที่ไม่เคยเห็นนักประดิษฐ์ใกล้ตัวมักไม่ได้เป็นนักประดิษฐ์", "<b>พื้นที่สีเขียวช่วยลดความเหลื่อมล้ำด้านสุขภาพ:</b> ในพื้นที่ที่มีสีเขียวมาก ช่องว่างอัตราตายระหว่างคนรวยกับคนจนแคบกว่าพื้นที่ที่สีเขียวน้อย", "<b>สาธารณสุขที่ลงทุนโดยท้องถิ่น</b> (น้ำสะอาด ท่อระบายน้ำ) คือสิ่งที่ทำให้อัตราตายในเมืองอุตสาหกรรมลดลง ไม่ใช่รายได้ที่เพิ่มขึ้นอย่างเดียว"],
+    en: ["<b>Innovation grows faster than city size:</b> doubling a city's population raises new patents per person by about 20%, because different groups meet more often.", "<b>Exposure matters as much as ability:</b> talented children who never see an inventor nearby rarely become inventors.", "<b>Green space narrows health inequality:</b> in greener areas, the mortality gap between rich and poor is smaller than in less green areas.", "<b>Locally funded public health</b> (clean water, sewers) is what brought down mortality in industrial cities, not rising income alone."]
+  },
+  lesson: { th: "สำหรับ OneQuest: เพิ่มชั้นข้อมูล “จุดเชื่อม” ในแต่ละจังหวัด เช่น มหาวิทยาลัย สวนสาธารณะ ตลาด ห้องสมุด พื้นที่ทำงานร่วม แล้วดูว่าจุดไหนมีคนหลายกลุ่มมาเจอกันจริง และเปิดเควสต์ระดับเริ่มต้นให้คนในชุมชนได้เห็นงานใหม่จากคนที่ทำจริง",
+            en: "For OneQuest: add a “meeting point” layer for each province, such as universities, parks, markets, libraries and co-working spaces, check which ones actually bring different groups together, and open beginner quests so community members see new work from people who do it." },
+  refs: [
+    { l: "Bettencourt, Lobo, Helbing, Kühnert & West (2007) Growth, innovation, scaling, and the pace of life in cities, PNAS 104(17)", u: "https://doi.org/10.1073/pnas.0610172104" },
+    { l: "Bell, Chetty, Jaravel, Petkova & Van Reenen (2019) Who Becomes an Inventor in America?, QJE 134(2)", u: "https://doi.org/10.1093/qje/qjy028" },
+    { l: "Mitchell & Popham (2008) Effect of exposure to natural environment on health inequalities, The Lancet 372", u: "https://doi.org/10.1016/S0140-6736(08)61689-X" },
+    { l: "Szreter (1988) The importance of social intervention in Britain's mortality decline c.1850–1914, Social History of Medicine 1(1)", u: "https://doi.org/10.1093/shm/1.1.1" },
+    { l: "Uglow (2002) The Lunar Men, Faber & Faber" },
+    { l: "Mokyr (2009) The Enlightened Economy: An Economic History of Britain 1700–1850, Yale University Press" }
+  ]
+};
+
+const INFRA_REFS = {
+  steam: [{ l: "Szreter & Mooney (1998) Urbanization, mortality, and the standard of living debate, Economic History Review 51(1)", u: "https://doi.org/10.1111/1468-0289.00084" }, { l: "Szreter (1988) The importance of social intervention in Britain's mortality decline, Social History of Medicine 1(1)", u: "https://doi.org/10.1093/shm/1.1.1" }, { l: "Crouzet, ed. (1972) Capital Formation in the Industrial Revolution, Methuen" }, { l: "Uglow (2002) The Lunar Men, Faber & Faber" }],
+  green: [{ l: "Kantor & Whalley (2019) Research Proximity and Productivity: Long-Term Evidence from Agriculture, Journal of Political Economy 127(2)", u: "https://doi.org/10.1086/701035" }],
+  internet: [{ l: "Gross & Sampat (2023) America, Jump-Started: World War II R&D and the Takeoff of the US Innovation System, AER 113(12)", u: "https://doi.org/10.1257/aer.20221365" }, { l: "Bush (1945) Science, the Endless Frontier, US Office of Scientific Research and Development" }, { l: "Bell et al. (2019) Who Becomes an Inventor in America?, QJE 134(2)", u: "https://doi.org/10.1093/qje/qjy028" }],
+  newwork: [{ l: "Andrews (2023) How Do Institutions of Higher Education Affect Local Invention?, AEJ: Economic Policy 15(2)", u: "https://doi.org/10.1257/pol.20200320" }],
+  chips: [{ l: "O'Mara (2019) The Code: Silicon Valley and the Remaking of America, Penguin Press" }]
+};
+
+(function () {
+  const $ = id => document.getElementById(id);
+  const esc = s => String(s ?? "").replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
+  const T = {
+    th: { tagline: "แผนที่ปัญหาและโอกาส อัปเดตทุกวัน", nav_dash: "แดชบอร์ด", nav_qa: "คลังถาม–ตอบ", nav_cases: "Case Study ประวัติศาสตร์", lang: "EN", lang_label: "Switch to English",
+      qa_title: "คลังถาม–ตอบ", qa_intro: "คำถามที่คุณถามและคำตอบจากบทสนทนาก่อนหน้าในโปรเจกต์นี้ รวมไว้ที่เดียว คำถามเรียบเรียงใหม่ให้อ่านง่าย คำตอบย่อจากต้นฉบับ",
+      qa_search: "ค้นหาคำถามหรือคำตอบ", all: "ทั้งหมด", refs: "อ้างอิง", file: "ไฟล์ในโปรเจกต์", none: "ไม่พบคำถามที่ตรงกับคำค้น", go_cases: "ดู Case Study ประวัติศาสตร์ →", count: n => n + " คำถาม",
+      cases_title: "Case Study: การปฏิวัติการทำงาน อุตสาหกรรม และวิถีชีวิต", cases_intro: "13 ช่วงเปลี่ยนผ่านในประวัติศาสตร์ พร้อมโครงสร้างพื้นฐานที่อยู่เบื้องหลัง ดูว่าอะไรเปลี่ยน งานแบบไหนหายและเกิด ใช้เวลานานแค่ไหน และ OneQuest เรียนรู้อะไรได้",
+      patterns: "สิ่งที่เกิดซ้ำในทุกยุค", p_cols: ["บทเรียน", "เห็นในเคส", "OneQuest ใช้อย่างไร"],
+      f_work: "งานที่เปลี่ยน", f_life: "วิถีชีวิตที่เปลี่ยน", f_lag: "ใช้เวลานานแค่ไหน", f_lesson: "บทเรียนสำหรับ OneQuest", more: "อ่านรายละเอียดและอ้างอิง",
+      dagger: "† ตัวเลขที่มีเครื่องหมายนี้อ้างจากงานวิจัยที่ระบุ แต่รอบนี้ยังไม่ได้เทียบกับต้นฉบับฉบับเต็ม ควรตรวจก่อนนำไปใช้ต่อ",
+      dash_note: "", infra_title: "โครงสร้างพื้นฐานเบื้องหลังปฏิวัติอุตสาหกรรม", infra_intro: "เครื่องจักรไอน้ำไม่ได้เปลี่ยนโลกลำพัง มี 6 ชั้นที่ต้องโตไปพร้อมกัน ชั้นที่ตามไม่ทันคือจุดที่คนจ่ายราคา เช่น สุขภาพคนเมืองที่แย่ลงก่อนระบบสาธารณสุขจะตามทัน", meet_title: "จุดที่คนหลายกลุ่มมาเจอกัน และขยายตัวอย่างไร", meet_groups: "กลุ่มคนที่ต้องมาเจอกัน", meet_ev: "หลักฐาน", f_infra: "โครงสร้างพื้นฐานเบื้องหลัง", layer_filter: "กรองตามชั้นโครงสร้างพื้นฐาน" },
+    en: { tagline: "A daily-updated map of problems and opportunities", nav_dash: "Dashboard", nav_qa: "Q&A library", nav_cases: "Historical case studies", lang: "ไทย", lang_label: "เปลี่ยนเป็นภาษาไทย",
+      qa_title: "Q&A library", qa_intro: "Your questions and Claude's answers from earlier conversations in this project, in one place. Questions are lightly edited for clarity; answers are condensed from the originals.",
+      qa_search: "Search questions or answers", all: "All", refs: "References", file: "Project file", none: "No questions match your search", go_cases: "See the historical case studies →", count: n => n + " questions",
+      cases_title: "Case studies: revolutions in work, industry and daily life", cases_intro: "13 historical transitions and the infrastructure behind them: what changed, which jobs vanished and appeared, how long it took, and what OneQuest can learn.",
+      patterns: "What repeats across eras", p_cols: ["Lesson", "Seen in", "How OneQuest uses it"],
+      f_work: "How work changed", f_life: "How daily life changed", f_lag: "How long it took", f_lesson: "Lesson for OneQuest", more: "Details and references",
+      dagger: "† Figures marked this way are cited from the named paper but were not re-checked against the full text this round. Verify before reusing.",
+      dash_note: "Problem data, plans and quests on the dashboard are written in Thai for now; headings are translated.", infra_title: "The infrastructure behind the Industrial Revolution", infra_intro: "The steam engine didn't change the world alone. Six layers had to grow together, and wherever one lagged, people paid the price, as with urban health collapsing before public health caught up.", meet_title: "Where different groups meet, and how those places grew", meet_groups: "Groups that need to meet", meet_ev: "Evidence", f_infra: "Infrastructure behind it", layer_filter: "Filter by infrastructure layer" }
+  };
+  let lang = "th", view = "dash", qaTheme = "all", qaQuery = "", caseTag = "all", layerTag = "all";
+  try { lang = localStorage.getItem("oq-lang") || "th"; } catch (e) {}
+  const L = o => (o && (o[lang] ?? o.th)) || "";
+
+  function applyStatic() {
+    const t = T[lang];
+    document.documentElement.lang = lang;
+    document.querySelectorAll("[data-t]").forEach(el => { el.textContent = t[el.dataset.t]; });
+    document.querySelectorAll("[data-en]").forEach(el => {
+      if (el.dataset.th == null) el.dataset.th = el.textContent;
+      el.textContent = lang === "en" ? el.dataset.en : el.dataset.th;
+    });
+    $("lang-btn").setAttribute("aria-label", t.lang_label);
+    $("dash-note").textContent = t.dash_note;
+    $("dash-note").hidden = !t.dash_note;
+    $("qa-search").placeholder = t.qa_search;
+    $("qa-search").setAttribute("aria-label", t.qa_search);
+  }
+
+  function setView(v, push) {
+    view = ["dash", "qa", "cases"].includes(v) ? v : "dash";
+    ["dash", "qa", "cases"].forEach(k => {
+      $("view-" + k).hidden = k !== view;
+      $("nav-" + k).setAttribute("aria-current", k === view ? "page" : "false");
+    });
+    if (push) { try { history.replaceState(null, "", view === "dash" ? location.pathname + location.search : "#" + view); } catch (e) {} }
+    if (view === "dash") requestAnimationFrame(() => window.dispatchEvent(new Event("resize")));
+  }
+
+  function renderQA() {
+    const t = T[lang];
+    $("qa-chips").innerHTML = [["all", { th: T.th.all, en: T.en.all }], ...Object.entries(QA_THEMES)].map(([k, n]) =>
+      '<button class="chip" data-k="' + k + '" aria-pressed="' + (qaTheme === k) + '">' + esc(L(n)) + "</button>").join("");
+    const q = qaQuery.trim().toLowerCase();
+    const list = QA.filter(x => (qaTheme === "all" || x.theme === qaTheme) &&
+      (!q || [x.q.th, x.q.en, x.a.th, x.a.en].join(" ").toLowerCase().includes(q)));
+    $("qa-count").textContent = t.count(list.length);
+    $("qa-list").innerHTML = list.length ? list.map(x => {
+      const d = new Date(x.date + "T00:00:00");
+      const date = d.toLocaleDateString(lang === "th" ? "th-TH" : "en-GB", { day: "numeric", month: "short", year: "numeric" });
+      return '<details class="qa" id="qa-' + x.id + '"><summary><span class="qa-meta"><span class="tag">' + esc(L(QA_THEMES[x.theme])) + '</span><span class="mono">' + date + '</span></span><span class="qa-q">' + esc(L(x.q)) + "</span></summary>" +
+        '<div class="qa-a">' + L(x.a) +
+        (x.link ? '<p><button class="linkbtn" data-view="' + x.link + '">' + t.go_cases + "</button></p>" : "") +
+        (x.refs.length || x.file ? '<div class="refs"><span class="label">' + t.refs + "</span><ul>" + x.refs.map(r => "<li>" + (r.u ? '<a href="' + esc(r.u) + '" target="_blank" rel="noopener">' + esc(r.l) + "</a>" : esc(r.l)) + "</li>").join("") +
+          (x.file ? '<li>' + t.file + ': <code>' + esc(x.file) + "</code></li>" : "") + "</ul></div>" : "") +
+        "</div></details>";
+    }).join("") : '<p class="err">' + t.none + "</p>";
+  }
+
+  function renderCases() {
+    const t = T[lang];
+    $("p-table").innerHTML = PATTERNS.map((p, i) => { const c = L(p);
+      return '<div class="pcard"><span class="mono pn">' + (i + 1) + "</span><b>" + esc(c[0]) + '</b><span class="label">' + t.p_cols[1] + "</span><span>" + esc(c[1]) + '</span><span class="label">' + t.p_cols[2] + "</span><span>" + esc(c[2]) + "</span></div>"; }).join("");
+    $("case-chips").innerHTML = [["all", { th: T.th.all, en: T.en.all }], ...Object.entries(CASE_TAGS)].map(([k, n]) =>
+      '<button class="chip" data-k="' + k + '" aria-pressed="' + (caseTag === k) + '">' + esc(L(n)) + "</button>").join("");
+    const list = CASES.filter(c => (caseTag === "all" || c.tags.includes(caseTag)) && (layerTag === "all" || (INFRA[c.id] || []).some(x => x.k === layerTag))).sort((a, b) => a.start - b.start);
+    const lt = k => '<span class="ltag"><span class="lic">' + LAYERS[k].ic + "</span>" + esc(L(LAYERS[k])) + "</span>";
+    $("layer-chips").innerHTML = '<span class="label">' + t.layer_filter + "</span>" + [["all", { th: T.th.all, en: T.en.all }], ...Object.entries(LAYERS)].map(([k, n]) =>
+      '<button class="chip" data-l="' + k + '" aria-pressed="' + (layerTag === k) + '">' + (n.ic ? '<span class="lic">' + n.ic + "</span>" : "") + esc(L(n)) + "</button>").join("");
+    $("infra-grid").innerHTML = INFRA.steam.map(x => '<div class="lcard">' + lt(x.k) + "<p>" + esc(L(x)) + "</p></div>").join("");
+    $("infra-refs").innerHTML = '<span class="label">' + t.refs + "</span><ul>" + INFRA_REFS.steam.map(r => "<li>" + (r.u ? '<a href="' + esc(r.u) + '" target="_blank" rel="noopener">' + esc(r.l) + "</a>" : esc(r.l)) + "</li>").join("") + "</ul>";
+    $("meet").innerHTML = '<div class="panel-head"><h2>' + t.meet_title + '</h2></div><p class="sub">' + esc(L(MEET.intro)) + "</p>" +
+      '<div><span class="label">' + t.meet_groups + '</span><div class="tags" style="margin-top:4px">' + L(MEET.groups).map(g => '<span class="tag">' + esc(g) + "</span>").join("") + "</div></div>" +
+      '<ol class="meet">' + MEET.steps.map(st => '<li><span class="mono">' + st.y + "</span><b>" + esc(L(st)[0]) + "</b><span>" + esc(L(st)[1]) + "</span></li>").join("") + "</ol>" +
+      '<div><span class="label">' + t.meet_ev + '</span><ul class="mev">' + L(MEET.evidence).map(e => "<li>" + e + "</li>").join("") + "</ul></div>" +
+      '<div class="lesson">' + esc(L(MEET.lesson)) + "</div>" +
+      '<div class="refs"><span class="label">' + t.refs + "</span><ul>" + MEET.refs.map(r => "<li>" + (r.u ? '<a href="' + esc(r.u) + '" target="_blank" rel="noopener">' + esc(r.l) + "</a>" : esc(r.l)) + "</li>").join("") + "</ul></div>";
+    const yrs = c => lang === "en" && c.yearsEn ? c.yearsEn : c.years;
+    $("timeline").innerHTML = list.map(c => '<a class="tl" href="#case-' + c.id + '" data-case="' + c.id + '"><span class="mono">' + c.start + "</span>" + esc(L(c.title)) + "</a>").join("");
+    $("case-list").innerHTML = list.map(c =>
+      '<article class="case" id="case-' + c.id + '"><div class="case-head"><span class="mono yrs">' + esc(yrs(c)) + '</span><span class="tags">' + c.tags.map(g => '<span class="tag">' + esc(L(CASE_TAGS[g])) + "</span>").join("") + "</span></div>" +
+      "<h3>" + esc(L(c.title)) + "</h3><p>" + esc(L(c.sum)) + "</p>" +
+      '<div class="lesson"><span class="label">' + t.f_lesson + "</span>" + esc(L(c.lesson)) + "</div>" +
+      (INFRA[c.id] ? '<div class="tags">' + [...new Set(INFRA[c.id].map(x => x.k))].map(lt).join("") + "</div>" : "") +
+      "<details><summary>" + t.more + '</summary><dl><dt>' + t.f_work + "</dt><dd>" + esc(L(c.work)) + "</dd><dt>" + t.f_life + "</dt><dd>" + esc(L(c.life)) + "</dd><dt>" + t.f_lag + "</dt><dd>" + esc(L(c.lag)) + "</dd>" + (INFRA[c.id] ? "<dt>" + t.f_infra + "</dt>" + INFRA[c.id].map(x => "<dd>" + lt(x.k) + " " + esc(L(x)) + "</dd>").join("") : "") + "</dl>" +
+      '<span class="ev ev-' + c.ev + '">' + esc(L(EVIDENCE[c.ev])) + '</span><div class="refs"><span class="label">' + t.refs + "</span><ul>" +
+      c.refs.concat(INFRA_REFS[c.id] || []).map(r => "<li>" + (r.u ? '<a href="' + esc(r.u) + '" target="_blank" rel="noopener">' + esc(r.l) + "</a>" : esc(r.l)) + "</li>").join("") + "</ul></div></details></article>").join("");
+  }
+
+  function renderAll() { applyStatic(); renderQA(); renderCases(); }
+
+  document.addEventListener("click", e => {
+    const nav = e.target.closest("[data-view]");
+    if (nav) { e.preventDefault(); setView(nav.dataset.view, true); window.scrollTo({ top: 0 }); return; }
+    const qc = e.target.closest("#qa-chips .chip");
+    if (qc) { qaTheme = qc.dataset.k; renderQA(); return; }
+    const cc = e.target.closest("#case-chips .chip");
+    if (cc) { caseTag = cc.dataset.k; renderCases(); return; }
+    const lc = e.target.closest("#layer-chips .chip");
+    if (lc) { layerTag = lc.dataset.l; renderCases(); return; }
+    const tl = e.target.closest(".tl");
+    if (tl) { e.preventDefault(); const el = $("case-" + tl.dataset.case); if (el) { el.scrollIntoView({ behavior: "smooth", block: "start" }); el.querySelector("details").open = true; } }
+  });
+  $("lang-btn").addEventListener("click", () => {
+    lang = lang === "th" ? "en" : "th";
+    try { localStorage.setItem("oq-lang", lang); } catch (e) {}
+    renderAll();
+  });
+  $("qa-search").addEventListener("input", e => { qaQuery = e.target.value; renderQA(); });
+  window.addEventListener("hashchange", () => { const h = location.hash.slice(1); if (["qa", "cases", "dash"].includes(h)) setView(h, false); });
+
+  renderAll();
+  setView(location.hash.slice(1), false);
 })();
 </script>
 
