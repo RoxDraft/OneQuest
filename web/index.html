@@ -252,11 +252,11 @@ ol.meet b { color: var(--ink); font-size: 14px; }
     <div class="chips" id="cat-chips" role="group" aria-label="ประเภทช่องว่าง"></div>
     <label class="label" for="scope"><span data-en="Scope">ขอบเขต</span>
       <select id="scope">
-        <option value="all">ทั้งหมด</option>
-        <option value="global">ระดับโลก</option>
-        <option value="regional">ระดับภูมิภาค</option>
-        <option value="national">ระดับประเทศ</option>
-        <option value="local">ระดับพื้นที่</option>
+        <option value="all" data-en="All">ทั้งหมด</option>
+        <option value="global" data-en="Global">ระดับโลก</option>
+        <option value="regional" data-en="Regional">ระดับภูมิภาค</option>
+        <option value="national" data-en="National">ระดับประเทศ</option>
+        <option value="local" data-en="Local">ระดับพื้นที่</option>
       </select>
     </label>
   </div>
@@ -346,25 +346,40 @@ ol.meet b { color: var(--ink); font-size: 14px; }
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/echarts/5.5.0/echarts.min.js"></script>
 <script>
+const OQ_TXT_EN = {"งานวิจัยประเมินขนาดปัญหาถึงปี 2035": "Research estimating the problem's size to 2035", "งานวิจัยเปรียบเทียบนโยบายใน 5 ประเทศ": "Research comparing policies in 5 countries", "บทความทบทวนวรรณกรรม (systematic review)": "Systematic review", "ตัวเลขทางการรอบล่าสุด": "Latest official figures", "รายงานประจำปีของหน่วยงานรัฐ": "Government agency annual report", "ข่าว: เหตุการณ์ล่าสุดที่เกี่ยวข้อง": "News: latest related event", "ข่าว: นโยบายหรืองบประมาณใหม่": "News: new policy or budget", "ข่าว: บริษัทเปิดตัวบริการใหม่": "News: company launches a new service", "กระทู้บ่นปัญหาที่คนแชร์มาก": "Widely shared complaint thread", "สำนักงานสถิติแห่งชาติ": "National Statistical Office", "สำนักข่าว A": "News outlet A", "สำนักข่าว B": "News outlet B", "สำนักข่าว C": "News outlet C", "ตัวเลขในข่าวไม่ตรงกับแหล่งทางการ": "Figures in the news don't match official sources", "ทีมตรวจสอบ (ตัวอย่าง)": "Review team (sample)","1 ฤดูกาล": "1 season", "1 สัปดาห์": "1 week", "1 เดือน": "1 month", "1–2 เดือน": "1–2 months", "2 ชม.": "2 hrs", "2 วัน": "2 days", "2 สัปดาห์": "2 weeks", "2 เดือน": "2 months", "2–3 เดือน": "2–3 months", "3 วัน": "3 days", "3 เดือน": "3 months", "4 ชม.": "4 hrs", "Air4Thai กรมควบคุมมลพิษ": "Air4Thai, Pollution Control Department", "NASA FIRMS และ GISTDA": "NASA FIRMS and GISTDA", "Python หรือ QGIS เบื้องต้น": "Basic Python or QGIS", "กฎหมาย": "Law", "กลุ่มออมทรัพย์ชุมชนที่ให้กู้ฉุกเฉินได้ภายในวันเดียว": "Community savings groups that lend for emergencies within a day", "การศึกษา": "Education", "การสำรวจภาวะการทำงานของประชากร (สสช.)": "Labour Force Survey (NSO)", "การสำรวจภาวะเศรษฐกิจและสังคมของครัวเรือน (สสช.)": "Household Socio-Economic Survey (NSO)", "การเผาถูกกว่าทางเลือกอื่นสำหรับเกษตรกร": "Burning is cheaper than the alternatives for farmers", "การเผาเป็นวิธีเคลียร์แปลงที่ถูกที่สุดสำหรับเกษตรกร ทางเลือกอื่นต้องจ่ายเพิ่ม": "Burning is the cheapest way for farmers to clear fields; every alternative costs extra", "ขั้นกลาง": "Intermediate", "ขั้นสูง": "Advanced", "ข้อมูล": "Data", "ข้อมูล 20 ครัวเรือน: ใครดูแล ต้องการอะไร": "Data on 20 households: who provides care and what they need", "ข้อมูลที่ได้รับ หรือบันทึกว่าถูกปฏิเสธเพราะอะไร": "The data received, or a record of why the request was refused", "ข้อมูลผู้ป่วยโรคทางเดินหายใจ (สธ.)": "Respiratory illness patient data (Ministry of Public Health)", "ข้อมูลฝุ่นและจุดความร้อนกระจัดกระจาย คนทั่วไปเข้าใจยาก": "PM2.5 and hotspot data are scattered and hard for the public to understand", "ข้ามพรมแดน": "Cross-border", "คน": "people", "คนที่ปล่อยฝุ่นไม่ได้จ่ายค่ารักษาของคนที่ป่วย ต้นทุนจึงตกที่สังคม": "Those who emit the smoke don't pay for the sick people's treatment, so society bears the cost", "คนรายได้ไม่ประจำไม่มีสลิปเงินเดือนหรือประวัติเครดิต ธนาคารจึงประเมินความเสี่ยงไม่ได้": "People with irregular income have no payslips or credit history, so banks can't assess their risk", "คนอยากเป็นผู้ดูแลแต่ไม่รู้จะอบรมที่ไหน": "People want to become carers but don't know where to train", "ครอบครัวรายได้ปานกลางจ่ายค่าผู้ดูแลเต็มเวลาไม่ไหว แต่ระบบจ้างรายชั่วโมงยังมีน้อย": "Middle-income families can't afford a full-time carer, and hourly hiring options are scarce", "ครอบครัวเล็กลง ลูกหลานย้ายไปทำงานในเมือง": "Families are shrinking and children move to cities for work", "ครัวเรือน": "households", "ครัวเรือนไทยที่มีหนี้นอกระบบมีประมาณกี่ครัวเรือน": "About how many Thai households have informal debt?", "ความต้องการแรงงานที่นายจ้างประกาศ": "Labour demand posted by employers", "ความรับผิดชอบกระจายอยู่หลายหน่วยงาน ทั้งสาธารณสุข พัฒนาสังคม และท้องถิ่น": "Responsibility is split across public health, social development and local government", "ความรู้และทักษะการวางแผนการเงินไม่พอ": "Not enough financial planning knowledge and skills", "ความสนใจ": "Attention", "คำนวณต้นทุนต่อไร่ ระหว่างเผากับไม่เผา": "Calculate the cost per rai of burning vs not burning", "คู่มือที่ตรวจแล้วโดยคนทำงานด้านนี้ 1 คน": "A guide reviewed by one practitioner in the field", "ค่าจ้าง ทักษะที่นายจ้างขอ": "Wages and the skills employers ask for", "ค่าฝุ่นรายชั่วโมงจากสถานีวัด": "Hourly PM2.5 readings from monitoring stations", "ค่าสมมติ ต้องแทนด้วยข้อมูล Air4Thai กรมควบคุมมลพิษ": "Sample value; replace with Air4Thai (Pollution Control Department) data", "ค่าสมมติ ต้องแทนด้วยข้อมูล สสช. / ธปท.": "Sample value; replace with NSO / Bank of Thailand data", "ค่าสมมติ ต้องแทนด้วยข้อมูลกรมกิจการผู้สูงอายุ / สสช.": "Sample value; replace with Department of Older Persons / NSO data", "ค่าสมมติ ต้องแทนด้วยข้อมูลกรมอนามัย": "Sample value; replace with Department of Health data", "ค่าแรงต่ำ คนไม่อยากทำอาชีพนี้": "Low pay, so people don't want this job", "ค้นข้อมูล": "Desk research", "ค้นข้อมูล, อ่านเอกสารราชการ": "Desk research, reading government documents", "ค้นข้อมูล, ใช้สเปรดชีต": "Desk research, spreadsheets", "งานช่างเบื้องต้น": "Basic handiwork", "งานดูแลถูกมองว่าเป็นหน้าที่ของครอบครัว จึงไม่ค่อยมีใครจ่ายค่าแรงให้ในราคาตลาด": "Care is seen as a family duty, so few people pay market wages for it", "จับคู่ผู้ดูแลในชุมชนกับผู้สูงอายุที่อยู่ลำพัง": "Match community carers with elderly people living alone", "จำนวนผู้ทำงานตามอาชีพ รายไตรมาส": "Workers by occupation, quarterly", "จำนวนสมาชิกที่กู้ฉุกเฉินแทนนอกระบบ": "Members who took emergency loans instead of informal loans", "จิตวิทยา": "Psychology", "จุดความร้อนจากดาวเทียม รายวัน": "Daily satellite hotspots", "จุดความร้อนช่วงฤดูฝุ่น อยู่นอกประเทศไทยกี่เปอร์เซ็นต์": "What percentage of haze-season hotspots are outside Thailand?", "ชุมชน": "Community", "ชุมชน / ท้องถิ่น": "Community / local government", "ชุมชน / รพ.สต.": "Community / sub-district health centre", "ชุมชน / อสม.": "Community / village health volunteers", "ชุมชน / โรงเรียน": "Community / school", "ช่วยเจรจาและรวมหนี้ให้ดอกเบี้ยลดลง": "Help negotiate and consolidate debt at lower interest", "ช่างเทคนิคด้านวิทยาศาสตร์และวิศวกรรม (เซนเซอร์)": "Science and engineering technicians (sensors)", "ดอกเบี้ยจริงและเหตุผลที่ไม่กู้ในระบบ": "Actual interest rates and why people avoid formal loans", "ดอกเบี้ยเงินกู้นอกระบบเฉลี่ยต่อปีกี่เปอร์เซ็นต์": "What is the average annual interest rate on informal loans?", "ดาวน์โหลดจุดความร้อนจาก NASA FIRMS ช่วงฤดูฝุ่น แล้วนับว่าอยู่ในและนอกประเทศเท่าไร": "Download haze-season hotspots from NASA FIRMS and count how many are inside vs outside Thailand", "ตัวเลขทั้งหมดเป็นค่าสมมติ ต้องแทนด้วยข้อมูลจริงก่อนใช้": "All numbers are sample values; replace with real data before use", "ตัวเลขทั้งหมดเป็นค่าสมมติ อัตราที่ปรึกษา 1 คนต่อ 500 ครัวเรือนเป็นสมมติฐานที่ต้องตรวจ": "All numbers are sample values; the ratio of one adviser per 500 households is an assumption to check", "ตัวเลขสัดส่วนจุดความร้อนในและนอกประเทศ รายเดือน": "Monthly share of hotspots inside vs outside the country", "ตั้งกองทุนฉุกเฉินในกลุ่มออมทรัพย์ที่มีอยู่ 1 กลุ่ม": "Set up an emergency fund in one existing savings group", "ตารางค่าจ้างตามจังหวัด 50 แถว": "A 50-row wage table by province", "ตารางมาตรการพร้อมสถานะ อัปเดตทุกเดือน": "A table of measures with status, updated monthly", "ตารางเทียบต้นทุน 3 พืชหลัก": "A cost comparison table for 3 main crops", "ตำแหน่งงานว่าง กรมการจัดหางาน": "Job vacancies, Department of Employment", "ติดตั้งเซนเซอร์ฝุ่นราคาถูกในพื้นที่ที่ไม่มีสถานีวัด": "Install low-cost PM2.5 sensors where there are no monitoring stations", "ติดตามข่าว, สเปรดชีต": "News tracking, spreadsheets", "ต่อเนื่อง": "Ongoing", "ต้นทุน": "Cost", "ต้นทุนจริงและเหตุผลที่ตัวเลขไม่เห็น": "Actual costs and what the numbers miss", "ต้นแบบแพ็กเกจและราคาที่ทดลองกับ 3 ครอบครัว": "A package and price prototype tested with 3 families", "ต้องใช้เงินด่วน และนอกระบบเร็วกว่า": "Money is needed urgently, and informal lenders are faster", "ทดลองโมเดลประเมินความเสี่ยงจากข้อมูลทางเลือกด้วยข้อมูลเปิด": "Prototype a risk model from alternative data using open data", "ทดลองโมเดลรับซื้อซังข้าวโพดหรือฟางไปทำเชื้อเพลิงหรือปุ๋ย ใน 1 ตำบล": "Pilot buying corn stalks or straw for fuel or fertiliser in one sub-district", "ทำคู่มือ 1 หน้า ว่าลูกหนี้นอกระบบไปขอความช่วยเหลือที่ไหนได้บ้าง": "Make a one-page guide to where informal borrowers can get help", "ทำตารางติดตามมาตรการที่รัฐประกาศ ว่าทำแล้วหรือยัง และวัดผลอย่างไร": "Track announced government measures: done yet, and how they are measured", "ทำต้นแบบระบบจับคู่ผู้ดูแลกับครอบครัว": "Prototype a carer–family matching system", "ทำห้องปลอดฝุ่นในศูนย์เด็กเล็กหรือโรงเรียน 1 แห่ง": "Build a clean-air room in one childcare centre or school", "ทำให้การไม่เผาคุ้มกว่า เช่น รับซื้อเศษวัสดุเกษตร": "Make not burning pay, e.g. buy crop residue", "ทำให้รายได้ผู้ดูแลชัดและมั่นคงขึ้น": "Make carer income clearer and more stable", "ที่ปรึกษาการเงิน": "Financial adviser", "ที่ปรึกษาด้านการเกษตรและป่าไม้": "Agricultural and forestry adviser", "ธุรกิจ, โลจิสติกส์": "Business, logistics", "นักวิชาการ / ทีม": "Researcher / team", "นักวิชาการสิ่งแวดล้อม": "Environmental scientist", "บรรเทาเฉพาะหน้า": "Short-term relief", "บริษัท / สตาร์ทอัพ": "Company / startup", "บันทึกสัมภาษณ์ 5 ชุด": "5 interview notes", "บันทึกสัมภาษณ์ 5 ชุด (ไม่ระบุตัวตน)": "5 anonymised interview notes", "บันทึกสัมภาษณ์ 5 ชุด พร้อมต้นทุนที่เกษตรกรบอก": "5 interview notes with farmer-reported costs", "บุคคล": "Individual", "บุคคล / ครู": "Individual / teacher", "บุคคล / นักพัฒนา": "Individual / developer", "บุคคล / ภาคประชาสังคม": "Individual / civil society", "ประกอบอุปกรณ์": "Hardware assembly", "ประกาศงานจากเว็บหางาน (เก็บเองเป็นตัวอย่าง)": "Job ads from job sites (hand-collected sample)", "ประสานงาน": "Coordination", "ประสานงาน, บัญชีพื้นฐาน": "Coordination, basic bookkeeping", "ปริมาณที่รับซื้อ และจำนวนไร่ที่เลิกเผา": "Volume purchased and rai no longer burned", "ปัญหาเป็นฤดูกาล พอฝนมาความสนใจก็หาย งบและแผนระยะยาวจึงไม่ต่อเนื่อง": "The problem is seasonal: when the rain comes, attention fades, so budgets and long-term plans don't continue", "ผลกระทบด้านสุขภาพ": "Health impacts", "ผลกระทบภายนอก": "Externality", "ผู้ช่วยดูแลด้านสุขภาพ": "Health care assistant", "ผู้ดูแลที่ผ่านการอบรมมีประมาณกี่คน": "About how many trained carers are there?", "ผู้ดูแลส่วนบุคคลที่บ้าน": "Home-based personal care worker", "ผู้ประกอบการ": "Entrepreneurship", "ผู้ผ่านอบรม 20 คน": "20 trained participants", "ผู้สูงอายุไทยที่ต้องมีคนดูแลมีประมาณกี่คน": "About how many Thai elderly people need a carer?", "ฝุ่นส่วนหนึ่งมาจากประเทศเพื่อนบ้าน และจากห่วงโซ่อุปทาน เช่น ข้าวโพดอาหารสัตว์": "Some haze comes from neighbouring countries and from supply chains such as animal-feed corn", "พฤติกรรม": "Behaviour", "ภาวะผู้นำ": "Leadership", "ยังคำนวณตำแหน่งงานที่ขาดไม่ได้ เพราะยังไม่มีอัตรากำลังคนต่อพื้นที่ที่ใช้อ้างอิง": "Missing jobs can't be calculated yet because there is no reference staffing ratio per area", "ยังไม่มีคำตอบ เป็นเควสต์ด้านล่าง": "No answer yet; it's a quest below", "ยังไม่มีคำตอบ เป็นเควสต์ด้านล่าง (NASA FIRMS / GISTDA)": "No answer yet; it's a quest below (NASA FIRMS / GISTDA)", "ยังไม่มีตัวเลขกลางว่าใครต้องการการดูแลระดับไหน จึงวางแผนกำลังคนยาก": "There is no central figure for who needs what level of care, so workforce planning is hard", "ยื่นขอข้อมูลตาม พ.ร.บ.ข้อมูลข่าวสารของราชการ เรื่องผลการดำเนินงานแก้ฝุ่น": "File an Official Information Act request on PM2.5 programme results", "รวบรวมว่าหน่วยงานไหนรับผิดชอบเรื่องฝุ่นส่วนไหน และใช้งบเท่าไร": "Map which agency is responsible for which part of PM2.5, and how much it spends", "รวมข้อมูลเปิดให้เห็นว่าฝุ่นมาจากไหน วันต่อวัน": "Combine open data to show where the haze comes from, day by day", "รวมหลักสูตรอบรมผู้ดูแลที่รับรองแล้วไว้ที่เดียว": "Gather certified carer training courses in one place", "รัฐศาสตร์": "Political science", "รายชื่อผู้ให้บริการ เงื่อนไข และดอกเบี้ย": "List of providers, terms and interest rates", "รายชื่อหลักสูตร พร้อมลิงก์และค่าใช้จ่าย": "Course list with links and fees", "ร่างข้อเสนอโครงสร้างหน่วยงานกลางที่เป็นอิสระ โดยเทียบกับต่างประเทศ": "Draft a structure for an independent central agency, benchmarked against other countries", "ลิสต์หลักสูตรผู้ดูแลผู้สูงอายุในจังหวัดของคุณ": "List elder-carer courses in your province", "วงจรหนี้": "Debt cycle", "วัน": "days", "วิจัยนโยบาย": "Policy research", "วิทยาศาสตร์ข้อมูล": "Data science", "วิศวกรรม": "Engineering", "สถิติ, Python": "Statistics, Python", "สถิติสินเชื่อครัวเรือน (ธปท.)": "Household credit statistics (Bank of Thailand)", "สร้างความสามารถ": "Capability-building", "สร้างระบบติดตามสาธารณะที่ใครก็ตรวจสอบได้ ก่อนจะมีหน่วยงานกลาง": "Build a public tracking system anyone can audit, before a central agency exists", "สอนการเงินผ่านสถานการณ์จริงของผู้เรียน ไม่ใช่ทฤษฎี": "Teach finance through learners' real situations, not theory", "สัมภาษณ์": "Interviewing", "สัมภาษณ์ผู้ดูแล 5 คนเรื่องรายได้และภาระงาน": "Interview 5 carers about income and workload", "สัมภาษณ์ผู้ดูแลและครอบครัว 10 คน": "Interview 10 carers and families", "สัมภาษณ์ลูกหนี้นอกระบบ 10 คน": "Interview 10 informal borrowers", "สัมภาษณ์ลูกหนี้นอกระบบ 5 คน เรื่องดอกเบี้ยจริงและเหตุผลที่เลือก": "Interview 5 informal borrowers about actual interest and why they chose it", "สัมภาษณ์อย่างเคารพความเป็นส่วนตัว": "Privacy-respecting interviewing", "สัมภาษณ์เกษตรกร 5 คน ว่าเผาเพราะอะไร และต้องได้อะไรถึงจะเลิก": "Interview 5 farmers on why they burn and what would make them stop", "สัมภาษณ์เกษตรกรที่เผาและเลิกเผา 10 คน": "Interview 10 farmers who burn and who stopped", "สำรวจผู้สูงอายุติดบ้านในตำบล 20 หลัง": "Survey 20 homebound elderly households in your sub-district", "สำรวจภาคสนาม": "Field survey", "สำรวจว่ามีผู้ให้บริการในไทยรายไหนใช้ข้อมูลทางเลือกปล่อยกู้แล้วบ้าง": "Find which Thai lenders already use alternative data", "สินเชื่อก้อนเล็กมีต้นทุนดำเนินการต่อบาทสูง สถาบันการเงินจึงไม่อยากปล่อย": "Small loans cost more to process per baht, so lenders avoid them", "สิ่งที่ตัวเลขทางการไม่เห็น": "What official numbers miss", "สเปรดชีต, คณิตศาสตร์พื้นฐาน": "Spreadsheets, basic maths", "หนี้ครัวเรือนแยกในระบบและนอกระบบ": "Household debt, formal vs informal", "หนี้โตเร็วกว่ารายได้มาหลายปี การลดหนี้ทำได้ไม่กี่ทาง (รัดเข็มขัด ปรับโครงสร้างหนี้ อัดฉีดเงิน กระจายรายได้) และทุกทางมีคนต้องรับต้นทุน (กรอบจาก Big Debt Crises ของ Ray Dalio)": "Debt has grown faster than income for years. There are only a few ways to deleverage (austerity, restructuring, money printing, redistribution), and each one puts costs on someone (frame from Ray Dalio's Big Debt Crises)", "หนี้ในระบบรายไตรมาส": "Formal debt, quarterly", "ห้องที่วัดค่าฝุ่นในห้องได้ต่ำกว่ามาตรฐาน": "A room with indoor PM2.5 measured below the standard", "ออกแบบการสอน": "Instructional design", "ออกแบบบริการ, การเงิน": "Service design, finance", "ออกแบบเวิร์กช็อป 2 ชั่วโมงจากบันทึกสัมภาษณ์ลูกหนี้": "Design a 2-hour workshop from borrower interview notes", "ออกแบบแพ็กเกจจ้างผู้ดูแลแบบรายชั่วโมงร่วมกันหลายครอบครัว": "Design an hourly carer package shared by several families", "อำนาจกระจายหลายกระทรวงและท้องถิ่น ไม่มีหน่วยงานที่รับผิดชอบผลลัพธ์ทั้งหมด": "Authority is spread across ministries and local governments; no agency owns the overall outcome", "เก็บค่าจ้างผู้ดูแลจากประกาศงาน 50 ประกาศ": "Collect carer wages from 50 job ads", "เขียนหนังสือราชการ": "Official letter writing", "เขียนโปรแกรม, ออกแบบ UX": "Programming, UX design", "เขียนให้อ่านง่าย": "Plain-language writing", "เงินกู้นอกระบบได้เงินเร็ว ไม่ต้องมีเอกสาร จึงชนะในวันที่ต้องใช้เงินด่วน": "Informal loans are fast and need no paperwork, so they win when money is needed urgently", "เจ้าภาพ": "No owner", "เจ้าหน้าที่สินเชื่อ": "Loan officer", "เซนเซอร์ 5 จุดที่ส่งค่าขึ้นเว็บได้": "5 sensors reporting readings online", "เปิดรอบอบรมผู้ดูแลในตำบล": "Run a carer training round in the sub-district", "เริ่มต้น": "Beginner", "เวิร์กช็อปที่ทดลองสอนจริง 1 รอบ พร้อมผลก่อนและหลัง": "One pilot workshop with before-and-after results", "เว็บต้นแบบที่ทดลองกับ 1 ตำบล": "A prototype website tested in one sub-district", "เศรษฐศาสตร์": "Economics", "เอกสารข้อเสนอที่ระบุอำนาจ งบ และตัวชี้วัด": "A proposal specifying powers, budget and indicators", "แก้ต้นเหตุ": "Root cause", "แจ้งเตือนและป้องกันกลุ่มเสี่ยงช่วงฝุ่นหนัก": "Warn and protect vulnerable groups during heavy haze", "แผนผังหน่วยงาน อำนาจ และงบประมาณ 1 หน้า": "A one-page map of agencies, powers and budgets", "แรงกดดันทางสังคมและความเครียดจากหนี้ทำให้คนตัดสินใจระยะสั้น ซึ่งเป็นผลของความขาดแคลน ไม่ใช่นิสัย": "Social pressure and debt stress push people toward short-term decisions, an effect of scarcity, not character", "แรงจูงใจ": "Incentives", "โมเดลต้นแบบพร้อมรายงานความแม่นยำและอคติต่อกลุ่มต่างๆ": "A prototype model with accuracy and bias reports across groups", "ใช้ข้อมูลทางเลือก เช่น การจ่ายค่าน้ำไฟตรงเวลา สร้างประวัติเครดิต": "Use alternative data, such as on-time utility payments, to build credit history", "ในหนึ่งปี มีกี่วันที่ค่าฝุ่นเกินมาตรฐาน (พื้นที่ที่หนักที่สุด)": "How many days a year exceed the PM2.5 standard (worst-hit area)?", "ไม่มีประวัติเครดิต จึงกู้ในระบบไม่ได้": "No credit history, so no access to formal loans", "ไม่มีเจ้าภาพกลางที่ตรวจสอบและติดตามผลได้": "No central owner that can audit and track results"};
+const OQ_PROB_EN = {"elder-care": {"title": "Not enough elder carers", "gap_type": "Supply shortage", "region": "Thailand", "demand": "Elderly people who need a carer", "supply": "Trained carers", "unit": "people"}, "mental-health": {"title": "Mental health services hard to access", "gap_type": "No access / too expensive", "region": "Global", "demand": "People who need treatment", "supply": "People receiving treatment", "unit": "people (Thailand)"}, "ai-jobs": {"title": "Jobs replaced by AI with no career-transition system", "gap_type": "Future risk", "region": "Global", "demand": "Workers who need reskilling", "supply": "Certified course seats", "unit": "people (Thailand)"}, "sme-credit": {"title": "SMEs lack capital because they lack data history", "gap_type": "No access / too expensive", "region": "ASEAN", "demand": "Credit SMEs need", "supply": "Credit actually received", "unit": "million baht"}, "battery-recycling": {"title": "End-of-life EV batteries with no recycling system", "gap_type": "Emerging (no market yet)", "region": "ASEAN", "demand": "Batteries reaching end of life by 2035", "supply": "Planned recycling capacity", "unit": "tonnes"}, "semiconductor-skills": {"title": "Shortage of semiconductor engineers", "gap_type": "Supply shortage", "region": "Thailand", "demand": "Open positions", "supply": "Relevant graduates per year", "unit": "positions"}, "food-loss": {"title": "Post-harvest crop losses", "gap_type": "Inefficiency", "region": "Thailand", "demand": "Produce that needs cold storage", "supply": "Cold-storage capacity in growing areas", "unit": "tonnes/year"}, "pm25": {"title": "PM2.5 haze in the North and Bangkok", "gap_type": "Market failure (externality)", "region": "Thailand + Mekong", "demand": "Days above the PM2.5 standard", "supply": "Days within the standard", "unit": "days/year"}, "household-debt": {"title": "High household debt, little fair credit", "gap_type": "No access / too expensive", "region": "Thailand", "demand": "Households with informal debt", "supply": "Households with formal credit access", "unit": "households"}, "online-fraud": {"title": "Online scams and mule accounts", "gap_type": "Coordination failure", "region": "ASEAN", "demand": "Cases reported per year", "supply": "Cases where money was recovered", "unit": "cases"}, "energy-security": {"title": "Reliance on imported energy, volatile prices", "gap_type": "Future risk", "region": "Global", "demand": "Peak electricity demand", "supply": "Domestic renewable capacity", "unit": "MW"}, "rural-doctors": {"title": "Not enough rural doctors", "gap_type": "Supply shortage", "region": "Northeast Thailand", "demand": "Doctors required by standard", "supply": "Doctors actually in post", "unit": "people"}, "groundwater": {"title": "Contaminated groundwater in communities", "gap_type": "Insufficient quality", "region": "Central and Northeast", "demand": "Households using groundwater", "supply": "Households with water-quality testing", "unit": "households"}, "flood-water": {"title": "Recurring floods alternating with drought", "gap_type": "Future risk", "region": "Chao Phraya basin", "demand": "Flood-risk area", "supply": "Area with flood protection", "unit": "rai"}};
+</script>
+<script>
 (function () {
+  const EN = () => document.documentElement.lang === "en";
+  const L2 = (th, en) => EN() ? en : th;
+  const tx = s => (EN() && OQ_TXT_EN[s]) || s;
+  const pe = (p, k, th) => (EN() && OQ_PROB_EN[p.id] && OQ_PROB_EN[p.id][k]) || th;
+  const ptitle = p => pe(p, "title", p.title);
   const CATS = {
-    supply:   { name: "ขาด supply", v: "--s1" },
-    access:   { name: "เข้าถึงไม่ได้ / แพง", v: "--s2" },
-    systemic: { name: "ความเสี่ยงเชิงระบบ", v: "--s3" }
+    supply:   { get name() { return L2("ขาด supply", "Supply shortage"); }, v: "--s1" },
+    access:   { get name() { return L2("เข้าถึงไม่ได้ / แพง", "No access / too costly"); }, v: "--s2" },
+    systemic: { get name() { return L2("ความเสี่ยงเชิงระบบ", "Systemic risk"); }, v: "--s3" }
   };
-  const SCOPE = { global: "ระดับโลก", regional: "ภูมิภาค", national: "ประเทศ", local: "พื้นที่" };
+  const SCOPE_TH = { global: "ระดับโลก", regional: "ภูมิภาค", national: "ประเทศ", local: "พื้นที่" };
+  const SCOPE_EN = { global: "Global", regional: "Regional", national: "National", local: "Local" };
   const STATUS = {
-    verified:      { label: "ยืนยันแล้ว", c: "--good", ic: "✓" },
-    corroborating: { label: "มีแหล่งรองรับบางส่วน", c: "--warn", ic: "◐" },
-    unverified:    { label: "รอตรวจสอบ", c: "--muted", ic: "?" },
-    disputed:      { label: "ขัดแย้งกับแหล่งอื่น", c: "--crit", ic: "✕" }
+    verified:      { th: "ยืนยันแล้ว", en: "Verified", c: "--good", ic: "✓" },
+    corroborating: { th: "มีแหล่งรองรับบางส่วน", en: "Partly corroborated", c: "--warn", ic: "◐" },
+    unverified:    { th: "รอตรวจสอบ", en: "Awaiting review", c: "--muted", ic: "?" },
+    disputed:      { th: "ขัดแย้งกับแหล่งอื่น", en: "Disputed by other sources", c: "--crit", ic: "✕" }
   };
-  const DIMS = { scale: "ขนาดปัญหา", neglect: "ถูกละเลย", tractability: "แก้ได้จริง", timing: "จังหวะเวลา (why now)" };
+  const DIMS_TH = { scale: "ขนาดปัญหา", neglect: "ถูกละเลย", tractability: "แก้ได้จริง", timing: "จังหวะเวลา (why now)" };
+  const DIMS_EN = { scale: "Scale", neglect: "Neglect", tractability: "Tractability", timing: "Timing (why now)" };
+  const TIERS_EN = { research: "Peer-reviewed research", official: "Official statistics", news: "News", social: "Social media" };
+  const dims = () => EN() ? DIMS_EN : DIMS_TH;
+  const scopeName = k => (EN() ? SCOPE_EN : SCOPE_TH)[k];
+  const tierName = k => (EN() && TIERS_EN[k]) || data.tiers[k];
 
   const css = n => getComputedStyle(document.documentElement).getPropertyValue(n).trim();
   const $ = id => document.getElementById(id);
   const esc = s => String(s ?? "").replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
-  const fmt = n => n >= 1e6 ? (n / 1e6).toFixed(1) + " ล้าน" : n >= 1e3 ? Math.round(n / 1e3).toLocaleString() + " พัน" : n.toLocaleString();
+  const fmt = n => n >= 1e6 ? (n / 1e6).toFixed(1) + L2(" ล้าน", "M") : n >= 1e3 ? Math.round(n / 1e3).toLocaleString() + L2(" พัน", "k") : n.toLocaleString();
 
   let data, bubble, area, spark, selected;
   const state = { cats: new Set(Object.keys(CATS)), scope: "all" };
@@ -372,7 +387,7 @@ ol.meet b { color: var(--ink); font-size: 14px; }
   const save = () => { try { localStorage.setItem("oq-filters", JSON.stringify({ cats: [...state.cats], scope: state.scope })); } catch (e) {} };
 
   fetch("data.json", { cache: "no-store" }).then(r => { if (!r.ok) throw new Error(r.status); return r.json(); }).then(init).catch(err => {
-    $("dossier").innerHTML = '<p class="err">โหลด data.json ไม่ได้ ถ้าเปิดไฟล์ตรงจากเครื่อง ให้รัน <code>python -m http.server</code> ในโฟลเดอร์ web ก่อน แล้วเปิด http://localhost:8000</p>';
+    $("dossier").innerHTML = '<p class="err">' + L2("โหลด data.json ไม่ได้ ถ้าเปิดไฟล์ตรงจากเครื่อง ให้รัน <code>python -m http.server</code> ในโฟลเดอร์ web ก่อน แล้วเปิด http://localhost:8000", "Could not load data.json. If you opened the file directly, run <code>python -m http.server</code> in the web folder and open http://localhost:8000") + "</p>";
   });
 
   function visible() {
@@ -382,17 +397,13 @@ ol.meet b { color: var(--ink); font-size: 14px; }
   function init(d) {
     data = d;
     $("banner").hidden = !d.is_sample;
-    const t = new Date(d.generated_at);
-    $("updated").innerHTML = 'อัปเดตล่าสุด <span class="mono">' + t.toLocaleString("th-TH", { dateStyle: "medium", timeStyle: "short" }) + "</span>";
+    relabel();
     const st = d.evidence_status;
     $("k-problems").textContent = d.problems.length;
     $("k-new").textContent = d.new_evidence_today;
     $("k-pending").textContent = (st.unverified || 0) + (st.corroborating || 0);
     $("k-verified").textContent = st.verified || 0;
-    $("weights").textContent = "คะแนน = " + Object.entries(d.weights).map(([k, w]) => DIMS[k].replace(/ \(.*/, "") + " × " + w).join(" + ");
-
     const chips = $("cat-chips");
-    chips.innerHTML = Object.entries(CATS).map(([k, c]) => '<button class="chip" id="chip-' + k + '" data-k="' + k + '" aria-pressed="' + state.cats.has(k) + '"><span class="dot" style="background:var(' + c.v + ')"></span>' + c.name + "</button>").join("");
     chips.addEventListener("click", e => {
       const b = e.target.closest(".chip"); if (!b) return;
       const k = b.dataset.k;
@@ -413,6 +424,15 @@ ol.meet b { color: var(--ink); font-size: 14px; }
     renderPipeline();
     render();
   }
+
+  function relabel() {
+    const t = new Date(data.generated_at);
+    $("updated").innerHTML = L2("อัปเดตล่าสุด ", "Last updated ") + '<span class="mono">' + t.toLocaleString(L2("th-TH", "en-GB"), { dateStyle: "medium", timeStyle: "short" }) + "</span>";
+    $("weights").textContent = L2("คะแนน = ", "Score = ") + Object.entries(data.weights).map(([k, w]) => dims()[k].replace(/ \(.*/, "") + " × " + w).join(" + ");
+    $("cat-chips").innerHTML = Object.entries(CATS).map(([k, c]) => '<button class="chip" id="chip-' + k + '" data-k="' + k + '" aria-pressed="' + state.cats.has(k) + '"><span class="dot" style="background:var(' + c.v + ')"></span>' + c.name + "</button>").join("");
+  }
+
+  window.oqDashRelang = () => { if (!data) return; relabel(); renderPipeline(); render(); };
 
   function axisBase(name) {
     return {
@@ -435,22 +455,22 @@ ol.meet b { color: var(--ink); font-size: 14px; }
       grid: { left: 48, right: 20, top: 16, bottom: 48 },
       tooltip: {
         backgroundColor: surface, borderColor: css("--line"), textStyle: { color: css("--ink"), fontFamily: css("--f-body") },
-        formatter: p => "<b>" + esc(p.data.title) + "</b><br>ขนาด " + p.data.value[0] + " · ถูกละเลย " + p.data.value[1] + "<br>กระทบ " + p.data.value[2] + " ล้านคน · คะแนน " + p.data.score
+        formatter: p => "<b>" + esc(p.data.title) + "</b><br>" + L2("ขนาด ", "Scale ") + p.data.value[0] + L2(" · ถูกละเลย ", " · Neglect ") + p.data.value[1] + "<br>" + L2("กระทบ ", "Affects ") + p.data.value[2] + L2(" ล้านคน · คะแนน ", "M people · score ") + p.data.score
       },
-      xAxis: axisBase("ขนาดและความรุนแรงของปัญหา →"),
-      yAxis: { ...axisBase("ถูกละเลย →"), nameGap: 32 },
+      xAxis: axisBase(L2("ขนาดและความรุนแรงของปัญหา →", "Scale and severity →")),
+      yAxis: { ...axisBase(L2("ถูกละเลย →", "Neglect →")), nameGap: 32 },
       series: Object.entries(CATS).map(([k, c]) => ({
         name: c.name, type: "scatter",
         data: list.filter(p => p.category === k).map(p => ({
-          id: p.id, title: p.title, score: p.score,
+          id: p.id, title: ptitle(p), score: p.score,
           value: [p.scores.scale, p.scores.neglect, p.affected_m],
           symbolSize: 14 + 56 * Math.sqrt(p.affected_m / maxA),
           itemStyle: { color: css(c.v), opacity: p.id === selected ? 1 : 0.72, borderColor: p.id === selected ? css("--ink") : surface, borderWidth: 2 },
-          label: { show: true, position: "right", formatter: p.title.length > 16 ? p.title.slice(0, 15) + "…" : p.title, color: css("--ink-2"), fontSize: 11, fontFamily: css("--f-body") }
+          label: { show: true, position: "right", formatter: (t => t.length > 16 + (EN() ? 6 : 0) ? t.slice(0, 15 + (EN() ? 6 : 0)) + "…" : t)(ptitle(p)), color: css("--ink-2"), fontSize: 11, fontFamily: css("--f-body") }
         })),
         labelLayout: { hideOverlap: true },
         emphasis: { focus: "self", label: { color: css("--ink") } },
-        markArea: k === "supply" ? { silent: true, itemStyle: { color: css("--accent-soft"), opacity: 0.55 }, data: [[{ coord: [60, 60] }, { coord: [100, 100] }]], label: { show: true, position: "insideTopRight", formatter: "จุดที่น่าลงมือ", color: css("--muted"), fontSize: 11 } } : undefined
+        markArea: k === "supply" ? { silent: true, itemStyle: { color: css("--accent-soft"), opacity: 0.55 }, data: [[{ coord: [60, 60] }, { coord: [100, 100] }]], label: { show: true, position: "insideTopRight", formatter: L2("จุดที่น่าลงมือ", "Worth acting on"), color: css("--muted"), fontSize: 11 } } : undefined
       }))
     }, { replaceMerge: ["series"] });
 
@@ -469,7 +489,7 @@ ol.meet b { color: var(--ink); font-size: 14px; }
       series
     });
 
-    $("rows").innerHTML = list.map((p, i) => '<tr tabindex="0" data-id="' + p.id + '" aria-selected="' + (p.id === selected) + '"><td class="mono">' + (i + 1) + "</td><td>" + esc(p.title) + '</td><td><span class="dot" style="background:var(' + CATS[p.category].v + ')"></span> ' + esc(p.gap_type) + "</td><td>" + esc(p.region) + '</td><td class="num"><b>' + p.score + '</b></td><td class="num">' + p.scores.scale + '</td><td class="num">' + p.scores.neglect + '</td><td class="num">' + p.scores.tractability + '</td><td class="num">' + p.scores.timing + '</td><td class="num">' + p.affected_m + "</td></tr>").join("");
+    $("rows").innerHTML = list.map((p, i) => '<tr tabindex="0" data-id="' + p.id + '" aria-selected="' + (p.id === selected) + '"><td class="mono">' + (i + 1) + "</td><td>" + esc(ptitle(p)) + '</td><td><span class="dot" style="background:var(' + CATS[p.category].v + ')"></span> ' + esc(pe(p, "gap_type", p.gap_type)) + "</td><td>" + esc(pe(p, "region", p.region)) + '</td><td class="num"><b>' + p.score + '</b></td><td class="num">' + p.scores.scale + '</td><td class="num">' + p.scores.neglect + '</td><td class="num">' + p.scores.tractability + '</td><td class="num">' + p.scores.timing + '</td><td class="num">' + p.affected_m + "</td></tr>").join("");
     $("rows").onclick = e => { const r = e.target.closest("tr"); if (r) select(r.dataset.id); };
     $("rows").onkeydown = e => { if (e.key === "Enter") { const r = e.target.closest("tr"); if (r) select(r.dataset.id); } };
 
@@ -480,28 +500,28 @@ ol.meet b { color: var(--ink); font-size: 14px; }
 
   function statusPill(s) {
     const m = STATUS[s];
-    return '<span class="pill"><span class="ic" style="background:var(' + m.c + ')">' + m.ic + "</span>" + m.label + "</span>";
+    return '<span class="pill"><span class="ic" style="background:var(' + m.c + ')">' + m.ic + "</span>" + L2(m.th, m.en) + "</span>";
   }
 
   function renderDossier() {
     const p = data.problems.find(x => x.id === selected);
     const el = $("dossier");
     renderPlan(p);
-    if (!p) { el.innerHTML = '<p class="err">ไม่มีปัญหาตรงกับตัวกรองนี้</p>'; return; }
+    if (!p) { el.innerHTML = '<p class="err">' + L2("ไม่มีปัญหาตรงกับตัวกรองนี้", "No problems match this filter") + "</p>"; return; }
     const gapPct = Math.round(100 * p.supply.value / p.demand.value);
     el.innerHTML =
-      '<div class="tags"><span class="tag"><span class="dot" style="background:var(' + CATS[p.category].v + ')"></span> ' + esc(p.gap_type) + '</span><span class="tag">' + SCOPE[p.scope] + " · " + esc(p.region) + "</span>" + p.sdg.map(s => '<span class="tag">SDG ' + s + "</span>").join("") + "</div>" +
-      "<h3>" + esc(p.title) + "</h3>" +
-      '<div class="score-big"><b>' + p.score + '</b><span class="label">คะแนนโอกาส จาก 100</span></div>' +
-      '<div class="bars">' + Object.entries(DIMS).map(([k, n]) => '<div class="bar"><span>' + n + '</span><span class="track"><span class="fill" style="display:block;width:' + p.scores[k] + '%"></span></span><span class="v">' + p.scores[k] + "</span></div>").join("") + "</div>" +
-      '<div class="gap"><span class="label">Demand เทียบ Supply</span>' +
-        '<div class="row"><span>' + esc(p.demand.label) + "</span><b>" + fmt(p.demand.value) + "</b></div>" +
-        '<div class="row"><span>' + esc(p.supply.label) + "</span><b>" + fmt(p.supply.value) + "</b></div>" +
-        '<div class="gapbar" aria-label="supply ครอบคลุม ' + gapPct + '%"><i style="width:' + gapPct + '%"></i></div>' +
-        '<div class="row"><span>supply ครอบคลุมได้ ' + gapPct + "% ขาดอีก " + fmt(p.demand.value - p.supply.value) + " " + esc(p.demand.unit) + "</span></div></div>" +
-      '<div><span class="label">สัญญาณรายวัน 30 วัน</span><div id="spark"></div></div>' +
-      '<div><span class="label">หลักฐานล่าสุด</span><ul class="ev">' + p.evidence.slice(0, 5).map(e =>
-        '<li><span class="t">' + esc(e.title) + '</span><span class="m">' + statusPill(e.status) + '<span>' + esc(data.tiers[e.tier]) + " · " + esc(e.source) + ' · <span class="mono">' + esc((e.date || "").slice(5)) + "</span>" + (e.note ? " · " + esc(e.note) : "") + "</span></span></li>").join("") + "</ul></div>";
+      '<div class="tags"><span class="tag"><span class="dot" style="background:var(' + CATS[p.category].v + ')"></span> ' + esc(pe(p, "gap_type", p.gap_type)) + '</span><span class="tag">' + scopeName(p.scope) + " · " + esc(pe(p, "region", p.region)) + "</span>" + p.sdg.map(s => '<span class="tag">SDG ' + s + "</span>").join("") + "</div>" +
+      "<h3>" + esc(ptitle(p)) + "</h3>" +
+      '<div class="score-big"><b>' + p.score + '</b><span class="label">' + L2("คะแนนโอกาส จาก 100", "Opportunity score out of 100") + '</span></div>' +
+      '<div class="bars">' + Object.entries(dims()).map(([k, n]) => '<div class="bar"><span>' + n + '</span><span class="track"><span class="fill" style="display:block;width:' + p.scores[k] + '%"></span></span><span class="v">' + p.scores[k] + "</span></div>").join("") + "</div>" +
+      '<div class="gap"><span class="label">Demand ' + L2("เทียบ", "vs") + ' Supply</span>' +
+        '<div class="row"><span>' + esc(pe(p, "demand", p.demand.label)) + "</span><b>" + fmt(p.demand.value) + "</b></div>" +
+        '<div class="row"><span>' + esc(pe(p, "supply", p.supply.label)) + "</span><b>" + fmt(p.supply.value) + "</b></div>" +
+        '<div class="gapbar" aria-label="supply ' + L2("ครอบคลุม ", "covers ") + gapPct + '%"><i style="width:' + gapPct + '%"></i></div>' +
+        '<div class="row"><span>' + L2("supply ครอบคลุมได้ ", "Supply covers ") + gapPct + L2("% ขาดอีก ", "%, short by ") + fmt(p.demand.value - p.supply.value) + " " + esc(pe(p, "unit", p.demand.unit)) + "</span></div></div>" +
+      '<div><span class="label">' + L2("สัญญาณรายวัน 30 วัน", "Daily signals, 30 days") + '</span><div id="spark"></div></div>' +
+      '<div><span class="label">' + L2("หลักฐานล่าสุด", "Latest evidence") + '</span><ul class="ev">' + p.evidence.slice(0, 5).map(e =>
+        '<li><span class="t">' + esc(tx(e.title)) + '</span><span class="m">' + statusPill(e.status) + '<span>' + esc(tierName(e.tier)) + " · " + esc(tx(e.source)) + ' · <span class="mono">' + esc((e.date || "").slice(5)) + "</span>" + (e.note ? " · " + esc(tx(e.note)) : "") + "</span></span></li>").join("") + "</ul></div>";
 
     spark && spark.dispose();
     spark = echarts.init($("spark"));
@@ -523,28 +543,31 @@ ol.meet b { color: var(--ink); font-size: 14px; }
     const g = loadGuess(guessKey(p, i));
     let res = "";
     if (g !== null && g !== "") {
-      if (x.answer == null) res = '<span class="res">คำตอบของคุณ ' + fmt(+g) + " " + esc(x.unit) + " · ยังไม่มีข้อมูลจริงให้เทียบ</span>";
+      if (x.answer == null) res = '<span class="res">' + L2("คำตอบของคุณ ", "Your answer ") + fmt(+g) + " " + esc(tx(x.unit)) + L2(" · ยังไม่มีข้อมูลจริงให้เทียบ", " · no real data to compare yet") + "</span>";
       else {
         const diff = Math.round(100 * (+g - x.answer) / x.answer);
-        res = '<span class="res">คุณทาย ' + fmt(+g) + " · ข้อมูลบอก <b>" + fmt(x.answer) + "</b> " + esc(x.unit) + " · " + (diff === 0 ? "ตรงพอดี" : (diff > 0 ? "สูงไป " : "ต่ำไป ") + Math.abs(diff) + "%") + "</span>";
+        res = '<span class="res">' + L2("คุณทาย ", "You guessed ") + fmt(+g) + L2(" · ข้อมูลบอก <b>", " · data says <b>") + fmt(x.answer) + "</b> " + esc(tx(x.unit)) + " · " + (diff === 0 ? L2("ตรงพอดี", "exactly right") : (diff > 0 ? L2("สูงไป ", "too high by ") : L2("ต่ำไป ", "too low by ")) + Math.abs(diff) + "%") + "</span>";
       }
     }
-    return '<li class="predict"><span>' + esc(x.q) + '</span><form data-i="' + i + '"><input type="number" inputmode="decimal" aria-label="คำตอบของคุณ" placeholder="คำตอบของคุณ" value="' + esc(g ?? "") + '"><span class="label">' + esc(x.unit) + '</span><button type="submit">ดูคำตอบ</button></form>' + res + '<span class="label">' + esc(x.source) + "</span></li>";
+    const yl = L2("คำตอบของคุณ", "Your answer");
+    return '<li class="predict"><span>' + esc(tx(x.q)) + '</span><form data-i="' + i + '"><input type="number" inputmode="decimal" aria-label="' + yl + '" placeholder="' + yl + '" value="' + esc(g ?? "") + '"><span class="label">' + esc(tx(x.unit)) + '</span><button type="submit">' + L2("ดูคำตอบ", "Check") + '</button></form>' + res + '<span class="label">' + esc(tx(x.source)) + "</span></li>";
   }
 
-  const STALE = "ไฟล์ data.json นี้สร้างจาก pipeline รุ่นเก่า จึงยังไม่มีข้อมูลแผนลงมือ ให้ใช้ pipeline/problems.json และ pipeline/build_data.py ชุดใหม่ แล้วรัน python pipeline/build_data.py อีกครั้ง";
+  const STALE_TH = "ไฟล์ data.json นี้สร้างจาก pipeline รุ่นเก่า จึงยังไม่มีข้อมูลแผนลงมือ ให้ใช้ pipeline/problems.json และ pipeline/build_data.py ชุดใหม่ แล้วรัน python pipeline/build_data.py อีกครั้ง";
+  const STALE_EN = "This data.json was built by an older pipeline and has no action plans. Use the new pipeline/problems.json and pipeline/build_data.py, then run python pipeline/build_data.py again.";
+  const stale = () => L2(STALE_TH, STALE_EN);
 
   function renderPatterns() {
     const pt = data.patterns;
-    if (!pt || !Object.keys(pt.why_unsolved).length) { $("patterns").innerHTML = '<p class="err">' + (pt ? "ยังไม่มีปัญหาที่แตกแผนไว้" : STALE) + "</p>"; return; }
-    const title = id => esc((data.problems.find(x => x.id === id) || {}).title || id);
+    if (!pt || !Object.keys(pt.why_unsolved).length) { $("patterns").innerHTML = '<p class="err">' + (pt ? L2("ยังไม่มีปัญหาที่แตกแผนไว้", "No problems have plans yet") : stale()) + "</p>"; return; }
+    const title = id => { const q = data.problems.find(x => x.id === id); return esc(q ? ptitle(q) : id); };
     const shared = Object.entries(pt.why_unsolved).filter(([, ids]) => ids.length > 1).sort((a, b) => b[1].length - a[1].length);
     const fields = Object.entries(pt.fields).sort((a, b) => b[1].quests - a[1].quests);
-    $("patterns").innerHTML = '<div class="plan-grid"><div class="labor"><span class="label">เหตุผลที่ยังแก้ไม่ได้ซึ่งเกิดซ้ำในหลายปัญหา</span><ul class="plist">' +
-      shared.map(([k, ids]) => "<li><b>" + esc(k) + "</b> · " + ids.length + " ปัญหา<span>" + ids.map(title).join(", ") + "</span></li>").join("") + "</ul></div>" +
-      '<div class="labor"><span class="label">สาขาที่เควสต์ต้องใช้ (นับจำนวนเควสต์)</span><ul class="plist">' +
-      fields.map(([k, v]) => "<li><b>" + esc(k) + '</b> <span class="mono">' + v.quests + "</span> · " + v.problems.length + " ปัญหา</li>").join("") + "</ul>" +
-      '<span class="label">ไม่มีใครต้องเก่งทุกสาขา เควสต์แต่ละชิ้นใช้ 1–2 สาขา สาขาที่ถูกใช้ซ้ำในหลายปัญหาคือหัวข้อที่ควรเปิดพื้นที่ upskill ก่อน</span></div></div>';
+    $("patterns").innerHTML = '<div class="plan-grid"><div class="labor"><span class="label">' + L2("เหตุผลที่ยังแก้ไม่ได้ซึ่งเกิดซ้ำในหลายปัญหา", "Reasons it stays unsolved that repeat across problems") + '</span><ul class="plist">' +
+      shared.map(([k, ids]) => "<li><b>" + esc(tx(k)) + "</b> · " + ids.length + L2(" ปัญหา", " problems") + "<span>" + ids.map(title).join(", ") + "</span></li>").join("") + "</ul></div>" +
+      '<div class="labor"><span class="label">' + L2("สาขาที่เควสต์ต้องใช้ (นับจำนวนเควสต์)", "Fields quests need (number of quests)") + '</span><ul class="plist">' +
+      fields.map(([k, v]) => "<li><b>" + esc(tx(k)) + '</b> <span class="mono">' + v.quests + "</span> · " + v.problems.length + L2(" ปัญหา", " problems") + "</li>").join("") + "</ul>" +
+      '<span class="label">' + L2("ไม่มีใครต้องเก่งทุกสาขา เควสต์แต่ละชิ้นใช้ 1–2 สาขา สาขาที่ถูกใช้ซ้ำในหลายปัญหาคือหัวข้อที่ควรเปิดพื้นที่ upskill ก่อน", "Nobody needs every field. Each quest uses 1–2 fields; fields used across many problems are where upskilling should start.") + "</span></div></div>";
   }
 
   function renderPlan(p) {
@@ -553,26 +576,26 @@ ol.meet b { color: var(--ink); font-size: 14px; }
     const pl = p && p.plan;
     if (!pl) {
       const withPlan = data.problems.filter(x => x.plan);
-      el.innerHTML = '<p class="err">' + (!data.patterns ? STALE : "ปัญหานี้ยังไม่ได้แตกเป็นแผนลงมือ เลือกปัญหาที่มีแผนแล้ว: " +
-        withPlan.map(x => '<button class="chip" data-go="' + esc(x.id) + '">' + esc(x.title) + "</button>").join(" ")) + "</p>";
+      el.innerHTML = '<p class="err">' + (!data.patterns ? stale() : L2("ปัญหานี้ยังไม่ได้แตกเป็นแผนลงมือ เลือกปัญหาที่มีแผนแล้ว: ", "This problem has no action plan yet. Pick one that does: ") +
+        withPlan.map(x => '<button class="chip" data-go="' + esc(x.id) + '">' + esc(ptitle(x)) + "</button>").join(" ")) + "</p>";
       el.querySelectorAll("[data-go]").forEach(b => b.addEventListener("click", () => select(b.dataset.go)));
       return;
     }
     const lb = pl.labor || {};
     el.innerHTML = '<div class="plan-grid"><div style="display:grid;gap:12px">' +
-      (pl.predict ? '<div class="cause"><b>ทายก่อนดูข้อมูล</b><span class="approach">เขียนคำตอบของคุณก่อน แล้วค่อยเทียบ จะเห็นว่าความรู้สึกเราพลาดไปทางไหน</span><ul class="quests">' + pl.predict.map((x, i) => predictHtml(p, x, i)).join("") + "</ul></div>" : "") +
-      (pl.why_unsolved ? '<div class="cause"><b>ทำไมยังไม่มีใครแก้</b><ul class="plist">' + pl.why_unsolved.map(w => '<li><span class="tag">' + esc(w.type) + "</span> " + esc(w.text) + "</li>").join("") + "</ul></div>" : "") +
-      '<div class="tierline"><span class="tag">เควสต์ทั้งหมด <b class="mono">' + pl.quest_count + '</b></span><span class="tag">ยังไม่มีคนรับ <b class="mono">' + pl.open_quests + '</b></span><span class="tag">ทำเสร็จแล้ว <b class="mono">' + pl.done_quests + '</b> ครั้ง</span></div>' +
-      pl.causes.map(c => '<div class="cause"><b>' + esc(c.title) + '</b>' + c.approaches.map(a =>
-        '<span class="approach">แนวทาง: ' + esc(a.title) + (a.kind ? ' <span class="tag">' + esc(a.kind) + '</span>' : '') + '</span><ul class="quests">' + a.quests.map(q =>
-          '<li class="quest' + (q.takers ? "" : " open") + '"><span class="q">' + esc(q.title) + '</span><span class="who">' + esc(q.who) + '</span>' +
-          '<span class="meta">' + (q.level ? '<span>ระดับ: ' + esc(q.level) + '</span>' : '') + (q.fields ? '<span>สาขา: ' + q.fields.map(esc).join(", ") + '</span>' : '') + '<span>ทักษะ: ' + esc(q.skill) + '</span><span>เวลา: ' + esc(q.effort) + '</span><span>ผลลัพธ์: ' + esc(q.output) + '</span><span>รับแล้ว ' + q.takers + ' · เสร็จ ' + q.done + '</span></span></li>').join("") + '</ul>').join("") + '</div>').join("") +
-      '</div><div class="labor"><span class="label">ตลาดงาน</span>' +
-      (lb.jobs_gap != null ? '<div><div class="big">' + fmt(lb.jobs_gap) + '</div><span class="label">ตำแหน่งงานที่ยังขาด (ผู้ทำงาน 1 คนต่อ ' + fmt(lb.people_per_worker) + " " + esc(p.demand.unit) + ')</span></div>'
-        : lb.workers_needed != null ? '<div><div class="big">' + fmt(lb.workers_needed) + '</div><span class="label">ตำแหน่งที่ต้องมีทั้งหมด (ผู้ทำงาน 1 คนต่อ ' + fmt(lb.people_per_worker) + " " + esc(p.demand.unit) + ') ยังไม่รู้ว่ามีอยู่แล้วกี่คน</span></div>' : "") +
-      '<div><span class="label">อาชีพที่เกี่ยวข้อง</span><ul>' + (lb.occupations || []).map(o => '<li>' + esc(o.name) + ' <span class="mono">' + esc(o.code) + '</span></li>').join("") + '</ul></div>' +
-      '<div><span class="label">ข้อมูลที่ต้องเก็บ</span><ul>' + (lb.data_sources || []).map(d => '<li>' + esc(d.name) + ' · ' + esc(d.measures) + '</li>').join("") + '</ul></div>' +
-      (lb.note ? '<span class="label">' + esc(lb.note) + '</span>' : "") + '</div></div>';
+      (pl.predict ? '<div class="cause"><b>' + L2("ทายก่อนดูข้อมูล", "Predict before you look") + '</b><span class="approach">' + L2("เขียนคำตอบของคุณก่อน แล้วค่อยเทียบ จะเห็นว่าความรู้สึกเราพลาดไปทางไหน", "Write your answer first, then compare, to see which way your intuition misses") + '</span><ul class="quests">' + pl.predict.map((x, i) => predictHtml(p, x, i)).join("") + "</ul></div>" : "") +
+      (pl.why_unsolved ? '<div class="cause"><b>' + L2("ทำไมยังไม่มีใครแก้", "Why nobody has solved it") + '</b><ul class="plist">' + pl.why_unsolved.map(w => '<li><span class="tag">' + esc(tx(w.type)) + "</span> " + esc(tx(w.text)) + "</li>").join("") + "</ul></div>" : "") +
+      '<div class="tierline"><span class="tag">' + L2("เควสต์ทั้งหมด", "Total quests") + ' <b class="mono">' + pl.quest_count + '</b></span><span class="tag">' + L2("ยังไม่มีคนรับ", "Unclaimed") + ' <b class="mono">' + pl.open_quests + '</b></span><span class="tag">' + L2("ทำเสร็จแล้ว", "Completed") + ' <b class="mono">' + pl.done_quests + '</b>' + L2(" ครั้ง", " times") + '</span></div>' +
+      pl.causes.map(c => '<div class="cause"><b>' + esc(tx(c.title)) + '</b>' + c.approaches.map(a =>
+        '<span class="approach">' + L2("แนวทาง: ", "Approach: ") + esc(tx(a.title)) + (a.kind ? ' <span class="tag">' + esc(tx(a.kind)) + '</span>' : '') + '</span><ul class="quests">' + a.quests.map(q =>
+          '<li class="quest' + (q.takers ? "" : " open") + '"><span class="q">' + esc(tx(q.title)) + '</span><span class="who">' + esc(tx(q.who)) + '</span>' +
+          '<span class="meta">' + (q.level ? '<span>' + L2("ระดับ: ", "Level: ") + esc(tx(q.level)) + '</span>' : '') + (q.fields ? '<span>' + L2("สาขา: ", "Fields: ") + q.fields.map(f => esc(tx(f))).join(", ") + '</span>' : '') + '<span>' + L2("ทักษะ: ", "Skills: ") + esc(tx(q.skill)) + '</span><span>' + L2("เวลา: ", "Time: ") + esc(tx(q.effort)) + '</span><span>' + L2("ผลลัพธ์: ", "Output: ") + esc(tx(q.output)) + '</span><span>' + L2("รับแล้ว ", "Taken ") + q.takers + L2(" · เสร็จ ", " · done ") + q.done + '</span></span></li>').join("") + '</ul>').join("") + '</div>').join("") +
+      '</div><div class="labor"><span class="label">' + L2("ตลาดงาน", "Job market") + '</span>' +
+      (lb.jobs_gap != null ? '<div><div class="big">' + fmt(lb.jobs_gap) + '</div><span class="label">' + L2("ตำแหน่งงานที่ยังขาด (ผู้ทำงาน 1 คนต่อ ", "Unfilled positions (1 worker per ") + fmt(lb.people_per_worker) + " " + esc(pe(p, "unit", p.demand.unit)) + ')</span></div>'
+        : lb.workers_needed != null ? '<div><div class="big">' + fmt(lb.workers_needed) + '</div><span class="label">' + L2("ตำแหน่งที่ต้องมีทั้งหมด (ผู้ทำงาน 1 คนต่อ ", "Positions needed (1 worker per ") + fmt(lb.people_per_worker) + " " + esc(pe(p, "unit", p.demand.unit)) + L2(") ยังไม่รู้ว่ามีอยู่แล้วกี่คน", "); current headcount unknown") + '</span></div>' : "") +
+      '<div><span class="label">' + L2("อาชีพที่เกี่ยวข้อง", "Related occupations") + '</span><ul>' + (lb.occupations || []).map(o => '<li>' + esc(tx(o.name)) + ' <span class="mono">' + esc(o.code) + '</span></li>').join("") + '</ul></div>' +
+      '<div><span class="label">' + L2("ข้อมูลที่ต้องเก็บ", "Data to collect") + '</span><ul>' + (lb.data_sources || []).map(d => '<li>' + esc(tx(d.name)) + ' · ' + esc(tx(d.measures)) + '</li>').join("") + '</ul></div>' +
+      (lb.note ? '<span class="label">' + esc(tx(lb.note)) + '</span>' : "") + '</div></div>';
     el.querySelectorAll("form[data-i]").forEach(fm => fm.addEventListener("submit", ev => {
       ev.preventDefault();
       const v = fm.querySelector("input").value;
@@ -586,14 +609,14 @@ ol.meet b { color: var(--ink); font-size: 14px; }
     const st = data.evidence_status;
     const total = Object.values(st).reduce((a, b) => a + b, 0);
     const steps = [
-      ["ดึงเข้ามา", "ข่าวจาก GDELT, งานวิจัยจาก OpenAlex, ตัวเลขจาก World Bank และ UN SDG", total, null],
-      ["ให้คะแนนแหล่ง", "งานวิจัยที่ผ่าน peer review และสถิติทางการได้น้ำหนักมากกว่าข่าวและโซเชียล", null, "tiers"],
-      ["หาแหล่งยืนยันข้าม", "ข่าวต้องมีอย่างน้อย 2 สำนักที่เป็นอิสระต่อกัน หรือตรงกับตัวเลขทางการ", (st.corroborating || 0) + (st.unverified || 0), null],
-      ["คนตรวจ", "คนอ่านหลักฐานแล้วกดยืนยันหรือแจ้งว่าขัดแย้ง ระบบไม่ยืนยันเองอัตโนมัติ", (st.verified || 0) + (st.disputed || 0), null]
+      [L2("ดึงเข้ามา", "Ingest"), L2("ข่าวจาก GDELT, งานวิจัยจาก OpenAlex, ตัวเลขจาก World Bank และ UN SDG", "News from GDELT, research from OpenAlex, figures from the World Bank and UN SDG"), total, null],
+      [L2("ให้คะแนนแหล่ง", "Score the source"), L2("งานวิจัยที่ผ่าน peer review และสถิติทางการได้น้ำหนักมากกว่าข่าวและโซเชียล", "Peer-reviewed research and official statistics weigh more than news and social media"), null, "tiers"],
+      [L2("หาแหล่งยืนยันข้าม", "Cross-check"), L2("ข่าวต้องมีอย่างน้อย 2 สำนักที่เป็นอิสระต่อกัน หรือตรงกับตัวเลขทางการ", "News needs at least 2 independent outlets, or a match with official figures"), (st.corroborating || 0) + (st.unverified || 0), null],
+      [L2("คนตรวจ", "Human review"), L2("คนอ่านหลักฐานแล้วกดยืนยันหรือแจ้งว่าขัดแย้ง ระบบไม่ยืนยันเองอัตโนมัติ", "A person reads the evidence and confirms or disputes it; the system never auto-verifies"), (st.verified || 0) + (st.disputed || 0), null]
     ];
     $("pipeline").innerHTML = steps.map((s, i) =>
       '<div class="stage"><span class="n">' + (i + 1) + "</span><div><b>" + s[0] + "</b><span>" + s[1] + "</span>" +
-      (s[3] ? '<div class="tierline" style="margin-top:6px">' + Object.values(data.tiers).map(t => '<span class="tag">' + esc(t) + "</span>").join("") + "</div>" : "") +
+      (s[3] ? '<div class="tierline" style="margin-top:6px">' + Object.keys(data.tiers).map(k => '<span class="tag">' + esc(tierName(k)) + "</span>").join("") + "</div>" : "") +
       '</div><span class="c">' + (s[2] ?? "") + "</span></div>").join("") +
       '<div class="tierline" style="margin-top:4px">' + Object.entries(STATUS).map(([k]) => statusPill(k) + ' <span class="mono" style="font-size:12px;color:var(--ink-2)">' + (st[k] || 0) + "</span>").join("&nbsp;&nbsp;") + "</div>";
   }
@@ -1009,7 +1032,7 @@ const INFRA_REFS = {
       patterns: "What repeats across eras", p_cols: ["Lesson", "Seen in", "How OneQuest uses it"],
       f_work: "How work changed", f_life: "How daily life changed", f_lag: "How long it took", f_lesson: "Lesson for OneQuest", more: "Details and references",
       dagger: "† Figures marked this way are cited from the named paper but were not re-checked against the full text this round. Verify before reusing.",
-      dash_note: "Problem data, plans and quests on the dashboard are written in Thai for now; headings are translated.", infra_title: "The infrastructure behind the Industrial Revolution", infra_intro: "The steam engine didn't change the world alone. Six layers had to grow together, and wherever one lagged, people paid the price, as with urban health collapsing before public health caught up.", meet_title: "Where different groups meet, and how those places grew", meet_groups: "Groups that need to meet", meet_ev: "Evidence", f_infra: "Infrastructure behind it", layer_filter: "Filter by infrastructure layer" }
+      dash_note: "Evidence titles and sources are shown as published, in their original language.", infra_title: "The infrastructure behind the Industrial Revolution", infra_intro: "The steam engine didn't change the world alone. Six layers had to grow together, and wherever one lagged, people paid the price, as with urban health collapsing before public health caught up.", meet_title: "Where different groups meet, and how those places grew", meet_groups: "Groups that need to meet", meet_ev: "Evidence", f_infra: "Infrastructure behind it", layer_filter: "Filter by infrastructure layer" }
   };
   let lang = "th", view = "dash", qaTheme = "all", qaQuery = "", caseTag = "all", layerTag = "all";
   try { lang = localStorage.getItem("oq-lang") || "th"; } catch (e) {}
@@ -1108,6 +1131,7 @@ const INFRA_REFS = {
     lang = lang === "th" ? "en" : "th";
     try { localStorage.setItem("oq-lang", lang); } catch (e) {}
     renderAll();
+    if (window.oqDashRelang) window.oqDashRelang();
   });
   $("qa-search").addEventListener("input", e => { qaQuery = e.target.value; renderQA(); });
   window.addEventListener("hashchange", () => { const h = location.hash.slice(1); if (["qa", "cases", "dash"].includes(h)) setView(h, false); });
