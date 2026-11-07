@@ -1,6 +1,6 @@
 {
  "is_sample": false,
- "generated_at": "2026-11-06T20:31+00:00",
+ "generated_at": "2026-11-07T02:41+00:00",
  "weights": {
   "scale": 0.3,
   "neglect": 0.25,
@@ -14,7 +14,6 @@
   "social": "เสียงจากโซเชียล"
  },
  "dates": [
-  "2026-10-08",
   "2026-10-09",
   "2026-10-10",
   "2026-10-11",
@@ -43,7 +42,8 @@
   "2026-11-03",
   "2026-11-04",
   "2026-11-05",
-  "2026-11-06"
+  "2026-11-06",
+  "2026-11-07"
  ],
  "daily_signals": {
   "supply": [
@@ -144,8 +144,7 @@
   ]
  },
  "evidence_status": {
-  "unverified": 2,
-  "corroborating": 70
+  "corroborating": 73
  },
  "new_evidence_today": 0,
  "patterns": {
@@ -672,9 +671,39 @@
     "source": "World Bank WDI",
     "url": "https://data.worldbank.org/indicator/SH.STA.SUIC.P5?locations=TH"
    },
-   "new_papers_12m": 84642,
+   "new_papers_12m": 84418,
    "plan": null,
    "evidence": [
+    {
+     "tier": "news",
+     "title": "Will psychedelics become legal in California ? ",
+     "date": "20261106",
+     "source": "redbluffdailynews.com",
+     "domain": "redbluffdailynews.com",
+     "doi_or_url": "https://www.redbluffdailynews.com/2021/06/10/will-psychedelics-become-legal-in-california/",
+     "problem": "mental-health",
+     "status": "corroborating"
+    },
+    {
+     "tier": "news",
+     "title": "Inside the Katseye car crash : They had the chance of a lifetime to become the next K - pop stars ... now furious fans are turning their backs and industry execs are steaming with rage over latest scandal",
+     "date": "20261106",
+     "source": "dailymail.com",
+     "domain": "dailymail.com",
+     "doi_or_url": "https://www.dailymail.com/tvshowbiz/article-16266167/katseye-concert-cancelled-backlash.html",
+     "problem": "mental-health",
+     "status": "corroborating"
+    },
+    {
+     "tier": "news",
+     "title": "Health And Rights Observatory Exposes Gaps Between UPR Promises And Progress",
+     "date": "20261106",
+     "source": "scoop.co.nz",
+     "domain": "scoop.co.nz",
+     "doi_or_url": "https://www.scoop.co.nz/stories/WO2611/S00054/health-and-rights-observatory-exposes-gaps-between-upr-promises-and-progress.htm",
+     "problem": "mental-health",
+     "status": "corroborating"
+    },
     {
      "tier": "research",
      "title": "Mean-Field Limit of Non-exchangeable Multi-agent Systems Over Hypergraphs with Unbounded Rank",
@@ -805,7 +834,7 @@
     "source": "World Bank WDI",
     "url": "https://data.worldbank.org/indicator/SL.UEM.1524.ZS?locations=TH"
    },
-   "new_papers_12m": 1522,
+   "new_papers_12m": 1517,
    "plan": null,
    "evidence": [
     {
@@ -938,7 +967,7 @@
     "source": "World Bank WDI",
     "url": "https://data.worldbank.org/indicator/FB.BNK.CAPA.ZS?locations=TH"
    },
-   "new_papers_12m": 679,
+   "new_papers_12m": 676,
    "plan": null,
    "evidence": [
     {
@@ -976,23 +1005,23 @@
     },
     {
      "tier": "research",
+     "title": "Bridging the Energy Gap in ASEAN : Scaling Green Finance and Carbon Markets for a Sustainable Transition",
+     "date": "2026-01-05",
+     "source": "Wiley Interdisciplinary Reviews Energy and Environment",
+     "domain": "openalex.org",
+     "doi_or_url": "https://doi.org/10.1002/wene.70020",
+     "cited_by": 14,
+     "problem": "sme-credit",
+     "status": "corroborating"
+    },
+    {
+     "tier": "research",
      "title": "From Access to Impact: How Digital Financial Inclusion Drives Sustainable Development",
      "date": "2025-12-02",
      "source": "Sustainability",
      "domain": "openalex.org",
      "doi_or_url": "https://doi.org/10.3390/su172310799",
      "cited_by": 17,
-     "problem": "sme-credit",
-     "status": "corroborating"
-    },
-    {
-     "tier": "research",
-     "title": "Economic Growth and Sustainable Development: The Role of Financial Inclusion, FinTech , Eco‐Innovation, and Economic Complexity",
-     "date": "2025-11-06",
-     "source": "Sustainable Development",
-     "domain": "openalex.org",
-     "doi_or_url": "https://doi.org/10.1002/sd.70322",
-     "cited_by": 20,
      "problem": "sme-credit",
      "status": "corroborating"
     }
@@ -1204,19 +1233,9 @@
     "source": "World Bank WDI",
     "url": "https://data.worldbank.org/indicator/SE.TER.ENRR?locations=TH"
    },
-   "new_papers_12m": 573,
+   "new_papers_12m": 572,
    "plan": null,
    "evidence": [
-    {
-     "tier": "news",
-     "title": "Community colleges rush to expand semiconductor training as labor shortage looms US chip industry – KTBB News , Weather , Talk",
-     "date": "20261105",
-     "source": "ktbb.com",
-     "domain": "ktbb.com",
-     "doi_or_url": "https://ktbb.com/post/?p=1558266",
-     "problem": "semiconductor-skills",
-     "status": "unverified"
-    },
     {
      "tier": "research",
      "title": "OM Forum—Supply Chain Management in the AI Era: A Vision Statement from the Operations Management Community",
@@ -1263,12 +1282,12 @@
     },
     {
      "tier": "research",
-     "title": "Towards Industry 5.0: a conceptual model for leading organisational change in digital age",
-     "date": "2025-11-06",
-     "source": "Journal of Organizational Change Management",
+     "title": "The AI Co-pilot: Navigating Market Turbulence and Charting a Course for Sustainable Advantage",
+     "date": "2025-12-04",
+     "source": "International Journal of Management Science and Application",
      "domain": "openalex.org",
-     "doi_or_url": "https://doi.org/10.1108/jocm-03-2025-0264",
-     "cited_by": 15,
+     "doi_or_url": "https://doi.org/10.58291/ijmsa.v4i2.442",
+     "cited_by": 12,
      "problem": "semiconductor-skills",
      "status": "corroborating"
     }
@@ -2351,7 +2370,7 @@
     "source": "World Bank WDI",
     "url": "https://data.worldbank.org/indicator/EG.IMP.CONS.ZS?locations=TH"
    },
-   "new_papers_12m": 6543,
+   "new_papers_12m": 6527,
    "plan": null,
    "evidence": [
     {
@@ -2610,16 +2629,6 @@
    "plan": null,
    "evidence": [
     {
-     "tier": "news",
-     "title": "Chiang Rai Civic Groups Offers 5 Recommendations Before Thai - Myanmar River Talks",
-     "date": "20261106",
-     "source": "chiangraitimes.com",
-     "domain": "chiangraitimes.com",
-     "doi_or_url": "https://www.chiangraitimes.com/chiang-rai/chiang-rai-river-talks/",
-     "problem": "groundwater",
-     "status": "unverified"
-    },
-    {
      "tier": "research",
      "title": "Biological synergies for heavy metal bioremediation across microbial, algal, and phytoremediation perspectives",
      "date": "2026-03-02",
@@ -2750,7 +2759,7 @@
     "source": "World Bank WDI",
     "url": "https://data.worldbank.org/indicator/ER.H2O.FWST.ZS?locations=TH"
    },
-   "new_papers_12m": 76,
+   "new_papers_12m": 74,
    "plan": null,
    "evidence": [
     {
