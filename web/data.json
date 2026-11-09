@@ -1,6 +1,6 @@
 {
  "is_sample": false,
- "generated_at": "2026-11-08T02:14+00:00",
+ "generated_at": "2026-11-09T02:34+00:00",
  "weights": {
   "scale": 0.3,
   "neglect": 0.25,
@@ -14,7 +14,6 @@
   "social": "เสียงจากโซเชียล"
  },
  "dates": [
-  "2026-10-10",
   "2026-10-11",
   "2026-10-12",
   "2026-10-13",
@@ -43,7 +42,8 @@
   "2026-11-05",
   "2026-11-06",
   "2026-11-07",
-  "2026-11-08"
+  "2026-11-08",
+  "2026-11-09"
  ],
  "daily_signals": {
   "supply": [
@@ -144,7 +144,7 @@
   ]
  },
  "evidence_status": {
-  "corroborating": 70
+  "corroborating": 55
  },
  "new_evidence_today": 0,
  "patterns": {
@@ -671,7 +671,7 @@
     "source": "World Bank WDI",
     "url": "https://data.worldbank.org/indicator/SH.STA.SUIC.P5?locations=TH"
    },
-   "new_papers_12m": 84633,
+   "new_papers_12m": 84835,
    "plan": null,
    "evidence": [
     {
@@ -692,7 +692,7 @@
      "source": "Wiley Interdisciplinary Reviews Data Mining and Knowledge Discovery",
      "domain": "openalex.org",
      "doi_or_url": "https://doi.org/10.1002/widm.70111",
-     "cited_by": 267,
+     "cited_by": 271,
      "problem": "mental-health",
      "status": "corroborating"
     },
@@ -725,7 +725,7 @@
      "source": "Artificial Intelligence Review",
      "domain": "openalex.org",
      "doi_or_url": "https://doi.org/10.1007/s10462-025-11422-4",
-     "cited_by": 291,
+     "cited_by": 294,
      "problem": "mental-health",
      "status": "corroborating"
     }
@@ -804,65 +804,9 @@
     "source": "World Bank WDI",
     "url": "https://data.worldbank.org/indicator/SL.UEM.1524.ZS?locations=TH"
    },
-   "new_papers_12m": 1523,
+   "new_papers_12m": null,
    "plan": null,
-   "evidence": [
-    {
-     "tier": "research",
-     "title": "A Survey on Human–AI Collaboration with Large Foundation Models",
-     "date": "2026-08-22",
-     "source": "ACM Transactions on Intelligent Systems and Technology",
-     "domain": "openalex.org",
-     "doi_or_url": "https://doi.org/10.1145/3841472",
-     "cited_by": 72,
-     "problem": "ai-jobs",
-     "status": "corroborating"
-    },
-    {
-     "tier": "research",
-     "title": "What is ethical: AIHED driving humans or Human-Driven AIHED? A conceptual framework enabling the ‘ethos’ of AI-driven higher education",
-     "date": "2026-05-19",
-     "source": "Journal of Experimental & Theoretical Artificial Intelligence",
-     "domain": "openalex.org",
-     "doi_or_url": "https://doi.org/10.1080/0952813x.2026.2678591",
-     "cited_by": 62,
-     "problem": "ai-jobs",
-     "status": "corroborating"
-    },
-    {
-     "tier": "research",
-     "title": "Technostress and generative AI in the workplace: a qualitative analysis of young professionals",
-     "date": "2025-12-12",
-     "source": "Frontiers in Artificial Intelligence",
-     "domain": "openalex.org",
-     "doi_or_url": "https://doi.org/10.3389/frai.2025.1728881",
-     "cited_by": 37,
-     "problem": "ai-jobs",
-     "status": "corroborating"
-    },
-    {
-     "tier": "research",
-     "title": "Technology-Driven Change in Human Resource Management: Reshaping Talent Management and Organizational Design",
-     "date": "2025-11-19",
-     "source": "Administrative Sciences",
-     "domain": "openalex.org",
-     "doi_or_url": "https://doi.org/10.3390/admsci15110452",
-     "cited_by": 41,
-     "problem": "ai-jobs",
-     "status": "corroborating"
-    },
-    {
-     "tier": "research",
-     "title": "Strategic Human Resource Management in the Digital Era: Technology, Transformation, and Sustainable Advantage",
-     "date": "2025-11-11",
-     "source": "Merits",
-     "domain": "openalex.org",
-     "doi_or_url": "https://doi.org/10.3390/merits5040023",
-     "cited_by": 78,
-     "problem": "ai-jobs",
-     "status": "corroborating"
-    }
-   ]
+   "evidence": []
   },
   {
    "id": "sme-credit",
@@ -1070,65 +1014,9 @@
     "source": "World Bank WDI",
     "url": "https://data.worldbank.org/indicator/EG.FEC.RNEW.ZS?locations=TH"
    },
-   "new_papers_12m": 182,
+   "new_papers_12m": null,
    "plan": null,
-   "evidence": [
-    {
-     "tier": "research",
-     "title": "A Review of Nickel and Cobalt from Laterite Ores: Toward Sustainable Extraction Pathways for the Battery Industry",
-     "date": "2026-02-21",
-     "source": "Journal of Sustainable Metallurgy",
-     "domain": "openalex.org",
-     "doi_or_url": "https://doi.org/10.1007/s40831-026-01439-6",
-     "cited_by": 29,
-     "problem": "battery-recycling",
-     "status": "corroborating"
-    },
-    {
-     "tier": "research",
-     "title": "Techno economic and environmental evaluation of second life battery PV hybrid charging stations for sustainable e-mobility in tropical regions",
-     "date": "2026-02-10",
-     "source": "Scientific Reports",
-     "domain": "openalex.org",
-     "doi_or_url": "https://doi.org/10.1038/s41598-026-39034-0",
-     "cited_by": 16,
-     "problem": "battery-recycling",
-     "status": "corroborating"
-    },
-    {
-     "tier": "research",
-     "title": "Techno-economic feasibility of photovoltaic-powered electric vehicle charging stations: a global review and future outlook",
-     "date": "2026-02-07",
-     "source": "Sustainable Energy Research",
-     "domain": "openalex.org",
-     "doi_or_url": "https://doi.org/10.1186/s40807-025-00228-1",
-     "cited_by": 14,
-     "problem": "battery-recycling",
-     "status": "corroborating"
-    },
-    {
-     "tier": "research",
-     "title": "Assessing tin demand and supply pressures under terawatt-scale photovoltaic deployment",
-     "date": "2026-01-01",
-     "source": "RSC Sustainability",
-     "domain": "openalex.org",
-     "doi_or_url": "https://doi.org/10.1039/d5su00956a",
-     "cited_by": 22,
-     "problem": "battery-recycling",
-     "status": "corroborating"
-    },
-    {
-     "tier": "research",
-     "title": "Advances in Building Energy Management: A Comprehensive Review",
-     "date": "2025-11-24",
-     "source": "Buildings",
-     "domain": "openalex.org",
-     "doi_or_url": "https://doi.org/10.3390/buildings15234237",
-     "cited_by": 26,
-     "problem": "battery-recycling",
-     "status": "corroborating"
-    }
-   ]
+   "evidence": []
   },
   {
    "id": "semiconductor-skills",
@@ -1203,7 +1091,7 @@
     "source": "World Bank WDI",
     "url": "https://data.worldbank.org/indicator/SE.TER.ENRR?locations=TH"
    },
-   "new_papers_12m": 570,
+   "new_papers_12m": 569,
    "plan": null,
    "evidence": [
     {
@@ -1336,16 +1224,16 @@
     "source": "World Bank WDI",
     "url": "https://data.worldbank.org/indicator/AG.PRD.FOOD.XD?locations=TH"
    },
-   "new_papers_12m": 697,
+   "new_papers_12m": 698,
    "plan": null,
    "evidence": [
     {
      "tier": "research",
-     "title": "Bioactive Compounds from Edible Mushrooms as Pharmaceutical Ingredients: A Comprehensive Review of the Developmental Pipeline",
-     "date": "2026-02-28",
-     "source": "Processes",
+     "title": "Attributional and Consequential Life Cycle Assessments: A Practice-Oriented Framework Integrating System Boundaries and Machine Learning",
+     "date": "2026-04-30",
+     "source": "JOURNAL OF CHEMICAL ENGINEERING OF JAPAN",
      "domain": "openalex.org",
-     "doi_or_url": "https://doi.org/10.3390/pr14050795",
+     "doi_or_url": "https://doi.org/10.1080/00219592.2026.2662789",
      "cited_by": 16,
      "problem": "food-loss",
      "status": "corroborating"
@@ -1357,7 +1245,7 @@
      "source": "Nature",
      "domain": "openalex.org",
      "doi_or_url": "https://doi.org/10.1038/s41586-025-10084-0",
-     "cited_by": 23,
+     "cited_by": 24,
      "problem": "food-loss",
      "status": "corroborating"
     },
@@ -1471,7 +1359,7 @@
     "source": "World Bank WDI",
     "url": "https://data.worldbank.org/indicator/EN.ATM.PM25.MC.M3?locations=TH"
    },
-   "new_papers_12m": 114,
+   "new_papers_12m": 115,
    "plan": {
     "predict": [
      {
@@ -1872,7 +1760,7 @@
     "source": "World Bank WDI",
     "url": "https://data.worldbank.org/indicator/FS.AST.PRVT.GD.ZS?locations=TH"
    },
-   "new_papers_12m": 231,
+   "new_papers_12m": 230,
    "plan": {
     "predict": [
      {
@@ -2208,65 +2096,9 @@
     "source": "World Bank WDI",
     "url": "https://data.worldbank.org/indicator/IT.NET.USER.ZS?locations=TH"
    },
-   "new_papers_12m": 42,
+   "new_papers_12m": null,
    "plan": null,
-   "evidence": [
-    {
-     "tier": "research",
-     "title": "Regulating the Crypto-Laundering Chain: A Comparative Study of Scam Compounds and Money Mule Mechanisms Within Criminal Networks",
-     "date": "2026-04-21",
-     "source": "Risks",
-     "domain": "openalex.org",
-     "doi_or_url": "https://doi.org/10.3390/risks14040096",
-     "cited_by": 6,
-     "problem": "online-fraud",
-     "status": "corroborating"
-    },
-    {
-     "tier": "research",
-     "title": "‘Funds Left Delaware in the Morning’: Online Fraud Networks and Money Laundering Operations",
-     "date": "2026-04-16",
-     "source": "International Criminal Justice Review",
-     "domain": "openalex.org",
-     "doi_or_url": "https://doi.org/10.1177/10575677261416902",
-     "cited_by": 6,
-     "problem": "online-fraud",
-     "status": "corroborating"
-    },
-    {
-     "tier": "research",
-     "title": "Evolutionary fraud, the global scamming ecosystem and a typology of actors",
-     "date": "2026-02-25",
-     "source": "International journal of law, crime and justice",
-     "domain": "openalex.org",
-     "doi_or_url": "https://doi.org/10.1016/j.ijlcj.2026.100825",
-     "cited_by": 12,
-     "problem": "online-fraud",
-     "status": "corroborating"
-    },
-    {
-     "tier": "research",
-     "title": "What Do We Know About Human Trafficking and Scam Compounds in Southeast Asia (2020–2025)? A Qualitative Meta-Synthesis of Coercive Deviant Enterprises",
-     "date": "2026-01-06",
-     "source": "Deviant Behavior",
-     "domain": "openalex.org",
-     "doi_or_url": "https://doi.org/10.1080/01639625.2025.2604138",
-     "cited_by": 29,
-     "problem": "online-fraud",
-     "status": "corroborating"
-    },
-    {
-     "tier": "research",
-     "title": "AI-Empowered Responsive Regulation for Preventing Future Crimes: An Empirical Inquiry into the Regulatory Pyramid to Combat Future Crimes in China and Southeast Asia",
-     "date": "2025-11-28",
-     "source": "Asian Journal of Criminology",
-     "domain": "openalex.org",
-     "doi_or_url": "https://doi.org/10.1007/s11417-025-09477-x",
-     "cited_by": 11,
-     "problem": "online-fraud",
-     "status": "corroborating"
-    }
-   ]
+   "evidence": []
   },
   {
    "id": "energy-security",
@@ -2340,7 +2172,7 @@
     "source": "World Bank WDI",
     "url": "https://data.worldbank.org/indicator/EG.IMP.CONS.ZS?locations=TH"
    },
-   "new_papers_12m": 6543,
+   "new_papers_12m": 6578,
    "plan": null,
    "evidence": [
     {
@@ -2649,7 +2481,7 @@
      "source": "World Water Policy",
      "domain": "openalex.org",
      "doi_or_url": "https://doi.org/10.1002/wwp2.70055",
-     "cited_by": 17,
+     "cited_by": 18,
      "problem": "groundwater",
      "status": "corroborating"
     }
