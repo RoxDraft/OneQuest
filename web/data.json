@@ -1,6 +1,6 @@
 {
  "is_sample": false,
- "generated_at": "2026-11-10T04:36+00:00",
+ "generated_at": "2026-11-11T02:44+00:00",
  "weights": {
   "scale": 0.3,
   "neglect": 0.25,
@@ -14,7 +14,6 @@
   "social": "เสียงจากโซเชียล"
  },
  "dates": [
-  "2026-10-12",
   "2026-10-13",
   "2026-10-14",
   "2026-10-15",
@@ -43,7 +42,8 @@
   "2026-11-07",
   "2026-11-08",
   "2026-11-09",
-  "2026-11-10"
+  "2026-11-10",
+  "2026-11-11"
  ],
  "daily_signals": {
   "supply": [
@@ -318,14 +318,7 @@
     21,
     25
    ],
-   "indicator": {
-    "indicator": "SP.POP.65UP.TO.ZS",
-    "name": "Population ages 65 and above (% of total population)",
-    "year": 2025,
-    "value": 16.017421033045,
-    "source": "World Bank WDI",
-    "url": "https://data.worldbank.org/indicator/SP.POP.65UP.TO.ZS?locations=TH"
-   },
+   "indicator": null,
    "new_papers_12m": 174,
    "plan": {
     "labor": {
@@ -560,17 +553,17 @@
      "source": "Infectious Diseases of Poverty",
      "domain": "openalex.org",
      "doi_or_url": "https://doi.org/10.1186/s40249-026-01412-1",
-     "cited_by": 6,
+     "cited_by": 7,
      "problem": "elder-care",
      "status": "corroborating"
     },
     {
      "tier": "research",
-     "title": "‘Pagbangon at Pag‐Asa’ (Resurgence and Hope): A Qualitative Study of the Lived Experiences of People With Stroke and Household Carers in the Philippines",
-     "date": "2025-12-24",
-     "source": "Health Expectations",
+     "title": "The anthropomorphization of AI and the concept of Buddhist compassion in human-machine interaction",
+     "date": "2026-01-14",
+     "source": "Frontiers in Psychology",
      "domain": "openalex.org",
-     "doi_or_url": "https://doi.org/10.1111/hex.70537",
+     "doi_or_url": "https://doi.org/10.3389/fpsyg.2025.1583565",
      "cited_by": 6,
      "problem": "elder-care",
      "status": "corroborating"
@@ -593,7 +586,7 @@
      "source": "BMC Medicine",
      "domain": "openalex.org",
      "doi_or_url": "https://doi.org/10.1186/s12916-025-04522-z",
-     "cited_by": 7,
+     "cited_by": 8,
      "problem": "elder-care",
      "status": "corroborating"
     }
@@ -663,15 +656,8 @@
     20,
     23
    ],
-   "indicator": {
-    "indicator": "SH.STA.SUIC.P5",
-    "name": "Suicide mortality rate (per 100,000 population)",
-    "year": 2021,
-    "value": 16.59,
-    "source": "World Bank WDI",
-    "url": "https://data.worldbank.org/indicator/SH.STA.SUIC.P5?locations=TH"
-   },
-   "new_papers_12m": 84990,
+   "indicator": null,
+   "new_papers_12m": 84947,
    "plan": null,
    "evidence": [
     {
@@ -681,7 +667,7 @@
      "source": "Journal of Nonlinear Science",
      "domain": "openalex.org",
      "doi_or_url": "https://doi.org/10.1007/s00332-026-10338-9",
-     "cited_by": 285,
+     "cited_by": 288,
      "problem": "mental-health",
      "status": "corroborating"
     },
@@ -692,7 +678,7 @@
      "source": "Wiley Interdisciplinary Reviews Data Mining and Knowledge Discovery",
      "domain": "openalex.org",
      "doi_or_url": "https://doi.org/10.1002/widm.70111",
-     "cited_by": 271,
+     "cited_by": 286,
      "problem": "mental-health",
      "status": "corroborating"
     },
@@ -703,18 +689,18 @@
      "source": "Science China Information Sciences",
      "domain": "openalex.org",
      "doi_or_url": "https://doi.org/10.1007/s11432-025-4665-8",
-     "cited_by": 543,
+     "cited_by": 558,
      "problem": "mental-health",
      "status": "corroborating"
     },
     {
      "tier": "research",
-     "title": "From LLM Reasoning to Autonomous AI Agents: A Comprehensive Review",
-     "date": "2026-01-01",
-     "source": "IEEE Access",
+     "title": "Prompt engineering for healthcare: Methodologies and applications",
+     "date": "2025-11-22",
+     "source": "Meta-Radiology",
      "domain": "openalex.org",
-     "doi_or_url": "https://doi.org/10.1109/access.2026.3698694",
-     "cited_by": 269,
+     "doi_or_url": "https://doi.org/10.1016/j.metrad.2025.100190",
+     "cited_by": 286,
      "problem": "mental-health",
      "status": "corroborating"
     },
@@ -725,7 +711,7 @@
      "source": "Artificial Intelligence Review",
      "domain": "openalex.org",
      "doi_or_url": "https://doi.org/10.1007/s10462-025-11422-4",
-     "cited_by": 296,
+     "cited_by": 301,
      "problem": "mental-health",
      "status": "corroborating"
     }
@@ -796,15 +782,8 @@
     6,
     5
    ],
-   "indicator": {
-    "indicator": "SL.UEM.1524.ZS",
-    "name": "Unemployment, youth total (% of total labor force ages 15-24) (modeled ILO estimate)",
-    "year": 2025,
-    "value": 4.531,
-    "source": "World Bank WDI",
-    "url": "https://data.worldbank.org/indicator/SL.UEM.1524.ZS?locations=TH"
-   },
-   "new_papers_12m": 1527,
+   "indicator": null,
+   "new_papers_12m": 1528,
    "plan": null,
    "evidence": [
     {
@@ -814,7 +793,7 @@
      "source": "ACM Transactions on Intelligent Systems and Technology",
      "domain": "openalex.org",
      "doi_or_url": "https://doi.org/10.1145/3841472",
-     "cited_by": 72,
+     "cited_by": 73,
      "problem": "ai-jobs",
      "status": "corroborating"
     },
@@ -836,7 +815,7 @@
      "source": "Frontiers in Artificial Intelligence",
      "domain": "openalex.org",
      "doi_or_url": "https://doi.org/10.3389/frai.2025.1728881",
-     "cited_by": 37,
+     "cited_by": 38,
      "problem": "ai-jobs",
      "status": "corroborating"
     },
@@ -858,7 +837,7 @@
      "source": "Merits",
      "domain": "openalex.org",
      "doi_or_url": "https://doi.org/10.3390/merits5040023",
-     "cited_by": 79,
+     "cited_by": 80,
      "problem": "ai-jobs",
      "status": "corroborating"
     }
@@ -1070,7 +1049,7 @@
     "source": "World Bank WDI",
     "url": "https://data.worldbank.org/indicator/EG.FEC.RNEW.ZS?locations=TH"
    },
-   "new_papers_12m": 186,
+   "new_papers_12m": 185,
    "plan": null,
    "evidence": [
     {
@@ -1080,7 +1059,7 @@
      "source": "Journal of Sustainable Metallurgy",
      "domain": "openalex.org",
      "doi_or_url": "https://doi.org/10.1007/s40831-026-01439-6",
-     "cited_by": 29,
+     "cited_by": 30,
      "problem": "battery-recycling",
      "status": "corroborating"
     },
@@ -1091,7 +1070,7 @@
      "source": "Scientific Reports",
      "domain": "openalex.org",
      "doi_or_url": "https://doi.org/10.1038/s41598-026-39034-0",
-     "cited_by": 16,
+     "cited_by": 18,
      "problem": "battery-recycling",
      "status": "corroborating"
     },
@@ -1113,7 +1092,7 @@
      "source": "RSC Sustainability",
      "domain": "openalex.org",
      "doi_or_url": "https://doi.org/10.1039/d5su00956a",
-     "cited_by": 22,
+     "cited_by": 23,
      "problem": "battery-recycling",
      "status": "corroborating"
     },
@@ -1124,7 +1103,7 @@
      "source": "Buildings",
      "domain": "openalex.org",
      "doi_or_url": "https://doi.org/10.3390/buildings15234237",
-     "cited_by": 26,
+     "cited_by": 27,
      "problem": "battery-recycling",
      "status": "corroborating"
     }
@@ -1195,8 +1174,15 @@
     30,
     32
    ],
-   "indicator": null,
-   "new_papers_12m": 567,
+   "indicator": {
+    "indicator": "SE.TER.ENRR",
+    "name": "School enrollment, tertiary (% gross)",
+    "year": 2025,
+    "value": 49.0776442074561,
+    "source": "World Bank WDI",
+    "url": "https://data.worldbank.org/indicator/SE.TER.ENRR?locations=TH"
+   },
+   "new_papers_12m": 568,
    "plan": null,
    "evidence": [
     {
@@ -1206,7 +1192,7 @@
      "source": "Manufacturing & Service Operations Management",
      "domain": "openalex.org",
      "doi_or_url": "https://doi.org/10.1287/msom.2025.1065",
-     "cited_by": 22,
+     "cited_by": 25,
      "problem": "semiconductor-skills",
      "status": "corroborating"
     },
@@ -1217,7 +1203,7 @@
      "source": "Renewable and Sustainable Energy Reviews",
      "domain": "openalex.org",
      "doi_or_url": "https://doi.org/10.1016/j.rser.2026.116861",
-     "cited_by": 25,
+     "cited_by": 24,
      "problem": "semiconductor-skills",
      "status": "corroborating"
     },
@@ -1228,7 +1214,7 @@
      "source": "Annals of Operations Research",
      "domain": "openalex.org",
      "doi_or_url": "https://doi.org/10.1007/s10479-026-07070-8",
-     "cited_by": 13,
+     "cited_by": 14,
      "problem": "semiconductor-skills",
      "status": "corroborating"
     },
@@ -1239,7 +1225,7 @@
      "source": "Frontiers in Mechanical Engineering",
      "domain": "openalex.org",
      "doi_or_url": "https://doi.org/10.3389/fmech.2025.1722114",
-     "cited_by": 25,
+     "cited_by": 27,
      "problem": "semiconductor-skills",
      "status": "corroborating"
     },
@@ -1250,7 +1236,7 @@
      "source": "International Journal of Management Science and Application",
      "domain": "openalex.org",
      "doi_or_url": "https://doi.org/10.58291/ijmsa.v4i2.442",
-     "cited_by": 12,
+     "cited_by": 15,
      "problem": "semiconductor-skills",
      "status": "corroborating"
     }
@@ -1321,14 +1307,7 @@
     17,
     15
    ],
-   "indicator": {
-    "indicator": "AG.PRD.FOOD.XD",
-    "name": "Food production index (2014-2016 = 100)",
-    "year": 2024,
-    "value": 98.91,
-    "source": "World Bank WDI",
-    "url": "https://data.worldbank.org/indicator/AG.PRD.FOOD.XD?locations=TH"
-   },
+   "indicator": null,
    "new_papers_12m": 700,
    "plan": null,
    "evidence": [
@@ -1345,12 +1324,23 @@
     },
     {
      "tier": "research",
+     "title": "Beyond the flush: a review of wastewater circular systems",
+     "date": "2026-02-16",
+     "source": "npj Clean Water",
+     "domain": "openalex.org",
+     "doi_or_url": "https://doi.org/10.1038/s41545-026-00557-8",
+     "cited_by": 17,
+     "problem": "food-loss",
+     "status": "corroborating"
+    },
+    {
+     "tier": "research",
      "title": "PtdIns(3,5)P2 is an endogenous ligand of STING in innate immune signalling",
      "date": "2026-02-04",
      "source": "Nature",
      "domain": "openalex.org",
      "doi_or_url": "https://doi.org/10.1038/s41586-025-10084-0",
-     "cited_by": 24,
+     "cited_by": 25,
      "problem": "food-loss",
      "status": "corroborating"
     },
@@ -1361,7 +1351,7 @@
      "source": "Foods",
      "domain": "openalex.org",
      "doi_or_url": "https://doi.org/10.3390/foods14223980",
-     "cited_by": 17,
+     "cited_by": 18,
      "problem": "food-loss",
      "status": "corroborating"
     },
@@ -1373,17 +1363,6 @@
      "domain": "openalex.org",
      "doi_or_url": "https://doi.org/10.3390/polym17223003",
      "cited_by": 18,
-     "problem": "food-loss",
-     "status": "corroborating"
-    },
-    {
-     "tier": "research",
-     "title": "Plant-Derived Extracellular Vesicles in Cosmetics: Building a Framework for Safety, Efficacy, and Quality",
-     "date": "2025-11-10",
-     "source": "Cosmetics",
-     "domain": "openalex.org",
-     "doi_or_url": "https://doi.org/10.3390/cosmetics12060252",
-     "cited_by": 29,
      "problem": "food-loss",
      "status": "corroborating"
     }
@@ -1456,14 +1435,7 @@
     12,
     12
    ],
-   "indicator": {
-    "indicator": "EN.ATM.PM25.MC.M3",
-    "name": "PM2.5 air pollution, mean annual exposure (micrograms per cubic meter)",
-    "year": 2023,
-    "value": 23.4870743016258,
-    "source": "World Bank WDI",
-    "url": "https://data.worldbank.org/indicator/EN.ATM.PM25.MC.M3?locations=TH"
-   },
+   "indicator": null,
    "new_papers_12m": 117,
    "plan": {
     "predict": [
@@ -1764,6 +1736,17 @@
      "source": "Toxics",
      "domain": "openalex.org",
      "doi_or_url": "https://doi.org/10.3390/toxics14010084",
+     "cited_by": 9,
+     "problem": "pm25",
+     "status": "corroborating"
+    },
+    {
+     "tier": "research",
+     "title": "Resourceful utilization of crop residue by smallholder farmers in major grain-producing areas: pathways and countermeasures",
+     "date": "2026-01-12",
+     "source": "Scientific Reports",
+     "domain": "openalex.org",
+     "doi_or_url": "https://doi.org/10.1038/s41598-026-35164-7",
      "cited_by": 8,
      "problem": "pm25",
      "status": "corroborating"
@@ -1775,18 +1758,7 @@
      "source": "Forests",
      "domain": "openalex.org",
      "doi_or_url": "https://doi.org/10.3390/f17010081",
-     "cited_by": 9,
-     "problem": "pm25",
-     "status": "corroborating"
-    },
-    {
-     "tier": "research",
-     "title": "Integrating quantile regression with ARIMA and ANN for interpretable and accurate PM2.5 forecasting in Hat Yai, Thailand",
-     "date": "2025-12-08",
-     "source": "Scientific Reports",
-     "domain": "openalex.org",
-     "doi_or_url": "https://doi.org/10.1038/s41598-025-27294-1",
-     "cited_by": 8,
+     "cited_by": 10,
      "problem": "pm25",
      "status": "corroborating"
     }
@@ -1857,15 +1829,8 @@
     4,
     8
    ],
-   "indicator": {
-    "indicator": "FS.AST.PRVT.GD.ZS",
-    "name": "Domestic credit to private sector (% of GDP)",
-    "year": 2025,
-    "value": 143.080092396055,
-    "source": "World Bank WDI",
-    "url": "https://data.worldbank.org/indicator/FS.AST.PRVT.GD.ZS?locations=TH"
-   },
-   "new_papers_12m": 230,
+   "indicator": null,
+   "new_papers_12m": 229,
    "plan": {
     "predict": [
      {
@@ -2123,7 +2088,7 @@
      "source": "Cogent Economics & Finance",
      "domain": "openalex.org",
      "doi_or_url": "https://doi.org/10.1080/23322039.2025.2588925",
-     "cited_by": 19,
+     "cited_by": 21,
      "problem": "household-debt",
      "status": "corroborating"
     }
@@ -2244,7 +2209,7 @@
      "source": "International journal of law, crime and justice",
      "domain": "openalex.org",
      "doi_or_url": "https://doi.org/10.1016/j.ijlcj.2026.100825",
-     "cited_by": 12,
+     "cited_by": 13,
      "problem": "online-fraud",
      "status": "corroborating"
     },
@@ -2255,7 +2220,7 @@
      "source": "Asian Journal of Criminology",
      "domain": "openalex.org",
      "doi_or_url": "https://doi.org/10.1007/s11417-025-09477-x",
-     "cited_by": 11,
+     "cited_by": 13,
      "problem": "online-fraud",
      "status": "corroborating"
     }
@@ -2325,15 +2290,8 @@
     30,
     30
    ],
-   "indicator": {
-    "indicator": "EG.IMP.CONS.ZS",
-    "name": "Energy imports, net (% of energy use)",
-    "year": 2024,
-    "value": 57.2704702560609,
-    "source": "World Bank WDI",
-    "url": "https://data.worldbank.org/indicator/EG.IMP.CONS.ZS?locations=TH"
-   },
-   "new_papers_12m": 6591,
+   "indicator": null,
+   "new_papers_12m": 6594,
    "plan": null,
    "evidence": [
     {
@@ -2343,7 +2301,7 @@
      "source": "Journal of International Economics",
      "domain": "openalex.org",
      "doi_or_url": "https://doi.org/10.1016/j.jinteco.2026.104259",
-     "cited_by": 82,
+     "cited_by": 84,
      "problem": "energy-security",
      "status": "corroborating"
     },
@@ -2365,7 +2323,7 @@
      "source": "Quality & Quantity",
      "domain": "openalex.org",
      "doi_or_url": "https://doi.org/10.1007/s11135-026-02572-w",
-     "cited_by": 43,
+     "cited_by": 49,
      "problem": "energy-security",
      "status": "corroborating"
     },
@@ -2376,7 +2334,7 @@
      "source": "Nature Communications",
      "domain": "openalex.org",
      "doi_or_url": "https://doi.org/10.1038/s41467-025-67862-7",
-     "cited_by": 47,
+     "cited_by": 49,
      "problem": "energy-security",
      "status": "corroborating"
     },
@@ -2456,15 +2414,8 @@
     9,
     13
    ],
-   "indicator": {
-    "indicator": "SH.MED.PHYS.ZS",
-    "name": "Physicians (per 1,000 people)",
-    "year": 2021,
-    "value": 0.541,
-    "source": "World Bank WDI",
-    "url": "https://data.worldbank.org/indicator/SH.MED.PHYS.ZS?locations=TH"
-   },
-   "new_papers_12m": 90,
+   "indicator": null,
+   "new_papers_12m": 91,
    "plan": null,
    "evidence": [
     {
@@ -2485,7 +2436,7 @@
      "source": "Aerobiology",
      "domain": "openalex.org",
      "doi_or_url": "https://doi.org/10.3390/aerobiology4010005",
-     "cited_by": 4,
+     "cited_by": 5,
      "problem": "rural-doctors",
      "status": "corroborating"
     },
@@ -2588,7 +2539,7 @@
     0
    ],
    "indicator": null,
-   "new_papers_12m": 369,
+   "new_papers_12m": 370,
    "plan": null,
    "evidence": [
     {
@@ -2598,7 +2549,7 @@
      "source": "Discover Green Chemistry",
      "domain": "openalex.org",
      "doi_or_url": "https://doi.org/10.1007/s44509-026-00003-5",
-     "cited_by": 13,
+     "cited_by": 14,
      "problem": "groundwater",
      "status": "corroborating"
     },
@@ -2631,7 +2582,7 @@
      "source": "C – Journal of Carbon Research",
      "domain": "openalex.org",
      "doi_or_url": "https://doi.org/10.3390/c12010007",
-     "cited_by": 29,
+     "cited_by": 31,
      "problem": "groundwater",
      "status": "corroborating"
     },
@@ -2642,7 +2593,7 @@
      "source": "World Water Policy",
      "domain": "openalex.org",
      "doi_or_url": "https://doi.org/10.1002/wwp2.70055",
-     "cited_by": 18,
+     "cited_by": 19,
      "problem": "groundwater",
      "status": "corroborating"
     }
@@ -2714,14 +2665,7 @@
     29,
     32
    ],
-   "indicator": {
-    "indicator": "ER.H2O.FWST.ZS",
-    "name": "Level of water stress: freshwater withdrawal as a proportion of available freshwater resources",
-    "year": 2022,
-    "value": 23.01393518,
-    "source": "World Bank WDI",
-    "url": "https://data.worldbank.org/indicator/ER.H2O.FWST.ZS?locations=TH"
-   },
+   "indicator": null,
    "new_papers_12m": 73,
    "plan": null,
    "evidence": [
@@ -2743,7 +2687,7 @@
      "source": "Applied Water Science",
      "domain": "openalex.org",
      "doi_or_url": "https://doi.org/10.1007/s13201-025-02648-2",
-     "cited_by": 10,
+     "cited_by": 12,
      "problem": "flood-water",
      "status": "corroborating"
     },
@@ -2754,7 +2698,7 @@
      "source": "Scientific Reports",
      "domain": "openalex.org",
      "doi_or_url": "https://doi.org/10.1038/s41598-025-24133-1",
-     "cited_by": 5,
+     "cited_by": 6,
      "problem": "flood-water",
      "status": "corroborating"
     },
