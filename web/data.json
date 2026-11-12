@@ -1,6 +1,6 @@
 {
  "is_sample": false,
- "generated_at": "2026-11-11T02:44+00:00",
+ "generated_at": "2026-11-12T03:49+00:00",
  "weights": {
   "scale": 0.3,
   "neglect": 0.25,
@@ -14,7 +14,6 @@
   "social": "เสียงจากโซเชียล"
  },
  "dates": [
-  "2026-10-13",
   "2026-10-14",
   "2026-10-15",
   "2026-10-16",
@@ -43,7 +42,8 @@
   "2026-11-08",
   "2026-11-09",
   "2026-11-10",
-  "2026-11-11"
+  "2026-11-11",
+  "2026-11-12"
  ],
  "daily_signals": {
   "supply": [
@@ -319,7 +319,7 @@
     25
    ],
    "indicator": null,
-   "new_papers_12m": 174,
+   "new_papers_12m": 196,
    "plan": {
     "labor": {
      "note": "ตัวเลขทั้งหมดเป็นค่าสมมติ ต้องแทนด้วยข้อมูลจริงก่อนใช้",
@@ -559,12 +559,12 @@
     },
     {
      "tier": "research",
-     "title": "The anthropomorphization of AI and the concept of Buddhist compassion in human-machine interaction",
-     "date": "2026-01-14",
-     "source": "Frontiers in Psychology",
+     "title": "Exploring the caregiving perceptions and needs of family caregivers of older stroke patients: a descriptive qualitative study",
+     "date": "2025-11-25",
+     "source": "International Journal of Qualitative Studies on Health and Well-Being",
      "domain": "openalex.org",
-     "doi_or_url": "https://doi.org/10.3389/fpsyg.2025.1583565",
-     "cited_by": 6,
+     "doi_or_url": "https://doi.org/10.1080/17482631.2025.2588908",
+     "cited_by": 10,
      "problem": "elder-care",
      "status": "corroborating"
     },
@@ -657,7 +657,7 @@
     23
    ],
    "indicator": null,
-   "new_papers_12m": 84947,
+   "new_papers_12m": 93267,
    "plan": null,
    "evidence": [
     {
@@ -678,7 +678,7 @@
      "source": "Wiley Interdisciplinary Reviews Data Mining and Knowledge Discovery",
      "domain": "openalex.org",
      "doi_or_url": "https://doi.org/10.1002/widm.70111",
-     "cited_by": 286,
+     "cited_by": 291,
      "problem": "mental-health",
      "status": "corroborating"
     },
@@ -700,7 +700,7 @@
      "source": "Meta-Radiology",
      "domain": "openalex.org",
      "doi_or_url": "https://doi.org/10.1016/j.metrad.2025.100190",
-     "cited_by": 286,
+     "cited_by": 289,
      "problem": "mental-health",
      "status": "corroborating"
     },
@@ -711,7 +711,7 @@
      "source": "Artificial Intelligence Review",
      "domain": "openalex.org",
      "doi_or_url": "https://doi.org/10.1007/s10462-025-11422-4",
-     "cited_by": 301,
+     "cited_by": 303,
      "problem": "mental-health",
      "status": "corroborating"
     }
@@ -783,7 +783,7 @@
     5
    ],
    "indicator": null,
-   "new_papers_12m": 1528,
+   "new_papers_12m": 1534,
    "plan": null,
    "evidence": [
     {
@@ -810,6 +810,17 @@
     },
     {
      "tier": "research",
+     "title": "Algorithmic anxiety: AI, work, and the evolving psychological contract in digital discourse",
+     "date": "2026-02-17",
+     "source": "Frontiers in Psychology",
+     "domain": "openalex.org",
+     "doi_or_url": "https://doi.org/10.3389/fpsyg.2026.1745164",
+     "cited_by": 22,
+     "problem": "ai-jobs",
+     "status": "corroborating"
+    },
+    {
+     "tier": "research",
      "title": "Technostress and generative AI in the workplace: a qualitative analysis of young professionals",
      "date": "2025-12-12",
      "source": "Frontiers in Artificial Intelligence",
@@ -827,17 +838,6 @@
      "domain": "openalex.org",
      "doi_or_url": "https://doi.org/10.3390/admsci15110452",
      "cited_by": 41,
-     "problem": "ai-jobs",
-     "status": "corroborating"
-    },
-    {
-     "tier": "research",
-     "title": "Strategic Human Resource Management in the Digital Era: Technology, Transformation, and Sustainable Advantage",
-     "date": "2025-11-11",
-     "source": "Merits",
-     "domain": "openalex.org",
-     "doi_or_url": "https://doi.org/10.3390/merits5040023",
-     "cited_by": 80,
      "problem": "ai-jobs",
      "status": "corroborating"
     }
@@ -908,28 +908,10 @@
     6,
     6
    ],
-   "indicator": {
-    "indicator": "FB.BNK.CAPA.ZS",
-    "name": "Bank capital to assets ratio (%)",
-    "year": 2024,
-    "value": 11.125634912273,
-    "source": "World Bank WDI",
-    "url": "https://data.worldbank.org/indicator/FB.BNK.CAPA.ZS?locations=TH"
-   },
-   "new_papers_12m": 679,
+   "indicator": null,
+   "new_papers_12m": 683,
    "plan": null,
    "evidence": [
-    {
-     "tier": "research",
-     "title": "Financial mechanisms for advancing environmental sustainability: a comprehensive review",
-     "date": "2026-03-04",
-     "source": "Green Technology Resilience and Sustainability",
-     "domain": "openalex.org",
-     "doi_or_url": "https://doi.org/10.1007/s44173-026-00029-9",
-     "cited_by": 16,
-     "problem": "sme-credit",
-     "status": "corroborating"
-    },
     {
      "tier": "research",
      "title": "Macroeconomic and Structural Determinants of Formal Business Entry in ASEAN: Evidence from a Linear Mixed-Effects Model Using World Development Indicators",
@@ -949,6 +931,17 @@
      "domain": "openalex.org",
      "doi_or_url": "https://doi.org/10.3390/su18020732",
      "cited_by": 25,
+     "problem": "sme-credit",
+     "status": "corroborating"
+    },
+    {
+     "tier": "research",
+     "title": "Bridging the Energy Gap in ASEAN : Scaling Green Finance and Carbon Markets for a Sustainable Transition",
+     "date": "2026-01-05",
+     "source": "Wiley Interdisciplinary Reviews Energy and Environment",
+     "domain": "openalex.org",
+     "doi_or_url": "https://doi.org/10.1002/wene.70020",
+     "cited_by": 17,
      "problem": "sme-credit",
      "status": "corroborating"
     },
@@ -1041,15 +1034,8 @@
     13,
     13
    ],
-   "indicator": {
-    "indicator": "EG.FEC.RNEW.ZS",
-    "name": "Renewable energy consumption (% of total final energy consumption)",
-    "year": 2021,
-    "value": 19,
-    "source": "World Bank WDI",
-    "url": "https://data.worldbank.org/indicator/EG.FEC.RNEW.ZS?locations=TH"
-   },
-   "new_papers_12m": 185,
+   "indicator": null,
+   "new_papers_12m": 187,
    "plan": null,
    "evidence": [
     {
@@ -1092,7 +1078,7 @@
      "source": "RSC Sustainability",
      "domain": "openalex.org",
      "doi_or_url": "https://doi.org/10.1039/d5su00956a",
-     "cited_by": 23,
+     "cited_by": 24,
      "problem": "battery-recycling",
      "status": "corroborating"
     },
@@ -1174,15 +1160,8 @@
     30,
     32
    ],
-   "indicator": {
-    "indicator": "SE.TER.ENRR",
-    "name": "School enrollment, tertiary (% gross)",
-    "year": 2025,
-    "value": 49.0776442074561,
-    "source": "World Bank WDI",
-    "url": "https://data.worldbank.org/indicator/SE.TER.ENRR?locations=TH"
-   },
-   "new_papers_12m": 568,
+   "indicator": null,
+   "new_papers_12m": 573,
    "plan": null,
    "evidence": [
     {
@@ -1308,7 +1287,7 @@
     15
    ],
    "indicator": null,
-   "new_papers_12m": 700,
+   "new_papers_12m": 756,
    "plan": null,
    "evidence": [
     {
@@ -1436,7 +1415,7 @@
     12
    ],
    "indicator": null,
-   "new_papers_12m": 117,
+   "new_papers_12m": 123,
    "plan": {
     "predict": [
      {
@@ -1830,7 +1809,7 @@
     8
    ],
    "indicator": null,
-   "new_papers_12m": 229,
+   "new_papers_12m": 230,
    "plan": {
     "predict": [
      {
@@ -2055,7 +2034,7 @@
      "source": "Review of Managerial Science",
      "domain": "openalex.org",
      "doi_or_url": "https://doi.org/10.1007/s11846-026-00992-4",
-     "cited_by": 11,
+     "cited_by": 12,
      "problem": "household-debt",
      "status": "corroborating"
     },
@@ -2066,7 +2045,7 @@
      "source": "Wiley Interdisciplinary Reviews Energy and Environment",
      "domain": "openalex.org",
      "doi_or_url": "https://doi.org/10.1002/wene.70020",
-     "cited_by": 16,
+     "cited_by": 17,
      "problem": "household-debt",
      "status": "corroborating"
     },
@@ -2158,15 +2137,8 @@
     2,
     5
    ],
-   "indicator": {
-    "indicator": "IT.NET.USER.ZS",
-    "name": "Individuals using the Internet (% of population)",
-    "year": 2024,
-    "value": 90.86718789,
-    "source": "World Bank WDI",
-    "url": "https://data.worldbank.org/indicator/IT.NET.USER.ZS?locations=TH"
-   },
-   "new_papers_12m": 41,
+   "indicator": null,
+   "new_papers_12m": 42,
    "plan": null,
    "evidence": [
     {
@@ -2291,7 +2263,7 @@
     30
    ],
    "indicator": null,
-   "new_papers_12m": 6594,
+   "new_papers_12m": 6630,
    "plan": null,
    "evidence": [
     {
@@ -2415,7 +2387,7 @@
     13
    ],
    "indicator": null,
-   "new_papers_12m": 91,
+   "new_papers_12m": 104,
    "plan": null,
    "evidence": [
     {
@@ -2453,12 +2425,12 @@
     },
     {
      "tier": "research",
-     "title": "From Local to Global Perspective in AI-Based Digital Twins in Healthcare",
-     "date": "2025-12-21",
-     "source": "Applied Sciences",
+     "title": "Exploring the caregiving perceptions and needs of family caregivers of older stroke patients: a descriptive qualitative study",
+     "date": "2025-11-25",
+     "source": "International Journal of Qualitative Studies on Health and Well-Being",
      "domain": "openalex.org",
-     "doi_or_url": "https://doi.org/10.3390/app16010083",
-     "cited_by": 5,
+     "doi_or_url": "https://doi.org/10.1080/17482631.2025.2588908",
+     "cited_by": 10,
      "problem": "rural-doctors",
      "status": "corroborating"
     },
@@ -2469,7 +2441,7 @@
      "source": "BMC Family Practice",
      "domain": "openalex.org",
      "doi_or_url": "https://doi.org/10.1186/s12875-025-03033-3",
-     "cited_by": 11,
+     "cited_by": 12,
      "problem": "rural-doctors",
      "status": "corroborating"
     }
@@ -2539,7 +2511,7 @@
     0
    ],
    "indicator": null,
-   "new_papers_12m": 370,
+   "new_papers_12m": 383,
    "plan": null,
    "evidence": [
     {
@@ -2666,9 +2638,20 @@
     32
    ],
    "indicator": null,
-   "new_papers_12m": 73,
+   "new_papers_12m": 72,
    "plan": null,
    "evidence": [
+    {
+     "tier": "research",
+     "title": "Weathering the storm: impacts of extreme climate events on food security in Southeast Asia and pathways to resilience",
+     "date": "2026-03-19",
+     "source": "Food Security",
+     "domain": "openalex.org",
+     "doi_or_url": "https://doi.org/10.1007/s12571-026-01670-9",
+     "cited_by": 4,
+     "problem": "flood-water",
+     "status": "corroborating"
+    },
     {
      "tier": "research",
      "title": "Soil Types and Degradation Pathways in Saudi Arabia: A Geospatial Approach for Sustainable Land Management",
@@ -2710,17 +2693,6 @@
      "domain": "openalex.org",
      "doi_or_url": "https://doi.org/10.1038/s41598-025-23184-8",
      "cited_by": 6,
-     "problem": "flood-water",
-     "status": "corroborating"
-    },
-    {
-     "tier": "research",
-     "title": "Deep Reinforcement Learning for Optimized Reservoir Operation and Flood Risk Mitigation",
-     "date": "2025-11-11",
-     "source": "Water",
-     "domain": "openalex.org",
-     "doi_or_url": "https://doi.org/10.3390/w17223226",
-     "cited_by": 5,
      "problem": "flood-water",
      "status": "corroborating"
     }
