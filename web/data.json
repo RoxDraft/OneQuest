@@ -1,6 +1,6 @@
 {
  "is_sample": false,
- "generated_at": "2026-11-13T03:22+00:00",
+ "generated_at": "2026-11-14T03:04+00:00",
  "weights": {
   "scale": 0.3,
   "neglect": 0.25,
@@ -14,7 +14,6 @@
   "social": "เสียงจากโซเชียล"
  },
  "dates": [
-  "2026-10-15",
   "2026-10-16",
   "2026-10-17",
   "2026-10-18",
@@ -43,7 +42,8 @@
   "2026-11-10",
   "2026-11-11",
   "2026-11-12",
-  "2026-11-13"
+  "2026-11-13",
+  "2026-11-14"
  ],
  "daily_signals": {
   "supply": [
@@ -144,7 +144,6 @@
   ]
  },
  "evidence_status": {
-  "unverified": 1,
   "corroborating": 70
  },
  "new_evidence_today": 0,
@@ -319,14 +318,7 @@
     21,
     25
    ],
-   "indicator": {
-    "indicator": "SP.POP.65UP.TO.ZS",
-    "name": "Population ages 65 and above (% of total population)",
-    "year": 2025,
-    "value": 16.017421033045,
-    "source": "World Bank WDI",
-    "url": "https://data.worldbank.org/indicator/SP.POP.65UP.TO.ZS?locations=TH"
-   },
+   "indicator": null,
    "new_papers_12m": 196,
    "plan": {
     "labor": {
@@ -664,20 +656,17 @@
     20,
     23
    ],
-   "indicator": null,
-   "new_papers_12m": 93367,
+   "indicator": {
+    "indicator": "SH.STA.SUIC.P5",
+    "name": "Suicide mortality rate (per 100,000 population)",
+    "year": 2021,
+    "value": 16.59,
+    "source": "World Bank WDI",
+    "url": "https://data.worldbank.org/indicator/SH.STA.SUIC.P5?locations=TH"
+   },
+   "new_papers_12m": 93482,
    "plan": null,
    "evidence": [
-    {
-     "tier": "news",
-     "title": "Bravo Zulu groundbreaking marks new beginning for women veterans",
-     "date": "20261112",
-     "source": "mankatofreepress.com",
-     "domain": "mankatofreepress.com",
-     "doi_or_url": "https://www.mankatofreepress.com/news/local_news/bravo-zulu-groundbreaking-marks-new-beginning-for-women-veterans/article_96c85edc-8df5-4894-a69d-6e76e3f92168.html",
-     "problem": "mental-health",
-     "status": "unverified"
-    },
     {
      "tier": "research",
      "title": "Mean-Field Limit of Non-exchangeable Multi-agent Systems Over Hypergraphs with Unbounded Rank",
@@ -707,7 +696,7 @@
      "source": "Science China Information Sciences",
      "domain": "openalex.org",
      "doi_or_url": "https://doi.org/10.1007/s11432-025-4665-8",
-     "cited_by": 559,
+     "cited_by": 560,
      "problem": "mental-health",
      "status": "corroborating"
     },
@@ -729,7 +718,7 @@
      "source": "Artificial Intelligence Review",
      "domain": "openalex.org",
      "doi_or_url": "https://doi.org/10.1007/s10462-025-11422-4",
-     "cited_by": 304,
+     "cited_by": 306,
      "problem": "mental-health",
      "status": "corroborating"
     }
@@ -800,15 +789,8 @@
     6,
     5
    ],
-   "indicator": {
-    "indicator": "SL.UEM.1524.ZS",
-    "name": "Unemployment, youth total (% of total labor force ages 15-24) (modeled ILO estimate)",
-    "year": 2025,
-    "value": 4.531,
-    "source": "World Bank WDI",
-    "url": "https://data.worldbank.org/indicator/SL.UEM.1524.ZS?locations=TH"
-   },
-   "new_papers_12m": 1541,
+   "indicator": null,
+   "new_papers_12m": 1538,
    "plan": null,
    "evidence": [
     {
@@ -840,7 +822,7 @@
      "source": "Frontiers in Psychology",
      "domain": "openalex.org",
      "doi_or_url": "https://doi.org/10.3389/fpsyg.2026.1745164",
-     "cited_by": 22,
+     "cited_by": 23,
      "problem": "ai-jobs",
      "status": "corroborating"
     },
@@ -934,7 +916,7 @@
     6
    ],
    "indicator": null,
-   "new_papers_12m": 683,
+   "new_papers_12m": 687,
    "plan": null,
    "evidence": [
     {
@@ -1092,7 +1074,7 @@
      "source": "Sustainable Energy Research",
      "domain": "openalex.org",
      "doi_or_url": "https://doi.org/10.1186/s40807-025-00228-1",
-     "cited_by": 14,
+     "cited_by": 15,
      "problem": "battery-recycling",
      "status": "corroborating"
     },
@@ -1186,7 +1168,7 @@
     32
    ],
    "indicator": null,
-   "new_papers_12m": 577,
+   "new_papers_12m": 578,
    "plan": null,
    "evidence": [
     {
@@ -1312,7 +1294,7 @@
     15
    ],
    "indicator": null,
-   "new_papers_12m": 754,
+   "new_papers_12m": 755,
    "plan": null,
    "evidence": [
     {
@@ -1834,7 +1816,7 @@
     8
    ],
    "indicator": null,
-   "new_papers_12m": 229,
+   "new_papers_12m": 228,
    "plan": {
     "predict": [
      {
@@ -2162,7 +2144,14 @@
     2,
     5
    ],
-   "indicator": null,
+   "indicator": {
+    "indicator": "IT.NET.USER.ZS",
+    "name": "Individuals using the Internet (% of population)",
+    "year": 2024,
+    "value": 90.86718789,
+    "source": "World Bank WDI",
+    "url": "https://data.worldbank.org/indicator/IT.NET.USER.ZS?locations=TH"
+   },
    "new_papers_12m": 42,
    "plan": null,
    "evidence": [
@@ -2288,7 +2277,7 @@
     30
    ],
    "indicator": null,
-   "new_papers_12m": 6646,
+   "new_papers_12m": 6672,
    "plan": null,
    "evidence": [
     {
@@ -2412,7 +2401,7 @@
     13
    ],
    "indicator": null,
-   "new_papers_12m": 106,
+   "new_papers_12m": 107,
    "plan": null,
    "evidence": [
     {
@@ -2536,7 +2525,7 @@
     0
    ],
    "indicator": null,
-   "new_papers_12m": 383,
+   "new_papers_12m": 384,
    "plan": null,
    "evidence": [
     {
@@ -2579,7 +2568,7 @@
      "source": "C – Journal of Carbon Research",
      "domain": "openalex.org",
      "doi_or_url": "https://doi.org/10.3390/c12010007",
-     "cited_by": 31,
+     "cited_by": 32,
      "problem": "groundwater",
      "status": "corroborating"
     },
