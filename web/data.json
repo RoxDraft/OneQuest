@@ -1,6 +1,6 @@
 {
  "is_sample": false,
- "generated_at": "2026-11-14T03:04+00:00",
+ "generated_at": "2026-11-15T02:35+00:00",
  "weights": {
   "scale": 0.3,
   "neglect": 0.25,
@@ -14,7 +14,6 @@
   "social": "เสียงจากโซเชียล"
  },
  "dates": [
-  "2026-10-16",
   "2026-10-17",
   "2026-10-18",
   "2026-10-19",
@@ -43,7 +42,8 @@
   "2026-11-11",
   "2026-11-12",
   "2026-11-13",
-  "2026-11-14"
+  "2026-11-14",
+  "2026-11-15"
  ],
  "daily_signals": {
   "supply": [
@@ -319,7 +319,7 @@
     25
    ],
    "indicator": null,
-   "new_papers_12m": 196,
+   "new_papers_12m": 197,
    "plan": {
     "labor": {
      "note": "ตัวเลขทั้งหมดเป็นค่าสมมติ ต้องแทนด้วยข้อมูลจริงก่อนใช้",
@@ -575,7 +575,7 @@
      "source": "Humanities and Social Sciences Communications",
      "domain": "openalex.org",
      "doi_or_url": "https://doi.org/10.1057/s41599-025-06077-z",
-     "cited_by": 15,
+     "cited_by": 16,
      "problem": "elder-care",
      "status": "corroborating"
     },
@@ -656,15 +656,8 @@
     20,
     23
    ],
-   "indicator": {
-    "indicator": "SH.STA.SUIC.P5",
-    "name": "Suicide mortality rate (per 100,000 population)",
-    "year": 2021,
-    "value": 16.59,
-    "source": "World Bank WDI",
-    "url": "https://data.worldbank.org/indicator/SH.STA.SUIC.P5?locations=TH"
-   },
-   "new_papers_12m": 93482,
+   "indicator": null,
+   "new_papers_12m": 93519,
    "plan": null,
    "evidence": [
     {
@@ -674,7 +667,7 @@
      "source": "Journal of Nonlinear Science",
      "domain": "openalex.org",
      "doi_or_url": "https://doi.org/10.1007/s00332-026-10338-9",
-     "cited_by": 288,
+     "cited_by": 289,
      "problem": "mental-health",
      "status": "corroborating"
     },
@@ -696,7 +689,18 @@
      "source": "Science China Information Sciences",
      "domain": "openalex.org",
      "doi_or_url": "https://doi.org/10.1007/s11432-025-4665-8",
-     "cited_by": 560,
+     "cited_by": 562,
+     "problem": "mental-health",
+     "status": "corroborating"
+    },
+    {
+     "tier": "research",
+     "title": "From LLM Reasoning to Autonomous AI Agents: A Comprehensive Review",
+     "date": "2026-01-01",
+     "source": "IEEE Access",
+     "domain": "openalex.org",
+     "doi_or_url": "https://doi.org/10.1109/access.2026.3698694",
+     "cited_by": 283,
      "problem": "mental-health",
      "status": "corroborating"
     },
@@ -707,18 +711,7 @@
      "source": "Meta-Radiology",
      "domain": "openalex.org",
      "doi_or_url": "https://doi.org/10.1016/j.metrad.2025.100190",
-     "cited_by": 289,
-     "problem": "mental-health",
-     "status": "corroborating"
-    },
-    {
-     "tier": "research",
-     "title": "Agentic AI: a comprehensive survey of architectures, applications, and future directions",
-     "date": "2025-11-14",
-     "source": "Artificial Intelligence Review",
-     "domain": "openalex.org",
-     "doi_or_url": "https://doi.org/10.1007/s10462-025-11422-4",
-     "cited_by": 306,
+     "cited_by": 290,
      "problem": "mental-health",
      "status": "corroborating"
     }
@@ -789,8 +782,15 @@
     6,
     5
    ],
-   "indicator": null,
-   "new_papers_12m": 1538,
+   "indicator": {
+    "indicator": "SL.UEM.1524.ZS",
+    "name": "Unemployment, youth total (% of total labor force ages 15-24) (modeled ILO estimate)",
+    "year": 2025,
+    "value": 4.531,
+    "source": "World Bank WDI",
+    "url": "https://data.worldbank.org/indicator/SL.UEM.1524.ZS?locations=TH"
+   },
+   "new_papers_12m": 1548,
    "plan": null,
    "evidence": [
     {
@@ -915,8 +915,15 @@
     6,
     6
    ],
-   "indicator": null,
-   "new_papers_12m": 687,
+   "indicator": {
+    "indicator": "FB.BNK.CAPA.ZS",
+    "name": "Bank capital to assets ratio (%)",
+    "year": 2024,
+    "value": 11.125634912273,
+    "source": "World Bank WDI",
+    "url": "https://data.worldbank.org/indicator/FB.BNK.CAPA.ZS?locations=TH"
+   },
+   "new_papers_12m": 686,
    "plan": null,
    "evidence": [
     {
@@ -937,7 +944,7 @@
      "source": "Journal of Enterprise Strategy and Management Innovation",
      "domain": "openalex.org",
      "doi_or_url": "https://doi.org/10.65166/bh0gx302",
-     "cited_by": 18,
+     "cited_by": 21,
      "problem": "sme-credit",
      "status": "corroborating"
     },
@@ -970,7 +977,7 @@
      "source": "Sustainability",
      "domain": "openalex.org",
      "doi_or_url": "https://doi.org/10.3390/su172310799",
-     "cited_by": 18,
+     "cited_by": 19,
      "problem": "sme-credit",
      "status": "corroborating"
     }
@@ -1041,8 +1048,15 @@
     13,
     13
    ],
-   "indicator": null,
-   "new_papers_12m": 188,
+   "indicator": {
+    "indicator": "EG.FEC.RNEW.ZS",
+    "name": "Renewable energy consumption (% of total final energy consumption)",
+    "year": 2021,
+    "value": 19,
+    "source": "World Bank WDI",
+    "url": "https://data.worldbank.org/indicator/EG.FEC.RNEW.ZS?locations=TH"
+   },
+   "new_papers_12m": 187,
    "plan": null,
    "evidence": [
     {
@@ -1167,8 +1181,15 @@
     30,
     32
    ],
-   "indicator": null,
-   "new_papers_12m": 578,
+   "indicator": {
+    "indicator": "SE.TER.ENRR",
+    "name": "School enrollment, tertiary (% gross)",
+    "year": 2025,
+    "value": 49.0776442074561,
+    "source": "World Bank WDI",
+    "url": "https://data.worldbank.org/indicator/SE.TER.ENRR?locations=TH"
+   },
+   "new_papers_12m": 577,
    "plan": null,
    "evidence": [
     {
@@ -1293,8 +1314,15 @@
     17,
     15
    ],
-   "indicator": null,
-   "new_papers_12m": 755,
+   "indicator": {
+    "indicator": "AG.PRD.FOOD.XD",
+    "name": "Food production index (2014-2016 = 100)",
+    "year": 2024,
+    "value": 98.91,
+    "source": "World Bank WDI",
+    "url": "https://data.worldbank.org/indicator/AG.PRD.FOOD.XD?locations=TH"
+   },
+   "new_papers_12m": 753,
    "plan": null,
    "evidence": [
     {
@@ -1315,7 +1343,7 @@
      "source": "Processes",
      "domain": "openalex.org",
      "doi_or_url": "https://doi.org/10.3390/pr14050795",
-     "cited_by": 16,
+     "cited_by": 17,
      "problem": "food-loss",
      "status": "corroborating"
     },
@@ -1421,7 +1449,14 @@
     12,
     12
    ],
-   "indicator": null,
+   "indicator": {
+    "indicator": "EN.ATM.PM25.MC.M3",
+    "name": "PM2.5 air pollution, mean annual exposure (micrograms per cubic meter)",
+    "year": 2023,
+    "value": 23.4870743016258,
+    "source": "World Bank WDI",
+    "url": "https://data.worldbank.org/indicator/EN.ATM.PM25.MC.M3?locations=TH"
+   },
    "new_papers_12m": 124,
    "plan": {
     "predict": [
@@ -1815,8 +1850,15 @@
     4,
     8
    ],
-   "indicator": null,
-   "new_papers_12m": 228,
+   "indicator": {
+    "indicator": "FS.AST.PRVT.GD.ZS",
+    "name": "Domestic credit to private sector (% of GDP)",
+    "year": 2025,
+    "value": 143.080092396055,
+    "source": "World Bank WDI",
+    "url": "https://data.worldbank.org/indicator/FS.AST.PRVT.GD.ZS?locations=TH"
+   },
+   "new_papers_12m": 229,
    "plan": {
     "predict": [
      {
@@ -2030,7 +2072,7 @@
      "source": "Asian Financial Economics and Policy",
      "domain": "openalex.org",
      "doi_or_url": "https://doi.org/10.65166/p4hr6f59",
-     "cited_by": 8,
+     "cited_by": 10,
      "problem": "household-debt",
      "status": "corroborating"
     },
@@ -2063,7 +2105,7 @@
      "source": "Sustainability",
      "domain": "openalex.org",
      "doi_or_url": "https://doi.org/10.3390/su172310799",
-     "cited_by": 18,
+     "cited_by": 19,
      "problem": "household-debt",
      "status": "corroborating"
     },
@@ -2144,14 +2186,7 @@
     2,
     5
    ],
-   "indicator": {
-    "indicator": "IT.NET.USER.ZS",
-    "name": "Individuals using the Internet (% of population)",
-    "year": 2024,
-    "value": 90.86718789,
-    "source": "World Bank WDI",
-    "url": "https://data.worldbank.org/indicator/IT.NET.USER.ZS?locations=TH"
-   },
+   "indicator": null,
    "new_papers_12m": 42,
    "plan": null,
    "evidence": [
@@ -2206,7 +2241,7 @@
      "source": "Asian Journal of Criminology",
      "domain": "openalex.org",
      "doi_or_url": "https://doi.org/10.1007/s11417-025-09477-x",
-     "cited_by": 13,
+     "cited_by": 14,
      "problem": "online-fraud",
      "status": "corroborating"
     }
@@ -2277,7 +2312,7 @@
     30
    ],
    "indicator": null,
-   "new_papers_12m": 6672,
+   "new_papers_12m": 6685,
    "plan": null,
    "evidence": [
     {
@@ -2309,7 +2344,7 @@
      "source": "Quality & Quantity",
      "domain": "openalex.org",
      "doi_or_url": "https://doi.org/10.1007/s11135-026-02572-w",
-     "cited_by": 49,
+     "cited_by": 50,
      "problem": "energy-security",
      "status": "corroborating"
     },
@@ -2320,7 +2355,7 @@
      "source": "Nature Communications",
      "domain": "openalex.org",
      "doi_or_url": "https://doi.org/10.1038/s41467-025-67862-7",
-     "cited_by": 49,
+     "cited_by": 50,
      "problem": "energy-security",
      "status": "corroborating"
     },
@@ -2525,7 +2560,7 @@
     0
    ],
    "indicator": null,
-   "new_papers_12m": 384,
+   "new_papers_12m": 385,
    "plan": null,
    "evidence": [
     {
@@ -2557,7 +2592,7 @@
      "source": "Agriculture",
      "domain": "openalex.org",
      "doi_or_url": "https://doi.org/10.3390/agriculture16030309",
-     "cited_by": 13,
+     "cited_by": 15,
      "problem": "groundwater",
      "status": "corroborating"
     },
@@ -2651,7 +2686,14 @@
     29,
     32
    ],
-   "indicator": null,
+   "indicator": {
+    "indicator": "ER.H2O.FWST.ZS",
+    "name": "Level of water stress: freshwater withdrawal as a proportion of available freshwater resources",
+    "year": 2022,
+    "value": 23.01393518,
+    "source": "World Bank WDI",
+    "url": "https://data.worldbank.org/indicator/ER.H2O.FWST.ZS?locations=TH"
+   },
    "new_papers_12m": 71,
    "plan": null,
    "evidence": [
