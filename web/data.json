@@ -1,6 +1,6 @@
 {
  "is_sample": false,
- "generated_at": "2026-11-15T02:35+00:00",
+ "generated_at": "2026-11-16T02:46+00:00",
  "weights": {
   "scale": 0.3,
   "neglect": 0.25,
@@ -14,7 +14,6 @@
   "social": "เสียงจากโซเชียล"
  },
  "dates": [
-  "2026-10-17",
   "2026-10-18",
   "2026-10-19",
   "2026-10-20",
@@ -43,7 +42,8 @@
   "2026-11-12",
   "2026-11-13",
   "2026-11-14",
-  "2026-11-15"
+  "2026-11-15",
+  "2026-11-16"
  ],
  "daily_signals": {
   "supply": [
@@ -144,7 +144,7 @@
   ]
  },
  "evidence_status": {
-  "corroborating": 70
+  "corroborating": 60
  },
  "new_evidence_today": 0,
  "patterns": {
@@ -319,7 +319,7 @@
     25
    ],
    "indicator": null,
-   "new_papers_12m": 197,
+   "new_papers_12m": 200,
    "plan": {
     "labor": {
      "note": "ตัวเลขทั้งหมดเป็นค่าสมมติ ต้องแทนด้วยข้อมูลจริงก่อนใช้",
@@ -657,65 +657,9 @@
     23
    ],
    "indicator": null,
-   "new_papers_12m": 93519,
+   "new_papers_12m": null,
    "plan": null,
-   "evidence": [
-    {
-     "tier": "research",
-     "title": "Mean-Field Limit of Non-exchangeable Multi-agent Systems Over Hypergraphs with Unbounded Rank",
-     "date": "2026-10-23",
-     "source": "Journal of Nonlinear Science",
-     "domain": "openalex.org",
-     "doi_or_url": "https://doi.org/10.1007/s00332-026-10338-9",
-     "cited_by": 289,
-     "problem": "mental-health",
-     "status": "corroborating"
-    },
-    {
-     "tier": "research",
-     "title": "Exploring Large Language Model‐Based Intelligent Agents: Definitions, Methods, and Prospects",
-     "date": "2026-07-24",
-     "source": "Wiley Interdisciplinary Reviews Data Mining and Knowledge Discovery",
-     "domain": "openalex.org",
-     "doi_or_url": "https://doi.org/10.1002/widm.70111",
-     "cited_by": 291,
-     "problem": "mental-health",
-     "status": "corroborating"
-    },
-    {
-     "tier": "research",
-     "title": "Towards reasoning era: a survey of long chain-of-thought for reasoning large language models",
-     "date": "2026-05-12",
-     "source": "Science China Information Sciences",
-     "domain": "openalex.org",
-     "doi_or_url": "https://doi.org/10.1007/s11432-025-4665-8",
-     "cited_by": 562,
-     "problem": "mental-health",
-     "status": "corroborating"
-    },
-    {
-     "tier": "research",
-     "title": "From LLM Reasoning to Autonomous AI Agents: A Comprehensive Review",
-     "date": "2026-01-01",
-     "source": "IEEE Access",
-     "domain": "openalex.org",
-     "doi_or_url": "https://doi.org/10.1109/access.2026.3698694",
-     "cited_by": 283,
-     "problem": "mental-health",
-     "status": "corroborating"
-    },
-    {
-     "tier": "research",
-     "title": "Prompt engineering for healthcare: Methodologies and applications",
-     "date": "2025-11-22",
-     "source": "Meta-Radiology",
-     "domain": "openalex.org",
-     "doi_or_url": "https://doi.org/10.1016/j.metrad.2025.100190",
-     "cited_by": 290,
-     "problem": "mental-health",
-     "status": "corroborating"
-    }
-   ]
+   "evidence": []
   },
   {
    "id": "ai-jobs",
@@ -782,73 +726,10 @@
     6,
     5
    ],
-   "indicator": {
-    "indicator": "SL.UEM.1524.ZS",
-    "name": "Unemployment, youth total (% of total labor force ages 15-24) (modeled ILO estimate)",
-    "year": 2025,
-    "value": 4.531,
-    "source": "World Bank WDI",
-    "url": "https://data.worldbank.org/indicator/SL.UEM.1524.ZS?locations=TH"
-   },
-   "new_papers_12m": 1548,
+   "indicator": null,
+   "new_papers_12m": null,
    "plan": null,
-   "evidence": [
-    {
-     "tier": "research",
-     "title": "A Survey on Human–AI Collaboration with Large Foundation Models",
-     "date": "2026-08-22",
-     "source": "ACM Transactions on Intelligent Systems and Technology",
-     "domain": "openalex.org",
-     "doi_or_url": "https://doi.org/10.1145/3841472",
-     "cited_by": 73,
-     "problem": "ai-jobs",
-     "status": "corroborating"
-    },
-    {
-     "tier": "research",
-     "title": "What is ethical: AIHED driving humans or Human-Driven AIHED? A conceptual framework enabling the ‘ethos’ of AI-driven higher education",
-     "date": "2026-05-19",
-     "source": "Journal of Experimental & Theoretical Artificial Intelligence",
-     "domain": "openalex.org",
-     "doi_or_url": "https://doi.org/10.1080/0952813x.2026.2678591",
-     "cited_by": 62,
-     "problem": "ai-jobs",
-     "status": "corroborating"
-    },
-    {
-     "tier": "research",
-     "title": "Algorithmic anxiety: AI, work, and the evolving psychological contract in digital discourse",
-     "date": "2026-02-17",
-     "source": "Frontiers in Psychology",
-     "domain": "openalex.org",
-     "doi_or_url": "https://doi.org/10.3389/fpsyg.2026.1745164",
-     "cited_by": 23,
-     "problem": "ai-jobs",
-     "status": "corroborating"
-    },
-    {
-     "tier": "research",
-     "title": "Technostress and generative AI in the workplace: a qualitative analysis of young professionals",
-     "date": "2025-12-12",
-     "source": "Frontiers in Artificial Intelligence",
-     "domain": "openalex.org",
-     "doi_or_url": "https://doi.org/10.3389/frai.2025.1728881",
-     "cited_by": 38,
-     "problem": "ai-jobs",
-     "status": "corroborating"
-    },
-    {
-     "tier": "research",
-     "title": "Technology-Driven Change in Human Resource Management: Reshaping Talent Management and Organizational Design",
-     "date": "2025-11-19",
-     "source": "Administrative Sciences",
-     "domain": "openalex.org",
-     "doi_or_url": "https://doi.org/10.3390/admsci15110452",
-     "cited_by": 42,
-     "problem": "ai-jobs",
-     "status": "corroborating"
-    }
-   ]
+   "evidence": []
   },
   {
    "id": "sme-credit",
@@ -915,14 +796,7 @@
     6,
     6
    ],
-   "indicator": {
-    "indicator": "FB.BNK.CAPA.ZS",
-    "name": "Bank capital to assets ratio (%)",
-    "year": 2024,
-    "value": 11.125634912273,
-    "source": "World Bank WDI",
-    "url": "https://data.worldbank.org/indicator/FB.BNK.CAPA.ZS?locations=TH"
-   },
+   "indicator": null,
    "new_papers_12m": 686,
    "plan": null,
    "evidence": [
@@ -955,7 +829,7 @@
      "source": "Sustainability",
      "domain": "openalex.org",
      "doi_or_url": "https://doi.org/10.3390/su18020732",
-     "cited_by": 25,
+     "cited_by": 26,
      "problem": "sme-credit",
      "status": "corroborating"
     },
@@ -1048,15 +922,8 @@
     13,
     13
    ],
-   "indicator": {
-    "indicator": "EG.FEC.RNEW.ZS",
-    "name": "Renewable energy consumption (% of total final energy consumption)",
-    "year": 2021,
-    "value": 19,
-    "source": "World Bank WDI",
-    "url": "https://data.worldbank.org/indicator/EG.FEC.RNEW.ZS?locations=TH"
-   },
-   "new_papers_12m": 187,
+   "indicator": null,
+   "new_papers_12m": 189,
    "plan": null,
    "evidence": [
     {
@@ -1181,15 +1048,8 @@
     30,
     32
    ],
-   "indicator": {
-    "indicator": "SE.TER.ENRR",
-    "name": "School enrollment, tertiary (% gross)",
-    "year": 2025,
-    "value": 49.0776442074561,
-    "source": "World Bank WDI",
-    "url": "https://data.worldbank.org/indicator/SE.TER.ENRR?locations=TH"
-   },
-   "new_papers_12m": 577,
+   "indicator": null,
+   "new_papers_12m": 578,
    "plan": null,
    "evidence": [
     {
@@ -1314,14 +1174,7 @@
     17,
     15
    ],
-   "indicator": {
-    "indicator": "AG.PRD.FOOD.XD",
-    "name": "Food production index (2014-2016 = 100)",
-    "year": 2024,
-    "value": 98.91,
-    "source": "World Bank WDI",
-    "url": "https://data.worldbank.org/indicator/AG.PRD.FOOD.XD?locations=TH"
-   },
+   "indicator": null,
    "new_papers_12m": 753,
    "plan": null,
    "evidence": [
@@ -1449,15 +1302,8 @@
     12,
     12
    ],
-   "indicator": {
-    "indicator": "EN.ATM.PM25.MC.M3",
-    "name": "PM2.5 air pollution, mean annual exposure (micrograms per cubic meter)",
-    "year": 2023,
-    "value": 23.4870743016258,
-    "source": "World Bank WDI",
-    "url": "https://data.worldbank.org/indicator/EN.ATM.PM25.MC.M3?locations=TH"
-   },
-   "new_papers_12m": 124,
+   "indicator": null,
+   "new_papers_12m": 123,
    "plan": {
     "predict": [
      {
@@ -1850,14 +1696,7 @@
     4,
     8
    ],
-   "indicator": {
-    "indicator": "FS.AST.PRVT.GD.ZS",
-    "name": "Domestic credit to private sector (% of GDP)",
-    "year": 2025,
-    "value": 143.080092396055,
-    "source": "World Bank WDI",
-    "url": "https://data.worldbank.org/indicator/FS.AST.PRVT.GD.ZS?locations=TH"
-   },
+   "indicator": null,
    "new_papers_12m": 229,
    "plan": {
     "predict": [
@@ -2312,7 +2151,7 @@
     30
    ],
    "indicator": null,
-   "new_papers_12m": 6685,
+   "new_papers_12m": 6699,
    "plan": null,
    "evidence": [
     {
@@ -2333,7 +2172,7 @@
      "source": "Sustainability",
      "domain": "openalex.org",
      "doi_or_url": "https://doi.org/10.3390/su18052165",
-     "cited_by": 53,
+     "cited_by": 54,
      "problem": "energy-security",
      "status": "corroborating"
     },
@@ -2560,7 +2399,7 @@
     0
    ],
    "indicator": null,
-   "new_papers_12m": 385,
+   "new_papers_12m": 386,
    "plan": null,
    "evidence": [
     {
@@ -2581,7 +2420,7 @@
      "source": "Environments",
      "domain": "openalex.org",
      "doi_or_url": "https://doi.org/10.3390/environments13020116",
-     "cited_by": 12,
+     "cited_by": 13,
      "problem": "groundwater",
      "status": "corroborating"
     },
@@ -2614,7 +2453,7 @@
      "source": "World Water Policy",
      "domain": "openalex.org",
      "doi_or_url": "https://doi.org/10.1002/wwp2.70055",
-     "cited_by": 19,
+     "cited_by": 20,
      "problem": "groundwater",
      "status": "corroborating"
     }
@@ -2686,15 +2525,8 @@
     29,
     32
    ],
-   "indicator": {
-    "indicator": "ER.H2O.FWST.ZS",
-    "name": "Level of water stress: freshwater withdrawal as a proportion of available freshwater resources",
-    "year": 2022,
-    "value": 23.01393518,
-    "source": "World Bank WDI",
-    "url": "https://data.worldbank.org/indicator/ER.H2O.FWST.ZS?locations=TH"
-   },
-   "new_papers_12m": 71,
+   "indicator": null,
+   "new_papers_12m": 69,
    "plan": null,
    "evidence": [
     {
