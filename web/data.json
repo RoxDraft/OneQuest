@@ -1,6 +1,6 @@
 {
  "is_sample": false,
- "generated_at": "2026-11-19T04:08+00:00",
+ "generated_at": "2026-11-20T03:57+00:00",
  "weights": {
   "scale": 0.3,
   "neglect": 0.25,
@@ -14,7 +14,6 @@
   "social": "เสียงจากโซเชียล"
  },
  "dates": [
-  "2026-10-21",
   "2026-10-22",
   "2026-10-23",
   "2026-10-24",
@@ -43,7 +42,8 @@
   "2026-11-16",
   "2026-11-17",
   "2026-11-18",
-  "2026-11-19"
+  "2026-11-19",
+  "2026-11-20"
  ],
  "daily_signals": {
   "supply": [
@@ -144,7 +144,7 @@
   ]
  },
  "evidence_status": {
-  "corroborating": 25
+  "corroborating": 70
  },
  "new_evidence_today": 0,
  "patterns": {
@@ -326,7 +326,7 @@
     "source": "World Bank WDI",
     "url": "https://data.worldbank.org/indicator/SP.POP.65UP.TO.ZS?locations=TH"
    },
-   "new_papers_12m": null,
+   "new_papers_12m": 204,
    "plan": {
     "labor": {
      "note": "ตัวเลขทั้งหมดเป็นค่าสมมติ ต้องแทนด้วยข้อมูลจริงก่อนใช้",
@@ -541,7 +541,63 @@
     "open_quests": 2,
     "done_quests": 6
    },
-   "evidence": []
+   "evidence": [
+    {
+     "tier": "research",
+     "title": "RECOVER: Designing a Large Language Model-based Remote Patient Monitoring System for Postoperative Gastrointestinal Cancer Care CSCW032",
+     "date": "2026-04-30",
+     "source": "Proceedings of the ACM on Human-Computer Interaction",
+     "domain": "openalex.org",
+     "doi_or_url": "https://doi.org/10.1145/3788068",
+     "cited_by": 7,
+     "problem": "elder-care",
+     "status": "corroborating"
+    },
+    {
+     "tier": "research",
+     "title": "Economic burden of dengue in Puerto Rico, 2010–2023",
+     "date": "2026-01-27",
+     "source": "Infectious Diseases of Poverty",
+     "domain": "openalex.org",
+     "doi_or_url": "https://doi.org/10.1186/s40249-026-01412-1",
+     "cited_by": 7,
+     "problem": "elder-care",
+     "status": "corroborating"
+    },
+    {
+     "tier": "research",
+     "title": "Exploring the caregiving perceptions and needs of family caregivers of older stroke patients: a descriptive qualitative study",
+     "date": "2025-11-25",
+     "source": "International Journal of Qualitative Studies on Health and Well-Being",
+     "domain": "openalex.org",
+     "doi_or_url": "https://doi.org/10.1080/17482631.2025.2588908",
+     "cited_by": 11,
+     "problem": "elder-care",
+     "status": "corroborating"
+    },
+    {
+     "tier": "research",
+     "title": "FinTech and older adults: a global synthesis of enablers, barriers, and research trends for inclusive digital finance",
+     "date": "2025-11-20",
+     "source": "Humanities and Social Sciences Communications",
+     "domain": "openalex.org",
+     "doi_or_url": "https://doi.org/10.1057/s41599-025-06077-z",
+     "cited_by": 18,
+     "problem": "elder-care",
+     "status": "corroborating"
+    },
+    {
+     "tier": "research",
+     "title": "Balancing patient choice and health system capacity: a system dynamics model of dialysis in Thailand",
+     "date": "2025-11-20",
+     "source": "BMC Medicine",
+     "domain": "openalex.org",
+     "doi_or_url": "https://doi.org/10.1186/s12916-025-04522-z",
+     "cited_by": 8,
+     "problem": "elder-care",
+     "status": "corroborating"
+    }
+   ]
   },
   {
    "id": "mental-health",
@@ -615,9 +671,65 @@
     "source": "World Bank WDI",
     "url": "https://data.worldbank.org/indicator/SH.STA.SUIC.P5?locations=TH"
    },
-   "new_papers_12m": null,
+   "new_papers_12m": 94893,
    "plan": null,
-   "evidence": []
+   "evidence": [
+    {
+     "tier": "research",
+     "title": "Exploring Large Language Model‐Based Intelligent Agents: Definitions, Methods, and Prospects",
+     "date": "2026-07-24",
+     "source": "Wiley Interdisciplinary Reviews Data Mining and Knowledge Discovery",
+     "domain": "openalex.org",
+     "doi_or_url": "https://doi.org/10.1002/widm.70111",
+     "cited_by": 339,
+     "problem": "mental-health",
+     "status": "corroborating"
+    },
+    {
+     "tier": "research",
+     "title": "Towards reasoning era: a survey of long chain-of-thought for reasoning large language models",
+     "date": "2026-05-12",
+     "source": "Science China Information Sciences",
+     "domain": "openalex.org",
+     "doi_or_url": "https://doi.org/10.1007/s11432-025-4665-8",
+     "cited_by": 612,
+     "problem": "mental-health",
+     "status": "corroborating"
+    },
+    {
+     "tier": "research",
+     "title": "From LLM Reasoning to Autonomous AI Agents: A Comprehensive Review",
+     "date": "2026-01-01",
+     "source": "IEEE Access",
+     "domain": "openalex.org",
+     "doi_or_url": "https://doi.org/10.1109/access.2026.3698694",
+     "cited_by": 342,
+     "problem": "mental-health",
+     "status": "corroborating"
+    },
+    {
+     "tier": "research",
+     "title": "Agentic Large Language Models, a Survey",
+     "date": "2025-12-30",
+     "source": "Journal of Artificial Intelligence Research",
+     "domain": "openalex.org",
+     "doi_or_url": "https://doi.org/10.1613/jair.1.18675",
+     "cited_by": 325,
+     "problem": "mental-health",
+     "status": "corroborating"
+    },
+    {
+     "tier": "research",
+     "title": "Prompt engineering for healthcare: Methodologies and applications",
+     "date": "2025-11-22",
+     "source": "Meta-Radiology",
+     "domain": "openalex.org",
+     "doi_or_url": "https://doi.org/10.1016/j.metrad.2025.100190",
+     "cited_by": 304,
+     "problem": "mental-health",
+     "status": "corroborating"
+    }
+   ]
   },
   {
    "id": "ai-jobs",
@@ -684,10 +796,73 @@
     6,
     5
    ],
-   "indicator": null,
-   "new_papers_12m": null,
+   "indicator": {
+    "indicator": "SL.UEM.1524.ZS",
+    "name": "Unemployment, youth total (% of total labor force ages 15-24) (modeled ILO estimate)",
+    "year": 2025,
+    "value": 4.531,
+    "source": "World Bank WDI",
+    "url": "https://data.worldbank.org/indicator/SL.UEM.1524.ZS?locations=TH"
+   },
+   "new_papers_12m": 1568,
    "plan": null,
-   "evidence": []
+   "evidence": [
+    {
+     "tier": "research",
+     "title": "“Generate” the Future of Work Through AI: Empirical Evidence from Online Labor Markets",
+     "date": "2026-11-18",
+     "source": "Information Systems Research",
+     "domain": "openalex.org",
+     "doi_or_url": "https://doi.org/10.1287/isre.2023.0461",
+     "cited_by": 68,
+     "problem": "ai-jobs",
+     "status": "corroborating"
+    },
+    {
+     "tier": "research",
+     "title": "A Survey on Human–AI Collaboration with Large Foundation Models",
+     "date": "2026-08-22",
+     "source": "ACM Transactions on Intelligent Systems and Technology",
+     "domain": "openalex.org",
+     "doi_or_url": "https://doi.org/10.1145/3841472",
+     "cited_by": 74,
+     "problem": "ai-jobs",
+     "status": "corroborating"
+    },
+    {
+     "tier": "research",
+     "title": "Distributional Policy Evaluation for Heterogeneous Treatment Effects, Social Equity and Climate-Transition Governance",
+     "date": "2026-07-24",
+     "source": "International Journal of Academic and Industrial Research Innovations(IJAIRI)",
+     "domain": "openalex.org",
+     "doi_or_url": "https://doi.org/10.62311/nesx/rp4jy-30072026",
+     "cited_by": 117,
+     "problem": "ai-jobs",
+     "status": "corroborating"
+    },
+    {
+     "tier": "research",
+     "title": "What is ethical: AIHED driving humans or Human-Driven AIHED? A conceptual framework enabling the ‘ethos’ of AI-driven higher education",
+     "date": "2026-05-19",
+     "source": "Journal of Experimental & Theoretical Artificial Intelligence",
+     "domain": "openalex.org",
+     "doi_or_url": "https://doi.org/10.1080/0952813x.2026.2678591",
+     "cited_by": 67,
+     "problem": "ai-jobs",
+     "status": "corroborating"
+    },
+    {
+     "tier": "research",
+     "title": "Technostress and generative AI in the workplace: a qualitative analysis of young professionals",
+     "date": "2025-12-12",
+     "source": "Frontiers in Artificial Intelligence",
+     "domain": "openalex.org",
+     "doi_or_url": "https://doi.org/10.3389/frai.2025.1728881",
+     "cited_by": 45,
+     "problem": "ai-jobs",
+     "status": "corroborating"
+    }
+   ]
   },
   {
    "id": "sme-credit",
@@ -754,10 +929,73 @@
     6,
     6
    ],
-   "indicator": null,
-   "new_papers_12m": null,
+   "indicator": {
+    "indicator": "FB.BNK.CAPA.ZS",
+    "name": "Bank capital to assets ratio (%)",
+    "year": 2024,
+    "value": 11.125634912273,
+    "source": "World Bank WDI",
+    "url": "https://data.worldbank.org/indicator/FB.BNK.CAPA.ZS?locations=TH"
+   },
+   "new_papers_12m": 695,
    "plan": null,
-   "evidence": []
+   "evidence": [
+    {
+     "tier": "research",
+     "title": "Financial mechanisms for advancing environmental sustainability: a comprehensive review",
+     "date": "2026-03-04",
+     "source": "Green Technology Resilience and Sustainability",
+     "domain": "openalex.org",
+     "doi_or_url": "https://doi.org/10.1007/s44173-026-00029-9",
+     "cited_by": 24,
+     "problem": "sme-credit",
+     "status": "corroborating"
+    },
+    {
+     "tier": "research",
+     "title": "Macroeconomic and Structural Determinants of Formal Business Entry in ASEAN: Evidence from a Linear Mixed-Effects Model Using World Development Indicators",
+     "date": "2026-02-16",
+     "source": "Journal of Enterprise Strategy and Management Innovation",
+     "domain": "openalex.org",
+     "doi_or_url": "https://doi.org/10.65166/bh0gx302",
+     "cited_by": 21,
+     "problem": "sme-credit",
+     "status": "corroborating"
+    },
+    {
+     "tier": "research",
+     "title": "The Application of Artificial Intelligence (AI) in the Implementation of ESG-Oriented Sustainable Development Strategies in the Banking Sector: A Case Study",
+     "date": "2026-01-10",
+     "source": "Sustainability",
+     "domain": "openalex.org",
+     "doi_or_url": "https://doi.org/10.3390/su18020732",
+     "cited_by": 31,
+     "problem": "sme-credit",
+     "status": "corroborating"
+    },
+    {
+     "tier": "research",
+     "title": "Navigating Digital Horizons: A Bibliometric Exploration of Digitalization in Family Businesses and Emerging Research Agendas",
+     "date": "2025-12-03",
+     "source": "Ekopedia Jurnal Ilmiah Ekonomi",
+     "domain": "openalex.org",
+     "doi_or_url": "https://doi.org/10.63822/qbwx6k02",
+     "cited_by": 18,
+     "problem": "sme-credit",
+     "status": "corroborating"
+    },
+    {
+     "tier": "research",
+     "title": "From Access to Impact: How Digital Financial Inclusion Drives Sustainable Development",
+     "date": "2025-12-02",
+     "source": "Sustainability",
+     "domain": "openalex.org",
+     "doi_or_url": "https://doi.org/10.3390/su172310799",
+     "cited_by": 25,
+     "problem": "sme-credit",
+     "status": "corroborating"
+    }
+   ]
   },
   {
    "id": "battery-recycling",
@@ -832,9 +1070,65 @@
     "source": "World Bank WDI",
     "url": "https://data.worldbank.org/indicator/EG.FEC.RNEW.ZS?locations=TH"
    },
-   "new_papers_12m": null,
+   "new_papers_12m": 193,
    "plan": null,
-   "evidence": []
+   "evidence": [
+    {
+     "tier": "research",
+     "title": "Integrating Geoeconomics into the GPN Framework: The Internationalization of Chinese EV Battery Firms amid China–EU Strategic Interaction",
+     "date": "2026-03-10",
+     "source": "Economic Geography",
+     "domain": "openalex.org",
+     "doi_or_url": "https://doi.org/10.1080/00130095.2026.2630648",
+     "cited_by": 18,
+     "problem": "battery-recycling",
+     "status": "corroborating"
+    },
+    {
+     "tier": "research",
+     "title": "A Review of Nickel and Cobalt from Laterite Ores: Toward Sustainable Extraction Pathways for the Battery Industry",
+     "date": "2026-02-21",
+     "source": "Journal of Sustainable Metallurgy",
+     "domain": "openalex.org",
+     "doi_or_url": "https://doi.org/10.1007/s40831-026-01439-6",
+     "cited_by": 33,
+     "problem": "battery-recycling",
+     "status": "corroborating"
+    },
+    {
+     "tier": "research",
+     "title": "Techno economic and environmental evaluation of second life battery PV hybrid charging stations for sustainable e-mobility in tropical regions",
+     "date": "2026-02-10",
+     "source": "Scientific Reports",
+     "domain": "openalex.org",
+     "doi_or_url": "https://doi.org/10.1038/s41598-026-39034-0",
+     "cited_by": 20,
+     "problem": "battery-recycling",
+     "status": "corroborating"
+    },
+    {
+     "tier": "research",
+     "title": "Assessing tin demand and supply pressures under terawatt-scale photovoltaic deployment",
+     "date": "2026-01-01",
+     "source": "RSC Sustainability",
+     "domain": "openalex.org",
+     "doi_or_url": "https://doi.org/10.1039/d5su00956a",
+     "cited_by": 24,
+     "problem": "battery-recycling",
+     "status": "corroborating"
+    },
+    {
+     "tier": "research",
+     "title": "Advances in Building Energy Management: A Comprehensive Review",
+     "date": "2025-11-24",
+     "source": "Buildings",
+     "domain": "openalex.org",
+     "doi_or_url": "https://doi.org/10.3390/buildings15234237",
+     "cited_by": 30,
+     "problem": "battery-recycling",
+     "status": "corroborating"
+    }
+   ]
   },
   {
    "id": "semiconductor-skills",
@@ -909,7 +1203,7 @@
     "source": "World Bank WDI",
     "url": "https://data.worldbank.org/indicator/SE.TER.ENRR?locations=TH"
    },
-   "new_papers_12m": 587,
+   "new_papers_12m": 597,
    "plan": null,
    "evidence": [
     {
@@ -930,7 +1224,18 @@
      "source": "Renewable and Sustainable Energy Reviews",
      "domain": "openalex.org",
      "doi_or_url": "https://doi.org/10.1016/j.rser.2026.116861",
-     "cited_by": 28,
+     "cited_by": 29,
+     "problem": "semiconductor-skills",
+     "status": "corroborating"
+    },
+    {
+     "tier": "research",
+     "title": "Clinical-grade autonomous cytopathology through whole-slide edge tomography",
+     "date": "2026-02-18",
+     "source": "Nature",
+     "domain": "openalex.org",
+     "doi_or_url": "https://doi.org/10.1038/s41586-025-10094-y",
+     "cited_by": 15,
      "problem": "semiconductor-skills",
      "status": "corroborating"
     },
@@ -953,17 +1258,6 @@
      "domain": "openalex.org",
      "doi_or_url": "https://doi.org/10.3389/fmech.2025.1722114",
      "cited_by": 34,
-     "problem": "semiconductor-skills",
-     "status": "corroborating"
-    },
-    {
-     "tier": "research",
-     "title": "The AI Co-pilot: Navigating Market Turbulence and Charting a Course for Sustainable Advantage",
-     "date": "2025-12-04",
-     "source": "International Journal of Management Science and Application",
-     "domain": "openalex.org",
-     "doi_or_url": "https://doi.org/10.58291/ijmsa.v4i2.442",
-     "cited_by": 15,
      "problem": "semiconductor-skills",
      "status": "corroborating"
     }
@@ -1034,10 +1328,73 @@
     17,
     15
    ],
-   "indicator": null,
-   "new_papers_12m": null,
+   "indicator": {
+    "indicator": "AG.PRD.FOOD.XD",
+    "name": "Food production index (2014-2016 = 100)",
+    "year": 2024,
+    "value": 98.91,
+    "source": "World Bank WDI",
+    "url": "https://data.worldbank.org/indicator/AG.PRD.FOOD.XD?locations=TH"
+   },
+   "new_papers_12m": 776,
    "plan": null,
-   "evidence": []
+   "evidence": [
+    {
+     "tier": "research",
+     "title": "Attributional and Consequential Life Cycle Assessments: A Practice-Oriented Framework Integrating System Boundaries and Machine Learning",
+     "date": "2026-04-30",
+     "source": "JOURNAL OF CHEMICAL ENGINEERING OF JAPAN",
+     "domain": "openalex.org",
+     "doi_or_url": "https://doi.org/10.1080/00219592.2026.2662789",
+     "cited_by": 17,
+     "problem": "food-loss",
+     "status": "corroborating"
+    },
+    {
+     "tier": "research",
+     "title": "Bioactive Compounds from Edible Mushrooms as Pharmaceutical Ingredients: A Comprehensive Review of the Developmental Pipeline",
+     "date": "2026-02-28",
+     "source": "Processes",
+     "domain": "openalex.org",
+     "doi_or_url": "https://doi.org/10.3390/pr14050795",
+     "cited_by": 17,
+     "problem": "food-loss",
+     "status": "corroborating"
+    },
+    {
+     "tier": "research",
+     "title": "Beyond the flush: a review of wastewater circular systems",
+     "date": "2026-02-16",
+     "source": "npj Clean Water",
+     "domain": "openalex.org",
+     "doi_or_url": "https://doi.org/10.1038/s41545-026-00557-8",
+     "cited_by": 19,
+     "problem": "food-loss",
+     "status": "corroborating"
+    },
+    {
+     "tier": "research",
+     "title": "PtdIns(3,5)P2 is an endogenous ligand of STING in innate immune signalling",
+     "date": "2026-02-04",
+     "source": "Nature",
+     "domain": "openalex.org",
+     "doi_or_url": "https://doi.org/10.1038/s41586-025-10084-0",
+     "cited_by": 27,
+     "problem": "food-loss",
+     "status": "corroborating"
+    },
+    {
+     "tier": "research",
+     "title": "Biodegradable Films and Edible Coatings Based on Whey Protein Isolate for Extending the Shelf Life of Commercial Strawberries",
+     "date": "2025-11-20",
+     "source": "Foods",
+     "domain": "openalex.org",
+     "doi_or_url": "https://doi.org/10.3390/foods14223980",
+     "cited_by": 19,
+     "problem": "food-loss",
+     "status": "corroborating"
+    }
+   ]
   },
   {
    "id": "pm25",
@@ -1114,7 +1471,7 @@
     "source": "World Bank WDI",
     "url": "https://data.worldbank.org/indicator/EN.ATM.PM25.MC.M3?locations=TH"
    },
-   "new_papers_12m": null,
+   "new_papers_12m": 123,
    "plan": {
     "predict": [
      {
@@ -1384,7 +1741,63 @@
     "open_quests": 7,
     "done_quests": 3
    },
-   "evidence": []
+   "evidence": [
+    {
+     "tier": "research",
+     "title": "Volatile organic compound emissions in croplands: The contributions of crops, soil, and agricultural management practices",
+     "date": "2026-05-18",
+     "source": "Agriculture Ecosystems & Environment",
+     "domain": "openalex.org",
+     "doi_or_url": "https://doi.org/10.1016/j.agee.2026.110484",
+     "cited_by": 9,
+     "problem": "pm25",
+     "status": "corroborating"
+    },
+    {
+     "tier": "research",
+     "title": "Impact of household air pollution on under 5 mortalities and ARI in sub saharan africa: evidence from demographic and health survey 2010–2020",
+     "date": "2026-02-14",
+     "source": "Scientific Reports",
+     "domain": "openalex.org",
+     "doi_or_url": "https://doi.org/10.1038/s41598-026-38186-3",
+     "cited_by": 9,
+     "problem": "pm25",
+     "status": "corroborating"
+    },
+    {
+     "tier": "research",
+     "title": "Near Real-Time Biomass Burning PM2.5 Emission Estimation to Support Environmental Health Risk Management in Northern Thailand Using FINNv2.5",
+     "date": "2026-01-17",
+     "source": "Toxics",
+     "domain": "openalex.org",
+     "doi_or_url": "https://doi.org/10.3390/toxics14010084",
+     "cited_by": 9,
+     "problem": "pm25",
+     "status": "corroborating"
+    },
+    {
+     "tier": "research",
+     "title": "Resourceful utilization of crop residue by smallholder farmers in major grain-producing areas: pathways and countermeasures",
+     "date": "2026-01-12",
+     "source": "Scientific Reports",
+     "domain": "openalex.org",
+     "doi_or_url": "https://doi.org/10.1038/s41598-026-35164-7",
+     "cited_by": 9,
+     "problem": "pm25",
+     "status": "corroborating"
+    },
+    {
+     "tier": "research",
+     "title": "Air Pollution as a Driver of Forest Dynamics: Patterns, Mechanisms, and Knowledge Gaps",
+     "date": "2026-01-08",
+     "source": "Forests",
+     "domain": "openalex.org",
+     "doi_or_url": "https://doi.org/10.3390/f17010081",
+     "cited_by": 10,
+     "problem": "pm25",
+     "status": "corroborating"
+    }
+   ]
   },
   {
    "id": "household-debt",
@@ -1459,7 +1872,7 @@
     "source": "World Bank WDI",
     "url": "https://data.worldbank.org/indicator/FS.AST.PRVT.GD.ZS?locations=TH"
    },
-   "new_papers_12m": 232,
+   "new_papers_12m": 236,
    "plan": {
     "predict": [
      {
@@ -1787,8 +2200,15 @@
     2,
     5
    ],
-   "indicator": null,
-   "new_papers_12m": 43,
+   "indicator": {
+    "indicator": "IT.NET.USER.ZS",
+    "name": "Individuals using the Internet (% of population)",
+    "year": 2024,
+    "value": 90.86718789,
+    "source": "World Bank WDI",
+    "url": "https://data.worldbank.org/indicator/IT.NET.USER.ZS?locations=TH"
+   },
+   "new_papers_12m": 45,
    "plan": null,
    "evidence": [
     {
@@ -1920,9 +2340,65 @@
     "source": "World Bank WDI",
     "url": "https://data.worldbank.org/indicator/EG.IMP.CONS.ZS?locations=TH"
    },
-   "new_papers_12m": null,
+   "new_papers_12m": 6879,
    "plan": null,
-   "evidence": []
+   "evidence": [
+    {
+     "tier": "research",
+     "title": "Quantum Topological Autonomous Decision Ecosystems for Geoeconomic Risk, Climate, Energy Markets, Smart Cities and Resilient Global Infrastructure",
+     "date": "2026-08-28",
+     "source": "International Journal of Academic and Industrial Research Innovations(IJAIRI)",
+     "domain": "openalex.org",
+     "doi_or_url": "https://doi.org/10.62311/nesx/rp1ag-30082026",
+     "cited_by": 78,
+     "problem": "energy-security",
+     "status": "corroborating"
+    },
+    {
+     "tier": "research",
+     "title": "Physics-Informed Reinforcement Learning for Financial Markets, Deep Hedging and Systemic-Risk-Constrained Portfolio Optimization",
+     "date": "2026-07-25",
+     "source": "International Journal of Academic and Industrial Research Innovations(IJAIRI)",
+     "domain": "openalex.org",
+     "doi_or_url": "https://doi.org/10.62311/nesx/rp5jy-30072026",
+     "cited_by": 62,
+     "problem": "energy-security",
+     "status": "corroborating"
+    },
+    {
+     "tier": "research",
+     "title": "Global Energy Crises, Geopolitical Conflict, and Economic Vulnerability: Econometric Evidence on Inflation Transmission, Growth Effects, and Renewable Transition Resilience",
+     "date": "2026-04-07",
+     "source": "International Journal of Academic and Industrial Research Innovations(IJAIRI)",
+     "domain": "openalex.org",
+     "doi_or_url": "https://doi.org/10.62311/nesx/rp5-30042026",
+     "cited_by": 61,
+     "problem": "energy-security",
+     "status": "corroborating"
+    },
+    {
+     "tier": "research",
+     "title": "The global transmission of U.S. monetary policy",
+     "date": "2026-04-03",
+     "source": "Journal of International Economics",
+     "domain": "openalex.org",
+     "doi_or_url": "https://doi.org/10.1016/j.jinteco.2026.104259",
+     "cited_by": 90,
+     "problem": "energy-security",
+     "status": "corroborating"
+    },
+    {
+     "tier": "research",
+     "title": "AI-Driven Trade Analytics for Evaluating Free Trade Agreement Outcomes and Industrial Competitiveness",
+     "date": "2026-01-30",
+     "source": "International Journal of Academic and Industrial Research Innovations(IJAIRI)",
+     "domain": "openalex.org",
+     "doi_or_url": "https://doi.org/10.62311/nesx/rp-j32026",
+     "cited_by": 68,
+     "problem": "energy-security",
+     "status": "corroborating"
+    }
+   ]
   },
   {
    "id": "rural-doctors",
@@ -1987,10 +2463,73 @@
     9,
     13
    ],
-   "indicator": null,
-   "new_papers_12m": null,
+   "indicator": {
+    "indicator": "SH.MED.PHYS.ZS",
+    "name": "Physicians (per 1,000 people)",
+    "year": 2021,
+    "value": 0.541,
+    "source": "World Bank WDI",
+    "url": "https://data.worldbank.org/indicator/SH.MED.PHYS.ZS?locations=TH"
+   },
+   "new_papers_12m": 107,
    "plan": null,
-   "evidence": []
+   "evidence": [
+    {
+     "tier": "research",
+     "title": "RECOVER: Designing a Large Language Model-based Remote Patient Monitoring System for Postoperative Gastrointestinal Cancer Care CSCW032",
+     "date": "2026-04-30",
+     "source": "Proceedings of the ACM on Human-Computer Interaction",
+     "domain": "openalex.org",
+     "doi_or_url": "https://doi.org/10.1145/3788068",
+     "cited_by": 7,
+     "problem": "rural-doctors",
+     "status": "corroborating"
+    },
+    {
+     "tier": "research",
+     "title": "Comparative Epidemiology of Machine and Deep Learning Diagnostics in Diabetes and Sickle Cell Disease: Africa’s Challenges, Global Non-Communicable Disease Opportunities",
+     "date": "2026-01-16",
+     "source": "Electronics",
+     "domain": "openalex.org",
+     "doi_or_url": "https://doi.org/10.3390/electronics15020394",
+     "cited_by": 7,
+     "problem": "rural-doctors",
+     "status": "corroborating"
+    },
+    {
+     "tier": "research",
+     "title": "Mobile Health Clinics and Telehealth Outreach in Thailand: A Focus on Elderly Care and NCDs",
+     "date": "2025-12-01",
+     "source": "Journal of Multidisciplinary Healthcare",
+     "domain": "openalex.org",
+     "doi_or_url": "https://doi.org/10.2147/jmdh.s559594",
+     "cited_by": 6,
+     "problem": "rural-doctors",
+     "status": "corroborating"
+    },
+    {
+     "tier": "research",
+     "title": "Legal Aspects of Patient Data Governance in Digital Health: A Comparative Analytical Study of UAE and Indonesian Legislation",
+     "date": "2025-11-30",
+     "source": "Journal of Indonesian Legal Studies",
+     "domain": "openalex.org",
+     "doi_or_url": "https://doi.org/10.15294/jils.v10i2.10025",
+     "cited_by": 9,
+     "problem": "rural-doctors",
+     "status": "corroborating"
+    },
+    {
+     "tier": "research",
+     "title": "Exploring the caregiving perceptions and needs of family caregivers of older stroke patients: a descriptive qualitative study",
+     "date": "2025-11-25",
+     "source": "International Journal of Qualitative Studies on Health and Well-Being",
+     "domain": "openalex.org",
+     "doi_or_url": "https://doi.org/10.1080/17482631.2025.2588908",
+     "cited_by": 11,
+     "problem": "rural-doctors",
+     "status": "corroborating"
+    }
+   ]
   },
   {
    "id": "groundwater",
@@ -2056,7 +2595,7 @@
     0
    ],
    "indicator": null,
-   "new_papers_12m": 390,
+   "new_papers_12m": 395,
    "plan": null,
    "evidence": [
     {
@@ -2182,8 +2721,15 @@
     29,
     32
    ],
-   "indicator": null,
-   "new_papers_12m": 70,
+   "indicator": {
+    "indicator": "ER.H2O.FWST.ZS",
+    "name": "Level of water stress: freshwater withdrawal as a proportion of available freshwater resources",
+    "year": 2022,
+    "value": 23.01393518,
+    "source": "World Bank WDI",
+    "url": "https://data.worldbank.org/indicator/ER.H2O.FWST.ZS?locations=TH"
+   },
+   "new_papers_12m": 72,
    "plan": null,
    "evidence": [
     {
@@ -2193,7 +2739,7 @@
      "source": "Food Security",
      "domain": "openalex.org",
      "doi_or_url": "https://doi.org/10.1007/s12571-026-01670-9",
-     "cited_by": 5,
+     "cited_by": 6,
      "problem": "flood-water",
      "status": "corroborating"
     },
