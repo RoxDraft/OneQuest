@@ -1,6 +1,6 @@
 {
  "is_sample": false,
- "generated_at": "2026-11-20T03:57+00:00",
+ "generated_at": "2026-11-21T03:54+00:00",
  "weights": {
   "scale": 0.3,
   "neglect": 0.25,
@@ -14,7 +14,6 @@
   "social": "เสียงจากโซเชียล"
  },
  "dates": [
-  "2026-10-22",
   "2026-10-23",
   "2026-10-24",
   "2026-10-25",
@@ -43,7 +42,8 @@
   "2026-11-17",
   "2026-11-18",
   "2026-11-19",
-  "2026-11-20"
+  "2026-11-20",
+  "2026-11-21"
  ],
  "daily_signals": {
   "supply": [
@@ -326,7 +326,7 @@
     "source": "World Bank WDI",
     "url": "https://data.worldbank.org/indicator/SP.POP.65UP.TO.ZS?locations=TH"
    },
-   "new_papers_12m": 204,
+   "new_papers_12m": 201,
    "plan": {
     "labor": {
      "note": "ตัวเลขทั้งหมดเป็นค่าสมมติ ต้องแทนด้วยข้อมูลจริงก่อนใช้",
@@ -566,34 +566,34 @@
     },
     {
      "tier": "research",
+     "title": "The anthropomorphization of AI and the concept of Buddhist compassion in human-machine interaction",
+     "date": "2026-01-14",
+     "source": "Frontiers in Psychology",
+     "domain": "openalex.org",
+     "doi_or_url": "https://doi.org/10.3389/fpsyg.2025.1583565",
+     "cited_by": 7,
+     "problem": "elder-care",
+     "status": "corroborating"
+    },
+    {
+     "tier": "research",
+     "title": "‘Pagbangon at Pag‐Asa’ (Resurgence and Hope): A Qualitative Study of the Lived Experiences of People With Stroke and Household Carers in the Philippines",
+     "date": "2025-12-24",
+     "source": "Health Expectations",
+     "domain": "openalex.org",
+     "doi_or_url": "https://doi.org/10.1111/hex.70537",
+     "cited_by": 6,
+     "problem": "elder-care",
+     "status": "corroborating"
+    },
+    {
+     "tier": "research",
      "title": "Exploring the caregiving perceptions and needs of family caregivers of older stroke patients: a descriptive qualitative study",
      "date": "2025-11-25",
      "source": "International Journal of Qualitative Studies on Health and Well-Being",
      "domain": "openalex.org",
      "doi_or_url": "https://doi.org/10.1080/17482631.2025.2588908",
      "cited_by": 11,
-     "problem": "elder-care",
-     "status": "corroborating"
-    },
-    {
-     "tier": "research",
-     "title": "FinTech and older adults: a global synthesis of enablers, barriers, and research trends for inclusive digital finance",
-     "date": "2025-11-20",
-     "source": "Humanities and Social Sciences Communications",
-     "domain": "openalex.org",
-     "doi_or_url": "https://doi.org/10.1057/s41599-025-06077-z",
-     "cited_by": 18,
-     "problem": "elder-care",
-     "status": "corroborating"
-    },
-    {
-     "tier": "research",
-     "title": "Balancing patient choice and health system capacity: a system dynamics model of dialysis in Thailand",
-     "date": "2025-11-20",
-     "source": "BMC Medicine",
-     "domain": "openalex.org",
-     "doi_or_url": "https://doi.org/10.1186/s12916-025-04522-z",
-     "cited_by": 8,
      "problem": "elder-care",
      "status": "corroborating"
     }
@@ -671,7 +671,7 @@
     "source": "World Bank WDI",
     "url": "https://data.worldbank.org/indicator/SH.STA.SUIC.P5?locations=TH"
    },
-   "new_papers_12m": 94893,
+   "new_papers_12m": 95463,
    "plan": null,
    "evidence": [
     {
@@ -692,7 +692,7 @@
      "source": "Science China Information Sciences",
      "domain": "openalex.org",
      "doi_or_url": "https://doi.org/10.1007/s11432-025-4665-8",
-     "cited_by": 612,
+     "cited_by": 616,
      "problem": "mental-health",
      "status": "corroborating"
     },
@@ -703,7 +703,7 @@
      "source": "IEEE Access",
      "domain": "openalex.org",
      "doi_or_url": "https://doi.org/10.1109/access.2026.3698694",
-     "cited_by": 342,
+     "cited_by": 344,
      "problem": "mental-health",
      "status": "corroborating"
     },
@@ -714,7 +714,7 @@
      "source": "Journal of Artificial Intelligence Research",
      "domain": "openalex.org",
      "doi_or_url": "https://doi.org/10.1613/jair.1.18675",
-     "cited_by": 325,
+     "cited_by": 328,
      "problem": "mental-health",
      "status": "corroborating"
     },
@@ -804,7 +804,7 @@
     "source": "World Bank WDI",
     "url": "https://data.worldbank.org/indicator/SL.UEM.1524.ZS?locations=TH"
    },
-   "new_papers_12m": 1568,
+   "new_papers_12m": 1576,
    "plan": null,
    "evidence": [
     {
@@ -821,7 +821,7 @@
     {
      "tier": "research",
      "title": "A Survey on Human–AI Collaboration with Large Foundation Models",
-     "date": "2026-08-22",
+     "date": "2026-09-29",
      "source": "ACM Transactions on Intelligent Systems and Technology",
      "domain": "openalex.org",
      "doi_or_url": "https://doi.org/10.1145/3841472",
@@ -937,7 +937,7 @@
     "source": "World Bank WDI",
     "url": "https://data.worldbank.org/indicator/FB.BNK.CAPA.ZS?locations=TH"
    },
-   "new_papers_12m": 695,
+   "new_papers_12m": 701,
    "plan": null,
    "evidence": [
     {
@@ -947,7 +947,7 @@
      "source": "Green Technology Resilience and Sustainability",
      "domain": "openalex.org",
      "doi_or_url": "https://doi.org/10.1007/s44173-026-00029-9",
-     "cited_by": 24,
+     "cited_by": 25,
      "problem": "sme-credit",
      "status": "corroborating"
     },
@@ -975,11 +975,11 @@
     },
     {
      "tier": "research",
-     "title": "Navigating Digital Horizons: A Bibliometric Exploration of Digitalization in Family Businesses and Emerging Research Agendas",
-     "date": "2025-12-03",
-     "source": "Ekopedia Jurnal Ilmiah Ekonomi",
+     "title": "Bridging the Energy Gap in ASEAN : Scaling Green Finance and Carbon Markets for a Sustainable Transition",
+     "date": "2026-01-05",
+     "source": "Wiley Interdisciplinary Reviews Energy and Environment",
      "domain": "openalex.org",
-     "doi_or_url": "https://doi.org/10.63822/qbwx6k02",
+     "doi_or_url": "https://doi.org/10.1002/wene.70020",
      "cited_by": 18,
      "problem": "sme-credit",
      "status": "corroborating"
@@ -1203,7 +1203,7 @@
     "source": "World Bank WDI",
     "url": "https://data.worldbank.org/indicator/SE.TER.ENRR?locations=TH"
    },
-   "new_papers_12m": 597,
+   "new_papers_12m": 598,
    "plan": null,
    "evidence": [
     {
@@ -1224,7 +1224,7 @@
      "source": "Renewable and Sustainable Energy Reviews",
      "domain": "openalex.org",
      "doi_or_url": "https://doi.org/10.1016/j.rser.2026.116861",
-     "cited_by": 29,
+     "cited_by": 30,
      "problem": "semiconductor-skills",
      "status": "corroborating"
     },
@@ -1336,7 +1336,7 @@
     "source": "World Bank WDI",
     "url": "https://data.worldbank.org/indicator/AG.PRD.FOOD.XD?locations=TH"
    },
-   "new_papers_12m": 776,
+   "new_papers_12m": 779,
    "plan": null,
    "evidence": [
     {
@@ -1385,12 +1385,12 @@
     },
     {
      "tier": "research",
-     "title": "Biodegradable Films and Edible Coatings Based on Whey Protein Isolate for Extending the Shelf Life of Commercial Strawberries",
-     "date": "2025-11-20",
-     "source": "Foods",
+     "title": "Review on Sustainable Forestry with Artificial Intelligence",
+     "date": "2025-11-24",
+     "source": "ACM Journal on Computing and Sustainable Societies",
      "domain": "openalex.org",
-     "doi_or_url": "https://doi.org/10.3390/foods14223980",
-     "cited_by": 19,
+     "doi_or_url": "https://doi.org/10.1145/3759259",
+     "cited_by": 14,
      "problem": "food-loss",
      "status": "corroborating"
     }
@@ -1471,7 +1471,7 @@
     "source": "World Bank WDI",
     "url": "https://data.worldbank.org/indicator/EN.ATM.PM25.MC.M3?locations=TH"
    },
-   "new_papers_12m": 123,
+   "new_papers_12m": 124,
    "plan": {
     "predict": [
      {
@@ -1793,7 +1793,7 @@
      "source": "Forests",
      "domain": "openalex.org",
      "doi_or_url": "https://doi.org/10.3390/f17010081",
-     "cited_by": 10,
+     "cited_by": 11,
      "problem": "pm25",
      "status": "corroborating"
     }
@@ -1872,7 +1872,7 @@
     "source": "World Bank WDI",
     "url": "https://data.worldbank.org/indicator/FS.AST.PRVT.GD.ZS?locations=TH"
    },
-   "new_papers_12m": 236,
+   "new_papers_12m": 233,
    "plan": {
     "predict": [
      {
@@ -2103,12 +2103,23 @@
     },
     {
      "tier": "research",
+     "title": "Internationalizing Industrial Policy: How China and the United States Use State Capacity to Secure Critical Minerals for Electric Vehicles",
+     "date": "2026-02-04",
+     "source": "Politics & Society",
+     "domain": "openalex.org",
+     "doi_or_url": "https://doi.org/10.1177/00323292251411593",
+     "cited_by": 7,
+     "problem": "household-debt",
+     "status": "corroborating"
+    },
+    {
+     "tier": "research",
      "title": "Bridging the Energy Gap in ASEAN : Scaling Green Finance and Carbon Markets for a Sustainable Transition",
      "date": "2026-01-05",
      "source": "Wiley Interdisciplinary Reviews Energy and Environment",
      "domain": "openalex.org",
      "doi_or_url": "https://doi.org/10.1002/wene.70020",
-     "cited_by": 17,
+     "cited_by": 18,
      "problem": "household-debt",
      "status": "corroborating"
     },
@@ -2119,17 +2130,6 @@
      "source": "Sustainability",
      "domain": "openalex.org",
      "doi_or_url": "https://doi.org/10.3390/su172310799",
-     "cited_by": 25,
-     "problem": "household-debt",
-     "status": "corroborating"
-    },
-    {
-     "tier": "research",
-     "title": "The role of financial inclusion in reducing household poverty: insights from Eastern Indonesia",
-     "date": "2025-11-20",
-     "source": "Cogent Economics & Finance",
-     "domain": "openalex.org",
-     "doi_or_url": "https://doi.org/10.1080/23322039.2025.2588925",
      "cited_by": 25,
      "problem": "household-debt",
      "status": "corroborating"
@@ -2214,7 +2214,7 @@
     {
      "tier": "research",
      "title": "Understanding Jamtara cybercriminals: poverty, opportunity, and the rise of organized criminal networks",
-     "date": "2026-05-22",
+     "date": "2026-05-23",
      "source": "Humanities and Social Sciences Communications",
      "domain": "openalex.org",
      "doi_or_url": "https://doi.org/10.1057/s41599-026-07703-0",
@@ -2340,7 +2340,7 @@
     "source": "World Bank WDI",
     "url": "https://data.worldbank.org/indicator/EG.IMP.CONS.ZS?locations=TH"
    },
-   "new_papers_12m": 6879,
+   "new_papers_12m": 6922,
    "plan": null,
    "evidence": [
     {
@@ -2471,7 +2471,7 @@
     "source": "World Bank WDI",
     "url": "https://data.worldbank.org/indicator/SH.MED.PHYS.ZS?locations=TH"
    },
-   "new_papers_12m": 107,
+   "new_papers_12m": 110,
    "plan": null,
    "evidence": [
     {
@@ -2595,7 +2595,7 @@
     0
    ],
    "indicator": null,
-   "new_papers_12m": 395,
+   "new_papers_12m": 396,
    "plan": null,
    "evidence": [
     {
@@ -2649,7 +2649,7 @@
      "source": "World Water Policy",
      "domain": "openalex.org",
      "doi_or_url": "https://doi.org/10.1002/wwp2.70055",
-     "cited_by": 24,
+     "cited_by": 25,
      "problem": "groundwater",
      "status": "corroborating"
     }
@@ -2783,7 +2783,7 @@
      "source": "Applied Water Science",
      "domain": "openalex.org",
      "doi_or_url": "https://doi.org/10.1007/s13201-025-02648-2",
-     "cited_by": 12,
+     "cited_by": 13,
      "problem": "flood-water",
      "status": "corroborating"
     }
