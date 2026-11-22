@@ -1,6 +1,6 @@
 {
  "is_sample": false,
- "generated_at": "2026-11-21T03:54+00:00",
+ "generated_at": "2026-11-22T02:58+00:00",
  "weights": {
   "scale": 0.3,
   "neglect": 0.25,
@@ -14,7 +14,6 @@
   "social": "เสียงจากโซเชียล"
  },
  "dates": [
-  "2026-10-23",
   "2026-10-24",
   "2026-10-25",
   "2026-10-26",
@@ -43,7 +42,8 @@
   "2026-11-18",
   "2026-11-19",
   "2026-11-20",
-  "2026-11-21"
+  "2026-11-21",
+  "2026-11-22"
  ],
  "daily_signals": {
   "supply": [
@@ -326,7 +326,7 @@
     "source": "World Bank WDI",
     "url": "https://data.worldbank.org/indicator/SP.POP.65UP.TO.ZS?locations=TH"
    },
-   "new_papers_12m": 201,
+   "new_papers_12m": 203,
    "plan": {
     "labor": {
      "note": "ตัวเลขทั้งหมดเป็นค่าสมมติ ต้องแทนด้วยข้อมูลจริงก่อนใช้",
@@ -671,7 +671,7 @@
     "source": "World Bank WDI",
     "url": "https://data.worldbank.org/indicator/SH.STA.SUIC.P5?locations=TH"
    },
-   "new_papers_12m": 95463,
+   "new_papers_12m": 95562,
    "plan": null,
    "evidence": [
     {
@@ -681,7 +681,7 @@
      "source": "Wiley Interdisciplinary Reviews Data Mining and Knowledge Discovery",
      "domain": "openalex.org",
      "doi_or_url": "https://doi.org/10.1002/widm.70111",
-     "cited_by": 339,
+     "cited_by": 341,
      "problem": "mental-health",
      "status": "corroborating"
     },
@@ -692,7 +692,7 @@
      "source": "Science China Information Sciences",
      "domain": "openalex.org",
      "doi_or_url": "https://doi.org/10.1007/s11432-025-4665-8",
-     "cited_by": 616,
+     "cited_by": 619,
      "problem": "mental-health",
      "status": "corroborating"
     },
@@ -703,7 +703,7 @@
      "source": "IEEE Access",
      "domain": "openalex.org",
      "doi_or_url": "https://doi.org/10.1109/access.2026.3698694",
-     "cited_by": 344,
+     "cited_by": 349,
      "problem": "mental-health",
      "status": "corroborating"
     },
@@ -714,7 +714,7 @@
      "source": "Journal of Artificial Intelligence Research",
      "domain": "openalex.org",
      "doi_or_url": "https://doi.org/10.1613/jair.1.18675",
-     "cited_by": 328,
+     "cited_by": 329,
      "problem": "mental-health",
      "status": "corroborating"
     },
@@ -725,7 +725,7 @@
      "source": "Meta-Radiology",
      "domain": "openalex.org",
      "doi_or_url": "https://doi.org/10.1016/j.metrad.2025.100190",
-     "cited_by": 304,
+     "cited_by": 305,
      "problem": "mental-health",
      "status": "corroborating"
     }
@@ -804,7 +804,7 @@
     "source": "World Bank WDI",
     "url": "https://data.worldbank.org/indicator/SL.UEM.1524.ZS?locations=TH"
    },
-   "new_papers_12m": 1576,
+   "new_papers_12m": 1580,
    "plan": null,
    "evidence": [
     {
@@ -836,7 +836,7 @@
      "source": "International Journal of Academic and Industrial Research Innovations(IJAIRI)",
      "domain": "openalex.org",
      "doi_or_url": "https://doi.org/10.62311/nesx/rp4jy-30072026",
-     "cited_by": 117,
+     "cited_by": 129,
      "problem": "ai-jobs",
      "status": "corroborating"
     },
@@ -858,7 +858,7 @@
      "source": "Frontiers in Artificial Intelligence",
      "domain": "openalex.org",
      "doi_or_url": "https://doi.org/10.3389/frai.2025.1728881",
-     "cited_by": 45,
+     "cited_by": 47,
      "problem": "ai-jobs",
      "status": "corroborating"
     }
@@ -937,7 +937,7 @@
     "source": "World Bank WDI",
     "url": "https://data.worldbank.org/indicator/FB.BNK.CAPA.ZS?locations=TH"
    },
-   "new_papers_12m": 701,
+   "new_papers_12m": 703,
    "plan": null,
    "evidence": [
     {
@@ -947,7 +947,7 @@
      "source": "Green Technology Resilience and Sustainability",
      "domain": "openalex.org",
      "doi_or_url": "https://doi.org/10.1007/s44173-026-00029-9",
-     "cited_by": 25,
+     "cited_by": 26,
      "problem": "sme-credit",
      "status": "corroborating"
     },
@@ -969,7 +969,7 @@
      "source": "Sustainability",
      "domain": "openalex.org",
      "doi_or_url": "https://doi.org/10.3390/su18020732",
-     "cited_by": 31,
+     "cited_by": 32,
      "problem": "sme-credit",
      "status": "corroborating"
     },
@@ -1203,7 +1203,7 @@
     "source": "World Bank WDI",
     "url": "https://data.worldbank.org/indicator/SE.TER.ENRR?locations=TH"
    },
-   "new_papers_12m": 598,
+   "new_papers_12m": 603,
    "plan": null,
    "evidence": [
     {
@@ -1213,7 +1213,7 @@
      "source": "Manufacturing & Service Operations Management",
      "domain": "openalex.org",
      "doi_or_url": "https://doi.org/10.1287/msom.2025.1065",
-     "cited_by": 36,
+     "cited_by": 37,
      "problem": "semiconductor-skills",
      "status": "corroborating"
     },
@@ -1235,7 +1235,7 @@
      "source": "Nature",
      "domain": "openalex.org",
      "doi_or_url": "https://doi.org/10.1038/s41586-025-10094-y",
-     "cited_by": 15,
+     "cited_by": 16,
      "problem": "semiconductor-skills",
      "status": "corroborating"
     },
@@ -1257,7 +1257,7 @@
      "source": "Frontiers in Mechanical Engineering",
      "domain": "openalex.org",
      "doi_or_url": "https://doi.org/10.3389/fmech.2025.1722114",
-     "cited_by": 34,
+     "cited_by": 35,
      "problem": "semiconductor-skills",
      "status": "corroborating"
     }
@@ -1336,7 +1336,7 @@
     "source": "World Bank WDI",
     "url": "https://data.worldbank.org/indicator/AG.PRD.FOOD.XD?locations=TH"
    },
-   "new_papers_12m": 779,
+   "new_papers_12m": 778,
    "plan": null,
    "evidence": [
     {
@@ -1368,7 +1368,7 @@
      "source": "npj Clean Water",
      "domain": "openalex.org",
      "doi_or_url": "https://doi.org/10.1038/s41545-026-00557-8",
-     "cited_by": 19,
+     "cited_by": 21,
      "problem": "food-loss",
      "status": "corroborating"
     },
@@ -1471,7 +1471,7 @@
     "source": "World Bank WDI",
     "url": "https://data.worldbank.org/indicator/EN.ATM.PM25.MC.M3?locations=TH"
    },
-   "new_papers_12m": 124,
+   "new_papers_12m": 125,
    "plan": {
     "predict": [
      {
@@ -2340,7 +2340,7 @@
     "source": "World Bank WDI",
     "url": "https://data.worldbank.org/indicator/EG.IMP.CONS.ZS?locations=TH"
    },
-   "new_papers_12m": 6922,
+   "new_papers_12m": 6944,
    "plan": null,
    "evidence": [
     {
@@ -2350,7 +2350,7 @@
      "source": "International Journal of Academic and Industrial Research Innovations(IJAIRI)",
      "domain": "openalex.org",
      "doi_or_url": "https://doi.org/10.62311/nesx/rp1ag-30082026",
-     "cited_by": 78,
+     "cited_by": 92,
      "problem": "energy-security",
      "status": "corroborating"
     },
@@ -2361,7 +2361,7 @@
      "source": "International Journal of Academic and Industrial Research Innovations(IJAIRI)",
      "domain": "openalex.org",
      "doi_or_url": "https://doi.org/10.62311/nesx/rp5jy-30072026",
-     "cited_by": 62,
+     "cited_by": 74,
      "problem": "energy-security",
      "status": "corroborating"
     },
@@ -2372,7 +2372,7 @@
      "source": "International Journal of Academic and Industrial Research Innovations(IJAIRI)",
      "domain": "openalex.org",
      "doi_or_url": "https://doi.org/10.62311/nesx/rp5-30042026",
-     "cited_by": 61,
+     "cited_by": 67,
      "problem": "energy-security",
      "status": "corroborating"
     },
@@ -2383,7 +2383,7 @@
      "source": "Journal of International Economics",
      "domain": "openalex.org",
      "doi_or_url": "https://doi.org/10.1016/j.jinteco.2026.104259",
-     "cited_by": 90,
+     "cited_by": 92,
      "problem": "energy-security",
      "status": "corroborating"
     },
@@ -2394,7 +2394,7 @@
      "source": "International Journal of Academic and Industrial Research Innovations(IJAIRI)",
      "domain": "openalex.org",
      "doi_or_url": "https://doi.org/10.62311/nesx/rp-j32026",
-     "cited_by": 68,
+     "cited_by": 72,
      "problem": "energy-security",
      "status": "corroborating"
     }
@@ -2471,7 +2471,7 @@
     "source": "World Bank WDI",
     "url": "https://data.worldbank.org/indicator/SH.MED.PHYS.ZS?locations=TH"
    },
-   "new_papers_12m": 110,
+   "new_papers_12m": 109,
    "plan": null,
    "evidence": [
     {
@@ -2492,7 +2492,7 @@
      "source": "Electronics",
      "domain": "openalex.org",
      "doi_or_url": "https://doi.org/10.3390/electronics15020394",
-     "cited_by": 7,
+     "cited_by": 8,
      "problem": "rural-doctors",
      "status": "corroborating"
     },
@@ -2595,7 +2595,7 @@
     0
    ],
    "indicator": null,
-   "new_papers_12m": 396,
+   "new_papers_12m": 395,
    "plan": null,
    "evidence": [
     {
@@ -2638,7 +2638,7 @@
      "source": "C – Journal of Carbon Research",
      "domain": "openalex.org",
      "doi_or_url": "https://doi.org/10.3390/c12010007",
-     "cited_by": 46,
+     "cited_by": 47,
      "problem": "groundwater",
      "status": "corroborating"
     },
@@ -2649,7 +2649,7 @@
      "source": "World Water Policy",
      "domain": "openalex.org",
      "doi_or_url": "https://doi.org/10.1002/wwp2.70055",
-     "cited_by": 25,
+     "cited_by": 26,
      "problem": "groundwater",
      "status": "corroborating"
     }
@@ -2729,7 +2729,7 @@
     "source": "World Bank WDI",
     "url": "https://data.worldbank.org/indicator/ER.H2O.FWST.ZS?locations=TH"
    },
-   "new_papers_12m": 72,
+   "new_papers_12m": 73,
    "plan": null,
    "evidence": [
     {
