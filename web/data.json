@@ -1,6 +1,6 @@
 {
  "is_sample": false,
- "generated_at": "2026-11-22T02:58+00:00",
+ "generated_at": "2026-11-23T03:40+00:00",
  "weights": {
   "scale": 0.3,
   "neglect": 0.25,
@@ -14,7 +14,6 @@
   "social": "เสียงจากโซเชียล"
  },
  "dates": [
-  "2026-10-24",
   "2026-10-25",
   "2026-10-26",
   "2026-10-27",
@@ -43,7 +42,8 @@
   "2026-11-19",
   "2026-11-20",
   "2026-11-21",
-  "2026-11-22"
+  "2026-11-22",
+  "2026-11-23"
  ],
  "daily_signals": {
   "supply": [
@@ -326,7 +326,7 @@
     "source": "World Bank WDI",
     "url": "https://data.worldbank.org/indicator/SP.POP.65UP.TO.ZS?locations=TH"
    },
-   "new_papers_12m": 203,
+   "new_papers_12m": 204,
    "plan": {
     "labor": {
      "note": "ตัวเลขทั้งหมดเป็นค่าสมมติ ต้องแทนด้วยข้อมูลจริงก่อนใช้",
@@ -671,7 +671,7 @@
     "source": "World Bank WDI",
     "url": "https://data.worldbank.org/indicator/SH.STA.SUIC.P5?locations=TH"
    },
-   "new_papers_12m": 95562,
+   "new_papers_12m": 95775,
    "plan": null,
    "evidence": [
     {
@@ -681,7 +681,7 @@
      "source": "Wiley Interdisciplinary Reviews Data Mining and Knowledge Discovery",
      "domain": "openalex.org",
      "doi_or_url": "https://doi.org/10.1002/widm.70111",
-     "cited_by": 341,
+     "cited_by": 343,
      "problem": "mental-health",
      "status": "corroborating"
     },
@@ -692,7 +692,7 @@
      "source": "Science China Information Sciences",
      "domain": "openalex.org",
      "doi_or_url": "https://doi.org/10.1007/s11432-025-4665-8",
-     "cited_by": 619,
+     "cited_by": 621,
      "problem": "mental-health",
      "status": "corroborating"
     },
@@ -714,18 +714,18 @@
      "source": "Journal of Artificial Intelligence Research",
      "domain": "openalex.org",
      "doi_or_url": "https://doi.org/10.1613/jair.1.18675",
-     "cited_by": 329,
+     "cited_by": 330,
      "problem": "mental-health",
      "status": "corroborating"
     },
     {
      "tier": "research",
-     "title": "Prompt engineering for healthcare: Methodologies and applications",
-     "date": "2025-11-22",
-     "source": "Meta-Radiology",
+     "title": "The Emerged Security and Privacy of LLM Agent: A Survey with Case Studies",
+     "date": "2025-12-09",
+     "source": "ACM Computing Surveys",
      "domain": "openalex.org",
-     "doi_or_url": "https://doi.org/10.1016/j.metrad.2025.100190",
-     "cited_by": 305,
+     "doi_or_url": "https://doi.org/10.1145/3773080",
+     "cited_by": 289,
      "problem": "mental-health",
      "status": "corroborating"
     }
@@ -804,7 +804,7 @@
     "source": "World Bank WDI",
     "url": "https://data.worldbank.org/indicator/SL.UEM.1524.ZS?locations=TH"
    },
-   "new_papers_12m": 1580,
+   "new_papers_12m": 1581,
    "plan": null,
    "evidence": [
     {
@@ -847,7 +847,7 @@
      "source": "Journal of Experimental & Theoretical Artificial Intelligence",
      "domain": "openalex.org",
      "doi_or_url": "https://doi.org/10.1080/0952813x.2026.2678591",
-     "cited_by": 67,
+     "cited_by": 68,
      "problem": "ai-jobs",
      "status": "corroborating"
     },
@@ -975,12 +975,12 @@
     },
     {
      "tier": "research",
-     "title": "Bridging the Energy Gap in ASEAN : Scaling Green Finance and Carbon Markets for a Sustainable Transition",
-     "date": "2026-01-05",
-     "source": "Wiley Interdisciplinary Reviews Energy and Environment",
+     "title": "Navigating Digital Horizons: A Bibliometric Exploration of Digitalization in Family Businesses and Emerging Research Agendas",
+     "date": "2025-12-05",
+     "source": "Ekopedia Jurnal Ilmiah Ekonomi",
      "domain": "openalex.org",
-     "doi_or_url": "https://doi.org/10.1002/wene.70020",
-     "cited_by": 18,
+     "doi_or_url": "https://doi.org/10.63822/qbwx6k02",
+     "cited_by": 19,
      "problem": "sme-credit",
      "status": "corroborating"
     },
@@ -991,7 +991,7 @@
      "source": "Sustainability",
      "domain": "openalex.org",
      "doi_or_url": "https://doi.org/10.3390/su172310799",
-     "cited_by": 25,
+     "cited_by": 26,
      "problem": "sme-credit",
      "status": "corroborating"
     }
@@ -1070,7 +1070,7 @@
     "source": "World Bank WDI",
     "url": "https://data.worldbank.org/indicator/EG.FEC.RNEW.ZS?locations=TH"
    },
-   "new_papers_12m": 193,
+   "new_papers_12m": 194,
    "plan": null,
    "evidence": [
     {
@@ -1113,7 +1113,7 @@
      "source": "RSC Sustainability",
      "domain": "openalex.org",
      "doi_or_url": "https://doi.org/10.1039/d5su00956a",
-     "cited_by": 24,
+     "cited_by": 25,
      "problem": "battery-recycling",
      "status": "corroborating"
     },
@@ -1203,7 +1203,7 @@
     "source": "World Bank WDI",
     "url": "https://data.worldbank.org/indicator/SE.TER.ENRR?locations=TH"
    },
-   "new_papers_12m": 603,
+   "new_papers_12m": 601,
    "plan": null,
    "evidence": [
     {
@@ -1336,7 +1336,7 @@
     "source": "World Bank WDI",
     "url": "https://data.worldbank.org/indicator/AG.PRD.FOOD.XD?locations=TH"
    },
-   "new_papers_12m": 778,
+   "new_papers_12m": 779,
    "plan": null,
    "evidence": [
     {
@@ -1385,11 +1385,11 @@
     },
     {
      "tier": "research",
-     "title": "Review on Sustainable Forestry with Artificial Intelligence",
-     "date": "2025-11-24",
-     "source": "ACM Journal on Computing and Sustainable Societies",
+     "title": "The emerging role of Fungi in sustainable farming and global food security",
+     "date": "2025-12-31",
+     "source": "Mycosphere",
      "domain": "openalex.org",
-     "doi_or_url": "https://doi.org/10.1145/3759259",
+     "doi_or_url": "https://doi.org/10.5943/mycosphere/16/1/37",
      "cited_by": 14,
      "problem": "food-loss",
      "status": "corroborating"
@@ -1471,7 +1471,7 @@
     "source": "World Bank WDI",
     "url": "https://data.worldbank.org/indicator/EN.ATM.PM25.MC.M3?locations=TH"
    },
-   "new_papers_12m": 125,
+   "new_papers_12m": 126,
    "plan": {
     "predict": [
      {
@@ -2130,7 +2130,7 @@
      "source": "Sustainability",
      "domain": "openalex.org",
      "doi_or_url": "https://doi.org/10.3390/su172310799",
-     "cited_by": 25,
+     "cited_by": 26,
      "problem": "household-debt",
      "status": "corroborating"
     }
@@ -2340,7 +2340,7 @@
     "source": "World Bank WDI",
     "url": "https://data.worldbank.org/indicator/EG.IMP.CONS.ZS?locations=TH"
    },
-   "new_papers_12m": 6944,
+   "new_papers_12m": 6963,
    "plan": null,
    "evidence": [
     {
@@ -2372,7 +2372,7 @@
      "source": "International Journal of Academic and Industrial Research Innovations(IJAIRI)",
      "domain": "openalex.org",
      "doi_or_url": "https://doi.org/10.62311/nesx/rp5-30042026",
-     "cited_by": 67,
+     "cited_by": 68,
      "problem": "energy-security",
      "status": "corroborating"
     },
@@ -2514,7 +2514,7 @@
      "source": "Journal of Indonesian Legal Studies",
      "domain": "openalex.org",
      "doi_or_url": "https://doi.org/10.15294/jils.v10i2.10025",
-     "cited_by": 9,
+     "cited_by": 11,
      "problem": "rural-doctors",
      "status": "corroborating"
     },
@@ -2600,17 +2600,6 @@
    "evidence": [
     {
      "tier": "research",
-     "title": "Biological synergies for heavy metal bioremediation across microbial, algal, and phytoremediation perspectives",
-     "date": "2026-03-02",
-     "source": "Discover Green Chemistry",
-     "domain": "openalex.org",
-     "doi_or_url": "https://doi.org/10.1007/s44509-026-00003-5",
-     "cited_by": 14,
-     "problem": "groundwater",
-     "status": "corroborating"
-    },
-    {
-     "tier": "research",
      "title": "Biomagnification of Potentially Toxic Elements and Metal-Based Nanomaterials in Food",
      "date": "2026-02-18",
      "source": "Environments",
@@ -2638,7 +2627,7 @@
      "source": "C – Journal of Carbon Research",
      "domain": "openalex.org",
      "doi_or_url": "https://doi.org/10.3390/c12010007",
-     "cited_by": 47,
+     "cited_by": 48,
      "problem": "groundwater",
      "status": "corroborating"
     },
@@ -2650,6 +2639,17 @@
      "domain": "openalex.org",
      "doi_or_url": "https://doi.org/10.1002/wwp2.70055",
      "cited_by": 26,
+     "problem": "groundwater",
+     "status": "corroborating"
+    },
+    {
+     "tier": "research",
+     "title": "Fractional orthopair fuzzy decision framework for sustainable water resource management in urban areas",
+     "date": "2025-12-01",
+     "source": "Scientific Reports",
+     "domain": "openalex.org",
+     "doi_or_url": "https://doi.org/10.1038/s41598-025-27126-2",
+     "cited_by": 16,
      "problem": "groundwater",
      "status": "corroborating"
     }
