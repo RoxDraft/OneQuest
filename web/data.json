@@ -1,6 +1,6 @@
 {
  "is_sample": false,
- "generated_at": "2026-11-24T06:55+00:00",
+ "generated_at": "2026-11-25T05:22+00:00",
  "weights": {
   "scale": 0.3,
   "neglect": 0.25,
@@ -14,7 +14,6 @@
   "social": "เสียงจากโซเชียล"
  },
  "dates": [
-  "2026-10-26",
   "2026-10-27",
   "2026-10-28",
   "2026-10-29",
@@ -43,7 +42,8 @@
   "2026-11-21",
   "2026-11-22",
   "2026-11-23",
-  "2026-11-24"
+  "2026-11-24",
+  "2026-11-25"
  ],
  "daily_signals": {
   "supply": [
@@ -144,6 +144,7 @@
   ]
  },
  "evidence_status": {
+  "unverified": 1,
   "corroborating": 70
  },
  "new_evidence_today": 0,
@@ -326,7 +327,7 @@
     "source": "World Bank WDI",
     "url": "https://data.worldbank.org/indicator/SP.POP.65UP.TO.ZS?locations=TH"
    },
-   "new_papers_12m": 204,
+   "new_papers_12m": 203,
    "plan": {
     "labor": {
      "note": "ตัวเลขทั้งหมดเป็นค่าสมมติ ต้องแทนด้วยข้อมูลจริงก่อนใช้",
@@ -671,7 +672,7 @@
     "source": "World Bank WDI",
     "url": "https://data.worldbank.org/indicator/SH.STA.SUIC.P5?locations=TH"
    },
-   "new_papers_12m": 95904,
+   "new_papers_12m": 96240,
    "plan": null,
    "evidence": [
     {
@@ -681,7 +682,7 @@
      "source": "Wiley Interdisciplinary Reviews Data Mining and Knowledge Discovery",
      "domain": "openalex.org",
      "doi_or_url": "https://doi.org/10.1002/widm.70111",
-     "cited_by": 343,
+     "cited_by": 342,
      "problem": "mental-health",
      "status": "corroborating"
     },
@@ -692,7 +693,7 @@
      "source": "Science China Information Sciences",
      "domain": "openalex.org",
      "doi_or_url": "https://doi.org/10.1007/s11432-025-4665-8",
-     "cited_by": 622,
+     "cited_by": 623,
      "problem": "mental-health",
      "status": "corroborating"
     },
@@ -703,7 +704,7 @@
      "source": "IEEE Access",
      "domain": "openalex.org",
      "doi_or_url": "https://doi.org/10.1109/access.2026.3698694",
-     "cited_by": 349,
+     "cited_by": 348,
      "problem": "mental-health",
      "status": "corroborating"
     },
@@ -714,7 +715,7 @@
      "source": "Journal of Artificial Intelligence Research",
      "domain": "openalex.org",
      "doi_or_url": "https://doi.org/10.1613/jair.1.18675",
-     "cited_by": 330,
+     "cited_by": 328,
      "problem": "mental-health",
      "status": "corroborating"
     },
@@ -725,7 +726,7 @@
      "source": "ACM Computing Surveys",
      "domain": "openalex.org",
      "doi_or_url": "https://doi.org/10.1145/3773080",
-     "cited_by": 290,
+     "cited_by": 289,
      "problem": "mental-health",
      "status": "corroborating"
     }
@@ -804,7 +805,7 @@
     "source": "World Bank WDI",
     "url": "https://data.worldbank.org/indicator/SL.UEM.1524.ZS?locations=TH"
    },
-   "new_papers_12m": 1586,
+   "new_papers_12m": 1606,
    "plan": null,
    "evidence": [
     {
@@ -825,7 +826,7 @@
      "source": "ACM Transactions on Intelligent Systems and Technology",
      "domain": "openalex.org",
      "doi_or_url": "https://doi.org/10.1145/3841472",
-     "cited_by": 74,
+     "cited_by": 71,
      "problem": "ai-jobs",
      "status": "corroborating"
     },
@@ -858,7 +859,7 @@
      "source": "Frontiers in Artificial Intelligence",
      "domain": "openalex.org",
      "doi_or_url": "https://doi.org/10.3389/frai.2025.1728881",
-     "cited_by": 47,
+     "cited_by": 48,
      "problem": "ai-jobs",
      "status": "corroborating"
     }
@@ -937,7 +938,7 @@
     "source": "World Bank WDI",
     "url": "https://data.worldbank.org/indicator/FB.BNK.CAPA.ZS?locations=TH"
    },
-   "new_papers_12m": 702,
+   "new_papers_12m": 704,
    "plan": null,
    "evidence": [
     {
@@ -1070,7 +1071,7 @@
     "source": "World Bank WDI",
     "url": "https://data.worldbank.org/indicator/EG.FEC.RNEW.ZS?locations=TH"
    },
-   "new_papers_12m": 194,
+   "new_papers_12m": 193,
    "plan": null,
    "evidence": [
     {
@@ -1108,23 +1109,23 @@
     },
     {
      "tier": "research",
+     "title": "Techno-economic feasibility of photovoltaic-powered electric vehicle charging stations: a global review and future outlook",
+     "date": "2026-02-07",
+     "source": "Sustainable Energy Research",
+     "domain": "openalex.org",
+     "doi_or_url": "https://doi.org/10.1186/s40807-025-00228-1",
+     "cited_by": 18,
+     "problem": "battery-recycling",
+     "status": "corroborating"
+    },
+    {
+     "tier": "research",
      "title": "Assessing tin demand and supply pressures under terawatt-scale photovoltaic deployment",
      "date": "2026-01-01",
      "source": "RSC Sustainability",
      "domain": "openalex.org",
      "doi_or_url": "https://doi.org/10.1039/d5su00956a",
      "cited_by": 25,
-     "problem": "battery-recycling",
-     "status": "corroborating"
-    },
-    {
-     "tier": "research",
-     "title": "Advances in Building Energy Management: A Comprehensive Review",
-     "date": "2025-11-24",
-     "source": "Buildings",
-     "domain": "openalex.org",
-     "doi_or_url": "https://doi.org/10.3390/buildings15234237",
-     "cited_by": 30,
      "problem": "battery-recycling",
      "status": "corroborating"
     }
@@ -1203,7 +1204,7 @@
     "source": "World Bank WDI",
     "url": "https://data.worldbank.org/indicator/SE.TER.ENRR?locations=TH"
    },
-   "new_papers_12m": 602,
+   "new_papers_12m": 608,
    "plan": null,
    "evidence": [
     {
@@ -1241,12 +1242,12 @@
     },
     {
      "tier": "research",
-     "title": "Adaptive and risk recovery strategies for enhancing supply chain network resilience: a cascading failure perspective",
-     "date": "2026-02-16",
-     "source": "Annals of Operations Research",
+     "title": "AI-Enhanced What-If Scenario Analysis in Supply Chain Digital Twins: A Multi-Objective Trade-Off Perspective on Cost, Resilience, and Carbon Efficiency",
+     "date": "2026-01-28",
+     "source": "Journal of Computing Innovations and Applications",
      "domain": "openalex.org",
-     "doi_or_url": "https://doi.org/10.1007/s10479-026-07070-8",
-     "cited_by": 16,
+     "doi_or_url": "https://doi.org/10.63575/cia.2026.40108",
+     "cited_by": 20,
      "problem": "semiconductor-skills",
      "status": "corroborating"
     },
@@ -1257,7 +1258,7 @@
      "source": "Frontiers in Mechanical Engineering",
      "domain": "openalex.org",
      "doi_or_url": "https://doi.org/10.3389/fmech.2025.1722114",
-     "cited_by": 37,
+     "cited_by": 38,
      "problem": "semiconductor-skills",
      "status": "corroborating"
     }
@@ -1336,7 +1337,7 @@
     "source": "World Bank WDI",
     "url": "https://data.worldbank.org/indicator/AG.PRD.FOOD.XD?locations=TH"
    },
-   "new_papers_12m": 776,
+   "new_papers_12m": 772,
    "plan": null,
    "evidence": [
     {
@@ -1368,7 +1369,7 @@
      "source": "npj Clean Water",
      "domain": "openalex.org",
      "doi_or_url": "https://doi.org/10.1038/s41545-026-00557-8",
-     "cited_by": 22,
+     "cited_by": 23,
      "problem": "food-loss",
      "status": "corroborating"
     },
@@ -1471,7 +1472,7 @@
     "source": "World Bank WDI",
     "url": "https://data.worldbank.org/indicator/EN.ATM.PM25.MC.M3?locations=TH"
    },
-   "new_papers_12m": 126,
+   "new_papers_12m": 125,
    "plan": {
     "predict": [
      {
@@ -1872,7 +1873,7 @@
     "source": "World Bank WDI",
     "url": "https://data.worldbank.org/indicator/FS.AST.PRVT.GD.ZS?locations=TH"
    },
-   "new_papers_12m": 234,
+   "new_papers_12m": 235,
    "plan": {
     "predict": [
      {
@@ -2097,7 +2098,7 @@
      "source": "Review of Managerial Science",
      "domain": "openalex.org",
      "doi_or_url": "https://doi.org/10.1007/s11846-026-00992-4",
-     "cited_by": 15,
+     "cited_by": 17,
      "problem": "household-debt",
      "status": "corroborating"
     },
@@ -2208,7 +2209,7 @@
     "source": "World Bank WDI",
     "url": "https://data.worldbank.org/indicator/IT.NET.USER.ZS?locations=TH"
    },
-   "new_papers_12m": 45,
+   "new_papers_12m": 46,
    "plan": null,
    "evidence": [
     {
@@ -2340,9 +2341,19 @@
     "source": "World Bank WDI",
     "url": "https://data.worldbank.org/indicator/EG.IMP.CONS.ZS?locations=TH"
    },
-   "new_papers_12m": 6977,
+   "new_papers_12m": 7041,
    "plan": null,
    "evidence": [
+    {
+     "tier": "news",
+     "title": "Europe cant afford another harsh winter as gas prices surge 200 %, storage plunges and factories close",
+     "date": "20261125",
+     "source": "peakoil.com",
+     "domain": "peakoil.com",
+     "doi_or_url": "https://peakoil.com/consumption/europe-cant-afford-another-harsh-winter-as-gas-prices-surge-200-storage-plunges-and-factories-close",
+     "problem": "energy-security",
+     "status": "unverified"
+    },
     {
      "tier": "research",
      "title": "Quantum Topological Autonomous Decision Ecosystems for Geoeconomic Risk, Climate, Energy Markets, Smart Cities and Resilient Global Infrastructure",
@@ -2361,18 +2372,7 @@
      "source": "International Journal of Academic and Industrial Research Innovations(IJAIRI)",
      "domain": "openalex.org",
      "doi_or_url": "https://doi.org/10.62311/nesx/rp5jy-30072026",
-     "cited_by": 75,
-     "problem": "energy-security",
-     "status": "corroborating"
-    },
-    {
-     "tier": "research",
-     "title": "Global Energy Crises, Geopolitical Conflict, and Economic Vulnerability: Econometric Evidence on Inflation Transmission, Growth Effects, and Renewable Transition Resilience",
-     "date": "2026-04-07",
-     "source": "International Journal of Academic and Industrial Research Innovations(IJAIRI)",
-     "domain": "openalex.org",
-     "doi_or_url": "https://doi.org/10.62311/nesx/rp5-30042026",
-     "cited_by": 69,
+     "cited_by": 76,
      "problem": "energy-security",
      "status": "corroborating"
     },
@@ -2395,6 +2395,17 @@
      "domain": "openalex.org",
      "doi_or_url": "https://doi.org/10.62311/nesx/rp-j32026",
      "cited_by": 72,
+     "problem": "energy-security",
+     "status": "corroborating"
+    },
+    {
+     "tier": "research",
+     "title": "Eco-Friendly Management of Insect Pests and Plant Diseases Using Botanical Extracts",
+     "date": "2026-01-02",
+     "source": "Global Research Journal of Natural Science and Technology",
+     "domain": "openalex.org",
+     "doi_or_url": "https://doi.org/10.53762/grjnst.03.03.19",
+     "cited_by": 89,
      "problem": "energy-security",
      "status": "corroborating"
     }
@@ -2471,7 +2482,7 @@
     "source": "World Bank WDI",
     "url": "https://data.worldbank.org/indicator/SH.MED.PHYS.ZS?locations=TH"
    },
-   "new_papers_12m": 109,
+   "new_papers_12m": 113,
    "plan": null,
    "evidence": [
     {
@@ -2595,7 +2606,7 @@
     0
    ],
    "indicator": null,
-   "new_papers_12m": 395,
+   "new_papers_12m": 396,
    "plan": null,
    "evidence": [
     {
@@ -2627,7 +2638,7 @@
      "source": "C – Journal of Carbon Research",
      "domain": "openalex.org",
      "doi_or_url": "https://doi.org/10.3390/c12010007",
-     "cited_by": 49,
+     "cited_by": 50,
      "problem": "groundwater",
      "status": "corroborating"
     },
@@ -2729,7 +2740,7 @@
     "source": "World Bank WDI",
     "url": "https://data.worldbank.org/indicator/ER.H2O.FWST.ZS?locations=TH"
    },
-   "new_papers_12m": 73,
+   "new_papers_12m": 72,
    "plan": null,
    "evidence": [
     {
