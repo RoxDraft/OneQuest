@@ -1,6 +1,6 @@
 {
  "is_sample": false,
- "generated_at": "2026-11-26T04:52+00:00",
+ "generated_at": "2026-11-27T04:56+00:00",
  "weights": {
   "scale": 0.3,
   "neglect": 0.25,
@@ -14,7 +14,6 @@
   "social": "เสียงจากโซเชียล"
  },
  "dates": [
-  "2026-10-28",
   "2026-10-29",
   "2026-10-30",
   "2026-10-31",
@@ -43,7 +42,8 @@
   "2026-11-23",
   "2026-11-24",
   "2026-11-25",
-  "2026-11-26"
+  "2026-11-26",
+  "2026-11-27"
  ],
  "daily_signals": {
   "supply": [
@@ -671,7 +671,7 @@
     "source": "World Bank WDI",
     "url": "https://data.worldbank.org/indicator/SH.STA.SUIC.P5?locations=TH"
    },
-   "new_papers_12m": 97378,
+   "new_papers_12m": 97467,
    "plan": null,
    "evidence": [
     {
@@ -681,7 +681,7 @@
      "source": "Wiley Interdisciplinary Reviews Data Mining and Knowledge Discovery",
      "domain": "openalex.org",
      "doi_or_url": "https://doi.org/10.1002/widm.70111",
-     "cited_by": 340,
+     "cited_by": 341,
      "problem": "mental-health",
      "status": "corroborating"
     },
@@ -703,7 +703,7 @@
      "source": "IEEE Access",
      "domain": "openalex.org",
      "doi_or_url": "https://doi.org/10.1109/access.2026.3698694",
-     "cited_by": 358,
+     "cited_by": 361,
      "problem": "mental-health",
      "status": "corroborating"
     },
@@ -714,7 +714,7 @@
      "source": "Journal of Artificial Intelligence Research",
      "domain": "openalex.org",
      "doi_or_url": "https://doi.org/10.1613/jair.1.18675",
-     "cited_by": 331,
+     "cited_by": 337,
      "problem": "mental-health",
      "status": "corroborating"
     },
@@ -725,7 +725,7 @@
      "source": "ACM Computing Surveys",
      "domain": "openalex.org",
      "doi_or_url": "https://doi.org/10.1145/3773080",
-     "cited_by": 294,
+     "cited_by": 296,
      "problem": "mental-health",
      "status": "corroborating"
     }
@@ -804,7 +804,7 @@
     "source": "World Bank WDI",
     "url": "https://data.worldbank.org/indicator/SL.UEM.1524.ZS?locations=TH"
    },
-   "new_papers_12m": 1610,
+   "new_papers_12m": 1615,
    "plan": null,
    "evidence": [
     {
@@ -825,7 +825,7 @@
      "source": "ACM Transactions on Intelligent Systems and Technology",
      "domain": "openalex.org",
      "doi_or_url": "https://doi.org/10.1145/3841472",
-     "cited_by": 67,
+     "cited_by": 68,
      "problem": "ai-jobs",
      "status": "corroborating"
     },
@@ -937,7 +937,7 @@
     "source": "World Bank WDI",
     "url": "https://data.worldbank.org/indicator/FB.BNK.CAPA.ZS?locations=TH"
    },
-   "new_papers_12m": 708,
+   "new_papers_12m": 709,
    "plan": null,
    "evidence": [
     {
@@ -969,7 +969,7 @@
      "source": "Sustainability",
      "domain": "openalex.org",
      "doi_or_url": "https://doi.org/10.3390/su18020732",
-     "cited_by": 32,
+     "cited_by": 33,
      "problem": "sme-credit",
      "status": "corroborating"
     },
@@ -1070,7 +1070,7 @@
     "source": "World Bank WDI",
     "url": "https://data.worldbank.org/indicator/EG.FEC.RNEW.ZS?locations=TH"
    },
-   "new_papers_12m": 196,
+   "new_papers_12m": 195,
    "plan": null,
    "evidence": [
     {
@@ -1091,7 +1091,7 @@
      "source": "Journal of Sustainable Metallurgy",
      "domain": "openalex.org",
      "doi_or_url": "https://doi.org/10.1007/s40831-026-01439-6",
-     "cited_by": 33,
+     "cited_by": 34,
      "problem": "battery-recycling",
      "status": "corroborating"
     },
@@ -1203,7 +1203,7 @@
     "source": "World Bank WDI",
     "url": "https://data.worldbank.org/indicator/SE.TER.ENRR?locations=TH"
    },
-   "new_papers_12m": 607,
+   "new_papers_12m": 609,
    "plan": null,
    "evidence": [
     {
@@ -1336,7 +1336,7 @@
     "source": "World Bank WDI",
     "url": "https://data.worldbank.org/indicator/AG.PRD.FOOD.XD?locations=TH"
    },
-   "new_papers_12m": 784,
+   "new_papers_12m": 785,
    "plan": null,
    "evidence": [
     {
@@ -1379,7 +1379,7 @@
      "source": "Nature",
      "domain": "openalex.org",
      "doi_or_url": "https://doi.org/10.1038/s41586-025-10084-0",
-     "cited_by": 27,
+     "cited_by": 28,
      "problem": "food-loss",
      "status": "corroborating"
     },
@@ -1471,7 +1471,7 @@
     "source": "World Bank WDI",
     "url": "https://data.worldbank.org/indicator/EN.ATM.PM25.MC.M3?locations=TH"
    },
-   "new_papers_12m": 133,
+   "new_papers_12m": 138,
    "plan": {
     "predict": [
      {
@@ -1788,11 +1788,11 @@
     },
     {
      "tier": "research",
-     "title": "Integrating quantile regression with ARIMA and ANN for interpretable and accurate PM2.5 forecasting in Hat Yai, Thailand",
-     "date": "2025-12-08",
-     "source": "Scientific Reports",
+     "title": "Calcination Optimisation of Corncob Ash for Sustainable Cementitious Applications: A Pathway to Low-Carbon Construction",
+     "date": "2025-12-28",
+     "source": "Sustainability",
      "domain": "openalex.org",
-     "doi_or_url": "https://doi.org/10.1038/s41598-025-27294-1",
+     "doi_or_url": "https://doi.org/10.3390/su18010311",
      "cited_by": 9,
      "problem": "pm25",
      "status": "corroborating"
@@ -1872,7 +1872,7 @@
     "source": "World Bank WDI",
     "url": "https://data.worldbank.org/indicator/FS.AST.PRVT.GD.ZS?locations=TH"
    },
-   "new_papers_12m": 237,
+   "new_papers_12m": 239,
    "plan": {
     "predict": [
      {
@@ -2097,7 +2097,7 @@
      "source": "Review of Managerial Science",
      "domain": "openalex.org",
      "doi_or_url": "https://doi.org/10.1007/s11846-026-00992-4",
-     "cited_by": 17,
+     "cited_by": 18,
      "problem": "household-debt",
      "status": "corroborating"
     },
@@ -2208,7 +2208,7 @@
     "source": "World Bank WDI",
     "url": "https://data.worldbank.org/indicator/IT.NET.USER.ZS?locations=TH"
    },
-   "new_papers_12m": 46,
+   "new_papers_12m": 47,
    "plan": null,
    "evidence": [
     {
@@ -2340,7 +2340,7 @@
     "source": "World Bank WDI",
     "url": "https://data.worldbank.org/indicator/EG.IMP.CONS.ZS?locations=TH"
    },
-   "new_papers_12m": 7109,
+   "new_papers_12m": 7129,
    "plan": null,
    "evidence": [
     {
@@ -2487,11 +2487,11 @@
     },
     {
      "tier": "research",
-     "title": "Economic changes and public health resources associated with satisfaction toward the state health service system among older adults under the Universal Coverage Scheme across 77 provinces in Thailand, 2017–2024",
-     "date": "2026-03-27",
-     "source": "International Journal for Equity in Health",
+     "title": "Bridging crisis recovery and long-term transformation of the health system in Lebanon: evidence from key informant interviews and global lessons",
+     "date": "2026-04-27",
+     "source": "BMC Health Services Research",
      "domain": "openalex.org",
-     "doi_or_url": "https://doi.org/10.1186/s12939-026-02820-3",
+     "doi_or_url": "https://doi.org/10.1186/s12913-026-14630-y",
      "cited_by": 5,
      "problem": "rural-doctors",
      "status": "corroborating"
@@ -2595,7 +2595,7 @@
     0
    ],
    "indicator": null,
-   "new_papers_12m": 399,
+   "new_papers_12m": 398,
    "plan": null,
    "evidence": [
     {
@@ -2729,9 +2729,20 @@
     "source": "World Bank WDI",
     "url": "https://data.worldbank.org/indicator/ER.H2O.FWST.ZS?locations=TH"
    },
-   "new_papers_12m": 72,
+   "new_papers_12m": 71,
    "plan": null,
    "evidence": [
+    {
+     "tier": "research",
+     "title": "Fielding Floods for Flourishing Farms: A Framework for Assessing the Reuse of Small Flood Reservoirs as Irrigation Reservoirs",
+     "date": "2026-05-01",
+     "source": "Earth s Future",
+     "domain": "openalex.org",
+     "doi_or_url": "https://doi.org/10.1029/2025ef006841",
+     "cited_by": 4,
+     "problem": "flood-water",
+     "status": "corroborating"
+    },
     {
      "tier": "research",
      "title": "Weathering the storm: impacts of extreme climate events on food security in Southeast Asia and pathways to resilience",
@@ -2773,17 +2784,6 @@
      "domain": "openalex.org",
      "doi_or_url": "https://doi.org/10.1016/j.geosus.2026.100411",
      "cited_by": 7,
-     "problem": "flood-water",
-     "status": "corroborating"
-    },
-    {
-     "tier": "research",
-     "title": "Assessing natural and human-induced drivers of groundwater quality and health risks in coastal deltas: advancing SDG 3, SDG 6, SDG 13, and SDG 15",
-     "date": "2025-11-26",
-     "source": "Applied Water Science",
-     "domain": "openalex.org",
-     "doi_or_url": "https://doi.org/10.1007/s13201-025-02648-2",
-     "cited_by": 13,
      "problem": "flood-water",
      "status": "corroborating"
     }
